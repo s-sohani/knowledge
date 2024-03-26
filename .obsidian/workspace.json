@@ -11,8 +11,12 @@
             "id": "9ba27427eab57b60",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "2024-02-05.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 1.canvas",
+                "file": "2024-02-05.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled 1.canvas",
+                "file": "2024-02-05.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled 1.canvas"
+                "file": "2024-02-05.md"
               }
             }
           }
@@ -144,7 +148,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a72ee06e3871643c",
+  "active": "9ba27427eab57b60",
   "lastOpenFiles": [
     "2024-02-05.md",
     "Untitled 1.canvas",
