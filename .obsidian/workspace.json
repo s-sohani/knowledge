@@ -4,22 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "b7ae3032702c643b",
+        "id": "920019dafc83fa9c",
         "type": "tabs",
         "children": [
           {
-            "id": "8e8388b71910d021",
+            "id": "9ba27427eab57b60",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Untitled 1.canvas",
-                "viewState": {
-                  "x": -250,
-                  "y": 111,
-                  "zoom": 0
-                }
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -72,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "90e4eaa6617e6c64",
