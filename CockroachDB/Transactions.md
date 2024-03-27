@@ -10,4 +10,4 @@ In Read Commit you must set lock manually on row that you want to read.
 
 ### Serializable
 
-If any read occured, 
+If any read occurs, that line will be locked, and if write perform after that then refused.
