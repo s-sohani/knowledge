@@ -1,3 +1,10 @@
 Two type of transactions exist: Serialized Transaction (Default) and Read Transaction. 
 
-Read Transaction is minimal fail but has higher in consistency.
+
+
+
+## Read Commit
+
+Read Commit is minimal fail but has higher in consistency.
+
+In Read Commit you must set lock manually on row that you want to read. 
