@@ -10,7 +10,4 @@ In Read Commit you must set lock manually on row that you want to read.
 
 ### Serializable
 
-If any read occurs, that line will be locked, and if a write takes place after that then will be refused. $2+2=4$
-$$
-\epsilon
-$$
+If any read occurs, that line will be locked, and if a write takes place after that then will be refused.
