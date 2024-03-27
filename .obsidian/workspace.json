@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fee48ba58a7655e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Java/Java 8 to 21.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CockroachDB/Transactions.md",
+                "file": "Java/Java 8 to 21.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CockroachDB/Transactions.md",
+                "file": "Java/Java 8 to 21.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CockroachDB/Transactions.md"
+                "file": "Java/Java 8 to 21.md"
               }
             }
           }
@@ -149,10 +162,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2d88c8ef66ea7598",
+  "active": "fee48ba58a7655e5",
   "lastOpenFiles": [
-    "Untitled 1.md",
     "CockroachDB/Transactions.md",
+    "Java/Java 8 to 21.md",
+    "Java",
+    "Untitled 1.md",
     "CockroachDB",
     "Untitled 1.canvas",
     "Untitled.canvas",
