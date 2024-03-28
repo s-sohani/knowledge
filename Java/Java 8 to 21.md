@@ -7,7 +7,19 @@
 ## JKD9
 #### Allow private methods in interfaces
 
+It just for tidy up the interface and increase encapsulation and resusability of code.
+
 ```java
-int i = 0;
+public interface SumInterface {  
+    default int sum(int i, int j) {  
+        return doSum(i, j);  
+    }  
+  
+    private int doSum(int i, int j) {  
+        return i + j;  
+    }  
+}
 
 ```
+
+
