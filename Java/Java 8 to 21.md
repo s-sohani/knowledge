@@ -62,3 +62,10 @@ JavaExample.java:7: error: cannot infer type arguments for MyClass
 
 Java 9 improved the use of diamond operator and allows us to use the diamond operator with anonymous inner classes.
 
+#### Allow effectively-final variables to be used as resources in try-with-resources statements
+
+Despite `try-with-resources` has power, it had a few shortcomings that Java 9 addressed.
+- Handle multiple resources in try block, make the code harder to read.
+- If you already have a variable that you want to handle with this construct, you had to introduce a dummy variable.
+
+To mitigate these criticisms, `try-with-resources` was enhanced to handle final or effectively final local variables in addition to newly created ones:
