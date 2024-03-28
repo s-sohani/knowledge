@@ -68,4 +68,19 @@ Despite `try-with-resources` has power, it had a few shortcomings that Java 9 
 - Handle multiple resources in try block, make the code harder to read.
 - If you already have a variable that you want to handle with this construct, you had to introduce a dummy variable.
 
-To mitigate these criticisms, `try-with-resources` was enhanced to handle final or effectively final local variables in addition to newly created ones:
+To mitigate these criticisms in Java9, `try-with-resources` was enhanced to handle final or effectively final local variables in addition to newly created ones:
+
+```java
+BufferedReader br1 = new BufferedReader(...);
+BufferedReader br2 = new BufferedReader(...);
+try (br1; br2) {
+    System.out.println(br1.readLine() + br2.readLine());
+}
+```
+
+#### Underscore is no longer a valid identifier name
+This block of code is invalid in Java9, but allowed and convey special meaning in Java21.
+
+```java
+int _ = 10;
+```
