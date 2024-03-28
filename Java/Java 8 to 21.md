@@ -59,3 +59,5 @@ JavaExample.java:7: error: cannot infer type arguments for MyClass
 ```
 
 ###### Java 9 – Diamond operator enhancements
+
+Java 9 improved the use of diamond operator and allows us to use the diamond operator with anonymous inner classes.
