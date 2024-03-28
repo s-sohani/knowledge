@@ -23,3 +23,6 @@ public interface SumInterface {
 ```
 
 
+#### Diamond operator for anonymous inner classes
+
+###### What is a diamond operator?
