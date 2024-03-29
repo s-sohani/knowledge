@@ -7,7 +7,7 @@
 ## JKD9
 #### Allow private methods in interfaces
 
-It just for tidy up the interface and increase encapsulation and resusability of code.
+It just for ==tidy up== the interface and increase encapsulation and resusability of code.
 
 ```java
 public interface SumInterface {  
