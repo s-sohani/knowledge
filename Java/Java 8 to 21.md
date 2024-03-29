@@ -109,3 +109,7 @@ Map<String, String> myMap = new HashMap<>();
 var myMap = new HashMap<>(); //Map<Object, Object>
 ```
 
+
+## JDK 17
+
+#### Switch Expressions
