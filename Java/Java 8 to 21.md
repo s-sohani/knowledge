@@ -90,3 +90,12 @@ int _ = 10;
 
 #### Type Inference
 
+Use `var` instead of explicit type, It makes this piece of code less redundant, thus, easier to read.
+```java
+var greetingMessage = "Hello!";
+```
+The type of the declared variables is **inferred at compile time**
+
+##### Maybe use `var` has backfire
+- Reduce readability
+  For example `.getDayOfWeek` in Java 8's Date/Time return `java.time.DayOfWeek` but in `Joda Time` return int so use `var` in below example made conf
