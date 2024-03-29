@@ -88,3 +88,5 @@ int _ = 10;
 
 ## JDK 11
 
+#### Type Inference
+
