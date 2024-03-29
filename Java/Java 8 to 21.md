@@ -179,3 +179,15 @@ switch (day) {
 ```
 
 #### Helpful NullPointerExceptions
+Log more details in NullPointExceptions. For example:
+```java
+// In JDK < 14
+Exception in thread "main" java.lang.NullPointerException
+        at Unlucky.method(Unlucky.java:83)
+// In Jdk >= 15
+Exception in thread "main" java.lang.NullPointerException:
+  Cannot invoke "org.w3c.dom.Node.getChildNodes()" because
+  the return value of "org.w3c.dom.NodeList.item(int)" is null
+        at Unlucky.method(Unlucky.java:83)
+```
+
