@@ -6,7 +6,6 @@
 
 ## JKD 11
 ### Allow private methods in interfaces
-
 It just for ==tidy up== the interface and increase encapsulation and resusability of code.
 
 ```java
@@ -24,7 +23,6 @@ public interface SumInterface {
 
 
 ### Diamond operator for anonymous inner classes
-
 ###### What is a diamond operator?
 - new feature in java SE 7
 -  The purpose of diamond operator is to avoid redundant code by leaving the generic type in the right side of the expression.
@@ -32,9 +30,7 @@ public interface SumInterface {
 List<String> myList = new ArrayList<String>();
 List<String> myList = new ArrayList<>();
 ```
- 
 ###### Problem with the diamond operator
-
  it didn’t allow us to use them in anonymous inner classes.
  ```java
  abstract class MyClass<T>{  
@@ -57,13 +53,10 @@ public class JavaExample {
 JavaExample.java:7: error: cannot infer type arguments for MyClass
         MyClass obj = new MyClass<>() {
 ```
-
 ###### Java 9 – Diamond operator enhancements
-
 Java 9 improved the use of diamond operator and allows us to use the diamond operator with anonymous inner classes.
 
 ### Allow effectively-final variables to be used as resources in try-with-resources statements
-
 Despite `try-with-resources` has power, it had a few ==shortcomings== that Java 9 addressed.
 - Handle multiple resources in try block, make the code harder to read.
 - If you already have a variable that you want to handle with this construct, you had to introduce a dummy variable.
@@ -86,7 +79,6 @@ int _ = 10;
 ```
 
 ### Type Inference
-
 Use `var` instead of explicit type, It makes this piece of code less redundant, thus, easier to read.
 ```java
 var greetingMessage = "Hello!";
@@ -285,3 +277,6 @@ private static int getLength(Object obj) {
   return s.length();
 }
 ```
+
+
+### Record Classes
