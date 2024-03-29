@@ -247,4 +247,5 @@ The `String` class also provides some programmatic ways to deal with indentati
 - `stripIndent` returns the contents of the original string without all the incidental indentation.
 
 ##### Some Tips
-- Text Block new line contain `\n`, If you want open file include Text Block content
+- Text Block new line contain `\n`, If you want open file include Text Block content, you see single line, so **Make sure you have correct control on characters**. For example replace all `\n` with `\n\r`.
+- Preserve trailing space Because in Text Block spaces are ignored. If a line end with spaces or tab, use `\t` or `\s`. 
