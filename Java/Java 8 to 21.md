@@ -98,4 +98,9 @@ The type of the declared variables is **inferred at compile time**
 
 ##### Maybe use `var` has backfire
 - Reduce readability
-  For example `.getDayOfWeek` in Java 8's Date/Time return `java.time.DayOfWeek` but in `Joda Time` return int so use `var` in below example made conf
+  For example `.getDayOfWeek` in Java 8's Date/Time return `java.time.DayOfWeek` but in `Joda Time` return `int` so use `var` in below example made confusing and hard to determind the the type.
+ ```java
+var dayOfWeek = date.getDayOfWeek();
+```
+- Problem in Diamond Operator
+  
