@@ -4,8 +4,8 @@
 >https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-21/
 
 
-## JKD 9
-#### Allow private methods in interfaces
+## JKD 11
+### Allow private methods in interfaces
 
 It just for ==tidy up== the interface and increase encapsulation and resusability of code.
 
@@ -23,7 +23,7 @@ public interface SumInterface {
 ```
 
 
-#### Diamond operator for anonymous inner classes
+### Diamond operator for anonymous inner classes
 
 ###### What is a diamond operator?
 - new feature in java SE 7
@@ -62,7 +62,7 @@ JavaExample.java:7: error: cannot infer type arguments for MyClass
 
 Java 9 improved the use of diamond operator and allows us to use the diamond operator with anonymous inner classes.
 
-#### Allow effectively-final variables to be used as resources in try-with-resources statements
+### Allow effectively-final variables to be used as resources in try-with-resources statements
 
 Despite `try-with-resources` has power, it had a few ==shortcomings== that Java 9 addressed.
 - Handle multiple resources in try block, make the code harder to read.
@@ -78,17 +78,14 @@ try (br1; br2) {
 }
 ```
 
-#### Underscore is no longer a valid identifier name
+### Underscore is no longer a valid identifier name
 This block of code is invalid in Java9, but allowed and convey special meaning in Java21.
 
 ```java
 int _ = 10;
 ```
 
-
-## JDK 11
-
-#### Type Inference
+### Type Inference
 
 Use `var` instead of explicit type, It makes this piece of code less redundant, thus, easier to read.
 ```java
@@ -96,7 +93,7 @@ var greetingMessage = "Hello!";
 ```
 The type of the declared variables is **inferred at compile time**
 
-##### Maybe use `var` has backfire
+#### Maybe use `var` has backfire
 - Reduce readability
   For example `.getDayOfWeek` in Java 8's Date/Time return `java.time.DayOfWeek` but in `Joda Time` return `int` so use `var` in below example made confusing and hard to determind the the type.
  ```java
@@ -112,7 +109,7 @@ var myMap = new HashMap<>(); //Map<Object, Object>
 
 ## JDK 17
 
-#### Switch Expressions
+### Switch Expressions
 Populate variable with Switch Expression.
 ```java
 int numLetters = switch (day) {
@@ -126,7 +123,7 @@ int numLetters = switch (day) {
 };
 ```
 
-##### Differences between Switch Statement and Switch Expression
+#### Differences between Switch Statement and Switch Expression
 - Switch expressions **cases don't fall-through**. So no more subtle bugs caused by missing `breaks`. To avoid the need for fall-through, **multiple constants can be specified for each case** in a comma separated list.
 - Each **case has its own scope**. use `yield` instead of `return`. 
 ```java
@@ -178,7 +175,7 @@ switch (day) {
 }
 ```
 
-#### Helpful NullPointerExceptions
+### Helpful NullPointerExceptions
 Log more details in NullPointExceptions. For example:
 ```java
 // In JDK < 14
@@ -191,7 +188,7 @@ Exception in thread "main" java.lang.NullPointerException:
         at Unlucky.method(Unlucky.java:83)
 ```
 
-#### Text Blocks
+### Text Blocks
 Use triple quout to write multiple line string. for example:
 ```java
 String html = "";
@@ -246,7 +243,7 @@ The `String` class also provides some programmatic ways to deal with indentati
 - The `indent` method takes an integer and returns a new string with the specified levels of additional indentation
 - `stripIndent` returns the contents of the original string without all the incidental indentation.
 
-##### Some Tips
+#### Some Tips
 - Text Block new line contain `\n`, If you want open file include Text Block content, you see single line, so **Make sure you have correct control on characters**. For example replace all `\n` with `\n\r`.
 - Preserve trailing space Because in Text Block spaces are ignored. If a line end with spaces or tab, use `\t` or `\s`. 
 - Text Block compatible with `String::formatted` or ``String::format`.
@@ -258,5 +255,33 @@ var greeting = """
     """.formatted(name);
 ```
 
-#### Pattern Matching for instanceof
-If test of `instanceof` be passed, we can declerd 
+### Pattern Matching for instanceof
+If test of `instanceof` be passed, we can declared pattern variable.
+```java
+// JDK < 16
+if (obj instanceof String) {
+    String s = (String) obj;
+    // use s
+}
+
+// JDK >= 16
+if (obj instanceof String s) {
+    // use s
+}
+
+// Pattern Matchin with complex condition
+if (obj instanceof String s && s.length() > 5) {
+  // use s
+}
+
+// User Pattern variable in every where in block.
+private static int getLength(Object obj) {
+  if (!(obj instanceof String s)) {
+    throw new IllegalArgumentException();
+  }
+
+  // s is in scope - if the instanceof does not match
+  //      the execution will not reach this statement
+  return s.length();
+}
+```
