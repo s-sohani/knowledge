@@ -129,7 +129,7 @@ int numLetters = switch (day) {
 ##### Differences between Switch Statement and Switch Expression
 - Switch expressions **cases don't fall-through**. So no more subtle bugs caused by missing `breaks`. To avoid the need for fall-through, **multiple constants can be specified for each case** in a comma separated list.
 - Each **case has its own scope**. use `yield` instead of `return`. 
-  ```
+```java
 String s = switch (k) {
     case  1 -> {
         String temp = "one";
@@ -142,3 +142,40 @@ String s = switch (k) {
     default -> "many";
 }
 ```
+- **Cases of a switch expression are exhaustive**. This means that for String, primitive types and their wrappers the `default` case always has to be defined.
+  For `enums` either a `default` case has to be present, or all cases have to be explicitly covered.
+```java
+int k = 3;
+String s = switch (k) {
+    case  1 -> "one";
+    case  2 -> "two";
+    default -> "many";
+}
+
+// Enum example
+enum Day {
+   MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+
+Day day = Day.TUESDAY;
+switch (day) {
+    case  MONDAY -> ":(";
+    case  TUESDAY, WEDNESDAY, THURSDAY -> ":|";
+    case  FRIDAY -> ":)";
+    case  SATURDAY, SUNDAY -> ":D";
+}
+
+// --- or ---
+
+enum Day {
+   MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+
+Day day = Day.TUESDAY;
+switch (day) {
+    case  MONDAY -> ":(";
+    case  default -> ":D";
+}
+```
+
+#### Helpful NullPointerExceptions
