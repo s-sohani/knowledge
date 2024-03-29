@@ -113,3 +113,32 @@ var myMap = new HashMap<>(); //Map<Object, Object>
 ## JDK 17
 
 #### Switch Expressions
+Populate variable with Switch Expression.
+```java
+int numLetters = switch (day) {
+    case MONDAY, FRIDAY, SUNDAY -> 6;
+    case TUESDAY                -> 7;
+    default      -> {
+        String s = day.toString();
+        int result = s.length();
+        yield result;
+    }
+};
+```
+
+##### Differences between Switch Statement and Switch Expression
+- Switch expressions **cases don't fall-through**. So no more subtle bugs caused by missing `breaks`. To avoid the need for fall-through, **multiple constants can be specified for each case** in a comma separated list.
+- Each **case has its own scope**. use `yield` instead of `return`. 
+  ```
+String s = switch (k) {
+    case  1 -> {
+        String temp = "one";
+        yield temp;
+    }
+    case  2 -> {
+        String temp = "two";
+        yield temp;
+    }
+    default -> "many";
+}
+```
