@@ -103,4 +103,9 @@ The type of the declared variables is **inferred at compile time**
 var dayOfWeek = date.getDayOfWeek();
 ```
 - Problem in Diamond Operator
-  
+  The Diamond operator is a nice feature to remove some verbosity from the right-hand side of an expression. But when using `var`  it iference `Map<Object, Object>` that It Is not valid even emit without a compiler warning. 
+```java
+Map<String, String> myMap = new HashMap<>();
+var myMap = new HashMap<>(); //Map<Object, Object>
+```
+
