@@ -243,4 +243,8 @@ String indentedByToSpaces = """
 ```
 
 The `String` class also provides some programmatic ways to deal with indentation.
-The `indent` method takes an integer and returns a new string with the specified levels of additional indentation
+- The `indent` method takes an integer and returns a new string with the specified levels of additional indentation
+- `stripIndent` returns the contents of the original string without all the incidental indentation.
+
+##### Some Tips
+- Text Block new line contain `\n`, If you want open file include Text Block content
