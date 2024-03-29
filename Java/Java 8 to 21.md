@@ -249,3 +249,11 @@ The `String` class also provides some programmatic ways to deal with indentati
 ##### Some Tips
 - Text Block new line contain `\n`, If you want open file include Text Block content, you see single line, so **Make sure you have correct control on characters**. For example replace all `\n` with `\n\r`.
 - Preserve trailing space Because in Text Block spaces are ignored. If a line end with spaces or tab, use `\t` or `\s`. 
+- Text Block compatible with `String::formatted` or ``String::format`.
+```java
+var name = "world";
+var greeting = """
+    hello
+    %s
+    """.formatted(name);
+```
