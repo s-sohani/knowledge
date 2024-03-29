@@ -257,3 +257,6 @@ var greeting = """
     %s
     """.formatted(name);
 ```
+
+#### Pattern Matching for instanceof
+If test of `instanceof` be passed, we can declerd 
