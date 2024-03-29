@@ -191,3 +191,28 @@ Exception in thread "main" java.lang.NullPointerException:
         at Unlucky.method(Unlucky.java:83)
 ```
 
+#### Text Blocks
+Use triple quout to write multiple line string. for example:
+```java
+String html = "";
+html += "<html>\n";
+html += "  <body>\n";
+html += "    <p>Hello, world</p>\n";
+html += "  </body>\n";
+html += "</html>\n";
+
+// also blow same result
+String html = """
+          <html>
+            <body>
+              <p>Hello, world</p>
+            </body>
+          </html>
+          """;
+//  remove new line using \
+String singleLine = """
+          Hello \
+          World
+          """;
+```
+
