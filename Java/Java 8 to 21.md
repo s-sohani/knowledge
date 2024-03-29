@@ -4,10 +4,10 @@
 >https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-21/
 
 
-## JKD9
+## JKD 9
 #### Allow private methods in interfaces
 
-It just for <label class="ob-comment" title="" style=""> ==tidy up== <input type="checkbox"> <span style=""> Comment </span></label> the interface and increase encapsulation and resusability of code.
+It just for ==tidy up== the interface and increase encapsulation and resusability of code.
 
 ```java
 public interface SumInterface {  
@@ -64,7 +64,7 @@ Java 9 improved the use of diamond operator and allows us to use the diamond ope
 
 #### Allow effectively-final variables to be used as resources in try-with-resources statements
 
-Despite `try-with-resources` has power, it had a few shortcomings that Java 9 addressed.
+Despite `try-with-resources` has power, it had a few ==shortcomings== that Java 9 addressed.
 - Handle multiple resources in try block, make the code harder to read.
 - If you already have a variable that you want to handle with this construct, you had to introduce a dummy variable.
 
@@ -84,3 +84,7 @@ This block of code is invalid in Java9, but allowed and convey special meaning i
 ```java
 int _ = 10;
 ```
+
+
+## JDK 11
+
