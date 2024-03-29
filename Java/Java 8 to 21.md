@@ -216,3 +216,31 @@ String singleLine = """
           """;
 ```
 
+The compiler checks the whitespace used for indentation in each line to find the least indented line, and shifts each line to the left by this minimal common indentation.
+This means that if the closing `"""` is in a separate line, the indentation can be increased by shifting the closing token to the left.
+The opening `"""` does not count for the indentation removal so it's not necessary to line up the text block with it.
+```java
+String noIndentation = """
+          First line
+          Second line
+          """;
+
+String indentedByToSpaces = """
+          First line
+          Second line
+        """;
+        
+// Below results are the same
+String indentedByToSpaces = """
+         First line
+         Second line
+       """;
+
+String indentedByToSpaces = """
+                              First line
+                              Second line
+                            """;
+```
+
+The `String` class also provides some programmatic ways to deal with indentation.
+The `indent` method takes an integer and returns a new string with the specified levels of additional indentation
