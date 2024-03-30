@@ -16,3 +16,8 @@ kubectl explain pod.spec
 kubectl logs kubia-manual
 ```
 
+If your pod includes multiple **containers** and you want see specific container's log:
+```
+kubectl logs kubia-manual -c <container name>
+kubectl logs kubia-manual -c kubia
+```

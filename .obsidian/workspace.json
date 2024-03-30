@@ -138,6 +138,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-comments:Show Comments Panel": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
