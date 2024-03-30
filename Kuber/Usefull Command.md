@@ -9,3 +9,10 @@ kubectl get po kubia-zxzij -o yaml
 kubectl explain pods
 kubectl explain pod.spec
 ```
+
+
+#### Print log
+```
+kubectl logs kubia-manual
+```
+
