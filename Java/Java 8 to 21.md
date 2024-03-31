@@ -361,5 +361,7 @@ public sealed class Shape {
 - Permitted classes must be located in the same package as the superclass.
 - **Sealed classes** offer a nice alternative to _Enum types_ making it possible to use regular classes to model the fixed alternatives.
 
-
+### Unnamed Class and Instance main method
+- Define main method on unnamed package, module or class
+- 
 
