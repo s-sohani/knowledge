@@ -369,6 +369,7 @@ Unnamed classes work similarly to _unnamed packages_ and _unnamed modules_. I
 
 ## JDK 21
 
-### String Templates 
+### Record Patterns
+
 
 
