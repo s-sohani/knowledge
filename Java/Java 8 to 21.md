@@ -302,3 +302,18 @@ public record Point(int x, int y) {
 ```
 
 #### Tipes
+- Use Local Records to model intermediate transformations
+  A typical solution was to rely on `Pair` or similar holder classes from a library, or to define your own.
+```java
+public List<Product> findProductsWithMostSaving(List<Product> products) {
+  record ProductWithSaving(Product product, double savingInEur) {}
+
+  products.stream()
+    .map(p -> new ProductWithSaving(p, p.basePriceInEur * p.discountPercentage))
+    .sorted((p1, p2) -> Double.compare(p2.savingInEur, p1.savingInEur))
+    .map(ProductWithSaving::product)
+    .limit(5)
+    .collect(Collectors.toList());
+}
+```
+- Record class not compatible with bean, spring data and some features in Jackson and other libs so far. 
