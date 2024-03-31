@@ -359,5 +359,7 @@ public sealed class Shape {
 ```
 - Record classes can also be part of a sealed hierarchy as leafs because they are implicitly final.
 - Permitted classes must be located in the same package as the superclass.
+- **Sealed classes** offer a nice alternative to _Enum types_ making it possible to use regular classes to model the fixed alternatives.
+
 
 
