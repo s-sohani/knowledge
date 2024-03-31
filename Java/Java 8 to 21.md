@@ -361,7 +361,14 @@ public sealed class Shape {
 - Permitted classes must be located in the same package as the superclass.
 - **Sealed classes** offer a nice alternative to _Enum types_ making it possible to use regular classes to model the fixed alternatives.
 
-### Unnamed Class and Instance main method
-- Define main method on unnamed package, module or class
-- 
+### Unnamed Class and Instance main method (Preview)
+- Define `main` method on unnamed package, module or class.
+- Define not `static` `main` method.
+- The `string[]` parameter can also be ommited.
+Unnamed classes work similarly to _unnamed packages_ and _unnamed modules_. If a class does not have a `package` declaration, it will be part of the unnamed package, in which case they can not be referenced by classes from named packages. If a package is not part of a module, it will be part of the unnamed module, so packages from other modules can't refer them.
+
+## JDK 21
+
+### String Templates 
+
 
