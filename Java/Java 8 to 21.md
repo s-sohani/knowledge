@@ -370,6 +370,36 @@ Unnamed classes work similarly to _unnamed packages_ and _unnamed modules_. I
 ## JDK 21
 
 ### Record Patterns
+Pattern matchin used for `instanceof` and `switch`, now is used for `Record` pattern.
+```java
+// Pattern matching with a type pattern using instanceof
+if (obj instanceof String s) {
+  // ... use s ...
+}
 
+// Pattern matching with a type pattern using switch
+switch (obj) {
+    case String s -> // ... use s ...
+    // ... other cases ...
+};
+
+// Pattern matching with a Record pattern
+interface Point { }
+record Point2D(int x, int y) implements Point { }
+enum Color { RED, GREEN, BLUE }
+record ColoredPoint(Point p, Color c) { }
+
+Object r = new ColoredPoint(new Point2D(3, 4), Color.GREEN);
+
+// Nested pattern matching or record pattern
+if (r instanceof ColoredPoint(Point2D(int x, int y), Color c)) {
+  // work with x, y, and c
+}
+
+var length = switch (r) {
+	case ColoredPoint(Point2D(int x, int y), Color c) -> Math.sqrt(x*x + y*y);
+	case ColoredPoint(Point p, Color c) -> 0;
+}
+```
 
 
