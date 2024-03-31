@@ -319,12 +319,45 @@ public List<Product> findProductsWithMostSaving(List<Product> products) {
 - Record class not compatible with bean, spring data and some features in Jackson and other libs so far. 
 
 ### Sealed Classes
-Alternative for final class. 
-Restrict which other classes or interfaces may extend or implement them.
-Allowing the authors to explicitly list the subclasses.
+- Alternative for final class. 
+- Restrict which other classes or interfaces may extend or implement them.
+- Allowing the authors to explicitly list the subclasses.
 ```java
 public sealed class Shape
     permits Circle, Quadrilateral {...}
 ```
-Permitted classes must be located in the same package as the superclass.
-Authors are forced to always explicitly define the boundaries of a sealed type hierarchy.
+- Permitted classes must be located in the same package as the superclass.
+- Authors are forced to always explicitly define the boundaries of a sealed type hierarchy.
+	- `final`: the subclass can not be extended at all
+	- `sealed`: the subclass can only be extended by some permitted classes
+	- `non-sealed`: the subclass can be freely extended
+```java
+public sealed class Shape
+    permits Circle, Quadrilateral, WeirdShape {...}
+
+public final class Circle extends Shape {...}
+
+public sealed class Quadrilateral extends Shape
+    permits Rectangle, Parallelogram {...}
+public final class Rectangle extends Quadrilateral {...}
+public final class Parallelogram extends Quadrilateral {...}
+
+public non-sealed class WeirdShape extends Shape {...}
+```
+- Declare all of Classes in the same source file in which case the `permits` clause can be omitted.
+```java
+public sealed class Shape {
+  public final class Circle extends Shape {}
+
+  public sealed class Quadrilateral extends Shape {
+    public final class Rectangle extends Quadrilateral {}
+    public final class Parallelogram extends Quadrilateral {}
+  }
+
+  public non-sealed class WeirdShape extends Shape {}
+}
+```
+- Record classes can also be part of a sealed hierarchy as leafs because they are implicitly final.
+- Permitted classes must be located in the same package as the superclass.
+
+
