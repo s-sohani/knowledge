@@ -280,7 +280,25 @@ private static int getLength(Object obj) {
 
 
 ### Record Classes
-Define immutable data classes.
+Define immutable data classes. **Record Classes are only about the data they carry** without providing too much customization options.
 ```java
 public record Point(int x, int y) { }
 ```
+Record Classes **can't extend other classes**, they **can't declare native methods**, and they are **implicitly final** and **can't be abstract**.
+Fields of a Record Class are not only `final` by default, it's **not even possible to have any non-final fields**.
+**Supplying data** to a record is only possible through its constructor.
+
+```java
+public record Point(int x, int y) {
+  public Point {
+    if (x < 0) {
+      throw new IllegalArgumentException("x can't be negative");
+    }
+    if (y < 0) {
+      y = 0;
+    }
+  }
+}
+```
+
+#### Tipes
