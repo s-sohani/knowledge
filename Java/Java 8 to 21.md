@@ -369,7 +369,7 @@ Unnamed classes work similarly to _unnamed packages_ and _unnamed modules_. I
 
 ## JDK 21
 
-### Record Patterns
+### Record Patterns And Pattern Matching For Switch
 Pattern matchin used for `instanceof` and `switch`, now is used for `Record` pattern.
 ```java
 // Pattern matching with a type pattern using instanceof
