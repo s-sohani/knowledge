@@ -319,3 +319,5 @@ public List<Product> findProductsWithMostSaving(List<Product> products) {
 - Record class not compatible with bean, spring data and some features in Jackson and other libs so far. 
 
 ### Sealed Classes
+Alternative for final class. 
+Restrict which other classes or interfaces may extend or implement them.
