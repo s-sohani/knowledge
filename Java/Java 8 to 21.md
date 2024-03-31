@@ -383,6 +383,28 @@ switch (obj) {
     // ... other cases ...
 };
 
+// Note: Pattern matchin for switch supports gaurd
+// The scope of i is the guard expression and the right hand side expression
+String formatted = switch (o) {
+    case Integer i when i > 10 -> String.format("a large Integer %d", i);
+    case Integer i             -> String.format("a small Integer %d", i);
+    default                    -> "something else";
+};
+
+// Note: Switch can now also match null values.
+switch (s) {
+  case null  -> System.out.println("Null");
+  case "Foo" -> System.out.println("Foo");
+  default    -> System.out.println("Something else");
+}
+
+// Note: Switch expressions always had to be exhaustive, in other words, they have to cover all possible input types.
+// OK
+String formatted = switch (o) {
+    case Integer i             -> String.format("a small Integer %d", i);
+    default                    -> "something else"; // if deleted, raise error
+};
+
 // Pattern matching with a Record pattern
 interface Point { }
 record Point2D(int x, int y) implements Point { }
