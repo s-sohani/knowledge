@@ -321,3 +321,10 @@ public List<Product> findProductsWithMostSaving(List<Product> products) {
 ### Sealed Classes
 Alternative for final class. 
 Restrict which other classes or interfaces may extend or implement them.
+Allowing the authors to explicitly list the subclasses.
+```java
+public sealed class Shape
+    permits Circle, Quadrilateral {...}
+```
+Permitted classes must be located in the same package as the superclass.
+Authors are forced to always explicitly define the boundaries of a sealed type hierarchy.
