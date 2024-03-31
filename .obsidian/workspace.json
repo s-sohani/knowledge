@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/Java 8 to 21.md",
+                "file": "Podcasts/Podcast List.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java/Java 8 to 21.md",
+                "file": "Podcasts/Podcast List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Java/Java 8 to 21.md",
+                "file": "Podcasts/Podcast List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Java/Java 8 to 21.md"
+                "file": "Podcasts/Podcast List.md"
               }
             }
           }
@@ -150,15 +150,17 @@
       "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "a72ee06e3871643c",
+  "active": "897d7ee6346bc6e4",
   "lastOpenFiles": [
+    "Java/Java 8 to 21.md",
+    "Podcasts/Podcast List.md",
+    "Podcasts",
     "Kuber/Objects/POD.md",
     "Kuber/Usefull Command.md",
     "Kuber/Objects",
     "Kuber/Concerpts.md",
     "Kuber",
     "CockroachDB/Transactions.md",
-    "Java/Java 8 to 21.md",
     "Java",
     "Untitled 1.md",
     "CockroachDB",
