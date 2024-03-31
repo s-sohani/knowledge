@@ -280,3 +280,7 @@ private static int getLength(Object obj) {
 
 
 ### Record Classes
+Define immutable data classes.
+```java
+public record Point(int x, int y) { }
+```
