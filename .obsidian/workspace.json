@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Podcasts/Podcast List.md",
+                "file": "Java/Java 8 to 21.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Podcasts/Podcast List.md",
+                "file": "Java/Java 8 to 21.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Podcasts/Podcast List.md",
+                "file": "Java/Java 8 to 21.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Podcasts/Podcast List.md"
+                "file": "Java/Java 8 to 21.md"
               }
             }
           }
@@ -150,10 +150,10 @@
       "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "897d7ee6346bc6e4",
+  "active": "a72ee06e3871643c",
   "lastOpenFiles": [
-    "Java/Java 8 to 21.md",
     "Podcasts/Podcast List.md",
+    "Java/Java 8 to 21.md",
     "Podcasts",
     "Kuber/Objects/POD.md",
     "Kuber/Usefull Command.md",
