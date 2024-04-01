@@ -1,9 +1,4 @@
 
->Refrences
->https://advancedweb.hu/new-language-features-since-java-8-to-21/
->https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-21/
-
-
 ## JKD 11
 ### Allow private methods in interfaces
 It just for ==tidy up== the interface and increase encapsulation and resusability of code.
@@ -484,3 +479,9 @@ In JDK 21 new interface added that added new functionality on Collection and Map
 
 ![[Pasted image 20240401144743.png]]
 
+
+
+
+>Refrences
+>https://advancedweb.hu/new-language-features-since-java-8-to-21/
+>https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-21/
