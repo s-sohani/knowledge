@@ -391,8 +391,7 @@ Stream.of(1, 2, 3, 4)
 ```
 
 ### Serial
-`@Serial` to indicate fields and methods that are part of the serialization mechanism (e.g. `serialVersionUID` and `readObject`)
-
+`@Serial` to indicate fields and methods that are part of the serialization mechanism (e.g. `serialVersionUID` and `readObject`). Check accessible and non-static field and method in compile time.
 
 
 ## JDK 21
