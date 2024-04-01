@@ -98,6 +98,15 @@ Map<String, String> myMap = new HashMap<>();
 var myMap = new HashMap<>(); //Map<Object, Object>
 ```
 
+### Collections Factory Method
+```java
+Set<Integer> mySet = Set.of(1, 2, 3);
+List<Integer> myList = List.of(1, 2, 3);
+Map<String, Integer> myMap = Map.of("one", 1, "two", 2);
+```
+
+### forRemoval
+Enhanced Deprecation policy. `@Deprecated` can be marked with `forRemoval`, which emits a new warning.
 
 ## JDK 17
 
@@ -394,7 +403,11 @@ Stream.of(1, 2, 3, 4)
 `@Serial` to indicate fields and methods that are part of the serialization mechanism (e.g. `serialVersionUID` and `readObject`). Check accessible and non-static field and method in compile time.
 
 ### Collectors.teeing
-
+Each element of the collection passed to the teeing collector is processed by downstream1 and downstream2 collectors, once the processing is completed by both the collectors, the results are passed to the BiFunction collector to merge the result or process accordingly.
+In this example, we're getting sum of numbers in downstream1 collector, count of numbers in downstream2 collector and then computing mean in the merger function.
+```java
+double mean = Stream.of(1, 2, 3, 4, 5, 6, 7) .collect(Collectors.teeing( Collectors.summingDouble(i -> i), Collectors.counting(), (sum, n) -> sum / n)); System.out.println(mean);
+```
 
 ## JDK 21
 
