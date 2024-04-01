@@ -105,8 +105,14 @@ List<Integer> myList = List.of(1, 2, 3);
 Map<String, Integer> myMap = Map.of("one", 1, "two", 2);
 ```
 
-### forRemoval
+### For Removal
 Enhanced Deprecation policy. `@Deprecated` can be marked with `forRemoval`, which emits a new warning.
+```java
+@Deprecated(forRemoval = true)
+```
+
+### Arrays Mismatch
+`Arrays.mismatch` find the first mismatching element between two arrays.
 
 ## JDK 17
 
