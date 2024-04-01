@@ -425,6 +425,14 @@ var length = switch (r) {
 ```
 
 ### Sequenced Collections
-
+In JDK 21 new interface added that added new functionality on Collection and Map:
+- addFirst
+- addLast
+- getFirst
+- getLast
+- removeFirst
+- removeLast
+- reversed
 
 ![[Pasted image 20240401144743.png]]
+
