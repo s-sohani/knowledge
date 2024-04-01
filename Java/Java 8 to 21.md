@@ -367,6 +367,34 @@ public sealed class Shape {
 - The `string[]` parameter can also be ommited.
 Unnamed classes work similarly to _unnamed packages_ and _unnamed modules_. If a class does not have a `package` declaration, it will be part of the unnamed package, in which case they can not be referenced by classes from named packages. If a package is not part of a module, it will be part of the unnamed module, so packages from other modules can't refer them.
 
+### Random
+```java
+new Random().ints()
+    .limit(10)
+    .forEach(System.out::println);
+```
+
+### Stream.toList
+```java
+List<String> result =
+  Stream.of("one", "two", "three").stream()
+    .filter(s -> s.length() == 3)
+    .toList();
+```
+
+### Stream.mapMulti
+ To replace each element of this stream with zero or more elements, an alternative to `flatMap`
+ ```java
+Stream.of(1, 2, 3, 4)
+    .mapMulti((number, downstream) -> downstream.accept(number))
+    .forEach(System.out::print); // prints 1234
+```
+
+### Serial
+`@Serial` to indicate fields and methods that are part of the serialization mechanism (e.g. `serialVersionUID` and `readObject`)
+
+
+
 ## JDK 21
 
 ### Record Patterns And Pattern Matching For Switch
