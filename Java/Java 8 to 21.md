@@ -424,4 +424,7 @@ var length = switch (r) {
 }
 ```
 
+### Sequenced Collections
 
+
+![[Pasted image 20240401144743.png]]
