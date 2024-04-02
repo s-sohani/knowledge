@@ -21,3 +21,9 @@ If your pod includes multiple **containers** and you want see specific container
 kubectl logs kubia-manual -c <container name>
 kubectl logs kubia-manual -c kubia
 ```
+
+
+#### Port forward
+```
+kubectl port-forward kubia-manual 8888:8080
+```
