@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Usefull Command.md",
+                "file": "Kuber/Concerpts.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Usefull Command.md",
+                "file": "Kuber/Concerpts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Usefull Command.md",
+                "file": "Kuber/Concerpts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Usefull Command.md"
+                "file": "Kuber/Concerpts.md"
               }
             }
           }
@@ -164,9 +164,9 @@
   },
   "active": "0b30c0a3ec675cd6",
   "lastOpenFiles": [
-    "Kuber/Concerpts.md",
     "Kuber/Objects/POD.md",
     "Kuber/Usefull Command.md",
+    "Kuber/Concerpts.md",
     "Podcasts/Podcast List.md",
     "Podcasts",
     "Java/Pasted image 20240401144743.png",

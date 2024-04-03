@@ -3,3 +3,12 @@
 - **Spec**: contains the actual description of the pod’s contents, such as the pod’s containers, volumes, and other data.
 - **Status**: contains the current information about the running pod, such as what condition the pod is in, the description and status of each container, and the pod’s internal IP and other basic info.
 
+### Organizing pods with labels
+categorizing them into subsets. In pod's `YAML` file write:
+```
+labels:
+		creation_method: manual
+		env: prod
+```
+
+
