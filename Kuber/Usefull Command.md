@@ -7,6 +7,8 @@ kubectl get po kubia-zxzij -o yaml
 #### Show pods with its labels
 ```
 kubectl get po --show-labels
+# show spicific labels
+kubectl get po -L creation_method,env
 ```
 #### To see which attributes are supported by each API object
 ```
@@ -29,3 +31,9 @@ kubectl logs kubia-manual -c kubia
 ```
 kubectl port-forward kubia-manual 8888:8080
 ```
+
+#### Create POD
+```
+kubectl create -f kubia-manual.yaml
+```
+
