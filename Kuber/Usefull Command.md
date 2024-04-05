@@ -9,6 +9,9 @@ kubectl get po kubia-zxzij -o yaml
 kubectl get po --show-labels
 # Show spicific labels
 kubectl get po -L creation_method,env
+# Show PODs contain label
+kubectl get po -l creation_method=manual
+# Show PODs contain key 
 ```
 #### Edit/Create POD's label
 ```
