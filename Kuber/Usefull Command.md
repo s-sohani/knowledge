@@ -16,6 +16,11 @@ kubectl get po -l env
 # Show PODs NOT contain key
 kubectl get po -l '!env'
 # Similarly, you could also match pods with the following label selectors
+creation_method!=manual
+env in (prod,devel)
+env notin (prod,devel)
+# Using multiple conditions in a label selector through comma seperate
+app=pc,rel=beta
 ```
 #### Edit/Create POD's label
 ```
