@@ -1,7 +1,34 @@
-#### Get YAML descriptor for existing pod
+#### Get YAML descriptor for existing POD
 What is yaml definition for exist pods look like.
 ```
 kubectl get po kubia-zxzij -o yaml
+```
+
+#### To see which attributes are supported by each API object
+```
+kubectl explain pods
+kubectl explain pod.spec
+```
+
+#### Print log
+```
+kubectl logs kubia-manual
+```
+
+If your pod includes multiple **containers** and you want see specific container's log:
+```
+kubectl logs kubia-manual -c <container name>
+kubectl logs kubia-manual -c kubia
+```
+
+#### Port forward
+```
+kubectl port-forward kubia-manual 8888:8080
+```
+
+#### Create POD
+```
+kubectl create -f kubia-manual.yaml
 ```
 
 #### Show pods with its labels
@@ -48,30 +75,5 @@ spec:
 	- image: luksa/kubia
 	  name: kubia
 ```
-#### To see which attributes are supported by each API object
-```
-kubectl explain pods
-kubectl explain pod.spec
-```
-
-#### Print log
-```
-kubectl logs kubia-manual
-```
-
-If your pod includes multiple **containers** and you want see specific container's log:
-```
-kubectl logs kubia-manual -c <container name>
-kubectl logs kubia-manual -c kubia
-```
-
-#### Port forward
-```
-kubectl port-forward kubia-manual 8888:8080
-```
-
-#### Create POD
-```
-kubectl create -f kubia-manual.yaml
-```
-
+#### Scheduling to one specific node
+each node also has a unique label with the key kubernetes.io/hostname and value set to the actual host-name of the node.
