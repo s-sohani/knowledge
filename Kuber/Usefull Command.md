@@ -7,8 +7,18 @@ kubectl get po kubia-zxzij -o yaml
 #### Show pods with its labels
 ```
 kubectl get po --show-labels
-# show spicific labels
+# Show spicific labels
 kubectl get po -L creation_method,env
+```
+#### Edit/Create POD's label
+```
+kubectl label po kubia-manual-v2 env=debug
+# To edit label
+kubectl label po kubia-manual-v2 env=debug --overwrite
+# Or in YAML file 
+labels:
+		creation_method: manual
+		env: prod
 ```
 #### To see which attributes are supported by each API object
 ```
