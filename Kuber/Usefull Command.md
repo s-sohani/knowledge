@@ -12,6 +12,10 @@ kubectl get po -L creation_method,env
 # Show PODs contain label
 kubectl get po -l creation_method=manual
 # Show PODs contain key 
+kubectl get po -l env
+# Show PODs NOT contain key
+kubectl get po -l '!env'
+
 ```
 #### Edit/Create POD's label
 ```
