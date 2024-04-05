@@ -32,6 +32,22 @@ labels:
 		creation_method: manual
 		env: prod
 ```
+#### Using labels and selectors to constrain pod scheduling
+```
+# 1- Lebeled node 
+kubectl label node gke-kubia-85f6-node-0rrx gpu=true
+# 2- Create YAML file and define node selector
+apiVersion: v1
+kind: Pod
+metadata:
+	name: kubia-gpu
+spec:
+	nodeSelector:
+	  gpu: "true"
+	containers:
+	- image: luksa/kubia
+	  name: kubia
+```
 #### To see which attributes are supported by each API object
 ```
 kubectl explain pods
