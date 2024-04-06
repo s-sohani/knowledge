@@ -77,3 +77,7 @@ spec:
 ```
 #### Scheduling to one specific node
 each node also has a unique label with the key kubernetes.io/hostname and value set to the actual host-name of the node.
+#### Check client permision
+```
+kubectl auth can-i create sts -n sre-prod
+```
