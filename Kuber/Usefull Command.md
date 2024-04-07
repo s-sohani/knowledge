@@ -83,7 +83,7 @@ kubectl auth can-i create sts -n sre-prod
 ```
 
 
-#### Discovering other namespaces and their pods
+#### Namespaces 
 ```
 kubectl get ns
 kubectl get po --namespace kube-system
