@@ -81,3 +81,10 @@ each node also has a unique label with the key kubernetes.io/hostname and value 
 ```
 kubectl auth can-i create sts -n sre-prod
 ```
+
+
+#### Discovering other namespaces and their pods
+```
+kubectl get ns
+kubectl get po --namespace kube-system
+```
