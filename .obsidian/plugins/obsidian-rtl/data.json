@@ -1,0 +1,10 @@
+{
+  "fileDirections": {
+    "Podcasts/BPLUS/Outliers.md": "rtl"
+  },
+  "defaultDirection": "auto",
+  "rememberPerFile": true,
+  "setNoteTitleDirection": true,
+  "setYamlDirection": false,
+  "statusBar": true
+}
