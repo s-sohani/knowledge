@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Podcasts/BPLUS/Outliers.md",
+                "file": "Kuber/Usefull Command.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Podcasts/BPLUS/Outliers.md",
+                "file": "Kuber/Usefull Command.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Podcasts/BPLUS/Outliers.md",
+                "file": "Kuber/Usefull Command.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Podcasts/BPLUS/Outliers.md"
+                "file": "Kuber/Usefull Command.md"
               }
             }
           }
@@ -166,8 +166,8 @@
   },
   "active": "897d7ee6346bc6e4",
   "lastOpenFiles": [
-    "Podcasts/Podcast List.md",
     "Podcasts/BPLUS/Outliers.md",
+    "Podcasts/Podcast List.md",
     "Podcasts/BPLUS",
     "Kuber/Usefull Command.md",
     "Kuber/Concerpts.md",

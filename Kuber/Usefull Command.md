@@ -87,4 +87,19 @@ kubectl auth can-i create sts -n sre-prod
 ```
 kubectl get ns
 kubectl get po --namespace kube-system
+
+# Create Namespace 
+
+# From Cli
+kubectl create namespace custom-namespace
+
+# From YAML file
+apiVersion: v1
+kind: Namespace
+metadata:
+	name: custom-namespace
+# Then execute this command
+kubectl create -f custom-namespace.yaml
+
+
 ```
