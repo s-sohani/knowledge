@@ -105,3 +105,10 @@ kubectl create -f custom-namespace.yaml
 ```
 
 > Most objects’ names must conform to the naming conventions specified in RFC 1035 (Domain names)
+
+To create object or pod in specific Namespace, use -n in cli:
+```
+kubectl create -f kubia-manual.yaml -n custom-namespace
+```
+Or in YAML file, define Namespace in metadata.
+
