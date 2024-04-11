@@ -112,3 +112,4 @@ kubectl create -f kubia-manual.yaml -n custom-namespace
 ```
 Or in YAML file, define Namespace in metadata.
 
+> Namespace isolate all resource 
