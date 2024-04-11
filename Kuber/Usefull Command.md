@@ -103,3 +103,5 @@ kubectl create -f custom-namespace.yaml
 
 
 ```
+
+> Most objects’ names must conform to the naming conventions specified in RFC 1035 (Domain names)
