@@ -112,4 +112,4 @@ kubectl create -f kubia-manual.yaml -n custom-namespace
 ```
 Or in YAML file, define Namespace in metadata.
 
-> Namespace isolate all resource 
+> Namespace isolate all resources except they don’t provide any kind of isolation of running objects. For example network on pods that has public IP over kubernates.
