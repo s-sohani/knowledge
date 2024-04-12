@@ -63,4 +63,4 @@
 ![[Pasted image 20240412125201.png]]
 
 
-![[Pasted image 20240412125317.png]]
+![[IMG_8280 1.heic]]
