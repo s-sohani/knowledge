@@ -81,8 +81,6 @@ each node also has a unique label with the key kubernetes.io/hostname and value 
 ```
 kubectl auth can-i create sts -n sre-prod
 ```
-
-
 #### Namespaces 
 ```
 kubectl get ns
@@ -100,8 +98,6 @@ metadata:
 	name: custom-namespace
 # Then execute this command
 kubectl create -f custom-namespace.yaml
-
-
 ```
 
 > Most objects’ names must conform to the naming conventions specified in RFC 1035 (Domain names)
