@@ -12,3 +12,19 @@ Kubernetes can probe a container using one of the three mechanisms:
 - An HTTP GET probe: the HTTP response code is 2xx or 3xx.
 - A TCP Socket probe: tries to open a TCP connection to the specified port of the container.
 - An Exec probe: executes an arbitrary command inside the container, If the status code is 0, the probe is successful.
+
+
+```
+apiVersion: v1
+kind: pod
+metadata:
+	name: kubia-liveness
+spec:
+	containers:
+	- image: luksa/kubia-unhealthy
+	name: kubia
+	livenessProbe:
+	httpGet:
+	path: /
+	port: 8080
+```
