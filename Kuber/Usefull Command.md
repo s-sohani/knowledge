@@ -113,3 +113,16 @@ kubectl create -f kubia-manual.yaml -n custom-namespace
 Or in YAML file, define Namespace in metadata.
 
 > Namespace isolate all resources except they don’t provide any kind of isolation of running objects. For example network on pods that has public IP over kubernates.
+
+#### Stopping and removing pods
+```
+# Sends a SIGTERM signal, wait 30s, if is running yet sends SIGKILL
+kubectl delete po kubia-gpu
+
+# Deleting pods using label selectors
+kubectl delete po -l creation_method=manual
+kubectl delete po -l rel=canary
+
+# Deleting pods by deleting the whole namespace
+
+```
