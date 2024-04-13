@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Objects/POD.md",
+                "file": "Kuber/Objects/C-I.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Objects/POD.md",
+                "file": "Kuber/Objects/C-I.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Objects/POD.md",
+                "file": "Kuber/Objects/C-I.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Objects/POD.md"
+                "file": "Kuber/Objects/C-I.md"
               }
             }
           }
@@ -151,10 +151,11 @@
   },
   "active": "a668dac34347a484",
   "lastOpenFiles": [
+    "Kuber/Objects/POD.md",
+    "Kuber/Objects/C-I.md",
     "Kuber/Kuber CheetSheet.md",
     "Kuber/Objects/CONTROLLER.md",
     "Kuber/Objects/SERVICE.md",
-    "Kuber/Objects/POD.md",
     "Kuber/Concerpts.md",
     "Microservices/3- Architecture Styles.md",
     "Microservices/2- Scale Cube.md",
