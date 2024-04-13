@@ -23,12 +23,8 @@
             "id": "0b30c0a3ec675cd6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kuber/Usefull Command.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ],
@@ -98,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Usefull Command.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +110,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Usefull Command.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +131,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Kuber/Usefull Command.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -164,10 +156,10 @@
   },
   "active": "0b30c0a3ec675cd6",
   "lastOpenFiles": [
+    "Kuber/Usefull Command.md",
     "Microservices/3- Architecture Styles.md",
     "Microservices/2- Scale Cube.md",
     "Microservices/1- Introduction.md",
-    "Kuber/Usefull Command.md",
     "Podcasts/BPLUS/Outliers.md",
     "Podcasts/BPLUS",
     "Microservices/images/Screenshot from 2024-04-12 13-28-03.png",
