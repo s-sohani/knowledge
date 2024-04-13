@@ -127,9 +127,10 @@ kubectl delete po -l rel=canary
 kubectl delete ns custom-namespace
 
 # Deleting all pods in current namespace, while keeping the namespace
-# Note: If pod is created with ReplicationControll, pod recreated as soon as you delete them, so you must delete ReplicationControll first.
+# Note: If pod is created with ReplicationControll, pod recreated as soon as you # delete them, so you must delete ReplicationControll first.
 kubectl delete po --all
 
-
 # Deleting (almost) all resources in a namespace
+# Note: Secrets are preserved and need to be deleted explicitly.
+kubectl delete all --all
 ```
