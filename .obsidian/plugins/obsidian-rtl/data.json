@@ -1,8 +1,9 @@
 {
   "fileDirections": {
     "Podcasts/BPLUS/Outliers.md": "rtl",
-    "Microservices/Introduction.md": "rtl",
-    "Microservices/Scale Cube.md": "rtl"
+    "Microservices/2- Scale Cube.md": "rtl",
+    "Microservices/1- Introduction.md": "rtl",
+    "Microservices/3- Architecture Styles.md": "rtl"
   },
   "defaultDirection": "auto",
   "rememberPerFile": true,

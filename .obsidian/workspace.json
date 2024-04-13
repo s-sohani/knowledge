@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "232a9445cfbb8fb1",
+        "id": "920019dafc83fa9c",
         "type": "tabs",
         "children": [
           {
-            "id": "897d7ee6346bc6e4",
+            "id": "a668dac34347a484",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Microservices/Scale Cube.md",
+                "file": "Kuber/Usefull Command.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0b30c0a3ec675cd6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Microservices/3- Architecture Styles.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Microservices/Scale Cube.md",
+                "file": "Microservices/3- Architecture Styles.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Microservices/Scale Cube.md",
+                "file": "Microservices/3- Architecture Styles.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,70 +138,52 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Microservices/Scale Cube.md"
+                "file": "Microservices/3- Architecture Styles.md"
               }
             }
           }
         ],
         "currentTab": 3
-      },
-      {
-        "id": "fb9467b5fe1e82c4",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6aea9710a0c7ffe3",
-            "type": "leaf",
-            "state": {
-              "type": "ob_comments",
-              "state": {}
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
-    "width": 293.5,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-comments:Show Comments Panel": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-comments:Show Comments Panel": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "a72ee06e3871643c",
+  "active": "0b30c0a3ec675cd6",
   "lastOpenFiles": [
+    "Microservices/2- Scale Cube.md",
+    "Microservices/3- Architecture Styles.md",
+    "Microservices/1- Introduction.md",
+    "Kuber/Usefull Command.md",
+    "Podcasts/BPLUS/Outliers.md",
+    "Podcasts/BPLUS",
     "Microservices/images/Screenshot from 2024-04-12 13-28-03.png",
     "Microservices/images/Screenshot from 2024-04-12 13-24-43.png",
-    "Microservices/images/Pasted image 20240412125317.png",
     "Microservices/images",
-    "Microservices/images/Pasted image 20240412125201.png",
-    "Microservices/images/IMG_8280.jpg",
-    "Microservices/Scale Cube.md",
-    "IMG_8280 1.heic",
-    "IMG_8280.heic",
-    "Microservices/Introduction.md",
-    "Kuber/Usefull Command.md",
     "Microservices",
-    "Podcasts/BPLUS/Outliers.md",
-    "Podcasts/Podcast List.md",
-    "Podcasts/BPLUS",
     "Kuber/Concerpts.md",
     "Kuber/Objects/POD.md",
-    "Java/Java 8 to 21.md",
-    "Java/Pasted image 20240401144743.png",
+    "Podcasts/Podcast List.md",
     "Podcasts",
+    "Java/Pasted image 20240401144743.png",
     "Kuber/Objects",
-    "Kuber",
     "CockroachDB/Transactions.md",
+    "Kuber",
+    "Untitled",
+    "Java/Java 8 to 21.md",
     "Java",
     "Untitled 1.md",
     "CockroachDB",
