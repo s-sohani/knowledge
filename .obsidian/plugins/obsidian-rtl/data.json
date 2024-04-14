@@ -1,6 +1,7 @@
 {
   "fileDirections": {
-    "Podcasts/BPLUS/Outliers.md": "rtl"
+    "Podcasts/BPLUS/Outliers.md": "rtl",
+    "Podcasts/BPLUS/Neanderthals.md": "rtl"
   },
   "defaultDirection": "auto",
   "rememberPerFile": true,
