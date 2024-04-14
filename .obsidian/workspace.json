@@ -144,6 +144,20 @@
           }
         ],
         "currentTab": 3
+      },
+      {
+        "id": "b5c5470dbc78ea49",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "db1c6ff03d4beeea",
+            "type": "leaf",
+            "state": {
+              "type": "ob_comments",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
