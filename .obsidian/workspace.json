@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "Podcasts/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Podcasts/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "Podcasts/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "Podcasts/Untitled.md"
               }
             }
           }
@@ -164,8 +164,9 @@
   },
   "active": "c418c512e2021a74",
   "lastOpenFiles": [
+    "Podcasts/Making Of A Manage.md",
+    "Podcasts/Untitled.md",
     "Kuber/Objects/CONTROLLER.md",
-    "Untitled.md",
     "Kuber/Kuber CheetSheet.md",
     "Kuber/Objects/POD.md",
     "Kuber/Concerpts.md",
