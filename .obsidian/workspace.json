@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c418c512e2021a74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "liven",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Objects/CONTROLLER.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Objects/CONTROLLER.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Objects/CONTROLLER.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -150,13 +162,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a668dac34347a484",
+  "active": "c418c512e2021a74",
   "lastOpenFiles": [
+    "Kuber/Objects/CONTROLLER.md",
+    "Untitled.md",
     "Kuber/Kuber CheetSheet.md",
     "Kuber/Objects/POD.md",
     "Kuber/Concerpts.md",
     "Kuber/Objects/C-I.md",
-    "Kuber/Objects/CONTROLLER.md",
     "Kuber/Objects/SERVICE.md",
     "Microservices/3- Architecture Styles.md",
     "Microservices/2- Scale Cube.md",
