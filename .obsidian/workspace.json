@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Microservices/3- Architecture Styles.md",
+                "file": "Microservices/4- Event Storming.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Microservices/3- Architecture Styles.md",
+                "file": "Microservices/4- Event Storming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Microservices/3- Architecture Styles.md",
+                "file": "Microservices/4- Event Storming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Microservices/3- Architecture Styles.md"
+                "file": "Microservices/4- Event Storming.md"
               }
             }
           }
@@ -166,13 +166,14 @@
   },
   "active": "897d7ee6346bc6e4",
   "lastOpenFiles": [
+    "Microservices/3- Architecture Styles.md",
+    "Microservices/4- Event Storming.md",
     "Microservices/2- Scale Cube.md",
     "Microservices/1- Introduction.md",
     "Podcasts/BPLUS/Neanderthals.md",
     "Microservices/Scale Cube.md",
     "Podcasts/Making Of A Manage.md",
     "Podcasts/How Read a Book.md",
-    "Microservices/3- Architecture Styles.md",
     "Kuber/Objects/SERVICE.md",
     "Kuber/Objects/CONTROLLER.md",
     "Kuber/Objects/C-I.md",
