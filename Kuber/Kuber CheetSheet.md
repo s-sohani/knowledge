@@ -13,6 +13,8 @@ kubectl explain pod.spec
 #### Print log
 ```
 kubectl logs kubia-manual
+# Show previos log
+kubectl logs -p kubia-manual
 ```
 
 If your pod includes multiple **containers** and you want see specific container's log:
@@ -129,4 +131,10 @@ kubectl delete po --all
 # Deleting (almost) all resources in a namespace
 # Note: Secrets are preserved and need to be deleted explicitly.
 kubectl delete all --all
+```
+
+#### Why the container had to be restarted
+See Last State section.
+```
+kubectl describe po kubia-liveness
 ```
