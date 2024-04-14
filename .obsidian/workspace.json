@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "920019dafc83fa9c",
+        "id": "232a9445cfbb8fb1",
         "type": "tabs",
         "children": [
           {
-            "id": "a668dac34347a484",
+            "id": "897d7ee6346bc6e4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Objects/CONTROLLER.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c418c512e2021a74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Podcasts/BPLUS/How Create Heman.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Podcasts/BPLUS/How Create Heman.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Podcasts/BPLUS/How Create Heman.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md"
+                "file": "Podcasts/BPLUS/How Create Heman.md"
               }
             }
           }
@@ -146,11 +133,11 @@
         "currentTab": 3
       },
       {
-        "id": "b5c5470dbc78ea49",
+        "id": "fb9467b5fe1e82c4",
         "type": "tabs",
         "children": [
           {
-            "id": "db1c6ff03d4beeea",
+            "id": "6aea9710a0c7ffe3",
             "type": "leaf",
             "state": {
               "type": "ob_comments",
@@ -161,48 +148,57 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 293.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-comments:Show Comments Panel": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "c418c512e2021a74",
+  "active": "897d7ee6346bc6e4",
   "lastOpenFiles": [
-    "Kuber/Objects/CONTROLLER.md",
-    "Kuber/Kuber CheetSheet.md",
-    "Kuber/Concerpts.md",
-    "Podcasts/How Read a Book.md",
+    "Microservices/Scale Cube.md",
+    "Podcasts/BPLUS/How Create Heman.md",
     "Podcasts/Making Of A Manage.md",
-    "Kuber/Objects/POD.md",
-    "Kuber/Objects/C-I.md",
-    "Kuber/Objects/SERVICE.md",
+    "Podcasts/How Read a Book.md",
     "Microservices/3- Architecture Styles.md",
     "Microservices/2- Scale Cube.md",
     "Microservices/1- Introduction.md",
-    "Podcasts/BPLUS/Outliers.md",
-    "Podcasts/BPLUS",
+    "Kuber/Objects/SERVICE.md",
+    "Kuber/Objects/CONTROLLER.md",
+    "Kuber/Objects/C-I.md",
+    "Kuber/Kuber CheetSheet.md",
     "Microservices/images/Screenshot from 2024-04-12 13-28-03.png",
     "Microservices/images/Screenshot from 2024-04-12 13-24-43.png",
+    "Microservices/images/Pasted image 20240412125317.png",
     "Microservices/images",
+    "Microservices/images/Pasted image 20240412125201.png",
+    "Microservices/images/IMG_8280.jpg",
+    "IMG_8280 1.heic",
+    "IMG_8280.heic",
+    "Microservices/Introduction.md",
+    "Kuber/Usefull Command.md",
     "Microservices",
+    "Podcasts/BPLUS/Outliers.md",
     "Podcasts/Podcast List.md",
-    "Podcasts",
-    "Java/Pasted image 20240401144743.png",
-    "Kuber/Objects",
-    "CockroachDB/Transactions.md",
-    "Kuber",
-    "Untitled",
+    "Podcasts/BPLUS",
+    "Kuber/Concerpts.md",
+    "Kuber/Objects/POD.md",
     "Java/Java 8 to 21.md",
+    "Java/Pasted image 20240401144743.png",
+    "Podcasts",
+    "Kuber/Objects",
+    "Kuber",
+    "CockroachDB/Transactions.md",
     "Java",
     "Untitled 1.md",
     "CockroachDB",
