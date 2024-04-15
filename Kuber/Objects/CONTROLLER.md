@@ -38,4 +38,4 @@ You can also set additional properties, such as delay, timeout, period.
 A ReplicationController is a Kubernetes resource that ensures its pods are always
 kept running. If the pod disappears for any reason, such as in the event of a node
 disappearing from the cluster or because the pod was evicted from the node, the
-ReplicationController notices the missing pod and creates a replacement pod.
+ReplicationController notices the missing pod and creates a replacement pod and makes sure the actual number of pods of a “type” always matches the desired number.
