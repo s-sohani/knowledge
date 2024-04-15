@@ -30,3 +30,7 @@ spec:
 		    initialDelaySeconds: 15
 ```
 
+If you don’t set the initial delay, the prober will start probing the container as soon as
+it starts.
+You can also set additional properties, such as delay, timeout, period.
+
