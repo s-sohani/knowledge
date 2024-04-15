@@ -39,3 +39,7 @@ A ReplicationController is a Kubernetes resource that ensures its pods are alway
 kept running. If the pod disappears for any reason, such as in the event of a node
 disappearing from the cluster or because the pod was evicted from the node, the
 ReplicationController notices the missing pod and creates a replacement pod and makes sure the actual number of pods of a “type” always matches the desired number.
+ReplicationControllers don’t operate on pod types, but on sets of pods that match a certain label selector.
+
+![[Screenshot from 2024-04-15 07-30-35.png]]
+
