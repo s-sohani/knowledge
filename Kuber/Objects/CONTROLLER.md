@@ -72,3 +72,4 @@ template:
 		  - containerPort: 8080
 ```
 
+The pod labels in the template must obviously match the label selector of the ReplicationController
