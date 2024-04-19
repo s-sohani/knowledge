@@ -48,3 +48,25 @@ A ReplicationController has three essential parts:
 - A replica count, which specifies the desired number of pods that should be running
 - A pod template, which is used when creating new pod replicas
 
+## Creating a ReplicationController
+```
+apiVersion: v1
+kind: ReplicationController
+metadata:
+	name: kubia
+spec:
+	replicas: 3
+	selector:
+		app: kubia #The pod selector determining what pods the RC is operating on
+template:
+	metadata:
+		labels:
+			app: kubia
+	spec:
+		containers:
+		- name: kubia
+		  image: luksa/kubia
+		  ports:
+		  - containerPort: 8080
+```
+
