@@ -84,3 +84,9 @@ Get ReplicationController
 kubectl get rc
 ```
 
+Get more information aboad an RC
+```
+kubectl describe rc kubia
+```
+
+
