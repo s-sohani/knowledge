@@ -90,3 +90,5 @@ kubectl describe rc kubia
 ```
 
 If you change a pod’s labels so they no longer match a ReplicationController’s label selector, the pod becomes like any other manually created pod. It’s no longer managed by anything. If the node running the pod fails, the pod is obviously not rescheduled. But keep in mind that when you changed the pod’s labels, the replication controller noticed one pod was missing and spun up a new pod to replace it.
+
+### Edit Exist ReplicationController
