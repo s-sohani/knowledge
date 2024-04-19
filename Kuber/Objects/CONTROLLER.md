@@ -97,3 +97,9 @@ kubectl edit rc kubia
 ```
 
 ### Horizontally scaling pods
+```
+# Scale with command
+kubectl scale rc kubia --replicas=10
+# Scale with edit rc file
+kubectl edit rc kubia
+```
