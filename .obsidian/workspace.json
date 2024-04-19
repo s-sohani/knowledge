@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Concerpts.md",
+                "file": "Kuber/Objects/CONTROLLER.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Concerpts.md",
+                "file": "Kuber/Objects/CONTROLLER.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Concerpts.md",
+                "file": "Kuber/Objects/CONTROLLER.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Concerpts.md"
+                "file": "Kuber/Objects/CONTROLLER.md"
               }
             }
           }
@@ -177,10 +177,10 @@
   },
   "active": "a668dac34347a484",
   "lastOpenFiles": [
+    "Kuber/Concerpts.md",
     "Kuber/Objects/CONTROLLER.md",
     "Kuber/Kuber CheetSheet.md",
     "Podcasts/BPLUS/Everybody Lies.md",
-    "Kuber/Concerpts.md",
     "Kuber/Images",
     "Kuber/Images/Screenshot from 2024-04-15 07-30-35.png",
     "Podcasts/BPLUS/Neanderthals.md",

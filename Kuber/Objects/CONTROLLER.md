@@ -103,3 +103,10 @@ kubectl scale rc kubia --replicas=10
 # Scale with edit rc file
 kubectl edit rc kubia
 ```
+
+### Deleting a ReplicationController
+When you delete a ReplicationController through kubectl delete , the pods are also deleted. When deleting a ReplicationController with kubectl delete , you can keep its pods running by passing the --cascade=false option to the command.
+```
+kubectl delete rc kubia --cascade=false
+```
+
