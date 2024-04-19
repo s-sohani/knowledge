@@ -47,7 +47,8 @@ A ReplicationController has three essential parts:
 - A label selector, which determines what pods are in the ReplicationController’s scope
 - A replica count, which specifies the desired number of pods that should be running
 - A pod template, which is used when creating new pod replicas
-
+Replication Controllers don’t operate on pod types, but on sets of pods that match a certain label selector. A ReplicationController’s job is to make sure that an exact number of pods always matches its label selector.
+Changing the label selector makes the existing pods fall out of the scope of the ReplicationController, so the controller stops caring about them.
 ## Creating a ReplicationController
 ```
 apiVersion: v1
