@@ -73,3 +73,8 @@ template:
 ```
 
 The pod labels in the template must obviously match the label selector of the ReplicationController
+
+To create ReplicationController:
+```
+kubectl create -f kubia-rc.yaml
+```
