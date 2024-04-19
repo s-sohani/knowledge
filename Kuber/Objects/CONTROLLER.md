@@ -110,3 +110,5 @@ When you delete a ReplicationController through kubectl delete , the pods are al
 kubectl delete rc kubia --cascade=false
 ```
 
+## ReplicaSets
+It’s a new generation of ReplicationController and replaces it completely (ReplicationControllers will eventually be deprecated).
