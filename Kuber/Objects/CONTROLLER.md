@@ -50,7 +50,7 @@ A ReplicationController has three essential parts:
 Replication Controllers don’t operate on pod types, but on sets of pods that match a certain label selector. A ReplicationController’s job is to make sure that an exact number of pods always matches its label selector.
 Changing the label selector makes the existing pods fall out of the scope of the ReplicationController, so the controller stops caring about them.
 ## Creating a ReplicationController
-When you post the file to the API server, Kubernetes creates a new ReplicationController named kubia , which makes sure three pod instances always match the label selector app=kubia .
+When you post the file to the API server, Kubernetes creates a new ReplicationController named kubia , which makes sure three pod instances always match the **label selector** app=kubia (**Label selector** different from **Node selector** in prev section).
 ```
 apiVersion: v1
 kind: ReplicationController
@@ -78,3 +78,5 @@ To create ReplicationController:
 ```
 kubectl create -f kubia-rc.yaml
 ```
+
+
