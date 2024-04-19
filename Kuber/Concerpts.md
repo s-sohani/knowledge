@@ -12,3 +12,5 @@ labels:
 ```
 
 
+### Kubernetes Has Declarative Approach
+Horizontally scaling pods in Kubernetes is a matter of stating your desire: “I want to have x number of instances running.” You’re not telling Kubernetes what or how to do it. You’re just specifying the desired state.
