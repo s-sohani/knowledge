@@ -79,4 +79,8 @@ To create ReplicationController:
 kubectl create -f kubia-rc.yaml
 ```
 
+Get ReplicationController
+```
+kubectl get rc
+```
 
