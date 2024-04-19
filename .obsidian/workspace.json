@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Podcasts/BPLUS/Everybody Lies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Podcasts/BPLUS/Everybody Lies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md"
+                "file": "Podcasts/BPLUS/Everybody Lies.md"
               }
             }
           }
@@ -176,11 +175,11 @@
       "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "c418c512e2021a74",
+  "active": "a668dac34347a484",
   "lastOpenFiles": [
+    "Kuber/Kuber CheetSheet.md",
     "Podcasts/BPLUS/Everybody Lies.md",
     "Kuber/Objects/CONTROLLER.md",
-    "Kuber/Kuber CheetSheet.md",
     "Kuber/Concerpts.md",
     "Kuber/Images",
     "Kuber/Images/Screenshot from 2024-04-15 07-30-35.png",
