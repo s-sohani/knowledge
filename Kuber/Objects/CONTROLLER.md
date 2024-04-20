@@ -197,3 +197,4 @@ kubectl get po
 ```
 
 ## Single Completable Task
+Run a task that terminates after completing its work.
