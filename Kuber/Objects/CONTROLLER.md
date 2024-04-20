@@ -112,4 +112,26 @@ kubectl delete rc kubia --cascade=false
 
 ## ReplicaSets
 It’s a new generation of ReplicationController and replaces it completely (ReplicationControllers will eventually be deprecated).
+has more expressive pod selectors:
+- A ReplicaSet’s selector also allows matching pods that lack a certain label or pods that include a certain label key, regardless of its value.
+- ReplicaSets can match pods based merely on the presence of a label key.
+```
+apiVersion: apps/v1beta2
+kind: ReplicaSet
+metadata:
+	name: kubia
+spec:
+	replicas: 3
+	selector:
+		matchLabels:
+			app: kubia
+	template:
+		metadata:
+			labels:
+				app: kubia
+		spec:
+			containers:
+			- name: kubia
+			  image: luksa/kubia
+```
 
