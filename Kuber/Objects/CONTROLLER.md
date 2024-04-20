@@ -216,3 +216,8 @@ spec:
 			- name: main
 			  image: luksa/batch-job
 ```
+
+To show jobs
+```
+kubectl get jobs
+```
