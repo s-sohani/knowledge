@@ -134,7 +134,7 @@ spec:
 			- name: kubia
 			  image: luksa/kubia
 ```
-
+### Use Expressions Label Selector
 ```
 selector:
 	matchExpressions:
@@ -144,8 +144,15 @@ selector:
 		  - kubia
 ```
 
-To print ReplicaSet
+### Additional Selectors
+- In: Label’s value must match one of the specified values.
+- NotIn: Label’s value must not match any of the specified values.
+- Exists: Pod must include a label with the specified key (the value isn’t important). When using this operator, you shouldn’t specify the values field.
+- DoesNotExist: Pod must not include a label with the specified key. The values property must not be specified.
+
+### Print ReplicaSet
 ```
 kubectl get rs
 kubectl describe rs
 ```
+
