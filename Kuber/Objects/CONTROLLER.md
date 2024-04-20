@@ -221,3 +221,5 @@ To show jobs
 ```
 kubectl get jobs
 ```
+
+### RUNNING JOB PODS SEQUENTIALLY
