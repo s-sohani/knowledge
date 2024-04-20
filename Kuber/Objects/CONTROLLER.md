@@ -158,4 +158,6 @@ kubectl describe rs
 
 
 ## DaemonSets
-Running exactly one pod on each node. Pod to run on each and every node in the cluster
+Running exactly one pod on each node. Pod to run on each and every node in the cluster.
+- A DaemonSet doesn’t have any notion of a desired replica count. It doesn’t need it because its job is to ensure that a pod matching its pod selector is running on each node.
+- You’ve already used node selectors to deploy a pod onto specific nodes.
