@@ -5,6 +5,7 @@
 commands:
 ```bash
 make deploy
+make undeploy
 make docker-build
 make manifest
 make generate

@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Objects/CONTROLLER.md",
+                "file": "Kuber/Develop an Operator.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -176,7 +175,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c418c512e2021a74",
+  "active": "a668dac34347a484",
   "lastOpenFiles": [
     "Kuber/Develop an Operator.md",
     "Kuber/Objects/CONTROLLER.md",
