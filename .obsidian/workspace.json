@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Kuber/Objects/CONTROLLER.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -164,25 +165,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-comments:Show Comments Panel": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-comments:Show Comments Panel": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "a668dac34347a484",
+  "active": "c418c512e2021a74",
   "lastOpenFiles": [
+    "Podcasts/BPLUS/Everybody Lies.md",
     "Kuber/Concerpts.md",
     "Kuber/Objects/CONTROLLER.md",
-    "Kuber/Kuber CheetSheet.md",
-    "Podcasts/BPLUS/Everybody Lies.md",
     "Kuber/Images",
     "Kuber/Images/Screenshot from 2024-04-15 07-30-35.png",
+    "Kuber/Kuber CheetSheet.md",
     "Podcasts/BPLUS/Neanderthals.md",
     "Microservices/4- Event Storming.md",
     "Podcasts/How Read a Book.md",
