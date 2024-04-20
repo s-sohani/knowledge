@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Develop an Operator.md",
+                "file": "Kuber/Objects/CONTROLLER.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Develop an Operator.md",
+                "file": "Kuber/Objects/CONTROLLER.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Develop an Operator.md",
+                "file": "Kuber/Objects/CONTROLLER.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Develop an Operator.md"
+                "file": "Kuber/Objects/CONTROLLER.md"
               }
             }
           }
@@ -178,8 +178,8 @@
   },
   "active": "c418c512e2021a74",
   "lastOpenFiles": [
-    "Kuber/Objects/CONTROLLER.md",
     "Kuber/Develop an Operator.md",
+    "Kuber/Objects/CONTROLLER.md",
     "Podcasts/BPLUS/Everybody Lies.md",
     "Kuber/Concerpts.md",
     "Kuber/Images",
