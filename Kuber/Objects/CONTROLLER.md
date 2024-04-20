@@ -227,9 +227,27 @@ kubectl get jobs
 apiVersion: batch/v1
 kind: Job
 metadata:
-name: multi-completion-batch-job
+	name: multi-completion-batch-job
 spec:
-completions: 5
-template:
-<template is the same as in listing 4.11>
+	completions: 5
+	template:
+	<template is the same as in listing 4.11>
 ```
+
+### RUNNING JOB PODS IN PARALLEL
+```
+apiVersion: batch/v1
+kind: Job
+metadata:
+	name: multi-completion-batch-job
+spec:
+	completions: 5
+	parallelism: 2
+	template:
+	<same as in listing 4.11>
+```
+
+> How long should the Job wait for a pod to finish? A pod’s time can be limited by setting the activeDeadlineSeconds property in the pod spec.
+
+> You can configure how many times a Job can be retried before it is marked as failed by specifying the spec.backoffLimit field in the Job manifest.
+
