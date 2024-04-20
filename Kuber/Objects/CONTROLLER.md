@@ -135,3 +135,17 @@ spec:
 			  image: luksa/kubia
 ```
 
+```
+selector:
+	matchExpressions:
+		- key: app
+		operator: In
+		values:
+		  - kubia
+```
+
+To print ReplicaSet
+```
+kubectl get rs
+kubectl describe rs
+```
