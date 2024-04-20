@@ -163,6 +163,12 @@ Running exactly one pod on each node. Pod to run on each and every node in the c
 - You’ve already used node selectors to deploy a pod onto specific nodes.
 Example
 ```
+kubectl get node
+kubectl label node minikube disk=ssd
+
+```
+
+```
 apiVersion: apps/v1beta2
 kind: DaemonSet
 metadata:
@@ -190,3 +196,4 @@ kubectl get ds
 kubectl get po
 ```
 
+## Single Completable Task
