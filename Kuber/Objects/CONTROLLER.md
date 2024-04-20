@@ -199,3 +199,20 @@ kubectl get po
 ##  JOB - Single Completable Task
 Run a task that terminates after completing its work.
 In the event of a failure of the process itself (when the process returns an error exit code), the Job can be configured to either restart the container or not.
+
+```
+apiVersion: batch/v1
+kind: Job
+metadata:
+	name: batch-job
+spec:
+	template:
+		metadata:
+			labels:
+				app: batch-job
+		spec:
+			restartPolicy: OnFailure
+			containers:
+			- name: main
+			  image: luksa/batch-job
+```
