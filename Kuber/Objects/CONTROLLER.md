@@ -156,3 +156,6 @@ kubectl get rs
 kubectl describe rs
 ```
 
+
+## DaemonSets
+Running exactly one pod on each node. Pod to run on each and every node in the cluster
