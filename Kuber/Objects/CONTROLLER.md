@@ -198,3 +198,4 @@ kubectl get po
 
 ##  JOB - Single Completable Task
 Run a task that terminates after completing its work.
+In the event of a failure of the process itself (when the process returns an error exit code), the Job can be configured to either restart the container or not.
