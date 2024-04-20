@@ -223,3 +223,13 @@ kubectl get jobs
 ```
 
 ### RUNNING JOB PODS SEQUENTIALLY
+```
+apiVersion: batch/v1
+kind: Job
+metadata:
+name: multi-completion-batch-job
+spec:
+completions: 5
+template:
+<template is the same as in listing 4.11>
+```
