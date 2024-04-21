@@ -260,6 +260,7 @@ metadata:
 	name: batch-job-every-fifteen-minutes
 spec:
 	schedule: "0,15,30,45 * * * *"
+	startingDeadlineSeconds: 15 # Optional: The pod must start running at 15  seconds past the scheduled time.
 	jobTemplate:
 		spec:
 			template:
@@ -272,3 +273,5 @@ spec:
 				- name: main
 				  image: luksa/batch-job
 ```
+
+
