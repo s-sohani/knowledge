@@ -251,3 +251,24 @@ spec:
 
 > You can configure how many times a Job can be retried before it is marked as failed by specifying the spec.backoffLimit field in the Job manifest.
 
+## CronJob
+
+```
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+	name: batch-job-every-fifteen-minutes
+spec:
+	schedule: "0,15,30,45 * * * *"
+	jobTemplate:
+		spec:
+			template:
+				metadata:
+					labels:
+						app: periodic-batch-job
+			spec:
+				restartPolicy: OnFailure
+				containers:
+				- name: main
+				  image: luksa/batch-job
+```
