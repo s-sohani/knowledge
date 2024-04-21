@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Podcasts/Making Of A Manage.md",
+                "file": "Kuber/Kuber CheetSheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Podcasts/Making Of A Manage.md",
+                "file": "Kuber/Kuber CheetSheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Podcasts/Making Of A Manage.md",
+                "file": "Kuber/Kuber CheetSheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Podcasts/Making Of A Manage.md"
+                "file": "Kuber/Kuber CheetSheet.md"
               }
             }
           }
@@ -177,6 +177,7 @@
   },
   "active": "a668dac34347a484",
   "lastOpenFiles": [
+    "Podcasts/Making Of A Manage.md",
     "Kuber/Objects/VOLUMES.md",
     "Kuber/Objects/SERVICES.md",
     "Kuber/Objects/CONTROLLER.md",
@@ -189,7 +190,6 @@
     "Podcasts/BPLUS/Neanderthals.md",
     "Microservices/4- Event Storming.md",
     "Podcasts/How Read a Book.md",
-    "Podcasts/Making Of A Manage.md",
     "Kuber/Objects/POD.md",
     "Kuber/Objects/C-I.md",
     "Microservices/3- Architecture Styles.md",
