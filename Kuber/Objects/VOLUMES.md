@@ -1,1 +1,1 @@
-Pods is logical hosts that use  be shared resources like CPU and RAM, but storage
+Pods is logical hosts that use  be shared resources like CPU and RAM, but storage can't be used share. so a pod has its own isolated filesystem.
