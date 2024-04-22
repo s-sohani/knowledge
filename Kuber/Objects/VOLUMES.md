@@ -1,0 +1,1 @@
+Pods is logical hosts that use  be shared resources like CPU and RAM, but storage
