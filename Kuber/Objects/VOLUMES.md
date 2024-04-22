@@ -25,17 +25,18 @@ spec:
 			name: html-generator
 			volumeMounts:
 			- name: html
-			mountPath: /var/htdocs
+			  mountPath: /var/htdocs
 		- image: nginx:alpine
-		name: web-server
-		volumeMounts:
-		- name: html
-		mountPath: /usr/share/nginx/html
-		readOnly: true
+			name: web-server
+			volumeMounts:
+			- name: html
+			  mountPath: /usr/share/nginx/html
+			  readOnly: true
 		ports:
 		- containerPort: 80
-		protocol: TCP
+		  protocol: TCP
 	volumes:
 	- name: html
 	  emptyDir: {}
 ```
+
