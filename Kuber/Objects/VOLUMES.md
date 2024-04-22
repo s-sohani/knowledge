@@ -2,19 +2,13 @@ Pods is logical hosts that use  be shared resources like CPU and RAM, but storag
 In Linux and Kubernetes can mounting the same volume into two or more containers in a pod. 
 
 ## Volume Types
-- emptyDir—A simple empty directory used for storing transient data.
--  hostPath—Used for mounting directories from the worker node’s filesystem into the pod.
-- gitRepo—A volume initialized by checking out the contents of a Git repository.
-- nfs—An NFS share mounted into the pod.
-- gcePersistentDisk (Google Compute Engine Persistent Disk), awsElastic-
-BlockStore (Amazon Web Services Elastic Block Store Volume), azureDisk
-(Microsoft Azure Disk Volume)—Used for mounting cloud provider-specific
-storage.Using volumes to share data between containers
-163
-- cinder, cephfs, iscsi, flocker, glusterfs, quobyte, rbd, flexVolume, vsphere-
-Volume, photonPersistentDisk, scaleIO—Used for mounting other types of
-network storage.
-- configMap, secret, downwardAPI—Special types of volumes used to expose cer-
-tain Kubernetes resources and cluster information to the pod.
-- persistentVolumeClaim—A way to use a pre- or dynamically provisioned per-
-sistent storage. (We’ll talk about them in the last section of this chapter.)
+-  **emptyDir**: A simple empty directory used for storing transient data.
+-  **hostPath**: Used for mounting directories from the worker node’s filesystem into the pod.
+- **gitRepo**: A volume initialized by checking out the contents of a Git repository.
+- **nfs**: An NFS share mounted into the pod.
+- **gcePersistentDisk (Google Compute Engine Persistent Disk), awsElastic BlockStore (Amazon Web Services Elastic Block Store Volume), azureDisk (Microsoft Azure Disk Volume)**: Used for mounting cloud provider-specific storage.Using volumes to share data between containers 163.
+- **cinder, cephfs, iscsi, flocker, glusterfs, quobyte, rbd, flexVolume, vsphere Volume, photonPersistentDisk, scaleIO**: Used for mounting other types of network storage.
+- **configMap, secret, downwardAPI**: Special types of volumes used to expose certain Kubernetes resources and cluster information to the pod.
+- **persistentVolumeClaim**: A way to use a pre- or dynamically provisioned persistent storage.
+
+## Using volumes to share data between containers
