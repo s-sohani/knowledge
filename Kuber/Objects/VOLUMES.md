@@ -12,3 +12,5 @@ In Linux and Kubernetes can mounting the same volume into two or more containers
 - **persistentVolumeClaim**: A way to use a pre- or dynamically provisioned persistent storage.
 
 ## Using volumes to share data between containers
+### Using an emptyDir volume
+An emptyDir volume is especially useful for sharing files between containers running in the same pod. But it can also be used by a single container for when a container needs to write data to disk temporarily. Because the volume’s lifetime is tied to that of the pod, the volume’s contents are lost when the pod is deleted.
