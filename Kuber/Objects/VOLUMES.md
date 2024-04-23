@@ -83,3 +83,30 @@ None of PODs uses the hostPath volume for storing their own data. They all use i
 
 ## Using persistent storage
 When an application running in a pod needs to persist data to disk and have that same data available even when the pod is rescheduled to another node, you can’t use any of the volume types we’ve mentioned so far. Because this data needs to be accessible from any cluster node, it must be stored on some type of network-attached storage (NAS).
+
+### Using a GCE Persistent Disk in a pod volume
+Google Compute Engine (GCE)
+```
+apiVersion: v1
+kind: Pod
+metadata:
+	name: mongodb
+spec:
+	volumes:
+	- name: mongodb-data
+	  gcePersistentDisk:
+		pdName: mongodb
+		fsType: ext4
+	containers:
+		- image: mongo
+		  name: mongodb
+		  volumeMounts:
+			- name: mongodb-data
+			  mountPath: /data/db
+		  ports:
+		  - containerPort: 27017
+			protocol: TCP
+```
+
+![[Screenshot from 2024-04-23 09-36-01.png]]
+### Using other types of volumes with underlying persistent storage
