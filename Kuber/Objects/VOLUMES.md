@@ -52,3 +52,20 @@ volumes:
 
 ### Using a Git repository as the starting point for a volume
 After the gitRepo volume is created, it isn’t kept in sync with the repo it’s referencing. The files in the volume will not be updated when you push additional commits to the Git repository. However, if your pod is managed by a ReplicationController, deleting the pod will result in a new pod being created and this new pod’s volume will then contain the latest commits.
+```
+apiVersion: v1
+kind: Pod
+metadata:
+name: gitrepo-volume-pod
+spec:
+containers:
+- image: nginx:alpine
+name: web-server
+volumeMounts:
+- name: html
+mountPath: /usr/share/nginx/html
+readOnly: true
+ports:
+- containerPort: 80
+protocol: TCP
+```
