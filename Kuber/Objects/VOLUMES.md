@@ -40,3 +40,13 @@ spec:
 	  emptyDir: {}
 ```
 
+#### SPECIFYING THE MEDIUM TO USE FOR THE EMPTYDIR
+You can tell Kubernetes to create the emptyDir on a tmpfs filesystem (in memory
+instead of on disk).
+```
+volumes:
+- name: html
+  emptyDir:
+    medium: Memory
+```
+
