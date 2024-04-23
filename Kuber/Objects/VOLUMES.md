@@ -82,3 +82,4 @@ None of PODs uses the hostPath volume for storing their own data. They all use i
 ![[Screenshot from 2024-04-23 09-02-49.png]]
 
 ## Using persistent storage
+When an application running in a pod needs to persist data to disk and have that same data available even when the pod is rescheduled to another node, you can’t use any of the volume types we’ve mentioned so far. Because this data needs to be accessible from any cluster node, it must be stored on some type of network-attached storage (NAS).
