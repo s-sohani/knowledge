@@ -76,3 +76,5 @@ spec:
 		directory: .
 ```
 
+## Accessing files on the worker node’s filesystem
+A hostPath volume points to a specific file or directory on the node’s filesystem.
