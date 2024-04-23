@@ -119,3 +119,5 @@ volumes:
 		server: 1.2.3.4
 		path: /some/path
 ```
+
+## Introducing PersistentVolumes and PersistentVolumeClaims

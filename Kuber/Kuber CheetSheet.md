@@ -1,3 +1,7 @@
+
+To enable tab completion in bash, you’ll first need to install a package called bash completion and then run the following command (you’ll probably also want to add it to ~/.bashrc or equivalent):
+$ source <(kubectl completion bash)
+
 #### Get YAML descriptor for existing POD
 What is yaml definition for exist pods look like.
 ```
