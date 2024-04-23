@@ -111,3 +111,11 @@ spec:
 ![[Screenshot from 2024-04-23 09-36-01.png]]
 ### Using other types of volumes with underlying persistent storage
 #### USING AN NFS VOLUME
+
+```
+volumes:
+- name: mongodb-data
+	nfs:
+		server: 1.2.3.4
+		path: /some/path
+```
