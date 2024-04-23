@@ -79,3 +79,6 @@ spec:
 ## Accessing files on the worker node’s filesystem
 A hostPath volume points to a specific file or directory on the node’s filesystem.
 None of PODs uses the hostPath volume for storing their own data. They all use it to get access to the node’s data.
+![[Screenshot from 2024-04-23 09-02-49.png]]
+
+## Using persistent storage
