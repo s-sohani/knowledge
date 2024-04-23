@@ -84,7 +84,7 @@ spec:
 	  name: kubia
 ```
 #### Scheduling to one specific node
-each node also has a unique label with the key kubernetes.io/hostname and value set to the actual host-name of the node.
+each node also has a unique label with the key `kubernetes.io/hostname` and value set to the actual host-name of the node.
 #### Check client permision
 ```
 kubectl auth can-i create sts -n sre-prod
@@ -94,9 +94,7 @@ kubectl auth can-i create sts -n sre-prod
 kubectl get ns
 kubectl get po --namespace kube-system
 
-# Create Namespace 
-
-# From Cli
+# Create Namespace From Cli
 kubectl create namespace custom-namespace
 
 # From YAML file
