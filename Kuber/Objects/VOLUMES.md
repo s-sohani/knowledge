@@ -50,3 +50,4 @@ volumes:
     medium: Memory
 ```
 
+### Using a Git repository as the starting point for a volume
