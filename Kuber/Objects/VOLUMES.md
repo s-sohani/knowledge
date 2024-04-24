@@ -127,7 +127,7 @@ In above config, user must now aboat NFS IP or infrastructure, but this agains K
 
 >Other users cannot use the same PersistentVolume until it has been released by deleting the bound PersistentVolumeClaim.
 
-#### Create PV
+### Create PV
 ```
 apiVersion: v1
 kind: PersistentVolume
@@ -151,4 +151,24 @@ kubectl get pv
  > PersistentVolumes don’t belong to any namespace. They’re clusterlevel resources like nodes.
  
  ![[Pasted image 20240424202233.png]]
+
+### Claiming a PersistentVolume by creating a PersistentVolumeClaim
+Claiming a PersistentVolume is a completely separate process from creating a pod, because you want the same PersistentVolumeClaim to stay available even if the pod is rescheduled.
+```
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+	name: mongodb-pvc
+spec:
+	resources:
+		requests:
+			storage: 1Gi
+	accessModes:
+	- ReadWriteOnce # support single client performing both reads and writes.
+	  storageClassName: "" # learn in the section about dynamic provisioning.
+```
+
+As soon as you create the claim, Kubernetes finds the appropriate PersistentVolume and binds it to the claim.
+
+
 
