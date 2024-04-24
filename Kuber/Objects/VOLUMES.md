@@ -136,10 +136,10 @@ metadata:
 spec:
 	capacity:
 		storage: 1Gi
-	accessModes:
+	accessModes:  # It can either be mounted by a single client for reading and                      writing or by multiple clients for reading only.
 	- ReadWriteOnce
 	- ReadOnlyMany
-	persistentVolumeReclaimPolicy: Retain
+	persistentVolumeReclaimPolicy: Retain  #After the claim is released, the                     PersistentVolume should be retained (not erased or deleted).
 	gcePersistentDisk:
 		pdName: mongodb
 		fsType: ext4
