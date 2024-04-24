@@ -170,5 +170,14 @@ spec:
 
 As soon as you create the claim, Kubernetes finds the appropriate PersistentVolume and binds it to the claim.
 
+```
+kubectl get pvc
+```
 
+#### Abbreviations used for the access modes:
+- RWO — ReadWriteOnce —Only a single node can mount the volume for reading and writing.
+-  ROX — ReadOnlyMany —Multiple nodes can mount the volume for reading.
+-  RWX — ReadWriteMany —Multiple nodes can mount the volume for both reading and writing.
+> PersistentVolume resources are cluster-scoped and thus cannot be created in a specific namespace, but PersistentVolumeClaims can only be created in a specific namespace. They can then only be used by pods in the same namespace.
 
+### Using a PersistentVolumeClaim in a pod
