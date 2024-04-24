@@ -145,3 +145,10 @@ spec:
 		fsType: ext4
 ```
 
+```
+kubectl get pv
+```
+ > PersistentVolumes don’t belong to any namespace. They’re clusterlevel resources like nodes.
+ 
+ ![[Pasted image 20240424202233.png]]
+
