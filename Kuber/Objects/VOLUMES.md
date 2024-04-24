@@ -181,3 +181,23 @@ kubectl get pvc
 > PersistentVolume resources are cluster-scoped and thus cannot be created in a specific namespace, but PersistentVolumeClaims can only be created in a specific namespace. They can then only be used by pods in the same namespace.
 
 ### Using a PersistentVolumeClaim in a pod
+```
+apiVersion: v1
+kind: Pod
+metadata:
+	name: mongodb
+spec:
+	containers:
+	- image: mongo
+	  name: mongodb
+	  volumeMounts:
+		- name: mongodb-data
+		  mountPath: /data/db
+	  ports:
+	  - containerPort: 27017
+	  protocol: TCP
+	volumes:
+	- name: mongodb-data
+	  persistentVolumeClaim:
+	  claimName: mongodb-pvc
+```
