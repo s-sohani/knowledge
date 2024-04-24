@@ -125,3 +125,5 @@ In above config, user must now aboat NFS IP or infrastructure, but this agains K
 
 ![[Pasted image 20240424195321.png]]
 
+>Other users cannot use the same PersistentVolume until it has been released by deleting the bound PersistentVolumeClaim.
+
