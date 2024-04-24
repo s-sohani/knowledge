@@ -121,3 +121,7 @@ volumes:
 ```
 
 ## Introducing PersistentVolumes and PersistentVolumeClaims
+In above config, user must now aboat NFS IP or infrastructure, but this agains Kubernetes idea. To enable apps to request storage in a Kubernetes cluster without having to deal with infrastructure specifics, two new resources were introduced. They are PersistentVolumes and PersistentVolumeClaims.
+
+![[Pasted image 20240424195321.png]]
+
