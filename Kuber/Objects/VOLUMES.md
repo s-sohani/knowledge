@@ -127,3 +127,21 @@ In above config, user must now aboat NFS IP or infrastructure, but this agains K
 
 >Other users cannot use the same PersistentVolume until it has been released by deleting the bound PersistentVolumeClaim.
 
+#### Create PV
+```
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+	name: mongodb-pv
+spec:
+	capacity:
+		storage: 1Gi
+	accessModes:
+	- ReadWriteOnce
+	- ReadOnlyMany
+	persistentVolumeReclaimPolicy: Retain
+	gcePersistentDisk:
+		pdName: mongodb
+		fsType: ext4
+```
+
