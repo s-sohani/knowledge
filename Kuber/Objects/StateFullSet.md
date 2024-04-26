@@ -61,3 +61,7 @@ When a pod instance managed by a StatefulSet disappears, the replacement pod get
 ![[Pasted image 20240426181507.png]]
 
 #### SCALING A STATEFULSET
+Scaling the StatefulSet creates a new pod instance with the next unused ordinal index. Scaling down a StatefulSet always removes the instances with the highest ordinal index first.
+![[Pasted image 20240426182223.png]]
+
+>Because certain stateful applications don’t handle rapid scale-downs nicely, StatefulSets scale down only one pod instance at a time.
