@@ -203,4 +203,4 @@ spec:
 ```
 
 ### Recycling PersistentVolumes
-When you delete pod and pv
+When you delete pod and pvc, The STATUS column shows the PersistentVolume as Released , not Available like before. Because you’ve already used the volume, it may contain data and shouldn’t be bound to a completely new claim without giving the cluster admin a chance to clean it up. Without this, a new pod using the same PersistentVolume could read the data stored there by the previous pod, even if the claim and pod were created in a different namespace.
