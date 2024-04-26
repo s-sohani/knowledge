@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Objects/VOLUMES.md",
+                "file": "Kuber/Objects/StateFullSet.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Objects/VOLUMES.md",
+                "file": "Kuber/Objects/StateFullSet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Objects/VOLUMES.md",
+                "file": "Kuber/Objects/StateFullSet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Objects/VOLUMES.md"
+                "file": "Kuber/Objects/StateFullSet.md"
               }
             }
           }
@@ -177,9 +177,10 @@
   },
   "active": "a668dac34347a484",
   "lastOpenFiles": [
+    "Kuber/Objects/VOLUMES.md",
+    "Kuber/Objects/StateFullSet.md",
     "Kuber/Images/Pasted image 20240426105213.png",
     "Kuber/Kuber CheetSheet.md",
-    "Kuber/Objects/VOLUMES.md",
     "Kuber/Images/Pasted image 20240424202233.png",
     "Kuber/Images/Pasted image 20240424195321.png",
     "Kuber/Images/Pasted image 20240423093712.png",
