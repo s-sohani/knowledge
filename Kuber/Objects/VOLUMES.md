@@ -201,3 +201,6 @@ spec:
 	  persistentVolumeClaim:
 	  claimName: mongodb-pvc
 ```
+
+### Recycling PersistentVolumes
+When you delete pod and pv
