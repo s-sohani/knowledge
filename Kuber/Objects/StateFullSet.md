@@ -28,4 +28,5 @@ A trick you can use is to have all pods use the same PersistentVolume, but then 
 
 
 ### Providing a stable identity for each pod
-When a ReplicaSet replaces a pod, the new pod is a completely new pod with a new hostname and IP. Starting up with the old instance’s data but with a completely new network identity may cause problems.
+When a ReplicaSet replaces a pod, the new pod is a completely new pod with a new hostname and IP. Starting up with the old instance’s data but with a completely new network identity may cause problems. But Kubernetes, every time a pod is rescheduled, the new pod gets both a new hostname and a new IP address, so the whole application cluster would have to be reconfigured every time one of its members is rescheduled.
+#### USING A DEDICATED SERVICE FOR EACH POD INSTANCE
