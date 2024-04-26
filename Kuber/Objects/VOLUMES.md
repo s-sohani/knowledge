@@ -216,3 +216,30 @@ The cluster admin, instead of creating PersistentVolumes, can deploy a Persisten
 >Kubernetes includes provisioners for the most popular cloud providers.
 >Instead of the administrator pre-provisioning a bunch of PersistentVolumes, they need to define one or two (or more) StorageClasses.
 
+### Defining the available storage types through StorageClass resources
+
+```
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+	name: fast
+provisioner: kubernetes.io/gce-pd
+parameters:  # The parameters passed to the provisioner
+	type: pd-ssd
+	zone: europe-west1-b
+```
+
+### CREATING A PVC DEFINITION REQUESTING A SPECIFIC STORAGE CLASS
+```
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+name: mongodb-pvc
+spec:
+storageClassName: fast
+resources:
+requests:
+storage: 100Mi
+accessModes:
+- ReadWriteOnce
+```
