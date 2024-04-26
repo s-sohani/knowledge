@@ -41,3 +41,5 @@ Luckily, Kubernetes saves us from resorting to such complex solutions.
 ## Understanding StatefulSets
 Instead of using a ReplicaSet to run these types of pods, you create a StatefulSet resource.
 
+### COMPARING STATEFULSETS WITH REPLICASETS OR REPLICATION CONTROLLERS
+A StatefulSet makes sure pods are rescheduled in such a way that they retain their identity and state.
