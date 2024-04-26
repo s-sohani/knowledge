@@ -234,12 +234,13 @@ parameters:  # The parameters passed to the provisioner
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-name: mongodb-pvc
+	name: mongodb-pvc
 spec:
-storageClassName: fast
-resources:
-requests:
-storage: 100Mi
-accessModes:
-- ReadWriteOnce
+	storageClassName: fast
+	resources:
+		requests:
+			storage: 100Mi
+			accessModes:
+			- ReadWriteOnce
 ```
+
