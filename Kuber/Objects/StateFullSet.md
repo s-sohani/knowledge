@@ -86,3 +86,5 @@ The fact that the PersistentVolumeClaim remains after a scale-down means a subse
 
 ## Using a StatefulSet
 Now building clustered data store.
+### Creating the app and container image
+
