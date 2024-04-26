@@ -175,8 +175,10 @@
       "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "a72ee06e3871643c",
+  "active": "a668dac34347a484",
   "lastOpenFiles": [
+    "Kuber/Kuber CheetSheet.md",
+    "Kuber/Objects/VOLUMES.md",
     "Kuber/Images/Pasted image 20240424202233.png",
     "Kuber/Images/Pasted image 20240424195321.png",
     "Kuber/Images/Pasted image 20240423093712.png",
@@ -186,11 +188,9 @@
     "Kuber/Images/Screenshot from 2024-04-23 09-02-49.png",
     "Kuber/Objects/CONTROLLER.md",
     "DataLake",
-    "Kuber/Objects/VOLUMES.md",
     "Kuber/Objects/SERVICES.md",
     "Kuber/Develop an Operator.md",
     "Kuber/Concerpts.md",
-    "Kuber/Kuber CheetSheet.md",
     "Podcasts/BPLUS/Everybody Lies.md",
     "Kuber/Images",
     "Kuber/Images/Screenshot from 2024-04-15 07-30-35.png",

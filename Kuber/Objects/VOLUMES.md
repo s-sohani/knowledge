@@ -245,3 +245,5 @@ spec:
 ```
 
 ### Dynamic provisioning without specifying a storage class
+The default storage class is what’s used to dynamically provision a PersistentVolume if the PersistentVolumeClaim doesn’t explicitly say which storage class to use.
+
