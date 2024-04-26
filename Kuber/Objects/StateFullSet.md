@@ -28,3 +28,4 @@ A trick you can use is to have all pods use the same PersistentVolume, but then 
 
 
 ### Providing a stable identity for each pod
+When a ReplicaSet replaces a pod, the new pod is a completely new pod with a new hostname and IP. Starting up with the old instance’s data but with a completely new network identity may cause problems.
