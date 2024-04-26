@@ -46,3 +46,7 @@ A StatefulSet makes sure pods are rescheduled in such a way that they retain the
 
 ### Providing a stable network identity
 Each pod created by a StatefulSet is assigned an ordinal index (zero-based), which is then used to derive the pod’s name and hostname, and to attach stable storage to the pod.
+
+![[Pasted image 20240426163544.png]]
+
+Stateful pods sometimes need to be addressable by their hostname.
