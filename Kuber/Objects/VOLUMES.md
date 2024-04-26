@@ -244,3 +244,4 @@ spec:
 			- ReadWriteOnce
 ```
 
+### Dynamic provisioning without specifying a storage class
