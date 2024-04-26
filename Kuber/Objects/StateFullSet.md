@@ -25,3 +25,6 @@ A trick you can use is to have all pods use the same PersistentVolume, but then 
 ![[Pasted image 20240426153857.png]]
 
 >Because you can’t configure pod replicas differently from a single pod template, you can’t tell each instance what directory it should use, but you can make each instance tomatically select (and possibly also create) a data directory that isn’t being used by any other instance at that time. This solution does require coordination between the instances, and isn’t easy to do correctly.
+
+
+### Providing a stable identity for each pod
