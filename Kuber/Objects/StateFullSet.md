@@ -110,5 +110,51 @@ items:
 			name: pv-b
 ```
 
-### CREATING THE GOVERNING S ERVICE
+### CREATING THE GOVERNING SERVICE
+```
+apiVersion: v1
+kind: Service
+metadata:
+	name: kubia
+spec:
+	clusterIP: None
+	selector:
+		app: kubia
+	ports:
+	- name: http
+	  port: 80
+```
 
+### CREATING THE STATEFULSET MANIFEST
+```
+apiVersion: apps/v1beta1
+kind: StatefulSet
+metadata:
+	name: kubia
+spec:
+	serviceName: kubia
+	replicas: 2
+	template:
+		metadata:
+			labels:
+				app: kubia
+		spec:
+			containers:
+			- name: kubia
+			  image: luksa/kubia-pet
+			  ports:
+				- name: http
+				containerPort: 8080
+			volumeMounts:
+			- name: data
+			  mountPath: /var/data
+	volumeClaimTemplates:
+	- metadata:
+		name: data
+		spec:
+		resources:
+		requests:
+		storage: 1Mi
+		accessModes:
+		- ReadWriteOnce
+```
