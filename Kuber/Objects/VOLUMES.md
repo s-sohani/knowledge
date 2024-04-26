@@ -120,7 +120,7 @@ volumes:
 		path: /some/path
 ```
 
-## Introducing PersistentVolumes and PersistentVolumeClaims
+## Decoupling pods from the underlying storage technology
 In above config, user must now aboat NFS IP or infrastructure, but this agains Kubernetes idea. To enable apps to request storage in a Kubernetes cluster without having to deal with infrastructure specifics, two new resources were introduced. They are PersistentVolumes and PersistentVolumeClaims.
 
 ![[Pasted image 20240424195321.png]]
@@ -208,3 +208,5 @@ When you delete pod and pvc, The STATUS column shows the PersistentVolume as Rel
 ### persistentVolumeReclaimPolicy
 - Retain: Retain the volume and its contents after it’s released from its claim. 
 - Recycle/Delete: Deletes the volume’s contents and makes the volume available to be claimed again.
+
+## Dynamic provisioning of PersistentVolumes
