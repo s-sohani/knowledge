@@ -42,6 +42,7 @@ Luckily, Kubernetes saves us from resorting to such complex solutions.
 Instead of using a ReplicaSet to run these types of pods, you create a StatefulSet resource.
 
 ### COMPARING STATEFULSETS WITH REPLICASETS OR REPLICATION CONTROLLERS
-A StatefulSet makes sure pods are rescheduled in such a way that they retain their identity and state. New instance needs to get the same name, network identity, and state as the one it’s replacing. Pods created by the StatefulSet aren’t
-exact replicas of each other. Each can have its own set of volumes—in other words,
-storage (and thus persistent state)—which differentiates it from its peers.
+A StatefulSet makes sure pods are rescheduled in such a way that they retain their identity and state. New instance needs to get the same name, network identity, and state as the one it’s replacing. Pods created by the StatefulSet aren’t exact replicas of each other. Each can have its own set of volumes—in other words, storage (and thus persistent state) which differentiates it from its peers.
+
+### Providing a stable network identity
+Each pod created by a StatefulSet is assigned an ordinal index (zero-based), which is then used to derive the pod’s name and hostname, and to attach stable storage to the pod.
