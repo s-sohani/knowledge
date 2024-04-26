@@ -39,3 +39,5 @@ A trick you can use to work around this problem is to provide a stable network a
 Luckily, Kubernetes saves us from resorting to such complex solutions.
 
 ## Understanding StatefulSets
+Instead of using a ReplicaSet to run these types of pods, you create a StatefulSet resource.
+
