@@ -160,3 +160,5 @@ spec:
 ```
 
 What’s new is the volumeClaimTemplates list. In it, you’re defining one volume claim template called data , which will be used to create a PersistentVolumeClaim for each pod.
+
+### Playing with your pods
