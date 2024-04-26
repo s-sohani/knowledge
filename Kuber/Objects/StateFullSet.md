@@ -72,4 +72,10 @@ Each pod of a StatefulSet needs to reference a different PersistentVolumeClaim t
 ![[Pasted image 20240426182958.png]]
 
 #### UNDERSTANDING THE CREATION AND DELETION OF PERSISTENTVOLUMECLAIMS
+Scaling down, however, deletes only the pod, leaving the claims alone.
+After a claim is deleted, the PersistentVolume it was bound to gets recycled or deleted and its contents are lost.
+Because stateful pods are meant to run stateful applications, which implies that the data they store in the volume is **important**.
+For this reason, you’re required to delete PersistentVolumeClaims **manually** to release the underlying PersistentVolume.
+
+
 
