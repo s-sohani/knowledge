@@ -261,3 +261,7 @@ spec:
 ```
 
 This PVC definition includes only the storage size request and the desired access modes, but no storage class.
+
+### THE COMPLETE PICTURE OF DYNAMIC P ERSISTENT V OLUME PROVISIONING
+
+![[Pasted image 20240426105213.png]]
