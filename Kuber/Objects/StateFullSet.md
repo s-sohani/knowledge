@@ -56,3 +56,8 @@ ReplicaSet.
 Additionally, you can also use DNS to look up all the StatefulSet’s pods’ names by looking up SRV records for the foo.default.svc.cluster.local domain.
 
 #### REPLACING LOST PETS
+When a pod instance managed by a StatefulSet disappears, the replacement pod gets the same name and hostname as the pod that has disappeared.
+
+![[Pasted image 20240426181507.png]]
+
+#### SCALING A STATEFULSET
