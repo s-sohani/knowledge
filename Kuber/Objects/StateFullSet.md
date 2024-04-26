@@ -78,4 +78,11 @@ Because stateful pods are meant to run stateful applications, which implies that
 For this reason, you’re required to delete PersistentVolumeClaims **manually** to release the underlying PersistentVolume.
 
 
+#### REATTACHING THE PERSISTENT VOLUMECLAIM TO THE NEW INSTANCE OF THE SAME POD
+The fact that the PersistentVolumeClaim remains after a scale-down means a subsequent scale-up can reattach the same claim along with the bound PersistentVolume and its contents to the new pod instance.
+
+![[Pasted image 20240426184257.png]]
+
+
+### Understanding StatefulSet guarantees
 
