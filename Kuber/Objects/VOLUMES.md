@@ -210,3 +210,5 @@ When you delete pod and pvc, The STATUS column shows the PersistentVolume as Rel
 - Recycle/Delete: Deletes the volume’s contents and makes the volume available to be claimed again.
 
 ## Dynamic provisioning of PersistentVolumes
+Creating PV still requires a cluster administrator to provision the actual storage up front.
+The cluster admin, instead of creating PersistentVolumes, can deploy a PersistentVolume provisioner and define one or more StorageClass objects to let users choose what type of PersistentVolume they want.
