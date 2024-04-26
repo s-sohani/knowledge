@@ -212,3 +212,7 @@ When you delete pod and pvc, The STATUS column shows the PersistentVolume as Rel
 ## Dynamic provisioning of PersistentVolumes
 Creating PV still requires a cluster administrator to provision the actual storage up front.
 The cluster admin, instead of creating PersistentVolumes, can deploy a PersistentVolume provisioner and define one or more StorageClass objects to let users choose what type of PersistentVolume they want.
+
+>Kubernetes includes provisioners for the most popular cloud providers.
+>Instead of the administrator pre-provisioning a bunch of PersistentVolumes, they need to define one or two (or more) StorageClasses.
+
