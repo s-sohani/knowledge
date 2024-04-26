@@ -67,4 +67,9 @@ Scaling the StatefulSet creates a new pod instance with the next unused ordinal 
 >Because certain stateful applications don’t handle rapid scale-downs nicely, StatefulSets scale down only one pod instance at a time.
 
 ### Providing stable dedicated storage to each stateful instance
-each pod of a StatefulSet needs to reference a different PersistentVolumeClaim to have its own separate PersistentVolume.
+Each pod of a StatefulSet needs to reference a different PersistentVolumeClaim to have its own separate PersistentVolume.
+
+![[Pasted image 20240426182958.png]]
+
+#### UNDERSTANDING THE CREATION AND DELETION OF PERSISTENTVOLUMECLAIMS
+
