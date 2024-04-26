@@ -33,3 +33,9 @@ When a ReplicaSet replaces a pod, the new pod is a completely new pod with a new
 A trick you can use to work around this problem is to provide a stable network address for cluster members by creating a dedicated Kubernetes Service for each individual member.
 
 ![[Pasted image 20240426160722.png]]
+
+>The solution is not only ugly, but it still doesn’t solve everything.
+
+Luckily, Kubernetes saves us from resorting to such complex solutions.
+
+## Understanding StatefulSets
