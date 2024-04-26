@@ -84,5 +84,5 @@ The fact that the PersistentVolumeClaim remains after a scale-down means a subse
 ![[Pasted image 20240426184257.png]]
 
 
-### Understanding StatefulSet guarantees
-
+## Using a StatefulSet
+Now building clustered data store.
