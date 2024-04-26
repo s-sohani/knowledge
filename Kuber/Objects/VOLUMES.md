@@ -247,3 +247,17 @@ spec:
 ### Dynamic provisioning without specifying a storage class
 The default storage class is what’s used to dynamically provision a PersistentVolume if the PersistentVolumeClaim doesn’t explicitly say which storage class to use.
 
+```
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+	name: mongodb-pvc2
+spec:
+	resources:
+		requests:
+			storage: 100Mi
+			accessModes:
+			- ReadWriteOnce
+```
+
+This PVC definition includes only the storage size request and the desired access modes, but no storage class.
