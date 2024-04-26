@@ -86,5 +86,29 @@ The fact that the PersistentVolumeClaim remains after a scale-down means a subse
 
 ## Using a StatefulSet
 Now building clustered data store.
-### Creating the app and container image
+### Create Three PersistentVolumes
+```
+kind: List
+apiVersion: v1
+items:
+	- apiVersion: v1
+	  kind: PersistentVolume
+	  metadata:
+		name: pv-a
+	  spec:
+		capacity:
+			storage: 1Mi
+		accessModes:
+		- ReadWriteOnce
+		persistentVolumeReclaimPolicy: Recycle
+		gcePersistentDisk:
+			pdName: pv-a
+			fsType: nfs4
+	- apiVersion: v1
+	  kind: PersistentVolume
+	  metadata:
+			name: pv-b
+```
+
+### CREATING THE GOVERNING S ERVICE
 
