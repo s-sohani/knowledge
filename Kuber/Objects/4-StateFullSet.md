@@ -181,3 +181,17 @@ The request went through two different proxies (the first was the kubectl proxy 
  
 ![[Screenshot from 2024-04-27 07-21-12.png]]
 
+#### Service for StateFullSet
+You’re going to add a proper, nonheadless Service in front of your pods, because clients usually connect to the pods through a Service rather than connecting directly.
+```
+apiVersion: v1
+kind: Service
+metadata:
+	name: kubia-public
+spec:
+	selector:
+		app: kubia
+	ports:
+	- port: 80
+	  targetPort: 8080
+```
