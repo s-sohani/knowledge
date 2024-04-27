@@ -232,3 +232,5 @@ The server that receives the request first performs a lookup of SRV records for 
 kubectl edit statefulset kubia
 ```
 
+- **Updating replica**: new instance of pod will be created.
+- **Updating template like change image**: StatefulSets were **more like ReplicaSets and not like Deployments**, so they don’t perform a rollout when the template is modified.
