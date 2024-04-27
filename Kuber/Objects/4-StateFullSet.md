@@ -235,3 +235,10 @@ kubectl edit statefulset kubia
 - **Updating replica**: new instance of pod will be created.
 - **Updating template like change image**: StatefulSets were **more like ReplicaSets and not like Deployments**, so they don’t perform a rollout when the template is modified. You need to delete the replicas manually and the StatefulSet will bring them up again based on the new template. OR perform rolling updates command.
 
+### Deleting the pod manually
+When node disconnected or down, and delete pod that run on that node manualy, The pod was marked for deletion, The pod’s status is Terminating. The pod was already marked for deletion earlier and will be removed as soon as the Kubelet on its node notifies the API server that the pod’s containers have terminated. Because the node’s network is down, this will never happen.
+The only thing you can do is tell the API server to delete the pod without waiting for the Kubelet to confirm that the pod is no longer running.
+```
+kubectl delete po kubia-0 --force --grace-period 0
+```
+
