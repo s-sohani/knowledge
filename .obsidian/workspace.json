@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Objects/StateFullSet.md",
+                "file": "Kuber/Objects/4-StateFullSet.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Kuber/Develop an Operator.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Objects/StateFullSet.md",
+                "file": "Kuber/Objects/4-StateFullSet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Objects/StateFullSet.md",
+                "file": "Kuber/Objects/4-StateFullSet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Objects/StateFullSet.md"
+                "file": "Kuber/Objects/4-StateFullSet.md"
               }
             }
           }
@@ -164,19 +164,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-comments:Show Comments Panel": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-comments:Show Comments Panel": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "a72ee06e3871643c",
+  "active": "a668dac34347a484",
   "lastOpenFiles": [
+    "Kuber/Objects/3-VOLUMES.md",
+    "Kuber/Objects/2-CONTROLLER.md",
+    "Kuber/Objects/1-POD.md",
+    "Kuber/Objects/5-SERVICES.md",
+    "Kuber/Objects/4-StateFullSet.md",
     "Kuber/Images/Pasted image 20240426184257.png",
     "Kuber/Images/Pasted image 20240426182958.png",
     "Kuber/Images/Pasted image 20240426182223.png",
@@ -186,29 +191,22 @@
     "Kuber/Images/Pasted image 20240426153857.png",
     "Kuber/Images/Pasted image 20240426153627.png",
     "Kuber/Images/Pasted image 20240426152950.png",
-    "Kuber/Objects/VOLUMES.md",
-    "Kuber/Objects/StateFullSet.md",
     "Kuber/Images/Pasted image 20240426105213.png",
-    "Kuber/Kuber CheetSheet.md",
-    "Kuber/Images/Pasted image 20240424202233.png",
-    "Microservices/1- Introduction.md",
-    "DataLake/Itroduction.md",
-    "Kuber/Objects/CONTROLLER.md",
-    "DataLake",
-    "Kuber/Objects/SERVICES.md",
-    "Kuber/Develop an Operator.md",
     "Kuber/Concerpts.md",
+    "Kuber/Kuber CheetSheet.md",
+    "Kuber/Develop an Operator.md",
+    "Kuber/Objects/C-I.md",
+    "DataLake/Itroduction.md",
+    "DataLake",
+    "Podcasts/Making Of A Manage.md",
     "Podcasts/BPLUS/Everybody Lies.md",
     "Kuber/Images",
     "Podcasts/BPLUS/Neanderthals.md",
     "Microservices/4- Event Storming.md",
     "Podcasts/How Read a Book.md",
-    "Podcasts/Making Of A Manage.md",
-    "Kuber/Objects/POD.md",
-    "Kuber/Objects/C-I.md",
-    "Kuber/Objects/SERVICE.md",
     "Microservices/3- Architecture Styles.md",
     "Microservices/2- Scale Cube.md",
+    "Microservices/1- Introduction.md",
     "Podcasts/BPLUS/Outliers.md",
     "Podcasts/BPLUS",
     "Microservices/images",
@@ -218,10 +216,10 @@
     "Kuber/Objects",
     "CockroachDB/Transactions.md",
     "Kuber",
+    "Untitled",
     "Java/Java 8 to 21.md",
     "Java",
     "Untitled 1.md",
-    "CockroachDB",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "2024-02-05.md"
