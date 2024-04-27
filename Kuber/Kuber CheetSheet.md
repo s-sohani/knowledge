@@ -93,6 +93,7 @@ kubectl auth can-i create sts -n sre-prod
 #### Annotation
 Annotations can hold much larger pieces of information and are primarily meant to be used by tools.
 Certain annotations are automatically added to objects by Kubernetes, but others are added by users manually.
+Annotations are also commonly used when introducing new features to Kubernetes. Usually, alpha and beta versions
 ```
 apiVersion: v1
 kind: pod
