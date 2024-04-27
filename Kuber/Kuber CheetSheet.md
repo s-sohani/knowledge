@@ -4,6 +4,13 @@ To enable tab completion in bash, you’ll first need to install a package calle
 $ source <(kubectl completion bash)
 ```
 
+#### Get All Resources in all Namespaces
+```
+kubectl get po all --all
+
+# get all Resources in current namespace
+kubectl get all
+```
 #### Get YAML descriptor for existing POD
 What is yaml definition for exist pods look like.
 ```
