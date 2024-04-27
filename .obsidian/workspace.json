@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Objects/4-StateFullSet.md",
+                "file": "Kuber/Kuber CheetSheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Objects/4-StateFullSet.md",
+                "file": "Kuber/Kuber CheetSheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Objects/4-StateFullSet.md",
+                "file": "Kuber/Kuber CheetSheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Objects/4-StateFullSet.md"
+                "file": "Kuber/Kuber CheetSheet.md"
               }
             }
           }
@@ -177,11 +177,11 @@
   },
   "active": "a668dac34347a484",
   "lastOpenFiles": [
+    "Kuber/Objects/4-StateFullSet.md",
     "Kuber/Images/Screenshot from 2024-04-27 08-38-35.png",
     "Kuber/Images/Screenshot from 2024-04-27 07-21-12.png",
     "Kuber/Images/Screenshot from 2024-04-27 07-16-35.png",
     "Kuber/Develop an Operator.md",
-    "Kuber/Objects/4-StateFullSet.md",
     "Kuber/Objects/3-VOLUMES.md",
     "Kuber/Objects/2-CONTROLLER.md",
     "Kuber/Objects/1-POD.md",
@@ -193,7 +193,6 @@
     "Kuber/Images/Pasted image 20240426163544.png",
     "Kuber/Images/Pasted image 20240426160722.png",
     "Kuber/Images/Pasted image 20240426153857.png",
-    "Kuber/Images/Pasted image 20240426153627.png",
     "Kuber/Concerpts.md",
     "Kuber/Kuber CheetSheet.md",
     "Kuber/Objects/C-I.md",
