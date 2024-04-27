@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a668dac34347a484",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c418c512e2021a74",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Develop an Operator.md",
+                "file": "Kuber/Kuber CheetSheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -175,13 +163,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a668dac34347a484",
+  "active": "a72ee06e3871643c",
   "lastOpenFiles": [
+    "Kuber/Develop an Operator.md",
+    "Kuber/Kuber CheetSheet.md",
     "Kuber/Objects/4-StateFullSet.md",
     "Kuber/Images/Screenshot from 2024-04-27 08-38-35.png",
     "Kuber/Images/Screenshot from 2024-04-27 07-21-12.png",
     "Kuber/Images/Screenshot from 2024-04-27 07-16-35.png",
-    "Kuber/Develop an Operator.md",
     "Kuber/Objects/3-VOLUMES.md",
     "Kuber/Objects/2-CONTROLLER.md",
     "Kuber/Objects/1-POD.md",
@@ -194,7 +183,6 @@
     "Kuber/Images/Pasted image 20240426160722.png",
     "Kuber/Images/Pasted image 20240426153857.png",
     "Kuber/Concerpts.md",
-    "Kuber/Kuber CheetSheet.md",
     "Kuber/Objects/C-I.md",
     "DataLake/Itroduction.md",
     "DataLake",
