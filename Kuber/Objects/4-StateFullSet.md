@@ -217,4 +217,8 @@ We can do that with DNS server, DNS has records like A, CNAME, and MX:
 Other lesser-known types of DNS records also exist. One of them is the SRV record.
 SRV records are used to point to hostnames and ports of servers providing a specific service.
 SRVlookup: list the SRV records for your stateful pods
+```
+kubectl run -it srvlookup --image=tutum/dnsutils --rm --restart=Never -- dig SRV kubia.default.svc.cluster.local
+```
+... ?
 
