@@ -170,3 +170,8 @@ One useful feature of the API server is the ability to proxy connections directl
 With `kubectl proxy` can talk with API server without having to deal with authentication and SSL certificates.
 `curl localhost:8001/api/v1/namespaces/default/pods/kubia-0/proxy/`
 
+The request went through two different proxies (the first was the kubectl proxy and the other was the API server, which proxied the request to the pod).
+
+![[Screenshot from 2024-04-27 07-16-35.png]]
+
+>Let me remind you again that, If pod be deleted, new pod may be scheduled to any node in the cluster, not necessarily the same node that the old pod was scheduled to.
