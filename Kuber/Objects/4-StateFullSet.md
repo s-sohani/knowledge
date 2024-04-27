@@ -195,3 +195,8 @@ spec:
 	- port: 80
 	  targetPort: 8080
 ```
+
+
+### Discovering peers in a StatefulSet
+Use the kubia-public service for storing to and reading data from your clustered data store. Of course, each request lands on a random cluster node, so you’ll get the data from a random node each time.
+
