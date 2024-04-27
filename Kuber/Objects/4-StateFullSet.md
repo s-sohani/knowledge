@@ -162,3 +162,8 @@ spec:
 What’s new is the volumeClaimTemplates list. In it, you’re defining one volume claim template called data , which will be used to create a PersistentVolumeClaim for each pod.
 
 ### Playing with your pods
+You can’t communicate with your pods through the Service you created because it’s **headless**.
+To connect to individual pods directly, You’ll use the API server as a proxy to the pods.
+One useful feature of the API server is the ability to proxy connections directly to individual pods. If you want to perform requests against your kubia-0 pod, you hit the following URL:
+`<apiServerHost>:<port>/api/v1/namespaces/default/pods/kubia-0/proxy/<path>`
+
