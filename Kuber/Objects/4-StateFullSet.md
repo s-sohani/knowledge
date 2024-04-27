@@ -227,3 +227,8 @@ The server that receives the request first performs a lookup of SRV records for 
 
 ![[Screenshot from 2024-04-27 08-38-35.png]]
 
+### Updating a StatefulSet
+```
+kubectl edit statefulset kubia
+```
+
