@@ -200,3 +200,18 @@ spec:
 ### Discovering peers in a StatefulSet
 Use the kubia-public service for storing to and reading data from your clustered data store. Of course, each request lands on a random cluster node, so you’ll get the data from a random node each time.
 
+We can do that with DNS server, DNS has records like A, CNAME, and MX:
+- **A Record (Address Record):**
+    - An A record maps a domain name to an IPv4 address.
+    - It associates a hostname (e.g., `www.example.com`) with a specific IPv4 address (e.g., `192.168.1.100`).
+    - This record type is used to point a domain or subdomain to the IP address of a web server or other internet-connected device.
+- **CNAME Record (Canonical Name Record):**
+    - A CNAME record maps an alias domain name to another domain name.
+    - It allows you to create a secondary or alias domain name (e.g., `subdomain.example.com`) that points to another domain name (e.g., `actualdomain.com`).
+    - CNAME records are often used for load balancing, redirection, or simplifying the pointing of subdomains to a complex primary domain.
+- **MX Record (Mail Exchange Record):**
+    - An MX record specifies the mail server responsible for handling emails for a particular domain name.
+    - It maps a domain name (e.g., `example.com`) to the hostname or IP address of a mail server (e.g., `mail.example.com` or `10.0.0.5`).
+    - MX records are essential for email delivery, as they tell other mail servers where to route emails destined for a specific domain.
+
+Other lesser-known types of DNS records also exist. One of them is the SRV record.
