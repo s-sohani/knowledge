@@ -167,3 +167,4 @@ To connect to individual pods directly, You’ll use the API server as a proxy t
 One useful feature of the API server is the ability to proxy connections directly to individual pods. If you want to perform requests against your kubia-0 pod, you hit the following URL:
 `<apiServerHost>:<port>/api/v1/namespaces/default/pods/kubia-0/proxy/<path>`
 
+API server without having to deal with authentication and SSL certificates.
