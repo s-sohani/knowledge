@@ -89,6 +89,24 @@ each node also has a unique label with the key `kubernetes.io/hostname` and valu
 ```
 kubectl auth can-i create sts -n sre-prod
 ```
+
+#### Annotation
+Annotations can hold much larger pieces of information and are primarily meant to be used by tools.
+Certain annotations are automatically added to objects by Kubernetes, but others are added by users manually.
+```
+apiVersion: v1
+kind: pod
+metadata:
+	annotations:
+		kubernetes.io/created-by: |
+		{"kind":"SerializedReference", "apiVersion":"v1",
+		"reference":{"kind":"ReplicationController", "namespace":"default", ...
+
+ ---
+
+kubectl annotate pod kubia-manual mycompany.com/someannotation="foo bar"
+```
+
 #### Namespaces 
 ```
 kubectl get ns
