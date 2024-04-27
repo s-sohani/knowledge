@@ -233,4 +233,5 @@ kubectl edit statefulset kubia
 ```
 
 - **Updating replica**: new instance of pod will be created.
-- **Updating template like change image**: StatefulSets were **more like ReplicaSets and not like Deployments**, so they don’t perform a rollout when the template is modified.
+- **Updating template like change image**: StatefulSets were **more like ReplicaSets and not like Deployments**, so they don’t perform a rollout when the template is modified. You need to delete the replicas manually and the StatefulSet will bring them up again based on the new template. OR perform rolling updates command.
+
