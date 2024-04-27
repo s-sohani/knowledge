@@ -222,3 +222,8 @@ kubectl run -it srvlookup --image=tutum/dnsutils --rm --restart=Never -- dig SRV
 ```
 ... ?
 
+#### Implementing peer discovery through DNS
+The server that receives the request first performs a lookup of SRV records for the headless kubia service and then sends a GET request to each of the pods backing the service.
+
+![[Screenshot from 2024-04-27 08-38-35.png]]
+
