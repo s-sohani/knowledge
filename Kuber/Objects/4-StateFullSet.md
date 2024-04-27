@@ -175,6 +175,9 @@ The request went through two different proxies (the first was the kubectl proxy 
 ![[Screenshot from 2024-04-27 07-16-35.png]]
 
 >Let me remind you again that, If pod be deleted, new pod may be scheduled to any node in the cluster, not necessarily the same node that the old pod was scheduled to.
-
+ 
+ >Remember that scaling down a StatefulSet only deletes the pods, but leaves the PersistentVolumeClaims untouched.
+ 
+ 
 ![[Screenshot from 2024-04-27 07-21-12.png]]
 
