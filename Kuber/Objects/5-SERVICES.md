@@ -90,3 +90,7 @@ spec:
 	  targetPort: https
 ```
 
+### Discovering services
+How do the client pods know the IP and port of a service?
+
+#### DISCOVERING SERVICES THROUGH ENVIRONMENT VARIABLES
