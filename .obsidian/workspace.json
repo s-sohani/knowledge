@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Podcasts/Making Of A Manage.md",
+                "file": "Kuber/Objects/5-SERVICES.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Podcasts/Making Of A Manage.md",
+                "file": "Kuber/Objects/5-SERVICES.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Podcasts/Making Of A Manage.md",
+                "file": "Kuber/Objects/5-SERVICES.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Podcasts/Making Of A Manage.md"
+                "file": "Kuber/Objects/5-SERVICES.md"
               }
             }
           }
@@ -165,6 +165,7 @@
   },
   "active": "c418c512e2021a74",
   "lastOpenFiles": [
+    "Podcasts/Making Of A Manage.md",
     "Kuber/Images/Screenshot from 2024-04-28 06-56-00.png",
     "Kuber/Objects/5-SERVICES.md",
     "Kuber/Kuber CheetSheet.md",
@@ -186,7 +187,6 @@
     "Kuber/Objects/C-I.md",
     "DataLake/Itroduction.md",
     "DataLake",
-    "Podcasts/Making Of A Manage.md",
     "Podcasts/BPLUS/Everybody Lies.md",
     "Kuber/Images",
     "Podcasts/BPLUS/Neanderthals.md",
