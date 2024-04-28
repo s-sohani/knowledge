@@ -172,3 +172,8 @@ See Last State section.
 kubectl describe po kubia-liveness
 ```
 
+#### Exec an Script in container
+```
+kubectl exec kubia-7nog1 -- curl -s http://10.111.249.153
+kubectl exec kubia-7nog1 -- bash
+```
