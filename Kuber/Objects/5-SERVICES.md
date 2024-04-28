@@ -8,3 +8,22 @@ With LabelSelector we can match pods and services.
 
 #### CREATING A SERVICE THROUGH KUBECTL EXPOSE
 exposing all its pods through a single IP address and port.
+This is the cluster IP, it’s only accessible from inside the cluster.
+```
+apiVersion: v1
+kind: Service
+metadata:
+	name: kubia
+spec:
+	ports:
+	- port: 80
+		targetPort: 8080
+	selector:
+		app: kubia
+```
+
+#### List all Service resources
+```
+kubectl get svc
+```
+
