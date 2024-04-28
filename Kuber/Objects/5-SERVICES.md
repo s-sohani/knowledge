@@ -98,8 +98,12 @@ If you create the service before creating the client pods, processes in those po
 OR
 Create service and delete all pods to  be recreated pods with replicaSet and get service's ENV.
 
+>In this way pod can list **all** Services Ip and Ports (services for other pods) in the **NameSpace** not only its own service.
+
 Then in pod you can see:
 ```
 KUBIA_SERVICE_HOST=10.111.249.153
 KUBIA_SERVICE_PORT=80
 ```
+
+#### DISCOVERING SERVICES THROUGH DNS
