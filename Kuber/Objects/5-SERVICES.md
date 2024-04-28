@@ -107,3 +107,11 @@ KUBIA_SERVICE_PORT=80
 ```
 
 #### DISCOVERING SERVICES THROUGH DNS
+client pods that know the name of the service can access it through its fully qualified domain name (FQDN) instead of resorting to environment variables.
+```
+backend-database.default.svc.cluster.local
+```
+
+backend-database corresponds to the service name, default stands for the namespace the service is defined in, and svc.cluster.local is a configurable cluster domain suffix used in all cluster local service names.
+
+>The client must still know the service’s port number. If the service is using a standard port (for example, 80 for HTTP or 5432 for Postgres), that shouldn’t be a problem. If not, the client can get the port number from the environment variable.
