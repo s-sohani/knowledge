@@ -6,7 +6,7 @@ $ source <(kubectl completion bash)
 
 #### Get All Resources in all Namespaces
 ```
-kubectl get po all --all
+kubectl get all -A
 
 # get all pods in all namespaces
 kubectl get po -A
