@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Objects/5-SERVICES.md",
+                "file": "Kuber/Kuber CheetSheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Objects/5-SERVICES.md",
+                "file": "Kuber/Kuber CheetSheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Objects/5-SERVICES.md",
+                "file": "Kuber/Kuber CheetSheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Objects/5-SERVICES.md"
+                "file": "Kuber/Kuber CheetSheet.md"
               }
             }
           }
@@ -165,9 +165,10 @@
   },
   "active": "c418c512e2021a74",
   "lastOpenFiles": [
+    "Kuber/Objects/C-I.md",
+    "Kuber/Objects/5-SERVICES.md",
     "Podcasts/Making Of A Manage.md",
     "Kuber/Images/Screenshot from 2024-04-28 06-56-00.png",
-    "Kuber/Objects/5-SERVICES.md",
     "Kuber/Kuber CheetSheet.md",
     "Kuber/Develop an Operator.md",
     "Kuber/Objects/4-StateFullSet.md",
@@ -184,7 +185,6 @@
     "Kuber/Images/Pasted image 20240426163544.png",
     "Kuber/Images/Pasted image 20240426160722.png",
     "Kuber/Concerpts.md",
-    "Kuber/Objects/C-I.md",
     "DataLake/Itroduction.md",
     "DataLake",
     "Podcasts/BPLUS/Everybody Lies.md",
