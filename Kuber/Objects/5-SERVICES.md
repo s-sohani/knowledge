@@ -28,4 +28,39 @@ kubectl get svc
 ```
 
 
-##
+#### CONFIGURING SESSION AFFINITY ON THE SERVICE
+If you want all requests made by a certain client to be redirected to the same pod every time.
+```
+apiVersion: v1
+kind: Service
+spec:
+	sessionAffinity: ClientIP
+```
+
+Type of session affinity: 
+- None 
+- ClientIP
+
+>Services deal with TCP and UDP packets and don’t care about the payload they carry. Because cookies are a construct of the HTTP protocol, services don’t know about them, which explains why session affinity cannot be based on cookies.
+
+#### MULTIPLE PORTS IN THE SAME SERVICE
+
+```
+apiVersion: v1
+kind: Service
+metadata:
+	name: kubia
+spec:
+	ports:
+	- name: http
+	  port: 80
+	  targetPort: 8080
+	- name: https
+	  port: 443
+	  targetPort: 8443
+	selector:
+	  app: kubia
+```
+
+>When creating a service with multiple ports, you must specify a name for each port.
+
