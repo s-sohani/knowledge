@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Kuber/Objects/5-SERVICES.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Kuber/Objects/5-SERVICES.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Kuber/Objects/5-SERVICES.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md"
+                "file": "Kuber/Objects/5-SERVICES.md"
               }
             }
           }
@@ -163,10 +163,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a72ee06e3871643c",
+  "active": "c418c512e2021a74",
   "lastOpenFiles": [
-    "Kuber/Develop an Operator.md",
     "Kuber/Kuber CheetSheet.md",
+    "Kuber/Develop an Operator.md",
     "Kuber/Objects/4-StateFullSet.md",
     "Kuber/Images/Screenshot from 2024-04-27 08-38-35.png",
     "Kuber/Images/Screenshot from 2024-04-27 07-21-12.png",
