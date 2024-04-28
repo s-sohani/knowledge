@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Kuber/Objects/4-StateFullSet.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Kuber/Objects/4-StateFullSet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Kuber/Objects/4-StateFullSet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md"
+                "file": "Kuber/Objects/4-StateFullSet.md"
               }
             }
           }
@@ -165,11 +165,11 @@
   },
   "active": "c418c512e2021a74",
   "lastOpenFiles": [
+    "Kuber/Kuber CheetSheet.md",
     "Kuber/Objects/C-I.md",
     "Kuber/Objects/5-SERVICES.md",
     "Podcasts/Making Of A Manage.md",
     "Kuber/Images/Screenshot from 2024-04-28 06-56-00.png",
-    "Kuber/Kuber CheetSheet.md",
     "Kuber/Develop an Operator.md",
     "Kuber/Objects/4-StateFullSet.md",
     "Kuber/Images/Screenshot from 2024-04-27 08-38-35.png",
