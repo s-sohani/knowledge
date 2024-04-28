@@ -64,3 +64,29 @@ spec:
 
 >When creating a service with multiple ports, you must specify a name for each port.
 
+#### USING NAMED PORTS
+```
+kind: Pod
+spec:
+	containers:
+	- name: kubia
+		  ports:
+			- name: http
+			  containerPort: 8080
+			- name: https
+			  containerPort: 8443
+
+---
+
+apiVersion: v1
+kind: Service
+spec:
+	ports:
+	- name: http
+	  port: 80
+	  targetPort: http
+	- name: https
+	  port: 443
+	  targetPort: https
+```
+
