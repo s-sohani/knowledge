@@ -94,3 +94,12 @@ spec:
 How do the client pods know the IP and port of a service?
 
 #### DISCOVERING SERVICES THROUGH ENVIRONMENT VARIABLES
+If you create the service before creating the client pods, processes in those pods can get the IP address and port of the service by inspecting their environment variables.
+OR
+Create service and delete all pods to  be recreated pods with replicaSet and get service's ENV.
+
+Then in pod you can see:
+```
+KUBIA_SERVICE_HOST=10.111.249.153
+KUBIA_SERVICE_PORT=80
+```
