@@ -132,8 +132,8 @@ Redirect to external IP(s) and port(s):
 - Load balancing
 - Service discovery
 
-### Manually configuring service endpoints
-To create a service with manually managed endpoints, you need to create both a Service and an Endpoints resource.
+### Manually configuring service endpoints (External Service)
+To create a service with manually managed endpoints, you need to create both a Service and an Endpoints resource to connect External Service. 
 ```
 # CREATING A SERVICE WITHOUT A SELECTOR
 apiVersion: v1
@@ -160,4 +160,5 @@ subsets:
 ```
 
 
+![[Screenshot from 2024-04-29 07-05-26.png]]
 
