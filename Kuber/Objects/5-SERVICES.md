@@ -181,4 +181,8 @@ Now you can connect to external service with
 >ExternalName services are implemented solely at the DNS level—a simple CNAME DNS record is created for the service. Therefore, clients connecting to the service will connect to the external service directly, bypassing the service proxy completely.
 
 ## Exposing services to external clients
+You have a few ways to make a service accessible externally:
+- NodePort:
+- 
+![[Screenshot from 2024-04-29 07-30-18.png]]
 
