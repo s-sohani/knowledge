@@ -277,13 +277,16 @@ metadata:
 	name: kubia
 spec:
 	rules:
-	- host: kubia.example.com
+	- host: kubia.example.com  # This Ingress maps this to your service.
 	  http:
 		paths:
 		- path: /
 		  backend:
-			serviceName: kubia-nodeport
+			serviceName: kubia-nodeport # All requests will be sent to port 80                                             of the kubia-nodeport service.
 			servicePort: 80
 ```
 
+```
+kubectl get ingresses
+```
 
