@@ -262,3 +262,28 @@ Using this annotation also has other drawbacks. Normally, connections are spread
 
 ### Exposing services externally through an Ingress resource
 
+![[Pasted image 20240429184735.png]]
+#### Enabling the Ingress add-on in Minikube
+```
+minikube addons list
+minikube addons enable ingress
+```
+
+#### Creating an Ingress resource
+```
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+	name: kubia
+spec:
+	rules:
+	- host: kubia.example.com
+	  http:
+		paths:
+		- path: /
+		  backend:
+			serviceName: kubia-nodeport
+			servicePort: 80
+```
+
+
