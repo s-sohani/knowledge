@@ -118,6 +118,15 @@ Backend-database corresponds to the service name, default stands for the namespa
 
 >Connecting to a service can be even simpler than that. You can omit the svc.cluster. local suffix and even the namespace.
 
+
+```
+# Show incomming IP and PORT and list of Endpoint's IP and PORT
+kubectl describe svc kubia
+
+# List of Endpoint's IP and PORTs
+kubectl get endpoints kubia
+
+```
 ## Connecting to services living outside the cluster
 Redirect to external IP(s) and port(s):
 - Load balancing
