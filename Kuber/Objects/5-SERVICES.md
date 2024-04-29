@@ -178,5 +178,7 @@ spec:
 Now you can connect to external service with
 `external-service.default.svc.cluster.local` OR `external-service`
 
+>ExternalName services are implemented solely at the DNS level—a simple CNAME DNS record is created for the service. Therefore, clients connecting to the service will connect to the external service directly, bypassing the service proxy completely.
 
+## Exposing services to external clients
 
