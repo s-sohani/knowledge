@@ -365,3 +365,22 @@ When create a pod, if you don’t want the pod to start receiving requests immed
 When a container is started, Kubernetes can be configured to wait for a configurable amount of time to pass before performing the first readiness check. After that, it invokes the probe periodically and acts based on the result of the readiness probe. If a pod reports that it’s not ready, it’s removed from the service. If the pod then becomes ready again, it’s re-added.
 
 >Unlike liveness probes, if a container fails the readiness check, it won’t be killed or restarted.
+
+#### ADDING A READINESS PROBE TO THE POD TEMPLATE
+
+```
+kubectl edit rc kubia
+
+---
+
+spec:
+	containers:
+	- name: kubia
+	  image: luksa/kubia
+	  readinessProbe:
+		exec:
+			command:
+			- ls
+			- /var/ready
+```
+
