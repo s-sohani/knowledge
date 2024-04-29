@@ -120,10 +120,10 @@ Backend-database corresponds to the service name, default stands for the namespa
 
 
 ```
-# Show incomming IP and PORT and list of Endpoint's IP and PORT
+# Show incomming IP and PORT and list of Endpoint's IPs and PORTs
 kubectl describe svc kubia
 
-# List of Endpoint's IP and PORTs
+# List of Endpoint's IPs and PORTs
 kubectl get endpoints kubia
 
 ```
@@ -132,4 +132,20 @@ Redirect to external IP(s) and port(s):
 - Load balancing
 - Service discovery
 
+### Manually configuring service endpoints
+To create a service with manually managed endpoints, you need to create both a Service and an Endpoints resource.
+```
+# CREATING A SERVICE WITHOUT A SELECTOR
+apiVersion: v1
+kind: Service
+metadata:
+	name: external-service
+spec:
+	ports:
+	- port: 80
 
+---
+
+# CREATING AN ENDPOINTS RESOURCE FOR A SERVICE WITHOUT A SELECTOR
+
+```
