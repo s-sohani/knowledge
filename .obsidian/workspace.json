@@ -165,8 +165,9 @@
   },
   "active": "c418c512e2021a74",
   "lastOpenFiles": [
-    "Kuber/Objects/4-STATEFULLSET.md",
+    "Kuber/Kuber CheetSheet.md",
     "Kuber/Objects/5-SERVICES.md",
+    "Kuber/Objects/4-STATEFULLSET.md",
     "Kuber/Objects/StateFullSet.md",
     "Kuber/Objects/3-VOLUMES.md",
     "Kuber/Objects/2-CONTROLLER.md",
@@ -182,7 +183,6 @@
     "Kuber/Images/Screenshot from 2024-04-27 07-16-35.png",
     "Kuber/Images/Pasted image 20240426184257.png",
     "Kuber/Objects/VOLUMES.md",
-    "Kuber/Kuber CheetSheet.md",
     "Microservices/1- Introduction.md",
     "DataLake/Itroduction.md",
     "Kuber/Objects/CONTROLLER.md",

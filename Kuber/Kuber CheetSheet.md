@@ -10,6 +10,7 @@ kubectl get all -A
 
 # get all pods in all namespaces
 kubectl get po -A
+kubectl get po --all-namespaces
 
 # get all Resources in current namespace
 kubectl get all
