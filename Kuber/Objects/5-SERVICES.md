@@ -388,5 +388,20 @@ spec:
 - the client needs to connect to all of those pods
 - the backing pods themselves need to each connect to all the other backing pods.
 
+Kubernetes allows clients to discover pod IPs through DNS lookups. Usually, when you perform a DNS lookup for a service, the DNS server returns a single IP, the service’s cluster IP. But if you tell Kubernetes you don’t need a cluster IP for your service (you do this by setting the clusterIP field to None in the service specification ) , the DNS server will return the pod IPs instead of the single service IP. Instead of returning a single DNS A record, the DNS server will return multiple A records for the service, each pointing to the IP of an individual pod backing the service at that moment. Clients can therefore do a simple DNS A record lookup and get the IPs of all the pods that are part of the service. The client can then use that information to connect to one, many, or all of them.
+
+```
+apiVersion: v1
+kind: Service
+metadata:
+	name: kubia-headless
+spec:
+	clusterIP: None
+	ports:
+	- port: 80
+	  targetPort: 8080
+	selector:
+	  app: kubia
+```
 
 
