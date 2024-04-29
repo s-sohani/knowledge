@@ -162,3 +162,21 @@ subsets:
 
 ![[Screenshot from 2024-04-29 07-05-26.png]]
 
+#### Creating an alias for an external service With FQDN
+```
+apiVersion: v1
+kind: Service
+metadata:
+ name: external-service
+spec:
+	type: ExternalName  # Service type is set to ExternalName
+	externalName: someapi.somecompany.com
+	ports:
+	- port: 80
+```
+
+Now you can connect to external service with
+`external-service.default.svc.cluster.local` OR `external-service`
+
+
+
