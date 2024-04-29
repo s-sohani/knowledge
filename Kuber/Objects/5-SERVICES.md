@@ -147,5 +147,17 @@ spec:
 ---
 
 # CREATING AN ENDPOINTS RESOURCE FOR A SERVICE WITHOUT A SELECTOR
-
+apiVersion: v1
+kind: Endpoints
+metadata:
+	name: external-service
+subsets:
+	- addresses:
+		- ip: 11.11.11.11
+		- ip: 22.22.22.22
+	ports:
+	- port: 80
 ```
+
+
+
