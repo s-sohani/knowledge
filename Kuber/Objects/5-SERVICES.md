@@ -358,10 +358,10 @@ spec:
 When create a pod, if you don’t want the pod to start receiving requests immediately (when pod required to load some data or config to became ready), you can use readiness:
 
 #### TYPES OF READINESS PROBES
-An Exec probe, where a process is executed. The container’s status is deter-
-mined by the process’ exit status code.
- An HTTP GET probe, which sends an HTTP GET request to the container and
-the HTTP status code of the response determines whether the container is
-ready or not.
- A TCP Socket probe, which opens a TCP connection to a specified port of the
-container. If the connection is established, the container is considered ready.
+- An Exec probe, where a process is executed. The container’s status is determined by the process’ exit status code.
+- An HTTP GET probe, which sends an HTTP GET request to the container and the HTTP status code of the response determines whether the container is ready or not.
+- A TCP Socket probe, which opens a TCP connection to a specified port of the container. If the connection is established, the container is considered ready.
+
+When a container is started, Kubernetes can be configured to wait for a configurable amount of time to pass before performing the first readiness check. After that, it invokes the probe periodically and acts based on the result of the readiness probe. If a pod reports that it’s not ready, it’s removed from the service. If the pod then becomes ready again, it’s re-added.
+
+>Unlike liveness probes, if a container fails the readiness check, it won’t be killed or restarted.
