@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Objects/5-SERVICES.md",
+                "file": "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Objects/5-SERVICES.md",
+                "file": "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Objects/5-SERVICES.md",
+                "file": "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Objects/5-SERVICES.md"
+                "file": "Kuber/Objects/6-CONFIGMAP AND SECRET.md"
               }
             }
           }
@@ -163,12 +163,13 @@
       "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "a72ee06e3871643c",
+  "active": "c418c512e2021a74",
   "lastOpenFiles": [
+    "Kuber/Objects/5-SERVICES.md",
+    "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
     "Kuber/Images/Pasted image 20240429184735.png",
     "Kuber/Images/Pasted image 20240429184731.png",
     "Kuber/Kuber CheetSheet.md",
-    "Kuber/Objects/5-SERVICES.md",
     "Kuber/Objects/4-STATEFULLSET.md",
     "Kuber/Objects/StateFullSet.md",
     "Kuber/Objects/3-VOLUMES.md",
@@ -182,7 +183,6 @@
     "Kuber/Images/Screenshot from 2024-04-28 06-56-00.png",
     "Kuber/Images/Screenshot from 2024-04-27 08-38-35.png",
     "Kuber/Images/Screenshot from 2024-04-27 07-21-12.png",
-    "Kuber/Images/Screenshot from 2024-04-27 07-16-35.png",
     "Kuber/Objects/VOLUMES.md",
     "Microservices/1- Introduction.md",
     "DataLake/Itroduction.md",
