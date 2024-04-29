@@ -218,3 +218,6 @@ The service is accessible at the following addresses:
 
 ![[Screenshot from 2024-04-29 07-45-14.png]]
 
+>If you only point your clients to the first node, when that node fails, your clients can’t access the service anymore.
+
+### Exposing a service through an external load balancer
