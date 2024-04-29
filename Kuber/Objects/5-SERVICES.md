@@ -204,3 +204,17 @@ spec:
 	selector:
 		app: kubia
 ```
+
+> Kubernetes will choose a random port if you omit nodePort.
+
+```
+kubectl get svc kubia-nodeport
+```
+
+The service is accessible at the following addresses:
+- 10.11.254.223:80
+- <1st node’s IP>:30123
+- <2nd node’s IP>:30123
+
+![[Screenshot from 2024-04-29 07-45-14.png]]
+
