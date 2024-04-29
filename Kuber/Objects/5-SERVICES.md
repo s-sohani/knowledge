@@ -119,4 +119,8 @@ Backend-database corresponds to the service name, default stands for the namespa
 >Connecting to a service can be even simpler than that. You can omit the svc.cluster. local suffix and even the namespace.
 
 ## Connecting to services living outside the cluster
+Redirect to external IP(s) and port(s):
+- Load balancing
+- Service discovery
+
 
