@@ -260,3 +260,5 @@ Using this annotation also has other drawbacks. Normally, connections are spread
 
 ![[Screenshot from 2024-04-29 08-10-49.png]]
 
+### Exposing services externally through an Ingress resource
+
