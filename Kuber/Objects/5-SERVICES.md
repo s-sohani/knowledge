@@ -284,6 +284,41 @@ spec:
 		  backend:
 			serviceName: kubia-nodeport # All requests will be sent to port 80                                             of the kubia-nodeport service.
 			servicePort: 80
+
+---
+
+# Define different paths
+- host: kubia.example.com
+	http:
+		paths:
+			- path: /kubia
+			  backend:
+				serviceName: kubia
+				servicePort: 80
+			- path: /foo
+			  backend:
+				serviceName: bar
+				servicePort: 80
+
+---
+
+# Define different services to different hosts
+spec:
+	rules:
+	- host: foo.example.com
+		http:
+			paths:
+			- path: /
+			  backend:
+				serviceName: foo
+				servicePort: 80
+	- host: bar.example.com
+		http:
+			paths:
+			- path: /
+			  backend:
+				serviceName: bar
+				servicePort: 80
 ```
 
 ```
