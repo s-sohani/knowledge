@@ -387,4 +387,6 @@ spec:
 ### Using a headless service for discovering individual pods
 - the client needs to connect to all of those pods
 - the backing pods themselves need to each connect to all the other backing pods.
-- 
+
+
+
