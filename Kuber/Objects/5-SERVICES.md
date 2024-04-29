@@ -333,6 +333,23 @@ openssl req -new -x509 -key tls.key -out tls.cert -days 360 -subj /CN=kubia.exam
 # Secret from the two files like this:
 kubectl create secret tls tls-secret --cert=tls.cert --key=tls.key
 
-
+# Ingress handling TLS traffic:
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+	name: kubia
+spec:
+	tls:
+	- hosts:
+		- kubia.example.com
+		  secretName: tls-secret
+	rules:
+		- host: kubia.example.com
+			http:
+			paths:
+			- path: /
+			  backend:
+			  serviceName: kubia-nodeport
+			  servicePort: 80
 
 ```
