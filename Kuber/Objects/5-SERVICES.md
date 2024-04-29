@@ -182,7 +182,9 @@ Now you can connect to external service with
 
 ## Exposing services to external clients
 You have a few ways to make a service accessible externally:
-- NodePort:
-- 
+- **NodePort**: Each cluster node opens a port on the node itself.
+- **LoadBalancer**: An extension of the NodePort, 
+- **Ingress**: For exposing multiple services through a single IP address.
+
 ![[Screenshot from 2024-04-29 07-30-18.png]]
 
