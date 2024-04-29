@@ -255,3 +255,8 @@ spec:
 	externalTrafficPolicy: Local
 ```
 
+If a service definition includes this setting and an external connection is opened through the service’s node port, the service proxy will choose a locally running pod. If no local pods exist, the connection will hang (it won’t be forwarded to a random global pod, the way connections are when not using the annotation). You therefore need to ensure the load balancer forwards connections only to nodes that have at least one such pod.
+Using this annotation also has other drawbacks. Normally, connections are spread evenly across all the pods, but when using this annotation, that’s no longer the case. Imagine having two nodes and three pods. Let’s say node A runs one pod and node B runs the other two. If the load balancer spreads connections evenly across the two nodes, the pod on node A will receive 50% of all connections, but the two pods on node B will only receive 25% each.
+
+![[Screenshot from 2024-04-29 08-10-49.png]]
+
