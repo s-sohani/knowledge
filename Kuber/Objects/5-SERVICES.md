@@ -353,3 +353,15 @@ spec:
 			  servicePort: 80
 
 ```
+
+### Signaling when a pod is ready to accept connections
+When create a pod, if you don’t want the pod to start receiving requests immediately (when pod required to load some data or config to became ready), you can use readiness:
+
+#### TYPES OF READINESS PROBES
+An Exec probe, where a process is executed. The container’s status is deter-
+mined by the process’ exit status code.
+ An HTTP GET probe, which sends an HTTP GET request to the container and
+the HTTP status code of the response determines whether the container is
+ready or not.
+ A TCP Socket probe, which opens a TCP connection to a specified port of the
+container. If the connection is established, the container is considered ready.
