@@ -188,3 +188,19 @@ You have a few ways to make a service accessible externally:
 
 ![[Screenshot from 2024-04-29 07-30-18.png]]
 
+### Using a NodePort service
+By creating a NodePort service, reserve a port on all its nodes. Pod can accessible through any node’s IP and the reserved node port.
+```
+apiVersion: v1
+kind: Service
+metadata:
+	name: kubia-nodeport
+spec:
+	type: NodePort
+	ports:
+	- port: 80
+	  targetPort: 8080
+	  nodePort: 30123
+	selector:
+		app: kubia
+```
