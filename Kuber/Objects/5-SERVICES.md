@@ -221,3 +221,17 @@ The service is accessible at the following addresses:
 >If you only point your clients to the first node, when that node fails, your clients can’t access the service anymore.
 
 ### Exposing a service through an external load balancer
+
+```
+apiVersion: v1
+kind: Service
+metadata:
+	name: kubia-loadbalancer
+spec:
+	type: LoadBalancer
+	ports:
+	- port: 80
+	  targetPort: 8080
+	selector:
+		app: kubia
+```
