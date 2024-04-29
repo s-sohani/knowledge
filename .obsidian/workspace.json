@@ -11,16 +11,6 @@
             "id": "c418c512e2021a74",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "Kuber/Images/Screenshot from 2024-04-29 07-30-18.png"
-              }
-            }
-          },
-          {
-            "id": "f1794891ea655b1d",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
                 "file": "Kuber/Objects/5-SERVICES.md",
@@ -29,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -163,50 +152,55 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-comments:Show Comments Panel": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "a72ee06e3871643c",
+  "active": "c418c512e2021a74",
   "lastOpenFiles": [
-    "Kuber/Images/Screenshot from 2024-04-29 08-10-49.png",
-    "Kuber/Images/Screenshot from 2024-04-29 08-00-41.png",
-    "Kuber/Images/Screenshot from 2024-04-29 07-45-14.png",
-    "Kuber/Images/Screenshot from 2024-04-29 07-05-26.png",
-    "Kuber/Images/Screenshot from 2024-04-29 07-30-18.png",
+    "Kuber/Objects/4-STATEFULLSET.md",
     "Kuber/Objects/5-SERVICES.md",
-    "Kuber/Objects/4-StateFullSet.md",
-    "Kuber/Kuber CheetSheet.md",
-    "Kuber/Objects/C-I.md",
-    "Podcasts/Making Of A Manage.md",
-    "Kuber/Images/Screenshot from 2024-04-28 06-56-00.png",
-    "Kuber/Develop an Operator.md",
-    "Kuber/Images/Screenshot from 2024-04-27 08-38-35.png",
-    "Kuber/Images/Screenshot from 2024-04-27 07-21-12.png",
-    "Kuber/Images/Screenshot from 2024-04-27 07-16-35.png",
+    "Kuber/Objects/StateFullSet.md",
     "Kuber/Objects/3-VOLUMES.md",
     "Kuber/Objects/2-CONTROLLER.md",
     "Kuber/Objects/1-POD.md",
+    "Kuber/Images/Screenshot from 2024-04-29 08-10-49.png",
+    "Kuber/Images/Screenshot from 2024-04-29 08-00-41.png",
+    "Kuber/Images/Screenshot from 2024-04-29 07-45-14.png",
+    "Kuber/Images/Screenshot from 2024-04-29 07-30-18.png",
+    "Kuber/Images/Screenshot from 2024-04-29 07-05-26.png",
+    "Kuber/Images/Screenshot from 2024-04-28 06-56-00.png",
+    "Kuber/Images/Screenshot from 2024-04-27 08-38-35.png",
+    "Kuber/Images/Screenshot from 2024-04-27 07-21-12.png",
+    "Kuber/Images/Screenshot from 2024-04-27 07-16-35.png",
     "Kuber/Images/Pasted image 20240426184257.png",
-    "Kuber/Images/Pasted image 20240426182958.png",
-    "Kuber/Concerpts.md",
+    "Kuber/Objects/VOLUMES.md",
+    "Kuber/Kuber CheetSheet.md",
+    "Microservices/1- Introduction.md",
     "DataLake/Itroduction.md",
+    "Kuber/Objects/CONTROLLER.md",
     "DataLake",
+    "Kuber/Objects/SERVICES.md",
+    "Kuber/Develop an Operator.md",
+    "Kuber/Concerpts.md",
     "Podcasts/BPLUS/Everybody Lies.md",
     "Kuber/Images",
     "Podcasts/BPLUS/Neanderthals.md",
     "Microservices/4- Event Storming.md",
     "Podcasts/How Read a Book.md",
+    "Podcasts/Making Of A Manage.md",
+    "Kuber/Objects/POD.md",
+    "Kuber/Objects/C-I.md",
+    "Kuber/Objects/SERVICE.md",
     "Microservices/3- Architecture Styles.md",
     "Microservices/2- Scale Cube.md",
-    "Microservices/1- Introduction.md",
     "Podcasts/BPLUS/Outliers.md",
     "Podcasts/BPLUS",
     "Microservices/images",
@@ -214,14 +208,10 @@
     "Podcasts/Podcast List.md",
     "Podcasts",
     "Kuber/Objects",
-    "CockroachDB/Transactions.md",
     "Kuber",
-    "Untitled",
-    "Java/Java 8 to 21.md",
     "Java",
-    "Untitled 1.md",
+    "CockroachDB",
     "Untitled 1.canvas",
-    "Untitled.canvas",
-    "2024-02-05.md"
+    "Untitled.canvas"
   ]
 }
