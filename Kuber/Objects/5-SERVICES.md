@@ -235,3 +235,15 @@ spec:
 	selector:
 		app: kubia
 ```
+
+```
+kubectl get svc kubia-loadbalancer
+```
+
+Once it does that, the IP address will be listed as the external IP address of your service, In this case, the loadbalancer is available at IP 130.211.53.173, so you can now access the service at that IP address.
+
+>The browser is using keep-alive connections and sends all its requests through a single connection, whereas curl opens a new connection every time. Services work at the connection level, so when a connection to a service is first opened, a random pod is selected and then all network packets belonging to that connection are all sent to that single pod. Even if session affinity is set to None, users will always hit the same pod.
+
+
+![[Screenshot from 2024-04-29 08-00-41.png]]
+
