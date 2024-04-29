@@ -247,3 +247,11 @@ Once it does that, the IP address will be listed as the external IP address of y
 
 ![[Screenshot from 2024-04-29 08-00-41.png]]
 
+### Understanding the peculiarities of external connections
+When an external client connects to a service through the node port (this also includes cases when it goes through the load balancer first), the randomly chosen pod may or may not be running on the same node that received the connection. An additional network hop is required to reach the pod, but this may not always be desirable.
+You can prevent this additional hop by configuring the service to redirect external traffic only to pods running on the node that received the connection. This is done by setting the externalTrafficPolicy field in the service’s spec section:
+```
+spec:
+	externalTrafficPolicy: Local
+```
+
