@@ -5,7 +5,7 @@ You can configure your app by
 ## Passing command-line arguments to containers
 Kubernetes allows overriding the command as part of the pod’s container definition instead of default container command.
 
-```
+```YAML
 kind: Pod
 spec:
 	containers:
@@ -15,4 +15,35 @@ spec:
 ```
 
 ![[Pasted image 20240430200557.png]]
+
+#### Example 
+``` Dockerfile
+FROM ubuntu:latest
+RUN apt-get update ; apt-get -y install fortune
+ADD fortuneloop.sh /bin/fortuneloop.sh
+ENTRYPOINT ["/bin/fortuneloop.sh"]
+CMD ["10"]
+```
+
+```YAML
+apiVersion: v1
+kind: Pod
+metadata:
+	name: fortune2s
+spec:
+	containers:
+	- image: luksa/fortune:args
+	  args: ["2"]  # Override argument
+	  name: html-generator
+	  volumeMounts:
+		- name: html
+		  mountPath: /var/htdocs
+```
+
+
+>You don’t need to enclose string values in quotations marks (but you must enclose numbers).
+>args:
+>- foo
+>- bar
+>- "15"
 
