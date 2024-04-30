@@ -173,6 +173,8 @@ spec:
 ```
 
 ### Using a configMap volume to expose ConfigMap entries as files
-
+Passing configuration options as environment variables or command-line arguments is usually used for short variable values. A ConfigMap, as you’ve seen, can also contain whole config files.
+In this case you can use volume namely a configMap volume.
+The process running in the container can obtain the entry’s value by reading the contents of the file.
 
 
