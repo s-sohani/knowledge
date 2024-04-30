@@ -220,16 +220,16 @@ spec:
 	- image: nginx:alpine
 	  name: web-server
 	  volumeMounts:
-	  ...
+	      ...
 		- name: config
 		  mountPath: /etc/nginx/conf.d
-		readOnly: true
-	...
-	volumes:
-	...
+		  readOnly: true
+	  ...
+    volumes:
+	...  
 	- name: config
-	configMap:
-	name: fortune-config
+	  configMap:
+		  name: fortune-config
 ```
 
 
