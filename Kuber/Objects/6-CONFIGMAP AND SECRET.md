@@ -70,3 +70,8 @@ env:
   value: "$(FIRST_VAR)bar"
 ```
 
+## Decoupling configuration with a ConfigMap
+The contents of the map are instead passed to containers as either environment variables or as files in a volume.
+
+![[Pasted image 20240430202927.png]]
+
