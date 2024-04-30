@@ -155,4 +155,21 @@ You can first initialize an environment variable from the ConfigMap entry and th
 
 ![[Pasted image 20240430212819.png]]
 
+```
+apiVersion: v1
+kind: Pod
+metadata:
+	name: fortune-args-from-configmap
+spec:
+	containers:
+	- image: luksa/fortune:args
+	  env:
+		- name: INTERVAL
+		  valueFrom:
+			configMapKeyRef:
+				name: fortune-config
+				key: sleep-interval
+		args: ["$(INTERVAL)"]
+```
+
 
