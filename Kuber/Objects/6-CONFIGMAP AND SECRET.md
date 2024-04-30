@@ -94,6 +94,16 @@ kubectl create configmap my-config --from-file=config-file.conf
 
 # You can also specify a key manually for content of file
 kubectl create configmap my-config --from-file=customkey=config-file.conf
+
+# CREATING A CONFIG MAP FROM FILES IN A DIRECTORY
+kubectl create configmap my-config --from-file=/path/to/dir
+
+# COMBINING DIFFERENT OPTIONS
+kubectl create configmap my-config
+➥ --from-file=foo.json
+➥ --from-file=bar=foobar.conf
+➥ --from-file=config-opts/
+➥ --from-literal=some=thing
 ```
 
 
