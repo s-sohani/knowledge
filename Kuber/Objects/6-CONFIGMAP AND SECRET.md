@@ -115,6 +115,22 @@ kubectl create configmap my-config
 
 
 ### Passing a ConfigMap entry to a container as an environment variable
+```
+apiVersion: v1
+kind: Pod
+metadata:
+	name: fortune-env-from-configmap
+spec:
+	containers:
+	- image: luksa/fortune:env
+	env:
+	- name: INTERVAL
+	  valueFrom:
+		configMapKeyRef:
+			name: fortune-config
+			key: sleep-interval
+```
 
+![[Pasted image 20240430211556.png]]
 
 
