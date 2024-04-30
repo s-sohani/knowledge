@@ -178,5 +178,58 @@ In this case you can use volume namely a configMap volume.
 The process running in the container can obtain the entry’s value by reading the contents of the file.
 
 #### Example
-Create a new directory called configmap-files
+Create a new directory called configmap-files like this:
+![[Pasted image 20240430223952.png]]
+
+Now create a ConfigMap from all the files in the directory like this:
+```
+kubectl create configmap fortune-config --from-file=configmap-files
+```
+
+```
+kubectl get configmap fortune-config -o yaml
+
+apiVersion: v1
+data:
+	my-nginx-config.conf: |
+		server {
+			listen 80;
+			server_name  www.kubia-example.com;
+			gzip on;
+			gzip_types text/plain application/xml;
+			location / {
+				root  /usr/share/nginx/html;
+				index index.html index.htm;
+			}
+		}
+	sleep-interval: |
+	25
+kind: ConfigMap
+```
+
+Now you can use both configMaps:
+![[Pasted image 20240430224300.png]]
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+	name: fortune-configmap-volume
+spec:
+	containers:
+	- image: nginx:alpine
+	  name: web-server
+	  volumeMounts:
+	  ...
+		- name: config
+		  mountPath: /etc/nginx/conf.d
+		readOnly: true
+	...
+	volumes:
+	...
+	- name: config
+	configMap:
+	name: fortune-config
+```
+
 
