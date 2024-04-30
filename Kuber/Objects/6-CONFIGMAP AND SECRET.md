@@ -258,3 +258,17 @@ spec:
 
 ![[Pasted image 20240430225826.png]]
 
+>This method of mounting individual files has a relatively big deficiency related to updating files.
+
+#### SETTING THE FILE PERMISSIONS FOR FILES IN A CONFIG MAP VOLUME
+By default, the permissions on all files in a configMap volume are set to 644 ( -rw-r—r-- ).
+You can change this by setting the defaultMode property in the volume spec
+```yaml
+volumes:
+- name: config
+  configMap:
+	name: fortune-config
+	defaultMode: "6600"
+```
+
+### Updating an app’s config without having to restart the app
