@@ -50,3 +50,23 @@ spec:
 
 ## Setting environment variables for a container
 
+```yaml
+kind: Pod
+spec:
+	containers:
+	- image: luksa/fortune:env
+	env:
+	- name: INTERVAL
+	  value: "30"
+	  name: html-generator
+```
+
+### Referring to other environment variables in a variable’s value
+```yaml
+env:
+- name: FIRST_VAR
+  value: "foo"
+- name: SECOND_VAR
+  value: "$(FIRST_VAR)bar"
+```
+
