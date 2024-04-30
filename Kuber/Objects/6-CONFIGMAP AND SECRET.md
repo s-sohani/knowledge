@@ -80,16 +80,21 @@ The contents of the map are instead passed to containers as either environment v
 ![[Pasted image 20240430203402.png]]
 
 ### Creating a ConfigMap
-#### USING THE KUBECTL CREATE CONFIGMAP COMMAND
+
 ```
+# USING THE KUBECTL CREATE CONFIGMAP COMMAND
 kubectl create configmap fortune-config --from-literal=sleep-interval=25
 
 # Create a ConfigMap with multiple literal entries
 kubectl create configmap myconfigmap --from-literal=foo=bar --from-literal=bar=baz --from-literal=one=two
-```
 
-#### CREATING A CONFIGMAP ENTRY FROM THE CONTENTS OF A FILE
-```
+# Create YAML ConfigMap
+apiVersion: v1
+data:
+	sleep-interval: "25"
+kind: ConfigMap
+
+# CREATING A CONFIGMAP ENTRY FROM THE CONTENTS OF A FILE
 kubectl create configmap my-config --from-file=config-file.conf
 
 # You can also specify a key manually for content of file
@@ -102,10 +107,14 @@ kubectl create configmap my-config --from-file=/path/to/dir
 kubectl create configmap my-config
 ➥ --from-file=foo.json
 ➥ --from-file=bar=foobar.conf
-➥ --from-file=config-opts/
+➥ --from-file=config-opts/        # A whole directory
 ➥ --from-literal=some=thing
 ```
 
+![[Pasted image 20240430210511.png]]
+
+
+### Passing a ConfigMap entry to a container as an environment variable
 
 
 
