@@ -177,4 +177,6 @@ Passing configuration options as environment variables or command-line arguments
 In this case you can use volume namely a configMap volume.
 The process running in the container can obtain the entry’s value by reading the contents of the file.
 
+#### Example
+Create a new directory called configmap-files
 
