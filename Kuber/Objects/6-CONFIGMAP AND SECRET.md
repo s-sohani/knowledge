@@ -47,3 +47,6 @@ spec:
 >- bar
 >- "15"
 
+
+## Setting environment variables for a container
+
