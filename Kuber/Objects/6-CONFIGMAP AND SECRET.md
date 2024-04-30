@@ -75,3 +75,6 @@ The contents of the map are instead passed to containers as either environment v
 
 ![[Pasted image 20240430202927.png]]
 
+>You can keep multiple manifests for ConfigMaps with the same name, each for a different environment.
+
+![[Pasted image 20240430203402.png]]
