@@ -133,4 +133,17 @@ spec:
 
 ![[Pasted image 20240430211556.png]]
 
+>The container referencing the non-existing ConfigMap will fail to start, but the other container will start normally.
+>If you then create the missing ConfigMap, the failed container is started without requiring you to recreate the pod.
 
+### If you then create the missing ConfigMap, the failed container is started without requiring you to recreate the pod.
+
+```
+spec:
+	containers:
+	- image: some-image
+	  envFrom:
+		- prefix: CONFIG_   # All environment variables will be prefixed with                                  CONFIG_.
+		configMapRef:
+		name: my-config-map
+```
