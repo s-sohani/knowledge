@@ -147,3 +147,12 @@ spec:
 		configMapRef:
 		name: my-config-map
 ```
+
+>CONFIG_FOO-BAR isn’t a valid environment variable name because it contains a dash. Kubernetes doesn’t convert the keys in any way (it doesn’t convert dashes to underscores, for example). If a ConfigMap key isn’t in the proper format, it skips the entry
+
+### Passing a ConfigMap entry as a command-line argument
+You can first initialize an environment variable from the ConfigMap entry and then refer to the variable inside the arguments.
+
+![[Pasted image 20240430212819.png]]
+
+
