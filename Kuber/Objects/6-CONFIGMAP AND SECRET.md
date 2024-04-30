@@ -78,3 +78,14 @@ The contents of the map are instead passed to containers as either environment v
 >You can keep multiple manifests for ConfigMaps with the same name, each for a different environment.
 
 ![[Pasted image 20240430203402.png]]
+
+### Creating a ConfigMap
+#### USING THE KUBECTL CREATE CONFIGMAP COMMAND
+```
+kubectl create configmap fortune-config --from-literal=sleep-interval=25
+
+# Create a ConfigMap with multiple literal entries
+kubectl create configmap myconfigmap --from-literal=foo=bar --from-literal=bar=baz --from-literal=one=two
+```
+
+
