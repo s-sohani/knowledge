@@ -232,4 +232,15 @@ spec:
 		  name: fortune-config
 ```
 
+To define which entries should be exposed as files in a configMap volume, use the volume’s items attribute as shown in the following listing.
+```yaml
+volumes:
+- name: config
+  configMap:
+	name: fortune-config
+	items:
+	- key: my-nginx-config.conf
+	  path: gzip.conf
+```
 
+>in Linux when you mount a filesystem into a nonempty directory. The directory then only contains the files from the mounted filesystem, whereas the original files in that directory are inaccessible for as long as the filesystem is mounted.
