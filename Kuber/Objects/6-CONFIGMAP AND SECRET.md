@@ -88,4 +88,14 @@ kubectl create configmap fortune-config --from-literal=sleep-interval=25
 kubectl create configmap myconfigmap --from-literal=foo=bar --from-literal=bar=baz --from-literal=one=two
 ```
 
+#### CREATING A CONFIGMAP ENTRY FROM THE CONTENTS OF A FILE
+```
+kubectl create configmap my-config --from-file=config-file.conf
+
+# You can also specify a key manually for content of file
+kubectl create configmap my-config --from-file=customkey=config-file.conf
+```
+
+
+
 
