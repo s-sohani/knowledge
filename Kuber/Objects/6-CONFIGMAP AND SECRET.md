@@ -244,3 +244,17 @@ volumes:
 ```
 
 >in Linux when you mount a filesystem into a nonempty directory. The directory then only contains the files from the mounted filesystem, whereas the original files in that directory are inaccessible for as long as the filesystem is mounted.
+
+How to add individual files from a ConfigMap into an existing directory **without** hiding existing files stored in it?
+```yaml
+spec:
+	containers:
+	- image: some/image
+	  volumeMounts:
+		- name: myvolume
+		  mountPath: /etc/someconfig.conf
+		  subPath: myconfig.conf
+```
+
+![[Pasted image 20240430225826.png]]
+
