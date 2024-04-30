@@ -172,4 +172,7 @@ spec:
 		args: ["$(INTERVAL)"]
 ```
 
+### Using a configMap volume to expose ConfigMap entries as files
+
+
 
