@@ -309,4 +309,5 @@ data:
 	https.key: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcE...
 ```
 
-When you exec `kubectl -o yaml` all entries you specified in the stringData field will be shown under data and will be Base64-encoded like all the other entries.
+>When you exec `kubectl -o yaml` all entries you specified in the stringData field will be shown under data and will be Base64-encoded like all the other entries.
+
