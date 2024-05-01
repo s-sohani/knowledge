@@ -361,3 +361,12 @@ spec:
 
 ![[Pasted image 20240501223527.png]]
 
+### EXPOSING A SECRET ’ S ENTRIES THROUGH ENVIRONMENT VARIABLES
+```yaml
+env:
+- name: FOO_SECRET
+  valueFrom:
+	secretKeyRef:
+		name: fortune-https
+		key: foo
+```
