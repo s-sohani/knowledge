@@ -279,3 +279,5 @@ Secrets are much like ConfigMaps:
 All secrest stores in master node, `etcd database`, and deploy in node thad run a pod that need access to this secred. so it doesn't write in storage, keep in memory. 
 
 ### Introducing the default token Secret
+When using kubectl describe on a pod you can see every pod has a secret volume attached to it automatically called (for example) `default-token-cfee9`.
+If describe secret you can see ca.crt , namespace , and token which represent everything you need to securely talk to the Kubernetes API.
