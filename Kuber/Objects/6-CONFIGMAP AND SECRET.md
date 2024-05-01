@@ -275,3 +275,5 @@ volumes:
 Secrets are much like ConfigMaps:
 - Pass Secret entries to the container as environment variables
 - Expose Secret entries as files in a volume
+
+All secr
