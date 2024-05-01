@@ -283,10 +283,17 @@ When using kubectl describe on a pod you can see every pod has a secret volume a
 If describe secret you can see ca.crt , namespace , and token which represent everything you need to securely talk to the Kubernetes API.
 
 ### Creating a Secret
-
 You’re creating a generic Secret, but you could also have created a tls Secret with the kubectl create secret tls command, This would create the Secret with different entry names
 
 ```
 kubectl create secret generic fortune-https --from-file=https.key
 ➥ --from-file=https.cert --from-file=foo
 ```
+
+### Comparing ConfigMaps and Secrets
+The contents of a Secret’s entries are shown as Base64-encoded strings, whereas those of a ConfigMap are shown in clear text.
+
+The reason for using Base64 encoding is simple. A Secret’s entries can contain binary values, not only plain-text. Base64 encoding allows you to include the binary data in YAML or JSON, which are both plain-text formats.
+
+>The maximum size of a Secret is limited to 1MB.
+
