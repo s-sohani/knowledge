@@ -281,3 +281,12 @@ All secrest stores in master node, `etcd database`, and deploy in node thad run 
 ### Introducing the default token Secret
 When using kubectl describe on a pod you can see every pod has a secret volume attached to it automatically called (for example) `default-token-cfee9`.
 If describe secret you can see ca.crt , namespace , and token which represent everything you need to securely talk to the Kubernetes API.
+
+### Creating a Secret
+
+You’re creating a generic Secret, but you could also have created a tls Secret with the kubectl create secret tls command, This would create the Secret with different entry names
+
+```
+kubectl create secret generic fortune-https --from-file=https.key
+➥ --from-file=https.cert --from-file=foo
+```
