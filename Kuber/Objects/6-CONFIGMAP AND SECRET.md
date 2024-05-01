@@ -358,3 +358,6 @@ spec:
 		secret:
 			secretName: fortune-https
 ```
+
+![[Pasted image 20240501223527.png]]
+
