@@ -14,4 +14,3 @@ vim krew.sh
 `./krew.sh`
 
 `kubectl krew install oidc-login ns ctx view-secret` 
-
