@@ -297,3 +297,14 @@ The reason for using Base64 encoding is simple. A Secret’s entries can contain
 
 >The maximum size of a Secret is limited to 1MB.
 
+Because not all sensitive data is in binary form, Kubernetes also allows setting a Secret’s values through the stringData field.
+
+```yaml
+kind: Secret
+apiVersion: v1
+stringData:
+	foo: plain text
+data:
+	https.cert: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURCekNDQ...
+	https.key: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcE...
+```
