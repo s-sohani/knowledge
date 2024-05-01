@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
+                "file": "Kuber/Install.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
+                "file": "Kuber/Install.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
+                "file": "Kuber/Install.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Objects/6-CONFIGMAP AND SECRET.md"
+                "file": "Kuber/Install.md"
               }
             }
           }
@@ -165,6 +165,8 @@
   },
   "active": "c418c512e2021a74",
   "lastOpenFiles": [
+    "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
+    "Kuber/Install.md",
     "Pasted image 20240430225826.png",
     "Pasted image 20240430224300.png",
     "Kuber/Images/Pasted image 20240430223952.png",
@@ -175,9 +177,7 @@
     "Kuber/Images/Pasted image 20240430202927.png",
     "Kuber/Images/Pasted image 20240430200557.png",
     "Kuber/Objects/5-SERVICES.md",
-    "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
     "Kuber/Images/Pasted image 20240429184735.png",
-    "Kuber/Images/Pasted image 20240429184731.png",
     "Kuber/Kuber CheetSheet.md",
     "Kuber/Objects/4-STATEFULLSET.md",
     "Kuber/Objects/StateFullSet.md",
