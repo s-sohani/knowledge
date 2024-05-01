@@ -271,9 +271,11 @@ volumes:
 	defaultMode: "6600"
 ```
 
-### Updating an app’s config without having to restart the app
+## Using Secrets to pass sensitive data to containers
 Secrets are much like ConfigMaps:
 - Pass Secret entries to the container as environment variables
 - Expose Secret entries as files in a volume
 
-All secr
+All secrest stores in master node, `etcd database`, and deploy in node thad run a pod that need access to this secred. so it doesn't write in storage, keep in memory. 
+
+### Introducing the default token Secret
