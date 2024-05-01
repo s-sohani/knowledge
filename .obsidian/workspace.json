@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md"
+                "file": "Kuber/Objects/6-CONFIGMAP AND SECRET.md"
               }
             }
           }
@@ -163,12 +163,13 @@
       "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "c418c512e2021a74",
+  "active": "a72ee06e3871643c",
   "lastOpenFiles": [
+    "Kuber/Kuber CheetSheet.md",
     "Kuber/Install.md",
     "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
-    "Pasted image 20240430225826.png",
-    "Pasted image 20240430224300.png",
+    "Kuber/Images/Pasted image 20240430225826.png",
+    "Kuber/Images/Pasted image 20240430224300.png",
     "Kuber/Images/Pasted image 20240430223952.png",
     "Kuber/Images/Pasted image 20240430212819.png",
     "Kuber/Images/Pasted image 20240430211556.png",
@@ -178,7 +179,6 @@
     "Kuber/Images/Pasted image 20240430200557.png",
     "Kuber/Objects/5-SERVICES.md",
     "Kuber/Images/Pasted image 20240429184735.png",
-    "Kuber/Kuber CheetSheet.md",
     "Kuber/Objects/4-STATEFULLSET.md",
     "Kuber/Objects/StateFullSet.md",
     "Kuber/Objects/3-VOLUMES.md",
