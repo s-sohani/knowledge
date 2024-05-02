@@ -63,3 +63,5 @@ In progress :
 - Update succeeded. Deleting kubia-v1
 - Replicationcontroller "kubia-v1" rolling updated to "kubia-v2"
 
+### Drawback of this scenario
+Kubernetes modifying the labels of my pods and the label selectors of my ReplicationController s is something that I don’t expect and could cause me to go around the office yelling at my colleagues, “Who’s been messing with my controllers!?!?”

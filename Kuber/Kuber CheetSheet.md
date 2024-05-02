@@ -181,3 +181,6 @@ kubectl describe po kubia-liveness
 kubectl exec kubia-7nog1 -- curl -s http://10.111.249.153
 kubectl exec -it kubia-7nog1 -- bash
 ```
+
+
+> Using the --v 6 option increases the logging level enough to let you see the requests kubectl is sending to the API server.

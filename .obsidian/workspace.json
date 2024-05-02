@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Objects/7-DEPLOYMENT.md",
+                "file": "Kuber/Kuber CheetSheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Objects/7-DEPLOYMENT.md",
+                "file": "Kuber/Kuber CheetSheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Objects/7-DEPLOYMENT.md",
+                "file": "Kuber/Kuber CheetSheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Objects/7-DEPLOYMENT.md"
+                "file": "Kuber/Kuber CheetSheet.md"
               }
             }
           }
@@ -163,8 +163,9 @@
       "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "a72ee06e3871643c",
+  "active": "c418c512e2021a74",
   "lastOpenFiles": [
+    "Kuber/Objects/7-DEPLOYMENT.md",
     "Kuber/Images/Pasted image 20240502194945.png",
     "Kuber/Images/Pasted image 20240502194727.png",
     "Kuber/Images/Pasted image 20240502193650.png",
@@ -173,13 +174,11 @@
     "Kuber/Images/Pasted image 20240502190402.png",
     "Kuber/Images/Pasted image 20240502185509.png",
     "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
-    "Kuber/Objects/7-DEPLOYMENT.md",
     "Kuber/Images/Pasted image 20240501223527.png",
     "Kuber/Kuber CheetSheet.md",
     "Kuber/Install.md",
     "Kuber/Images/Pasted image 20240430225826.png",
     "Kuber/Images/Pasted image 20240430224300.png",
-    "Kuber/Images/Pasted image 20240430223952.png",
     "Kuber/Objects/5-SERVICES.md",
     "Kuber/Objects/4-STATEFULLSET.md",
     "Kuber/Objects/StateFullSet.md",
