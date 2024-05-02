@@ -26,4 +26,8 @@ You can change the Service’s label selector and have the Service switch over t
 ![[Pasted image 20240502191007.png]]
 
 #### PERFORMING A ROLLING UPDATE
-Instead of bringing up all the new pods and deleting the old pods at once, you can also perform a rolling update, which replaces pods step by step.
+Instead of bringing up all the new pods and deleting the old pods at once, you can also perform a rolling update, which replaces pods step by step. In this case, you’ll want the Service’s pod selector to include both the old and the new pods.
+
+![[Pasted image 20240502191724.png]]
+
+## Performing an automatic rolling update with a ReplicationController
