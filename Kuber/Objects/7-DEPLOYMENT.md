@@ -39,4 +39,10 @@ kubectl created this ReplicationController by copying the kubia-v1 controller an
 
 ![[Pasted image 20240502193650.png]]
 
-If you look closely at the controller’s label selector, It includes not only a simple app=kubia label, but also an additional deployment label
+If you look closely at the controller’s label selector, It includes not only a simple app=kubia label, but also an additional deployment label, This is necessary to avoid having both the new and the old ReplicationControllers operating on the same set of pods. 
+The rolling-update process has modified the selector of the first ReplicationController, as well, kubectl had also modified the labels of the live pods just before modifying the ReplicationController’s selector.
+
+![[Pasted image 20240502194727.png]]
+
+![[Pasted image 20240502194945.png]]
+
