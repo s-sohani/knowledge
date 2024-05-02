@@ -44,5 +44,22 @@ The rolling-update process has modified the selector of the first ReplicationCon
 
 ![[Pasted image 20240502194727.png]]
 
+In progress :
+- Scaling kubia-v2 up to 1
+- Scaling kubia-v1 down to 2
+
 ![[Pasted image 20240502194945.png]]
+
+- Scaling kubia-v2 up to 2
+- Scaling kubia-v1 down to 1
+.
+.
+.
+- Scaling kubia-v2 up to 3
+- Scaling kubia-v1 down to 0
+.
+.
+.
+- Update succeeded. Deleting kubia-v1
+- Replicationcontroller "kubia-v1" rolling updated to "kubia-v2"
 
