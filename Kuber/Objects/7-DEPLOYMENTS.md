@@ -65,3 +65,8 @@ In progress :
 
 ### Drawback of this scenario
 Kubernetes modifying the labels of my pods and the label selectors of my ReplicationController s is something that I don’t expect and could cause me to go around the office yelling at my colleagues, “Who’s been messing with my controllers!?!?”
+
+These requests are the ones scaling down your ReplicationController, which shows that the **kubectl** client is the one doing the scaling, instead of it being **performed by the Kubernetes master**.
+What if you lost network connectivity while kubectl was performing the update.
+
+## Using Deployments for updating apps declaratively
