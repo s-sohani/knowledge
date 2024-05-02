@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
+                "file": "Kuber/Objects/7-DEPLOYMENT.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
+                "file": "Kuber/Objects/7-DEPLOYMENT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
+                "file": "Kuber/Objects/7-DEPLOYMENT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Objects/6-CONFIGMAP AND SECRET.md"
+                "file": "Kuber/Objects/7-DEPLOYMENT.md"
               }
             }
           }
@@ -163,12 +163,13 @@
       "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "a72ee06e3871643c",
+  "active": "c418c512e2021a74",
   "lastOpenFiles": [
+    "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
+    "Kuber/Objects/7-DEPLOYMENT.md",
     "Kuber/Images/Pasted image 20240501223527.png",
     "Kuber/Kuber CheetSheet.md",
     "Kuber/Install.md",
-    "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
     "Kuber/Images/Pasted image 20240430225826.png",
     "Kuber/Images/Pasted image 20240430224300.png",
     "Kuber/Images/Pasted image 20240430223952.png",
@@ -179,7 +180,6 @@
     "Kuber/Images/Pasted image 20240430202927.png",
     "Kuber/Images/Pasted image 20240430200557.png",
     "Kuber/Objects/5-SERVICES.md",
-    "Kuber/Images/Pasted image 20240429184735.png",
     "Kuber/Objects/4-STATEFULLSET.md",
     "Kuber/Objects/StateFullSet.md",
     "Kuber/Objects/3-VOLUMES.md",
