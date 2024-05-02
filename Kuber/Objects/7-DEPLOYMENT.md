@@ -35,6 +35,8 @@ All you need to do is tell it which ReplicationController you’re replacing, gi
 ```
 kubectl rolling-update kubia-v1 kubia-v2 --image=luksa/kubia:v2
 ```
+kubectl created this ReplicationController by copying the kubia-v1 controller and changing the image in its pod template.
 
 ![[Pasted image 20240502193650.png]]
 
+If you look closely at the controller’s label selector, It includes not only a simple app=kubia label, but also an additional deployment label
