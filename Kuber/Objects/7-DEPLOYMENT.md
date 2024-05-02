@@ -32,3 +32,9 @@ Instead of bringing up all the new pods and deleting the old pods at once, you c
 
 ## Performing an automatic rolling update with a ReplicationController
 All you need to do is tell it which ReplicationController you’re replacing, give a name for the new ReplicationController, and specify the new image you’d like to replace the original one with.
+```
+kubectl rolling-update kubia-v1 kubia-v2 --image=luksa/kubia:v2
+```
+
+![[Pasted image 20240502193650.png]]
+
