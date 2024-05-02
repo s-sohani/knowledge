@@ -17,3 +17,11 @@ If you have a ReplicationController managing a set of v1 pods, you can easily re
 
 >You should accept the short downtime between the time the old pods are deleted and new ones are started.
 
+#### Spinning up new pods and then deleting the old ones
+>This prcess will require more hardware resources, because you’ll have double the number of pods running at the same time for a short while.
+
+##### SWITCHING FROM THE OLD TO THE NEW VERSION AT ONCE
+You can change the Service’s label selector and have the Service switch over to the new pods.
+
+![[Pasted image 20240502191007.png]]
+
