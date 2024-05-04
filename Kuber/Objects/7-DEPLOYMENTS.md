@@ -91,3 +91,16 @@ spec:
 			- image: luksa/kubia:v1
 			  name: nodejs
 ```
+
+the Deployment can have multiple pod versions running under its wing, so its name shouldn’t reference the app version So it is above that version stuff.
+```
+# Use --record for revision history
+kubectl create -f kubia-deployment-v1.yaml --record
+
+kubectl get deployment
+kubectl describe deployment
+
+kubectl rollout status deployment kubia
+
+kubectl get po
+```
