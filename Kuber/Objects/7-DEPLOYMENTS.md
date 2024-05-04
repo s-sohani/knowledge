@@ -71,3 +71,23 @@ What if you lost network connectivity while kubectl was performing the update.
 
 ## Using Deployments for updating apps declaratively
 RC and RS are low-level but Deployment is Higher-level for deploy and update application decleratively, for example When you create a Deployment, a ReplicaSet resource is created and pods are created and managed by the Deployment’s ReplicaSets.
+Using a Deployment instead of the lower-level constructs makes updating an app much easier, because you’re defining the desired state through the single Deployment resource and letting Kubernetes take care of the rest ( for example update application throgh create new RC).
+
+### Creating a Deployment
+```yaml
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+	name: kubia
+spec:
+	replicas: 3
+	template:
+		metadata:
+			name: kubia
+			labels:
+				app: kubia
+		spec:
+			containers:
+			- image: luksa/kubia:v1
+			  name: nodejs
+```
