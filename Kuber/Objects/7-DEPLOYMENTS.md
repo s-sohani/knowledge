@@ -70,3 +70,4 @@ These requests are the ones scaling down your ReplicationController, which shows
 What if you lost network connectivity while kubectl was performing the update.
 
 ## Using Deployments for updating apps declaratively
+RC and RS are low-level but Deployment is Higher-level for deploy and update application decleratively, for example When you create a Deployment, a ReplicaSet resource is created and pods are created and managed by the Deployment’s ReplicaSets.
