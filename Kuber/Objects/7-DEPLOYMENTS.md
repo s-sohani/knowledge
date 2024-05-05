@@ -100,8 +100,8 @@ kubectl create -f kubia-deployment-v1.yaml --record
 kubectl get deployment
 kubectl describe deployment
 
+# Specifically for checking a Deployment’s status
 kubectl rollout status deployment kubia
 
-kubectl get po
 ```
 
