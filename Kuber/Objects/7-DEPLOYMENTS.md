@@ -131,3 +131,18 @@ This rolls the Deployment back to the previous revision.
 kubectl rollout undo deployment kubia
 ```
 
+#### DISPLAYING A DEPLOYMENT ’ S ROLLOUT HISTORY
+When a rollout completes, the old ReplicaSet isn’t deleted, and this enables rolling back to any revision, not only the previous one. The revision history can be displayed with the kubectl rollout history command:
+```
+kubectl rollout history deployment kubia
+```
+
+![[Pasted image 20240505203958.png]]
+
+Remember the `--record` command-line option you used when creating the Deployment? Without it, the CHANGE-CAUSE column in the revision history would be empty, making it much harder to figure out what’s behind each revision.
+
+For example, if you want to roll back to the first version:
+```
+kubectl rollout undo deployment kubia --to-revision=1
+```
+
