@@ -262,3 +262,148 @@ Using this annotation also has other drawbacks. Normally, connections are spread
 
 ### Exposing services externally through an Ingress resource
 
+![[Pasted image 20240429184735.png]]
+#### Enabling the Ingress add-on in Minikube
+```
+minikube addons list
+minikube addons enable ingress
+```
+
+#### Creating an Ingress resource
+```
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+	name: kubia
+spec:
+	rules:
+	- host: kubia.example.com  # This Ingress maps this to your service.
+	  http:
+		paths:
+		- path: /
+		  backend:
+			serviceName: kubia-nodeport # All requests will be sent to port 80                                             of the kubia-nodeport service.
+			servicePort: 80
+
+---
+
+# Define different paths
+- host: kubia.example.com
+	http:
+		paths:
+			- path: /kubia
+			  backend:
+				serviceName: kubia
+				servicePort: 80
+			- path: /foo
+			  backend:
+				serviceName: bar
+				servicePort: 80
+
+---
+
+# Define different services to different hosts
+spec:
+	rules:
+	- host: foo.example.com
+		http:
+			paths:
+			- path: /
+			  backend:
+				serviceName: foo
+				servicePort: 80
+	- host: bar.example.com
+		http:
+			paths:
+			- path: /
+			  backend:
+				serviceName: bar
+				servicePort: 80
+```
+
+```
+kubectl get ingresses
+```
+
+#### Configuring Ingress to handle TLS traffic
+```
+openssl genrsa -out tls.key 2048
+openssl req -new -x509 -key tls.key -out tls.cert -days 360 -subj /CN=kubia.example.com
+
+# Secret from the two files like this:
+kubectl create secret tls tls-secret --cert=tls.cert --key=tls.key
+
+# Ingress handling TLS traffic:
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+	name: kubia
+spec:
+	tls:
+	- hosts:
+		- kubia.example.com
+		  secretName: tls-secret
+	rules:
+		- host: kubia.example.com
+			http:
+			paths:
+			- path: /
+			  backend:
+			  serviceName: kubia-nodeport
+			  servicePort: 80
+
+```
+
+### Signaling when a pod is ready to accept connections
+When create a pod, if you don’t want the pod to start receiving requests immediately (when pod required to load some data or config to became ready), you can use readiness:
+
+#### TYPES OF READINESS PROBES
+- An Exec probe, where a process is executed. The container’s status is determined by the process’ exit status code.
+- An HTTP GET probe, which sends an HTTP GET request to the container and the HTTP status code of the response determines whether the container is ready or not.
+- A TCP Socket probe, which opens a TCP connection to a specified port of the container. If the connection is established, the container is considered ready.
+
+When a container is started, Kubernetes can be configured to wait for a configurable amount of time to pass before performing the first readiness check. After that, it invokes the probe periodically and acts based on the result of the readiness probe. If a pod reports that it’s not ready, it’s removed from the service. If the pod then becomes ready again, it’s re-added.
+
+>Unlike liveness probes, if a container fails the readiness check, it won’t be killed or restarted.
+
+#### ADDING A READINESS PROBE TO THE POD TEMPLATE
+
+```
+kubectl edit rc kubia
+
+---
+
+spec:
+	containers:
+	- name: kubia
+	  image: luksa/kubia
+	  readinessProbe:
+		exec:
+			command:
+			- ls
+			- /var/ready
+```
+
+### Using a headless service for discovering individual pods
+- the client needs to connect to all of those pods
+- the backing pods themselves need to each connect to all the other backing pods.
+
+Kubernetes allows clients to discover pod IPs through DNS lookups. Usually, when you perform a DNS lookup for a service, the DNS server returns a single IP, the service’s cluster IP. But if you tell Kubernetes you don’t need a cluster IP for your service (you do this by setting the clusterIP field to None in the service specification ) , the DNS server will return the pod IPs instead of the single service IP. Instead of returning a single DNS A record, the DNS server will return multiple A records for the service, each pointing to the IP of an individual pod backing the service at that moment. Clients can therefore do a simple DNS A record lookup and get the IPs of all the pods that are part of the service. The client can then use that information to connect to one, many, or all of them.
+
+So with headless service, because DNS returns the pods’ IPs, clients connect directly to the pods, instead of through the service proxy.
+
+```
+apiVersion: v1
+kind: Service
+metadata:
+	name: kubia-headless
+spec:
+	clusterIP: None
+	ports:
+	- port: 80
+	  targetPort: 8080
+	selector:
+	  app: kubia
+```
+
+
