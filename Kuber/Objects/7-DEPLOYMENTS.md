@@ -184,3 +184,7 @@ kubectl rollout resume deployment kubia
 
 A **canary** release is a technique for minimizing the risk of rolling out a bad version of an application and it affecting all your users. Instead of rolling out the new version to everyone, you replace only one or a small number of old pods with new ones. This way only a small number of users will initially hit the new version.
 
+>If a Deployment is paused, the undo command won’t undo it until you resume the Deployment.
+
+### Blocking rollouts of bad versions
+
