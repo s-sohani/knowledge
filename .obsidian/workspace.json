@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Podcasts/Making Of A Manager.md",
+                "file": "Kuber/Objects/7-DEPLOYMENTS.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Podcasts/Making Of A Manager.md",
+                "file": "Kuber/Objects/7-DEPLOYMENTS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Podcasts/Making Of A Manager.md",
+                "file": "Kuber/Objects/7-DEPLOYMENTS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Podcasts/Making Of A Manager.md"
+                "file": "Kuber/Objects/7-DEPLOYMENTS.md"
               }
             }
           }
@@ -165,15 +165,11 @@
   },
   "active": "c418c512e2021a74",
   "lastOpenFiles": [
-    "Kuber/Objects/7-DEPLOYMENTS.md",
     "Screenshot from 2024-05-05 07-16-38.png",
     "Screenshot from 2024-05-05 07-16-08.png",
-    "Kuber/Objects/C-I.md",
-    "Kuber/Objects/3-VOLUMES.md",
-    "Kuber/Objects/4-STATEFULLSET.md",
-    "Kuber/Objects/5-SERVICES.md",
-    "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
+    "Podcasts/Making Of A Manager.md",
     "Kuber/Kuber CheetSheet.md",
+    "Kuber/Objects/7-DEPLOYMENTS.md",
     "Kuber/Images/Pasted image 20240502194945.png",
     "Kuber/Images/Pasted image 20240502194727.png",
     "Kuber/Images/Pasted image 20240502193650.png",
@@ -181,9 +177,14 @@
     "Kuber/Images/Pasted image 20240502191007.png",
     "Kuber/Images/Pasted image 20240502190402.png",
     "Kuber/Images/Pasted image 20240502185509.png",
+    "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
     "Kuber/Images/Pasted image 20240501223527.png",
     "Kuber/Install.md",
+    "Kuber/Images/Pasted image 20240430225826.png",
+    "Kuber/Objects/5-SERVICES.md",
+    "Kuber/Objects/4-STATEFULLSET.md",
     "Kuber/Objects/StateFullSet.md",
+    "Kuber/Objects/3-VOLUMES.md",
     "Kuber/Objects/2-CONTROLLER.md",
     "Kuber/Objects/1-POD.md",
     "Kuber/Objects/VOLUMES.md",
@@ -199,9 +200,9 @@
     "Podcasts/BPLUS/Neanderthals.md",
     "Microservices/4- Event Storming.md",
     "Podcasts/How Read a Book.md",
-    "Podcasts/Making Of A Manager.md",
+    "Podcasts/Making Of A Manage.md",
     "Kuber/Objects/POD.md",
-    "Kuber/Objects/SERVICE.md",
+    "Kuber/Objects/C-I.md",
     "Podcasts/BPLUS",
     "Microservices/images",
     "Microservices",
