@@ -126,6 +126,7 @@ Now compare this to how you’re about to update a Deployment. The only thing yo
 ![[Pasted image 20240505200117.png]]
 
 ### Rolling back a deployment
+This rolls the Deployment back to the previous revision.
 ```
 kubectl rollout undo deployment kubia
 ```
