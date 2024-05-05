@@ -123,3 +123,5 @@ Now compare this to how you’re about to update a Deployment. The only thing yo
 - RollingUpdate (default): removes old pods one by one, while adding new ones at the same time
 - Recreate: deletes all the old pods at once and then creates new ones. Use this strategy when your application doesn’t support running multiple versions in parallel and requires the old version to be stopped completely before the new one is started.
 
+![[Pasted image 20240505200117.png]]
+
