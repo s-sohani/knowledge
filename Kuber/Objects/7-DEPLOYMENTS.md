@@ -104,3 +104,4 @@ kubectl rollout status deployment kubia
 
 kubectl get po
 ```
+
