@@ -120,5 +120,5 @@ As you’ll see later, a Deployment creates multiple ReplicaSets—one for each 
 Now compare this to how you’re about to update a Deployment. The only thing you need to do is modify the pod template defined in the Deployment resource and Kubernetes will take all the steps necessary to get the actual system state to what’s defined in the resource.
 
 #### UNDERSTANDING THE AVAILABLE DEPLOYMENT STRATEGIES
-- RollingUpdate
-- Recreate
+- RollingUpdate (default): removes old pods one by one, while adding new ones at the same time
+- Recreate: deletes all the old pods at once and then creates new ones. Use this strategy when your application doesn’t support running multiple versions in parallel and requires the old version to be stopped completely before the new one is started.
