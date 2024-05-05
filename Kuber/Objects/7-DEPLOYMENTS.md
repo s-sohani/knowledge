@@ -190,3 +190,32 @@ A **canary** release is a technique for minimizing the risk of rolling out a bad
 To automate previose section (rollout puase):
 The **minReadySeconds** property specifies how long a newly created pod should be ready before the pod is treated as available. Until the pod is available, the rollout process will not continue. 
 You used this property to slow down your rollout process by having Kubernetes wait 10 seconds after a pod was ready before continuing with the rollout.
+
+```yaml
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+	name: kubia
+spec:
+	replicas: 3
+	minReadySeconds: 10
+	strategy:
+		rollingUpdate:
+			maxSurge: 1
+			maxUnavailable: 0
+		type: RollingUpdate
+	template:
+	    metadata:
+		    name: kubia
+		    labels:
+			    app: kubia
+	    spec:
+		    containers:
+		    - image: luksa/kubia:v3
+		      name: nodejs
+		      readinessProbe:
+			    periodSeconds: 1
+			    httpGet:
+				    path: /
+				    port: 8080
+```
