@@ -151,3 +151,5 @@ Each ReplicaSet stores the complete information of the Deployment at that specif
 ![[Pasted image 20240505204301.png]]
 
 The length of the revision history is limited by the revisionHistoryLimit property on the Deployment resource. It defaults to two, Older ReplicaSets are deleted automatically.
+
+### Controlling the rate of the rollout
