@@ -154,8 +154,6 @@ The length of the revision history is limited by the revisionHistoryLimit proper
 
 ### Controlling the rate of the rollout
 
-#### INTRODUCING THE MAX SURGE AND MAX UNAVAILABLE PROPERTIES OF THE ROLLING UPDATE STRATEGY
-
 **maxSurge** allowed the number of all pods to reach.
 **maxUnavailable** disallowed having any unavailable pods.
 
@@ -173,3 +171,11 @@ spec:
 Another example
 ![[Pasted image 20240505213354.png]]
 
+### Pausing the rollout process
+A Deployment can also be paused during\ the rollout process. This allows you to verify that everything is fine with the new version before proceeding with the rest of the rollout.
+
+I’ve prepared the v4 image, so go ahead and trigger the rollout by changing the image to luksa/kubia:v4 , but then immediately (within a few seconds) pause the rollout:
+```
+kubectl set image deployment kubia nodejs=luksa/kubia:v4
+kubectl rollout pause deployment kubia
+```
