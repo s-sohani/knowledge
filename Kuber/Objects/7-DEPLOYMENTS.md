@@ -191,6 +191,7 @@ To automate previose section (rollout puase):
 The **minReadySeconds** property specifies how long a newly created pod should be ready before the pod is treated as available. Until the pod is available, the rollout process will not continue. 
 You used this property to slow down your rollout process by having Kubernetes wait 10 seconds after a pod was ready before continuing with the rollout.
 
+The Result YAML file:
 ```yaml
 apiVersion: apps/v1beta1
 kind: Deployment
