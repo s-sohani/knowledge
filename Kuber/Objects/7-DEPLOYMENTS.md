@@ -114,3 +114,5 @@ The ReplicaSet’s name also contains the hash value of its pod template.
 
 ![[Screenshot from 2024-05-05 07-16-38.png]]
 
+As you’ll see
+later, a Deployment creates multiple ReplicaSets—one for each version of the pod
