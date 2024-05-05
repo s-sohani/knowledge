@@ -178,4 +178,9 @@ I’ve prepared the v4 image, so go ahead and trigger the rollout by changing th
 ```
 kubectl set image deployment kubia nodejs=luksa/kubia:v4
 kubectl rollout pause deployment kubia
+
+kubectl rollout resume deployment kubia
 ```
+
+A **canary** release is a technique for minimizing the risk of rolling out a bad version of an application and it affecting all your users. Instead of rolling out the new version to everyone, you replace only one or a small number of old pods with new ones. This way only a small number of users will initially hit the new version.
+
