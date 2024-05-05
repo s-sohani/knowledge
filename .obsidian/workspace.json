@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Podcasts/Making Of A Manage.md",
+                "file": "Podcasts/Making Of A Manager.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Podcasts/Making Of A Manage.md",
+                "file": "Podcasts/Making Of A Manager.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Podcasts/Making Of A Manage.md",
+                "file": "Podcasts/Making Of A Manager.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Podcasts/Making Of A Manage.md"
+                "file": "Podcasts/Making Of A Manager.md"
               }
             }
           }
@@ -199,7 +199,7 @@
     "Podcasts/BPLUS/Neanderthals.md",
     "Microservices/4- Event Storming.md",
     "Podcasts/How Read a Book.md",
-    "Podcasts/Making Of A Manage.md",
+    "Podcasts/Making Of A Manager.md",
     "Kuber/Objects/POD.md",
     "Kuber/Objects/SERVICE.md",
     "Podcasts/BPLUS",
