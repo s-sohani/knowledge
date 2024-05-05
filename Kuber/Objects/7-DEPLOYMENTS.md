@@ -153,3 +153,23 @@ Each ReplicaSet stores the complete information of the Deployment at that specif
 The length of the revision history is limited by the revisionHistoryLimit property on the Deployment resource. It defaults to two, Older ReplicaSets are deleted automatically.
 
 ### Controlling the rate of the rollout
+
+#### INTRODUCING THE MAX SURGE AND MAX UNAVAILABLE PROPERTIES OF THE ROLLING UPDATE STRATEGY
+
+**maxSurge** allowed the number of all pods to reach.
+**maxUnavailable** disallowed having any unavailable pods.
+
+```yaml
+spec:
+	strategy:
+		rollingUpdate:
+			maxSurge: 1
+			maxUnavailable: 0
+		type: RollingUpdate
+```
+
+![[Pasted image 20240505213338.png]]
+
+Another example
+![[Pasted image 20240505213354.png]]
+
