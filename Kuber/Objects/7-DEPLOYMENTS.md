@@ -105,3 +105,12 @@ kubectl rollout status deployment kubia
 
 ```
 
+#### Recognize Deployment through POD name
+their names were composed of the name of the controller plus a randomly generated string (for example, kubia-v1-m33mv). The three pods created by the Deployment include an additional numeric value in the middle of their names. The number corresponds to the hashed value of the pod template in the Deployment.
+
+![[Screenshot from 2024-05-05 07-16-08.png]]
+
+The ReplicaSet’s name also contains the hash value of its pod template.
+
+![[Screenshot from 2024-05-05 07-16-38.png]]
+
