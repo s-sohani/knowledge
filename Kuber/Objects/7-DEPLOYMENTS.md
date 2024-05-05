@@ -187,4 +187,6 @@ A **canary** release is a technique for minimizing the risk of rolling out a bad
 >If a Deployment is paused, the undo command won’t undo it until you resume the Deployment.
 
 ### Blocking rollouts of bad versions
-
+To automate previose section (rollout puase):
+The **minReadySeconds** property specifies how long a newly created pod should be ready before the pod is treated as available. Until the pod is available, the rollout process will not continue. 
+You used this property to slow down your rollout process by having Kubernetes wait 10 seconds after a pod was ready before continuing with the rollout.
