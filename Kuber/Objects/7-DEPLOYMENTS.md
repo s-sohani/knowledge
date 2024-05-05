@@ -146,3 +146,7 @@ For example, if you want to roll back to the first version:
 kubectl rollout undo deployment kubia --to-revision=1
 ```
 
+Each ReplicaSet stores the complete information of the Deployment at that specific revision, so you shouldn’t delete it manually. If you do, you’ll lose that specific revision from the Deployment’s history, preventing you from rolling back to it.
+
+![[Pasted image 20240505204301.png]]
+
