@@ -125,3 +125,8 @@ Now compare this to how you’re about to update a Deployment. The only thing yo
 
 ![[Pasted image 20240505200117.png]]
 
+### Rolling back a deployment
+```
+kubectl rollout undo deployment kubia
+```
+
