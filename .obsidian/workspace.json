@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Objects/7-DEPLOYMENTS.md",
+                "file": "Kuber/Kuber CheetSheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Objects/7-DEPLOYMENTS.md",
+                "file": "Kuber/Kuber CheetSheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Objects/7-DEPLOYMENTS.md",
+                "file": "Kuber/Kuber CheetSheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Objects/7-DEPLOYMENTS.md"
+                "file": "Kuber/Kuber CheetSheet.md"
               }
             }
           }
@@ -165,6 +165,7 @@
   },
   "active": "c418c512e2021a74",
   "lastOpenFiles": [
+    "Kuber/Objects/7-DEPLOYMENTS.md",
     "Podcasts/Making Of A Manager.md",
     "Kuber/Images/Screenshot from 2024-05-05 07-16-38.png",
     "Kuber/Images/Screenshot from 2024-05-05 07-16-08.png",
@@ -173,7 +174,6 @@
     "Kuber/Images/Pasted image 20240505204301.png",
     "Kuber/Images/Pasted image 20240505203958.png",
     "Kuber/Images/Pasted image 20240505200117.png",
-    "Kuber/Objects/7-DEPLOYMENTS.md",
     "Screenshot from 2024-05-05 07-16-38.png",
     "Screenshot from 2024-05-05 07-16-08.png",
     "Kuber/Objects/C-I.md",
