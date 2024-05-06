@@ -81,6 +81,7 @@ A hostPath volume points to a specific file or directory on the node’s filesys
 None of PODs uses the hostPath volume for storing their own data. They all use it to get access to the node’s data.
 ![[Screenshot from 2024-04-23 09-02-49.png]]
 
+>The volume’s contents are stored on a specific node’s filesystem, when the database pod gets rescheduled to another node, it will no longer see the data.
 ## Using persistent storage
 When an application running in a pod needs to persist data to disk and have that same data available even when the pod is rescheduled to another node, you can’t use any of the volume types we’ve mentioned so far. Because this data needs to be accessible from any cluster node, it must be stored on some type of network-attached storage (NAS).
 
