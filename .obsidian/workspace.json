@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Kuber/Objects/2-CONTROLLER.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Kuber/Objects/2-CONTROLLER.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md",
+                "file": "Kuber/Objects/2-CONTROLLER.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Kuber CheetSheet.md"
+                "file": "Kuber/Objects/2-CONTROLLER.md"
               }
             }
           }
@@ -165,8 +165,10 @@
   },
   "active": "c418c512e2021a74",
   "lastOpenFiles": [
-    "Kuber/Objects/2-CONTROLLER.md",
+    "Kuber/Objects/1-POD.md",
+    "Kuber/Concepts.md",
     "Kuber/Kuber CheetSheet.md",
+    "Kuber/Objects/2-CONTROLLER.md",
     "Kuber/Objects/7-DEPLOYMENTS.md",
     "Podcasts/Making Of A Manager.md",
     "Kuber/Images/Screenshot from 2024-05-05 07-16-38.png",
@@ -186,7 +188,6 @@
     "Kuber/Images/Pasted image 20240502194945.png",
     "Kuber/Install.md",
     "Kuber/Objects/StateFullSet.md",
-    "Kuber/Objects/1-POD.md",
     "Kuber/Objects/VOLUMES.md",
     "Microservices/1- Introduction.md",
     "DataLake/Itroduction.md",
@@ -194,7 +195,6 @@
     "DataLake",
     "Kuber/Objects/SERVICES.md",
     "Kuber/Develop an Operator.md",
-    "Kuber/Concerpts.md",
     "Podcasts/BPLUS/Everybody Lies.md",
     "Kuber/Images",
     "Podcasts/BPLUS/Neanderthals.md",
