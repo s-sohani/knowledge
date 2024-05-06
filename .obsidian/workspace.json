@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Objects/2-CONTROLLER.md",
+                "file": "Kuber/Objects/3-VOLUMES.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Objects/2-CONTROLLER.md",
+                "file": "Kuber/Objects/3-VOLUMES.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Objects/2-CONTROLLER.md",
+                "file": "Kuber/Objects/3-VOLUMES.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Objects/2-CONTROLLER.md"
+                "file": "Kuber/Objects/3-VOLUMES.md"
               }
             }
           }
@@ -165,10 +165,12 @@
   },
   "active": "c418c512e2021a74",
   "lastOpenFiles": [
+    "Kuber/Objects/4-STATEFULLSET.md",
+    "Kuber/Objects/3-VOLUMES.md",
+    "Kuber/Objects/2-CONTROLLER.md",
     "Kuber/Objects/1-POD.md",
     "Kuber/Concepts.md",
     "Kuber/Kuber CheetSheet.md",
-    "Kuber/Objects/2-CONTROLLER.md",
     "Kuber/Objects/7-DEPLOYMENTS.md",
     "Podcasts/Making Of A Manager.md",
     "Kuber/Images/Screenshot from 2024-05-05 07-16-38.png",
@@ -181,8 +183,6 @@
     "Screenshot from 2024-05-05 07-16-38.png",
     "Screenshot from 2024-05-05 07-16-08.png",
     "Kuber/Objects/C-I.md",
-    "Kuber/Objects/3-VOLUMES.md",
-    "Kuber/Objects/4-STATEFULLSET.md",
     "Kuber/Objects/5-SERVICES.md",
     "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
     "Kuber/Images/Pasted image 20240502194945.png",
