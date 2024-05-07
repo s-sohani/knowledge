@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Develop an Operator.md",
+                "file": "Kuber/Objects/4-STATEFULLSET.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Develop an Operator.md",
+                "file": "Kuber/Objects/4-STATEFULLSET.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Develop an Operator.md",
+                "file": "Kuber/Objects/4-STATEFULLSET.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Develop an Operator.md"
+                "file": "Kuber/Objects/4-STATEFULLSET.md"
               }
             }
           }
@@ -165,6 +165,9 @@
   },
   "active": "7f72d6f33403fac1",
   "lastOpenFiles": [
+    "Kuber/Kuber CheetSheet.md",
+    "Kuber/Install.md",
+    "Kuber/Develop an Operator.md",
     "Kuber/Objects/1-POD.md",
     "Kuber/Concepts.md",
     "Kuber/Objects/4-STATEFULLSET.md",
@@ -175,7 +178,6 @@
     "Airflow/Images/Pasted image 20240507065906.png",
     "Airflow",
     "Kuber/Objects/C-I.md",
-    "Kuber/Kuber CheetSheet.md",
     "Kuber/Objects/7-DEPLOYMENTS.md",
     "Podcasts/Making Of A Manager.md",
     "Kuber/Images/Screenshot from 2024-05-05 07-16-38.png",
@@ -189,7 +191,6 @@
     "Screenshot from 2024-05-05 07-16-08.png",
     "Kuber/Objects/5-SERVICES.md",
     "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
-    "Kuber/Install.md",
     "Kuber/Objects/StateFullSet.md",
     "Kuber/Objects/VOLUMES.md",
     "Microservices/1- Introduction.md",
@@ -197,7 +198,6 @@
     "Kuber/Objects/CONTROLLER.md",
     "DataLake",
     "Kuber/Objects/SERVICES.md",
-    "Kuber/Develop an Operator.md",
     "Podcasts/BPLUS/Everybody Lies.md",
     "Kuber/Images",
     "Podcasts/BPLUS/Neanderthals.md",

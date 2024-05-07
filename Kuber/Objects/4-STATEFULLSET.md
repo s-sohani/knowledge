@@ -13,8 +13,9 @@ If the pod template includes a volume, which refers to a specific PersistentVolu
 >you can’t make each replica use its own separate PersistentVolumeClaim. You can’t use a ReplicaSet to run a distributed data store, where each instance needs its own separate storage.
 
 ### Running multiple replicas with separate storage for each
-#### USING ONE R EPLICA S ET PER POD INSTANCE
+#### USING ONE REPLICA SET PER POD INSTANCE
 You could create multiple ReplicaSets.
+
 ![[Pasted image 20240426153627.png]]
 
 >BUT if you’d scale the pods in that case. You couldn’t change the desired replica count—you’d have to create additional ReplicaSets instead.
