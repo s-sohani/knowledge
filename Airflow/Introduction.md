@@ -161,8 +161,11 @@ with DAG("my_dag", start_date=datetime(2021, 1, 1),
 - XCOM_PULL OR XCOM_PUSH
 - Task Decorator
 
-### expand
-training_model.expand
+### Expand
+Like `training_model.expand`, Each input run in single task, For example if we have three inputs, then create three task and put each value in one task. 
+
+### task.branch
+Next task selected base on returned value. 
 
 
 ```python
@@ -198,3 +201,5 @@ with DAG("new_dag", start_date=datetime(2021, 1, 1),
 
         choose_best_model(training_model.expand(accuracy=[3, 9, 2])) >> [accurate, inaccurate]
 ```
+
+
