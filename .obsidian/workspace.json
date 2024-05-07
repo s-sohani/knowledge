@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "920019dafc83fa9c",
+        "id": "27fcf599e5440d01",
         "type": "tabs",
         "children": [
           {
-            "id": "c418c512e2021a74",
+            "id": "7f72d6f33403fac1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Airflow/Introduction.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Airflow/Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Airflow/Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Airflow/Introduction.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -163,12 +155,12 @@
       "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "c418c512e2021a74",
+  "active": "7f72d6f33403fac1",
   "lastOpenFiles": [
+    "Airflow/Introduction.md",
     "Airflow/Images",
     "Airflow/Images/Pasted image 20240507065906.png",
     "Kuber/Objects/4-STATEFULLSET.md",
-    "Airflow/Introduction.md",
     "Airflow",
     "Kuber/Objects/3-VOLUMES.md",
     "Kuber/Objects/C-I.md",
@@ -210,7 +202,6 @@
     "Podcasts",
     "Kuber/Objects",
     "Kuber",
-    "Java",
     "Untitled 1.canvas",
     "Untitled.canvas"
   ]
