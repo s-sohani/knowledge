@@ -70,3 +70,11 @@ If you set `start_date` on one year ago and interval on `daily`, Airflow will cr
 with DAG("my_dag", start_date=datetime(2021, 1, 1),
     schedule_interval="@daily", catchup=False) as dag:
 ```
+
+### xcom
+Share data between tasks. Each task can push data to database and another task can pull that data. 
+```python 
+def _choose_best_model(ti): accuracies = ti.xcom_pull(task_ids=[ 'training_model_A', 'training_model_B', 'training_model_C' ]) best_accuracy = max(accuracies) if (best_accuracy > 8): return 'accurate' return 'inaccurate'
+```
+
+### 
