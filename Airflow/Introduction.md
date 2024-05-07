@@ -113,7 +113,7 @@ def _training_model():
     return randint(1, 10)
 
 with DAG("my_dag", start_date=datetime(2021, 1, 1),
-    schedule_interval="@daily", catchup=False) as dag:
+    schedule="@daily", tags=["Data engineering team", "Mark"], catchup=False) as dag:
 
         training_model_A = PythonOperator(
             task_id="training_model_A",
@@ -150,3 +150,6 @@ with DAG("my_dag", start_date=datetime(2021, 1, 1),
 
 
 ### Dynamic task mapping & Discover Task API
+### Share data between tasks
+- XCOM_PULL OR XCOM_PUSH
+- Task Decorator
