@@ -163,8 +163,10 @@
       "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "c418c512e2021a74",
+  "active": "a72ee06e3871643c",
   "lastOpenFiles": [
+    "Airflow/Images",
+    "Airflow/Images/Pasted image 20240507065906.png",
     "Kuber/Objects/4-STATEFULLSET.md",
     "Airflow/Intro.md",
     "Airflow",
@@ -187,7 +189,6 @@
     "Screenshot from 2024-05-05 07-16-08.png",
     "Kuber/Objects/5-SERVICES.md",
     "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
-    "Kuber/Images/Pasted image 20240502194945.png",
     "Kuber/Install.md",
     "Kuber/Objects/StateFullSet.md",
     "Kuber/Objects/VOLUMES.md",
@@ -203,7 +204,6 @@
     "Microservices/4- Event Storming.md",
     "Podcasts/How Read a Book.md",
     "Kuber/Objects/POD.md",
-    "Kuber/Objects/SERVICE.md",
     "Podcasts/BPLUS",
     "Microservices/images",
     "Microservices",

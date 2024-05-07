@@ -47,4 +47,10 @@ airflow scheduler
 ```
 
 ## Init DAG Scheduling
-- start_date: 
+- start_date: Timestamp that scheduler tempt to backfill
+- schedule_interval: How often a DAG runs.
+- end_date: Timestamp from which DAG ends. 
+
+![[Pasted image 20240507065906.png]]
+
+
