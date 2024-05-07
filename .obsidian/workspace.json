@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Objects/4-STATEFULLSET.md",
+                "file": "Kuber/Objects/5-SERVICES.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Objects/4-STATEFULLSET.md",
+                "file": "Kuber/Objects/5-SERVICES.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Objects/4-STATEFULLSET.md",
+                "file": "Kuber/Objects/5-SERVICES.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Objects/4-STATEFULLSET.md"
+                "file": "Kuber/Objects/5-SERVICES.md"
               }
             }
           }
@@ -165,10 +165,11 @@
   },
   "active": "7f72d6f33403fac1",
   "lastOpenFiles": [
-    "Kuber/Objects/3-VOLUMES.md",
-    "Kuber/Objects/C-I.md",
+    "Kuber/Objects/7-DEPLOYMENTS.md",
     "Kuber/Objects/5-SERVICES.md",
     "Kuber/Objects/4-STATEFULLSET.md",
+    "Kuber/Objects/3-VOLUMES.md",
+    "Kuber/Objects/C-I.md",
     "Kuber/Kuber CheetSheet.md",
     "Kuber/Install.md",
     "Kuber/Develop an Operator.md",
@@ -179,7 +180,6 @@
     "Airflow/Images",
     "Airflow/Images/Pasted image 20240507065906.png",
     "Airflow",
-    "Kuber/Objects/7-DEPLOYMENTS.md",
     "Podcasts/Making Of A Manager.md",
     "Kuber/Images/Screenshot from 2024-05-05 07-16-38.png",
     "Kuber/Images/Screenshot from 2024-05-05 07-16-08.png",
