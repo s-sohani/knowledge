@@ -53,9 +53,17 @@ airflow scheduler
 
 ![[Pasted image 20240507065906.png]]
 
-
-## DAG
+## Concepts
+### DAG
 DAG is Direct Acyclic Graph, that is data pipeline with no cycles, and edges are dependency between nodes, and nodes are tasks.
 
-## Operators
+### Operators
 Operators are only tasks in your dag. Airflow has ton of Operators. 
+
+### Catchup
+If you set `start_date` on one year ago and interval on `daily`, Airflow will create all tasks from one year ago to now, if you set `catchup = False`, Airflow doesn't create tasks earlier.
+
+```python 
+with DAG("my_dag", start_date=datetime(2021, 1, 1),
+    schedule_interval="@daily", catchup=False) as dag:
+```

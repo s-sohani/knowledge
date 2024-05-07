@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Airflow/Intro.md",
+                "file": "Airflow/Introduction.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Airflow/Intro.md",
+                "file": "Airflow/Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Airflow/Intro.md",
+                "file": "Airflow/Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Airflow/Intro.md"
+                "file": "Airflow/Introduction.md"
               }
             }
           }
@@ -163,12 +163,12 @@
       "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "a72ee06e3871643c",
+  "active": "c418c512e2021a74",
   "lastOpenFiles": [
     "Airflow/Images",
     "Airflow/Images/Pasted image 20240507065906.png",
     "Kuber/Objects/4-STATEFULLSET.md",
-    "Airflow/Intro.md",
+    "Airflow/Introduction.md",
     "Airflow",
     "Kuber/Objects/3-VOLUMES.md",
     "Kuber/Objects/C-I.md",
