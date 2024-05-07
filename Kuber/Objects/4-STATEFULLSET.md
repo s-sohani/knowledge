@@ -52,11 +52,10 @@ Each pod created by a StatefulSet is assigned an ordinal index (zero-based), whi
 
 #### INTRODUCING THE GOVERNING SERVICE
 Stateful pods sometimes need to be addressable by their hostname.
-For example, if the governing Service belongs to the default namespace and is called foo, and one of the pods is called A-0 , you can reach the pod through its fully qualified domain name, which is a-0.foo.default.svc.cluster.local . You can’t do that with pods managed by a
-ReplicaSet.
+For example, if the governing Service belongs to the default namespace and is called foo, and one of the pods is called A-0 , you can reach the pod through its fully qualified domain name, which is a-0.foo.default.svc.cluster.local . You can’t do that with pods managed by a ReplicaSet.
 Additionally, you can also use DNS to look up all the StatefulSet’s pods’ names by looking up SRV records for the foo.default.svc.cluster.local domain.
 
-#### REPLACING LOST PETS
+#### REPLACING LOST 
 When a pod instance managed by a StatefulSet disappears, the replacement pod gets the same name and hostname as the pod that has disappeared.
 
 ![[Pasted image 20240426181507.png]]
