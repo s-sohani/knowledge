@@ -58,4 +58,4 @@ airflow scheduler
 DAG is Direct Acyclic Graph, that is data pipeline with no cycles, and edges are dependency between nodes, and nodes are tasks.
 
 ## Operators
-Operators are only tasks in your dag, 
+Operators are only tasks in your dag. Airflow has ton of Operators. 
