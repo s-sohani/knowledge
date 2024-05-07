@@ -11,8 +11,12 @@
             "id": "7f72d6f33403fac1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Kuber/Objects/3-VOLUMES.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Kuber/Objects/3-VOLUMES.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Kuber/Objects/3-VOLUMES.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Kuber/Objects/3-VOLUMES.md"
+              }
             }
           }
         ],
@@ -157,6 +165,7 @@
   },
   "active": "7f72d6f33403fac1",
   "lastOpenFiles": [
+    "Kuber/Objects/2-CONTROLLER.md",
     "Airflow/Introduction.md",
     "Airflow/Images",
     "Airflow/Images/Pasted image 20240507065906.png",
@@ -164,7 +173,6 @@
     "Airflow",
     "Kuber/Objects/3-VOLUMES.md",
     "Kuber/Objects/C-I.md",
-    "Kuber/Objects/2-CONTROLLER.md",
     "Kuber/Objects/1-POD.md",
     "Kuber/Concepts.md",
     "Kuber/Kuber CheetSheet.md",
