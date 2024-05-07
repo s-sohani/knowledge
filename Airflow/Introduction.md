@@ -81,6 +81,13 @@ Share data between tasks. Each task can push data to database and another task c
 def _choose_best_model(ti): accuracies = ti.xcom_pull(task_ids=[ 'training_model_A', 'training_model_B', 'training_model_C' ]) best_accuracy = max(accuracies) if (best_accuracy > 8): return 'accurate' return 'inaccurate'
 ```
 
+### Branch Operator
+Choose Next Task base on returning value. 
+```python
+    if (best_accuracy > 8):
+        return 'accurate'
+    return 'inaccurate'
+```
 ### Define dependencies in Airflow 
 We can Define dependencies with Big Shift Operator. 
 Use [ ]  to define tasks in same level.
@@ -149,7 +156,45 @@ with DAG("my_dag", start_date=datetime(2021, 1, 1),
 ```
 
 
-### Dynamic task mapping & Discover Task API
+## Task API
 ### Share data between tasks
 - XCOM_PULL OR XCOM_PUSH
 - Task Decorator
+
+### expand
+training_model.expand
+
+
+```python
+from airflow import DAG
+from airflow.decorators import task
+from airflow.operators.bash import BashOperator
+
+from datetime import datetime
+
+with DAG("new_dag", start_date=datetime(2021, 1, 1), 
+    schedule="@daily", catchup=False):
+
+        @task
+        def training_model(accuracy):
+            return accuracy
+
+        @task.branch
+        def choose_best_model(accuracies):
+            best_accuracy = max(accuracies)
+            if best_accuracy > 8:
+                return 'accurate'
+            return 'inaccurate'
+
+        accurate = BashOperator(
+            task_id="accurate",
+            bash_command="echo 'accurate'"
+        )
+
+        inaccurate = BashOperator(
+            task_id="inaccurate",
+            bash_command="echo 'inaccurate'"
+        )
+
+        choose_best_model(training_model.expand(accuracy=[3, 9, 2])) >> [accurate, inaccurate]
+```
