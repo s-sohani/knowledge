@@ -166,7 +166,7 @@ spec:
 			storage: 1Gi
 	accessModes:
 	- ReadWriteOnce # support single client performing both reads and writes.
-	  storageClassName: "" # learn in the section about dynamic provisioning.
+	storageClassName: "" # learn in the section about dynamic provisioning.
 ```
 
 As soon as you create the claim, Kubernetes finds the appropriate PersistentVolume and binds it to the claim.
