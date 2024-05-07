@@ -60,6 +60,9 @@ DAG is Direct Acyclic Graph, that is data pipeline with no cycles, and edges are
 ### Operators
 Operators are only tasks in your dag. Airflow has ton of Operators. 
 
+```python 
+training_model_A = PythonOperator( task_id="training_model_A", python_callable=_training_model )
+```
 ### Catchup
 If you set `start_date` on one year ago and interval on `daily`, Airflow will create all tasks from one year ago to now, if you set `catchup = False`, Airflow doesn't create tasks earlier.
 
