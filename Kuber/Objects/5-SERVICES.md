@@ -282,7 +282,7 @@ spec:
 		paths:
 		- path: /
 		  backend:
-			serviceName: kubia-nodeport # All requests will be sent to port 80                                             of the kubia-nodeport service.
+			serviceName: kubia-nodeport # All requests will be sent to port 80 of the kubia-nodeport service.
 			servicePort: 80
 
 ---
