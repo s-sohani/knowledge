@@ -214,8 +214,8 @@ We can do that with DNS server, DNS has records like A, CNAME, and MX:
     - It maps a domain name (e.g., `example.com`) to the hostname or IP address of a mail server (e.g., `mail.example.com` or `10.0.0.5`).
     - MX records are essential for email delivery, as they tell other mail servers where to route emails destined for a specific domain.
 
-Other lesser-known types of DNS records also exist. One of them is the SRV record.
-SRV records are used to point to hostnames and ports of servers providing a specific service.
+Other lesser-known types of DNS records also exist. One of them is the **SRV** record.
+**SRV** records are used to point to hostnames and ports of servers providing a specific service.
 SRVlookup: list the SRV records for your stateful pods
 ```
 kubectl run -it srvlookup --image=tutum/dnsutils --rm --restart=Never -- dig SRV kubia.default.svc.cluster.local
