@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Airflow/Sensors.md",
+                "file": "Airflow/3- Data Update To Run Pipeline.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Airflow/Sensors.md",
+                "file": "Airflow/3- Data Update To Run Pipeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Airflow/Sensors.md",
+                "file": "Airflow/3- Data Update To Run Pipeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Airflow/Sensors.md"
+                "file": "Airflow/3- Data Update To Run Pipeline.md"
               }
             }
           }
@@ -163,10 +163,12 @@
       "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "7f72d6f33403fac1",
+  "active": "a72ee06e3871643c",
   "lastOpenFiles": [
-    "Airflow/Introduction.md",
-    "Airflow/Sensors.md",
+    "Airflow/Images/Pasted image 20240508071220.png",
+    "Airflow/1- Introduction.md",
+    "Airflow/2- Sensors.md",
+    "Airflow/3- Data Update To Run Pipeline.md",
     "Kuber/Objects/5-SERVICES.md",
     "Kuber/Objects/7-DEPLOYMENTS.md",
     "Kuber/Objects/4-STATEFULLSET.md",
@@ -203,8 +205,6 @@
     "Kuber/Images",
     "Podcasts/BPLUS/Neanderthals.md",
     "Microservices/4- Event Storming.md",
-    "Podcasts/How Read a Book.md",
-    "Kuber/Objects/POD.md",
     "Podcasts/BPLUS",
     "Microservices/images",
     "Microservices",
