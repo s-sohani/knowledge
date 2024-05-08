@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "27fcf599e5440d01",
+        "id": "2a18861aee78d694",
         "type": "tabs",
         "children": [
           {
-            "id": "7f72d6f33403fac1",
+            "id": "7dba438d48982a47",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Airflow/3- Data Update To Run Pipeline.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Airflow/3- Data Update To Run Pipeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Airflow/3- Data Update To Run Pipeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Airflow/3- Data Update To Run Pipeline.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -163,12 +155,12 @@
       "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "a72ee06e3871643c",
+  "active": "7dba438d48982a47",
   "lastOpenFiles": [
+    "Airflow/3- Data Update To Run Pipeline.md",
     "Airflow/Images/Pasted image 20240508071220.png",
     "Airflow/1- Introduction.md",
     "Airflow/2- Sensors.md",
-    "Airflow/3- Data Update To Run Pipeline.md",
     "Kuber/Objects/5-SERVICES.md",
     "Kuber/Objects/7-DEPLOYMENTS.md",
     "Kuber/Objects/4-STATEFULLSET.md",
@@ -192,7 +184,6 @@
     "Kuber/Images/Pasted image 20240505203958.png",
     "Kuber/Images/Pasted image 20240505200117.png",
     "Screenshot from 2024-05-05 07-16-38.png",
-    "Screenshot from 2024-05-05 07-16-08.png",
     "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
     "Kuber/Objects/StateFullSet.md",
     "Kuber/Objects/VOLUMES.md",
