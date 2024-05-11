@@ -46,6 +46,7 @@ airflow webserver &
 airflow scheduler
 ```
 
+> OR Install With Astro
 ## Init DAG Scheduling
 - start_date: Timestamp that scheduler tempt to backfill
 - schedule_interval: How often a DAG runs.
