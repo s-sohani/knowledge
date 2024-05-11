@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Airflow/1- Introduction.md",
+                "file": "Airflow/4- Notofication.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Airflow/1- Introduction.md",
+                "file": "Airflow/4- Notofication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Airflow/1- Introduction.md",
+                "file": "Airflow/4- Notofication.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Airflow/1- Introduction.md"
+                "file": "Airflow/4- Notofication.md"
               }
             }
           }
@@ -163,11 +163,13 @@
       "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "7dba438d48982a47",
+  "active": "a72ee06e3871643c",
   "lastOpenFiles": [
+    "Airflow/Images/Pasted image 20240511070709.png",
+    "Airflow/1- Introduction.md",
+    "Airflow/4- Notofication.md",
     "Airflow/3- Data Update To Run Pipeline.md",
     "Airflow/Images/Pasted image 20240508071220.png",
-    "Airflow/1- Introduction.md",
     "Airflow/2- Sensors.md",
     "Kuber/Objects/5-SERVICES.md",
     "Kuber/Objects/7-DEPLOYMENTS.md",
@@ -203,7 +205,6 @@
     "Podcasts/BPLUS/Everybody Lies.md",
     "Kuber/Images",
     "Podcasts/BPLUS/Neanderthals.md",
-    "Microservices/4- Event Storming.md",
     "Podcasts/BPLUS",
     "Microservices/images",
     "Microservices",
