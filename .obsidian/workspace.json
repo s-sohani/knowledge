@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Objects/7-DEPLOYMENTS.md",
+                "file": "Kuber/Objects/3-VOLUMES.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Objects/7-DEPLOYMENTS.md",
+                "file": "Kuber/Objects/3-VOLUMES.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Objects/7-DEPLOYMENTS.md",
+                "file": "Kuber/Objects/3-VOLUMES.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Objects/7-DEPLOYMENTS.md"
+                "file": "Kuber/Objects/3-VOLUMES.md"
               }
             }
           }
@@ -163,8 +163,11 @@
       "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "a72ee06e3871643c",
+  "active": "c418c512e2021a74",
   "lastOpenFiles": [
+    "Kuber/Objects/2-CONTROLLER.md",
+    "Kuber/Objects/1-POD.md",
+    "Kuber/Objects/7-DEPLOYMENTS.md",
     "Kuber/Images/Pasted image 20240505213354.png",
     "Kuber/Images/Pasted image 20240505213338.png",
     "Kuber/Images/Pasted image 20240505204301.png",
@@ -174,19 +177,15 @@
     "Kuber/Images/Screenshot from 2024-05-05 07-16-08.png",
     "Podcasts/Making Of A Manager.md",
     "Kuber/Kuber CheetSheet.md",
-    "Kuber/Objects/7-DEPLOYMENTS.md",
     "Kuber/Images/Pasted image 20240502194945.png",
     "Kuber/Images/Pasted image 20240502194727.png",
     "Kuber/Images/Pasted image 20240502193650.png",
-    "Kuber/Images/Pasted image 20240502191724.png",
     "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
     "Kuber/Install.md",
     "Kuber/Objects/5-SERVICES.md",
     "Kuber/Objects/4-STATEFULLSET.md",
     "Kuber/Objects/StateFullSet.md",
     "Kuber/Objects/3-VOLUMES.md",
-    "Kuber/Objects/2-CONTROLLER.md",
-    "Kuber/Objects/1-POD.md",
     "Kuber/Objects/VOLUMES.md",
     "Microservices/1- Introduction.md",
     "DataLake/Itroduction.md",
