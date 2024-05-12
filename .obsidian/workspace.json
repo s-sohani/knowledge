@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "920019dafc83fa9c",
+        "id": "2a18861aee78d694",
         "type": "tabs",
         "children": [
           {
-            "id": "c418c512e2021a74",
+            "id": "7dba438d48982a47",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kuber/Objects/3-VOLUMES.md",
+                "file": "Airflow/4- Notofication.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kuber/Objects/3-VOLUMES.md",
+                "file": "Airflow/4- Notofication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kuber/Objects/3-VOLUMES.md",
+                "file": "Airflow/4- Notofication.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kuber/Objects/3-VOLUMES.md"
+                "file": "Airflow/4- Notofication.md"
               }
             }
           }
@@ -163,53 +163,54 @@
       "obsidian-comments:Show Comments Panel": false
     }
   },
-  "active": "c418c512e2021a74",
+  "active": "a72ee06e3871643c",
   "lastOpenFiles": [
-    "Kuber/Objects/2-CONTROLLER.md",
-    "Kuber/Objects/1-POD.md",
+    "Airflow/Images/Pasted image 20240511070709.png",
+    "Airflow/1- Introduction.md",
+    "Airflow/4- Notofication.md",
+    "Airflow/3- Data Update To Run Pipeline.md",
+    "Airflow/Images/Pasted image 20240508071220.png",
+    "Airflow/2- Sensors.md",
+    "Kuber/Objects/5-SERVICES.md",
     "Kuber/Objects/7-DEPLOYMENTS.md",
+    "Kuber/Objects/4-STATEFULLSET.md",
+    "Kuber/Objects/3-VOLUMES.md",
+    "Kuber/Objects/C-I.md",
+    "Kuber/Kuber CheetSheet.md",
+    "Kuber/Install.md",
+    "Kuber/Develop an Operator.md",
+    "Kuber/Objects/1-POD.md",
+    "Kuber/Concepts.md",
+    "Kuber/Objects/2-CONTROLLER.md",
+    "Airflow/Images",
+    "Airflow/Images/Pasted image 20240507065906.png",
+    "Airflow",
+    "Podcasts/Making Of A Manager.md",
+    "Kuber/Images/Screenshot from 2024-05-05 07-16-38.png",
+    "Kuber/Images/Screenshot from 2024-05-05 07-16-08.png",
     "Kuber/Images/Pasted image 20240505213354.png",
     "Kuber/Images/Pasted image 20240505213338.png",
     "Kuber/Images/Pasted image 20240505204301.png",
     "Kuber/Images/Pasted image 20240505203958.png",
     "Kuber/Images/Pasted image 20240505200117.png",
-    "Kuber/Images/Screenshot from 2024-05-05 07-16-38.png",
-    "Kuber/Images/Screenshot from 2024-05-05 07-16-08.png",
-    "Podcasts/Making Of A Manager.md",
-    "Kuber/Kuber CheetSheet.md",
-    "Kuber/Images/Pasted image 20240502194945.png",
-    "Kuber/Images/Pasted image 20240502194727.png",
-    "Kuber/Images/Pasted image 20240502193650.png",
+    "Screenshot from 2024-05-05 07-16-38.png",
     "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
-    "Kuber/Install.md",
-    "Kuber/Objects/5-SERVICES.md",
-    "Kuber/Objects/4-STATEFULLSET.md",
     "Kuber/Objects/StateFullSet.md",
-    "Kuber/Objects/3-VOLUMES.md",
     "Kuber/Objects/VOLUMES.md",
     "Microservices/1- Introduction.md",
     "DataLake/Itroduction.md",
     "Kuber/Objects/CONTROLLER.md",
     "DataLake",
     "Kuber/Objects/SERVICES.md",
-    "Kuber/Develop an Operator.md",
-    "Kuber/Concerpts.md",
     "Podcasts/BPLUS/Everybody Lies.md",
     "Kuber/Images",
     "Podcasts/BPLUS/Neanderthals.md",
-    "Microservices/4- Event Storming.md",
-    "Podcasts/How Read a Book.md",
-    "Podcasts/Making Of A Manage.md",
-    "Kuber/Objects/POD.md",
-    "Kuber/Objects/C-I.md",
     "Podcasts/BPLUS",
     "Microservices/images",
     "Microservices",
     "Podcasts",
     "Kuber/Objects",
     "Kuber",
-    "Java",
-    "CockroachDB",
     "Untitled 1.canvas",
     "Untitled.canvas"
   ]

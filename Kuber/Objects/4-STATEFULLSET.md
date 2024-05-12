@@ -13,8 +13,9 @@ If the pod template includes a volume, which refers to a specific PersistentVolu
 >you can’t make each replica use its own separate PersistentVolumeClaim. You can’t use a ReplicaSet to run a distributed data store, where each instance needs its own separate storage.
 
 ### Running multiple replicas with separate storage for each
-#### USING ONE R EPLICA S ET PER POD INSTANCE
+#### USING ONE REPLICA SET PER POD INSTANCE
 You could create multiple ReplicaSets.
+
 ![[Pasted image 20240426153627.png]]
 
 >BUT if you’d scale the pods in that case. You couldn’t change the desired replica count—you’d have to create additional ReplicaSets instead.
@@ -51,11 +52,10 @@ Each pod created by a StatefulSet is assigned an ordinal index (zero-based), whi
 
 #### INTRODUCING THE GOVERNING SERVICE
 Stateful pods sometimes need to be addressable by their hostname.
-For example, if the governing Service belongs to the default namespace and is called foo, and one of the pods is called A-0 , you can reach the pod through its fully qualified domain name, which is a-0.foo.default.svc.cluster.local . You can’t do that with pods managed by a
-ReplicaSet.
+For example, if the governing Service belongs to the default namespace and is called foo, and one of the pods is called A-0 , you can reach the pod through its fully qualified domain name, which is a-0.foo.default.svc.cluster.local . You can’t do that with pods managed by a ReplicaSet.
 Additionally, you can also use DNS to look up all the StatefulSet’s pods’ names by looking up SRV records for the foo.default.svc.cluster.local domain.
 
-#### REPLACING LOST PETS
+#### REPLACING LOST 
 When a pod instance managed by a StatefulSet disappears, the replacement pod gets the same name and hostname as the pod that has disappeared.
 
 ![[Pasted image 20240426181507.png]]
@@ -214,8 +214,8 @@ We can do that with DNS server, DNS has records like A, CNAME, and MX:
     - It maps a domain name (e.g., `example.com`) to the hostname or IP address of a mail server (e.g., `mail.example.com` or `10.0.0.5`).
     - MX records are essential for email delivery, as they tell other mail servers where to route emails destined for a specific domain.
 
-Other lesser-known types of DNS records also exist. One of them is the SRV record.
-SRV records are used to point to hostnames and ports of servers providing a specific service.
+Other lesser-known types of DNS records also exist. One of them is the **SRV** record.
+**SRV** records are used to point to hostnames and ports of servers providing a specific service.
 SRVlookup: list the SRV records for your stateful pods
 ```
 kubectl run -it srvlookup --image=tutum/dnsutils --rm --restart=Never -- dig SRV kubia.default.svc.cluster.local

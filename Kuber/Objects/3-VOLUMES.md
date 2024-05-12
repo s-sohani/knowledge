@@ -81,6 +81,7 @@ A hostPath volume points to a specific file or directory on the node’s filesys
 None of PODs uses the hostPath volume for storing their own data. They all use it to get access to the node’s data.
 ![[Screenshot from 2024-04-23 09-02-49.png]]
 
+>The volume’s contents are stored on a specific node’s filesystem, when the database pod gets rescheduled to another node, it will no longer see the data.
 ## Using persistent storage
 When an application running in a pod needs to persist data to disk and have that same data available even when the pod is rescheduled to another node, you can’t use any of the volume types we’ve mentioned so far. Because this data needs to be accessible from any cluster node, it must be stored on some type of network-attached storage (NAS).
 
@@ -136,10 +137,10 @@ metadata:
 spec:
 	capacity:
 		storage: 1Gi
-	accessModes:  # It can either be mounted by a single client for reading and                      writing or by multiple clients for reading only.
+	accessModes:  # It can either be mounted by a single client for reading and writing or by multiple clients for reading only.
 	- ReadWriteOnce
 	- ReadOnlyMany
-	persistentVolumeReclaimPolicy: Retain  #After the claim is released, the                     PersistentVolume should be retained (not erased or deleted).
+	persistentVolumeReclaimPolicy: Retain  #After the claim is released, the PersistentVolume should be retained (not erased or deleted).
 	gcePersistentDisk:
 		pdName: mongodb
 		fsType: ext4
@@ -165,7 +166,7 @@ spec:
 			storage: 1Gi
 	accessModes:
 	- ReadWriteOnce # support single client performing both reads and writes.
-	  storageClassName: "" # learn in the section about dynamic provisioning.
+	storageClassName: "" # learn in the section about dynamic provisioning.
 ```
 
 As soon as you create the claim, Kubernetes finds the appropriate PersistentVolume and binds it to the claim.
@@ -213,8 +214,7 @@ When you delete pod and pvc, The STATUS column shows the PersistentVolume as Rel
 Creating PV still requires a cluster administrator to provision the actual storage up front.
 The cluster admin, instead of creating PersistentVolumes, can deploy a PersistentVolume provisioner and define one or more StorageClass objects to let users choose what type of PersistentVolume they want.
 
->Kubernetes includes provisioners for the most popular cloud providers.
->Instead of the administrator pre-provisioning a bunch of PersistentVolumes, they need to define one or two (or more) StorageClasses.
+>Kubernetes includes provisioners for the most popular cloud providers. Instead of the administrator pre-provisioning a bunch of PersistentVolumes, they need to define one or two (or more) StorageClasses.
 
 ### Defining the available storage types through StorageClass resources
 
