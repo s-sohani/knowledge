@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Airflow/4- Notofication.md",
+                "file": "Airflow/1- Introduction.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Airflow/4- Notofication.md",
+                "file": "Airflow/1- Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Airflow/4- Notofication.md",
+                "file": "Airflow/1- Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Airflow/4- Notofication.md"
+                "file": "Airflow/1- Introduction.md"
               }
             }
           }
@@ -165,9 +165,9 @@
   },
   "active": "a72ee06e3871643c",
   "lastOpenFiles": [
+    "Airflow/4- Notofication.md",
     "Airflow/Images/Pasted image 20240511070709.png",
     "Airflow/1- Introduction.md",
-    "Airflow/4- Notofication.md",
     "Airflow/3- Data Update To Run Pipeline.md",
     "Airflow/Images/Pasted image 20240508071220.png",
     "Airflow/2- Sensors.md",
@@ -193,7 +193,6 @@
     "Kuber/Images/Pasted image 20240505204301.png",
     "Kuber/Images/Pasted image 20240505203958.png",
     "Kuber/Images/Pasted image 20240505200117.png",
-    "Screenshot from 2024-05-05 07-16-38.png",
     "Kuber/Objects/6-CONFIGMAP AND SECRET.md",
     "Kuber/Objects/StateFullSet.md",
     "Kuber/Objects/VOLUMES.md",
