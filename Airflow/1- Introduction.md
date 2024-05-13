@@ -207,5 +207,7 @@ with DAG("new_dag", start_date=datetime(2021, 1, 1),
 1- Create venv
 2- Address venv location throgh below syntax
 ```python
-@task.
+@task.external_python(python='python_path')
+def func():
+	pass
 ```
