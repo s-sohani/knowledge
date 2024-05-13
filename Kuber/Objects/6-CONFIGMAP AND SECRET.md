@@ -136,7 +136,7 @@ spec:
 >The container referencing the non-existing ConfigMap will fail to start, but the other container will start normally.
 >If you then create the missing ConfigMap, the failed container is started without requiring you to recreate the pod.
 
-### If you then create the missing ConfigMap, the failed container is started without requiring you to recreate the pod.
+> If you then create the missing ConfigMap, the failed container is started without requiring you to recreate the pod.
 
 ```
 spec:
