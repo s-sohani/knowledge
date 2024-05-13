@@ -203,4 +203,9 @@ with DAG("new_dag", start_date=datetime(2021, 1, 1),
         choose_best_model(training_model.expand(accuracy=[3, 9, 2])) >> [accurate, inaccurate]
 ```
 
-
+## Dependency Conflict in Airflow
+1- Create venv
+2- Address venv location throgh below syntax
+```python
+@task.
+```
