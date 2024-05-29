@@ -64,3 +64,8 @@ Even if you only make the same request over and over again, you’ll get a sligh
 Random additional latency could be introduced by a context switch to a background process, the loss of a network packet and TCP retransmission, a garbage collection pause, a page fault forcing a read from disk, mechanical vibrations in the server rack.
 
 
+### Approaches for Coping with Load
+- vertical scaling
+- horizontal scaling
+
+
