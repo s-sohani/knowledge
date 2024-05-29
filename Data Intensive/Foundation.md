@@ -78,7 +78,7 @@ fixing bugs, keeping its systems operational, investigating failures, adapting i
 legacy system: System that out of date and dislike maintenance. 
 
 Minimize pain during maintenance:
-- Operability: Make it easy for operations teams to keep the system running smoothly.
-- Simplicity: new engineers to understand the system
+- Operability: Make it easy for operations teams to keep the system running smoothly (Can configure with human).
+- Simplicity: new engineers to understand the system (Abstract modules in clean way).
 - Evolvability: Make it easy for engineers to make changes to the system in the future.
 
