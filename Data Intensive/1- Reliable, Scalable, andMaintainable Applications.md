@@ -11,39 +11,31 @@ In recent years, numerous new tools for data storage and processing have emerged
 
 Now you have essentially created a new, special-purpose data system from smaller, general-purpose components.
 
-If you are designing a data system or service, a lot of tricky questions arise. How do
-you ensure that the data remains correct and complete, even when things go wrong
-internally? How do you provide consistently good performance to clients, even when
-parts of your system are degraded? How do you scale to handle an increase in load?
+If you are designing a data system or service, a lot of tricky questions arise. How do you ensure that the data remains correct and complete, even when things go wrong internally? How do you provide consistently good performance to clients, even when parts of your system are degraded? How do you scale to handle an increase in load?
 What does a good API for the service look like?
 
 ## Reliability
 • The application performs the function that the user expected.
-• It can tolerate the user making mistakes or using the software in unexpected
-ways.
-• Its performance is good enough for the required use case, under the expected
-load and data volume.
+• It can tolerate the user making mistakes or using the software in unexpected ways.
+• Its performance is good enough for the required use case, under the expected load and data volume.
 • The system prevents any unauthorized access and abuse.
 
-The things that can go wrong are called faults, and systems that anticipate faults and
-can cope with them are called fault-tolerant or resilient.
+The things that can go wrong are called **faults**, and systems that anticipate faults and can cope with them are called **fault-tolerant** or resilient.
 
 ### Types of faults
 #### Hardware Faults
 When we think of causes of system failure, hardware faults quickly come to mind.
-Hard disks crash, RAM becomes faulty, the power grid has a blackout, someone
-unplugs the wrong network cable.
-
+Hard disks crash, RAM becomes faulty, the power grid has a blackout, someone unplugs the wrong network cable.
 To prevent this type of failure we can use **Raid** Hard Disks or use **Multi-machine redundancy**.
 
 #### Software Error
-- A software bug that causes every instance of an application server to crash when given a particular bad input. For example, consider the leap second on June 30, 2012, that caused many applications to hang simultaneously due to a bug in the Linux kernel
-- A runaway process that uses up some shared resource—CPU time, memory, disk space, or network bandwidth.
-- A service that the system depends on that slows down, becomes unresponsive, or starts returning corrupted responses.
-- Cascading failures, where a small fault in one component triggers a fault in another component, which in turn triggers further faults.
+- A software bug that causes every instance of an application server to crash when given a particular **bad input**. For example, consider the leap second on June 30, 2012, that caused many applications to hang simultaneously due to a bug in the Linux kernel
+- A **runaway process** that uses up some shared resource—CPU time, memory, disk space, or network bandwidth.
+- A service that the system depends on that slows down, becomes unresponsive, or starts returning **corrupted responses**.
+- **Cascading failures**, where a small fault in one component triggers a fault in another component, which in turn triggers further faults.
 
 In those circumstances, it is revealed that the software is making some kind of assumption about its environment—and while that assumption is usually true, it eventually stops being true for some reason.
-For example, in a message queue, that the number of incoming messages equals the number of outgoing messages
+For example, in a message queue, that the number of incoming messages equals the number of outgoing messages.
 
 #### Human Errors
 How do we make our systems reliable, in spite of unreliable humans?
