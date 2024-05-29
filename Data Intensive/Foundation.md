@@ -68,4 +68,6 @@ Random additional latency could be introduced by a context switch to a backgroun
 - vertical scaling
 - horizontal scaling
 
+A system that is designed to handle 100,000 requests per second, each 1 kB in size, looks very different from a system that is designed for 3 requests per minute, each 2 GB in size—even though the two systems have the same data throughput.
+
 
