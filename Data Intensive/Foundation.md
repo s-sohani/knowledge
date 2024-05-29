@@ -75,4 +75,10 @@ A system that is designed to handle 100,000 requests per second, each 1 kB in si
 It is well known that the majority of the cost of software is not in its initial development, but in its ongoing maintenance
 fixing bugs, keeping its systems operational, investigating failures, adapting it to new platforms, modifying it for new use cases.
 
-legacy system: System that out of date and 
+legacy system: System that out of date and dislike maintenance. 
+
+Minimize pain during maintenance:
+- Operability
+- Simplicity: new engineers to understand the system
+- Evolvability: Make it easy for engineers to make changes to the system in the future.
+
