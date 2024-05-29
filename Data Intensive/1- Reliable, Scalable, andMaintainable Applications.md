@@ -41,9 +41,9 @@ For example, in a message queue, that the number of incoming messages equals the
 How do we make our systems reliable, in spite of unreliable humans?
 - Design systems in a way that minimizes opportunities for error for example develop **API** to do things.
 - Decouple the places where people make the most mistakes from the places where they can cause failures like **sandbox**.
-- Test thoroughly at all levels, from unit tests to whole-system integration tests and manual tests.
-- Allow quick and easy recovery from human errors.
-- Set up detailed and clear monitoring, such as performance metrics and error rates.
+- Test thoroughly at all levels, from unit tests to whole-system **integration tests and manual tests**.
+- Allow quick and easy **recovery** from human errors.
+- Set up detailed and clear **monitoring**, such as performance metrics and error rates.
 
 ## Scalability
 For example the number of simultaneously active users.
