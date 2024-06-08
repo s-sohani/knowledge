@@ -14,3 +14,6 @@ The NoSql use cases are
 ### Impedance mismatch
 Most application development today is done in object-oriented programming languages, which leads to a common criticism of the SQL data model.
 An awkward translation layer is required between the objects in the application code and the database model of tables, rows, and columns.
+
+![[Pasted image 20240608101301.png]]
+
