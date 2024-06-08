@@ -17,3 +17,5 @@ An awkward translation layer is required between the objects in the application 
 
 ![[Pasted image 20240608101301.png]]
 
+
+The JSON representation has better locality than the multi-table schema. If you want to fetch a profile in the relational example, you need to either perform multiple queries or perform a messy multiway join between the users table and its subordinate tables.
