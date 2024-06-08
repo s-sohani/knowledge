@@ -19,3 +19,14 @@ An awkward translation layer is required between the objects in the application 
 
 
 The JSON representation has better locality than the multi-table schema. If you want to fetch a profile in the relational example, you need to either perform multiple queries or perform a messy multiway join between the users table and its subordinate tables. But has some disadvatages, if that information is duplicated, all the redundant copies need to be updated. That incurs write overheads, and risks inconsistencies (where some copies of the information are updated but others aren’t).
+
+If the database itself does not support joins:
+- you have to emulate a join in application code by making multiple queries to the database.
+- data has a tendency of becoming more interconnected as features are added to applications.
+
+Example:
+	Organizations and schools as entities
+		In the previous description, organization (the company where the user worked) and school_name (where they studied) are just strings. Perhaps they should be references to entities instead? Then each organization, school, or university could have its own web page (with logo, news feed, etc.); each résumé could link to the
+		organizations and schools that it mentions, and include their logos and other information .
+	Recommendations
+		Say you want to add a new feature: one user can write a recommendation for another user. The recommendation is shown on the résumé of the user who was recommended, together with the name and photo of the user making the recommendation. If the recommender updates their photo, any recommendations they have written need to reflect the new photo. Therefore, the recommendation should have a reference to the author’s profile.
