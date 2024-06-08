@@ -11,3 +11,6 @@ The NoSql use cases are
 - Specialized query operations that are not well supported by the relational model.
 - Desire for a more dynamic and expressive data model
 
+### Impedance mismatch
+Most application development today is done in object-oriented programming languages, which leads to a common criticism of the SQL data model.
+An awkward translation layer is required between the objects in the application code and the database model of tables, rows, and columns.
