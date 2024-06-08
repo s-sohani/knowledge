@@ -1,1 +1,1 @@
-Most application is developed in layered structure. 
+Most application is developed in layered structure. Each leyer hide complexity of another layer. One of 
