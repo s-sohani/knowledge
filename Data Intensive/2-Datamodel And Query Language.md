@@ -1,0 +1,1 @@
+Most application is developed in layered structure. 
