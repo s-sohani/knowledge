@@ -30,3 +30,5 @@ Example:
 		organizations and schools that it mentions, and include their logos and other information .
 	Recommendations
 		Say you want to add a new feature: one user can write a recommendation for another user. The recommendation is shown on the résumé of the user who was recommended, together with the name and photo of the user making the recommendation. If the recommender updates their photo, any recommendations they have written need to reflect the new photo. Therefore, the recommendation should have a reference to the author’s profile.
+
+### Are Document Databases Repeating History?
