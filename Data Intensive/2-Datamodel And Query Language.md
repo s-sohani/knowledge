@@ -32,3 +32,6 @@ Example:
 		Say you want to add a new feature: one user can write a recommendation for another user. The recommendation is shown on the résumé of the user who was recommended, together with the name and photo of the user making the recommendation. If the recommender updates their photo, any recommendations they have written need to reflect the new photo. Therefore, the recommendation should have a reference to the author’s profile.
 
 ### Are Document Databases Repeating History?
+While many-to-many relationships and joins are routinely used in relational databases, document databases and NoSQL reopened the debate on how best to represent such relationships in a database.
+
+در گذشته IBM مدلی داد به نام hierarchical model. این مد
