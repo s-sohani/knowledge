@@ -40,3 +40,6 @@ Two prominent models emerged to address these limitations: the relational model 
 
 Despite its efficiency for the limited hardware of the time, the network model's complexity and inflexibility made it challenging to modify an application's data model. This historical context is relevant today as developers face similar issues with modern document databases.
 
+Although document databases store nested records similarly to the hierarchical model, both relational and document databases handle many-to-one and many-to-many relationships using unique identifiers resolved at read time.
+
+### Relational Versus Document Databases Today
