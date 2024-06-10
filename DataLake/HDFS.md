@@ -15,7 +15,7 @@ Though once brokered, clients communicate directly with DataNodes.
 The NameNode operates entirely **in memory**, persisting its state to disk.
 It represents a single point of failure for a Hadoop cluster that is not running in high-availability mode.  In high-availability mode, Hadoop maintains a standby NameNode to guard against failures.
 
-The NameNode stores file system metadata in two different files: the **fsimage** and the **edit log**.
+The NameNode stores file system metadata in two different files: the **fsimage** and the **edit log** (same as aof and rdb in redis).
 The fsimage stores a complete snapshot of the file system’s metadata at a specific moment in time. Incremental changes are then stored in the edit log for durability, rather than creating a new fsimage snapshot each time the namespace is modified.
 
 The NameNode can restore its state by loading the fsimage and performing all the transforms from the edit log, restoring the file system to its most recent state.
