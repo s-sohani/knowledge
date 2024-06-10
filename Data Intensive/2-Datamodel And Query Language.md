@@ -50,3 +50,8 @@ When the relational model was introduced, it revolutionized querying data by usi
 
 ### Declarative Queries on the Web
 Declarative query languages have advantages beyond databases, as illustrated by web browsers. For example, using CSS to style a web page is declarative: you specify what elements should look like based on their patterns, like making the title of the selected page have a blue background. In contrast, an imperative approach in JavaScript involves detailed, complex, and error-prone steps to achieve the same result. Declarative methods, such as CSS, automatically adjust to changes and are more maintainable and efficient. This concept parallels SQL's advantages in databases, offering simplicity, ease of optimization, and better handling of changes compared to imperative code.
+
+### MapReduce Querying
+MapReduce is a programming model for processing large-scale data across multiple machines, popularized by Google and used by some NoSQL databases like MongoDB and CouchDB for read-only queries. It is a middle ground between declarative and imperative querying, using snippets of code repeatedly executed by the processing framework. An example query in MongoDB to count shark sightings per month involves writing map and reduce JavaScript functions. However, writing these functions can be complex and less optimized compared to declarative queries. To address this, MongoDB introduced the aggregation pipeline, a declarative query language similar to SQL, providing a more user-friendly and optimizable approach.
+
+## Graph-Like Data Models
