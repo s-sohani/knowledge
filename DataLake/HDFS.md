@@ -9,3 +9,4 @@ Data in a Hadoop cluster is broken down into smaller units (called blocks) and d
 
 HDFS is based on a **leader/follower** architecture. Each cluster is typically composed of a single NameNode, an optional SecondaryNameNode (for data recovery in the event of failure), and an arbitrary number of DataNodes.
 
+### NameNode
