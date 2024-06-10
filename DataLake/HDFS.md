@@ -12,7 +12,8 @@ HDFS is based on a **leader/follower** architecture. Each cluster is typically c
 ### NameNode
 In addition to managing the file system namespace and associated metadata (file-to-block maps), the NameNode acts as the leader and brokers access to files by clients.
 Though once brokered, clients communicate directly with DataNodes.
-The NameNode operates entirely in memory, persisting its state to disk.
-It represents a single point of failure for a Hadoop cluster that is not running in high-availability mode.  In [high-availability mode](https://www.datadoghq.com/blog/hadoop-architecture-overview/#ha-namenode-service), Hadoop maintains a standby NameNode to guard against failures.
+The NameNode operates entirely **in memory**, persisting its state to disk.
+It represents a single point of failure for a Hadoop cluster that is not running in high-availability mode.  In high-availability mode, Hadoop maintains a standby NameNode to guard against failures.
 
 The NameNode stores file system metadata in two different files: the **fsimage** and the **edit log**.
+The fsimage stores a complete snapshot of the file system’s metadata at a specific moment in time. Incremental changes are then stored in the edit log for durability, rather than creating a new fsimage snapshot each time the namespace is modified.
