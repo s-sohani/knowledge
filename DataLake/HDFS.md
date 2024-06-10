@@ -19,3 +19,5 @@ The NameNode stores file system metadata in two different files: the **fsimage**
 The fsimage stores a complete snapshot of the file system’s metadata at a specific moment in time. Incremental changes are then stored in the edit log for durability, rather than creating a new fsimage snapshot each time the namespace is modified.
 
 The NameNode can restore its state by loading the fsimage and performing all the transforms from the edit log, restoring the file system to its most recent state.
+
+ if the NameNode goes down in the presence of a SecondaryNameNode, the NameNode doesn’t need to replay the edit log on top of the fsimage; cluster administrators can retrieve an updated copy of the fsimage from the SecondaryNameNode.
