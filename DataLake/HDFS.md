@@ -14,3 +14,5 @@ In addition to managing the file system namespace and associated metadata (file-
 Though once brokered, clients communicate directly with DataNodes.
 The NameNode operates entirely in memory, persisting its state to disk.
 It represents a single point of failure for a Hadoop cluster that is not running in high-availability mode.  In [high-availability mode](https://www.datadoghq.com/blog/hadoop-architecture-overview/#ha-namenode-service), Hadoop maintains a standby NameNode to guard against failures.
+
+The NameNode stores file system metadata in two different files: the **fsimage** and the **edit log**.
