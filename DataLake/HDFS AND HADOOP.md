@@ -12,6 +12,7 @@ HDFS is based on a **leader/follower** architecture. Each cluster is typically c
 
 ### NameNode
 In addition to managing the file system namespace and associated metadata (file-to-block maps), the NameNode acts as the leader and brokers access to files by clients.
+The metadata containing the file-to-block mappings.
 Though once brokered, clients communicate directly with DataNodes.
 The NameNode operates entirely **in memory**, persisting its state to disk.
 It represents a single point of failure for a Hadoop cluster that is not running in high-availability mode.  In high-availability mode, Hadoop maintains a standby NameNode to guard against failures.
@@ -57,8 +58,10 @@ Each application running on Hadoop has its own dedicated ApplicationMaster insta
 #### NodeManagers
 The NodeManager is a per-node agent tasked with overseeing containers.
 
-### ZooKeeper
+## ZooKeeper
 Apache ZooKeeper is a popular tool used for coordination and synchronization of distributed systems.
 Enabling high-availability of former single points of failure, specifically the **HDFS NameNode** and **YARN ResourceManager**.
 ![[Pasted image 20240611171645.png]]
 
+
+![[Pasted image 20240611172239.png]]
