@@ -37,21 +37,28 @@ Standby NameNodes, which are incompatible with SecondaryNameNodes, provide autom
 YARN (Yet Another Resource Negotiator) is the framework responsible for assigning computational resources for application execution.
 ![[Pasted image 20240611170646.png]]
 
+### YARN
 YARN consists of three core components:
 - ResourceManager (one per cluster)
 - ApplicationMaster (one per application)
 - NodeManagers (one per node)
 
-### ResourceManager
+#### ResourceManager
 The ResourceManager is the rack-aware leader node in YARN. It is responsible for taking inventory of available resources and runs several critical services, the most important of which is the Scheduler.
 The Scheduler component of the YARN ResourceManager allocates resources to running applications.
 
-### ApplicationMaster
+#### ApplicationMaster
 Each application running on Hadoop has its own dedicated ApplicationMaster instance.
 - sends heartbeat messages to the ResourceManager
 - requests for additional resources
 - execution of an application
 - submitting container release requests to the NodeManager
 
-### NodeManagers
+#### NodeManagers
+The NodeManager is a per-node agent tasked with overseeing containers.
+
+### ZooKeeper
+Apache ZooKeeper is a popular tool used for coordination and synchronization of distributed systems.
+Enabling high-availability of former single points of failure, specifically the **HDFS NameNode** and **YARN ResourceManager**.
+![[Pasted image 20240611171645.png]]
 
