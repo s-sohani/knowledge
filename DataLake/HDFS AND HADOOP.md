@@ -1,4 +1,5 @@
 
+## HDFS Overview
 - designed with hardware failure in mind
 - built for large datasets, with a default block size of 128 MB
 - optimized for sequential operations
@@ -26,4 +27,20 @@ if the NameNode goes down in the presence of a SecondaryNameNode, the NameNode d
 Early versions of Hadoop introduced several concepts (like SecondaryNameNodes, among others) to make the NameNode more resilient. With Hadoop 2.0 and Standby NameNodes, a mechanism for true high availability was realized.
 
 Standby NameNodes, which are incompatible with SecondaryNameNodes, provide automatic failover in the event of primary NameNode failure. Achieving high availability with Standby NameNodes requires shared storage between the primary and standbys
+
+![[Pasted image 20240611170319.png]]
+
+
+## MapReduce overview
+![[Pasted image 20240611170547.png]]
+
+YARN (Yet Another Resource Negotiator) is the framework responsible for assigning computational resources for application execution.
+![[Pasted image 20240611170646.png]]
+
+YARN consists of three core components:
+- ResourceManager (one per cluster)
+- ApplicationMaster (one per application)
+- NodeManagers (one per node)
+
+### ResourceManager
 
