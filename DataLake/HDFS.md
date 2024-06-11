@@ -20,4 +20,10 @@ The fsimage stores a complete snapshot of the file system’s metadata at a spec
 
 The NameNode can restore its state by loading the fsimage and performing all the transforms from the edit log, restoring the file system to its most recent state.
 
- if the NameNode goes down in the presence of a SecondaryNameNode, the NameNode doesn’t need to replay the edit log on top of the fsimage; cluster administrators can retrieve an updated copy of the fsimage from the SecondaryNameNode.
+if the NameNode goes down in the presence of a SecondaryNameNode, the NameNode doesn’t need to replay the edit log on top of the fsimage; cluster administrators can retrieve an updated copy of the fsimage from the SecondaryNameNode.
+
+### HA NameNode service
+Early versions of Hadoop introduced several concepts (like SecondaryNameNodes, among others) to make the NameNode more resilient. With Hadoop 2.0 and Standby NameNodes, a mechanism for true high availability was realized.
+
+Standby NameNodes, which are incompatible with SecondaryNameNodes, provide automatic failover in the event of primary NameNode failure. Achieving high availability with Standby NameNodes requires shared storage between the primary and standbys
+
