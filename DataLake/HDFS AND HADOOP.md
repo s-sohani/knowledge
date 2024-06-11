@@ -43,4 +43,15 @@ YARN consists of three core components:
 - NodeManagers (one per node)
 
 ### ResourceManager
+The ResourceManager is the rack-aware leader node in YARN. It is responsible for taking inventory of available resources and runs several critical services, the most important of which is the Scheduler.
+The Scheduler component of the YARN ResourceManager allocates resources to running applications.
+
+### ApplicationMaster
+Each application running on Hadoop has its own dedicated ApplicationMaster instance.
+- sends heartbeat messages to the ResourceManager
+- requests for additional resources
+- execution of an application
+- submitting container release requests to the NodeManager
+
+### NodeManagers
 
