@@ -45,3 +45,4 @@ The account server process handles requests regarding metadata for the individua
  Like accounts, the container information is stored as SQLite databases.
  
 #### Object Layer
+Objects are stored as binary files on the drive using a path. The timestamp is important as it allows the object server to store multiple versions of an object. the data and metadata are stored together and copied as a single unit.
