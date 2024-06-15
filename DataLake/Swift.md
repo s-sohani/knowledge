@@ -12,3 +12,8 @@
 - When adding or replacing hardware, data **does not have to be migrated to a new storage system**, i.e. there are no fork-lift upgrades
 - Failed nodes and drives can be swapped out while the cluster is running with no downtime. New nodes and drives can be added the same way.
 - Swift client libraries such as Java, Python, Ruby, or JavaScript.
+
+The storage URL has two basic parts:
+- cluster location
+- location
+
