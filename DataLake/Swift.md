@@ -17,5 +17,5 @@ The storage URL has two basic parts:
 - cluster location
 - location -> acount(split per user)/container(bucket)/object
 
-
+![[Pasted image 20240615150536.png]]
 
