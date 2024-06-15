@@ -28,3 +28,8 @@ The storage URL has two basic parts:
 
 ## Swift Overview
 A Swift cluster is the distributed storage system used for object storage. Each machine running **one or more** Swift’s **processes** and services is called a node.
+- Proxy Node
+- Storage Node
+	- Account
+	- Container
+	- Object
