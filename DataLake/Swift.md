@@ -15,5 +15,7 @@
 
 The storage URL has two basic parts:
 - cluster location
-- location
+- location -> acount(split per user)/container(bucket)/object
+
+
 
