@@ -19,3 +19,10 @@ The storage URL has two basic parts:
 
 ![[Pasted image 20240615150536.png]]
 
+### The Swift HTTP API
+- GET—downloads objects, lists the contents of containers or accounts
+- PUT—uploads objects, creates containers, overwrites metadata headers
+- POST—creates containers if they don't exist, updates metadata (accounts or containers), overwrites metadata (objects)
+- DELETE—deletes objects and containers that are empty
+- HEAD—retrieves header information for the account, container or object.
+
