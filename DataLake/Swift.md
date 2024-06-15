@@ -35,3 +35,6 @@ A Swift cluster is the distributed storage system used for object storage. Each 
 	- Object
 
 If a valid request is sent to Swift then the proxy server will verify the request, determine the correct storage nodes responsible for the data (based on a hash of the object name) and send the request to those servers concurrently.
+
+The proxy server process is looking up multiple locations because Swift provides data durability by writing multiple–typically three complete copies of the data and storing them in the system.
+
