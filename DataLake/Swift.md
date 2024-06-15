@@ -33,3 +33,5 @@ A Swift cluster is the distributed storage system used for object storage. Each 
 	- Account
 	- Container
 	- Object
+
+If a valid request is sent to Swift then the proxy server will verify the request, determine the correct storage nodes responsible for the data (based on a hash of the object name) and send the request to those servers concurrently.
