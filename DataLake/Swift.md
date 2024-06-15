@@ -38,3 +38,7 @@ If a valid request is sent to Swift then the proxy server will verify the reques
 
 The proxy server process is looking up multiple locations because Swift provides data durability by writing multiple–typically three complete copies of the data and storing them in the system.
 
+#### Account Layer
+The account server process handles requests regarding metadata for the individual accounts or the list of the containers within each account. This information is stored by the account server process in SQLite databases on disk.
+
+#### Container Layer
