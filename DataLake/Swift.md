@@ -26,3 +26,5 @@ The storage URL has two basic parts:
 - DELETE—deletes objects and containers that are empty
 - HEAD—retrieves header information for the account, container or object.
 
+## Swift Overview
+A Swift cluster is the distributed storage system used for object storage. Each machine running **one or more** Swift’s **processes** and services is called a node.
