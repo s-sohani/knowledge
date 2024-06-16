@@ -56,3 +56,19 @@ MapReduce is a programming model for processing large-scale data across multiple
 
 ## Graph-Like Data Models
 Many-to-many relationships are key in distinguishing data models. For applications with mostly one-to-many or no relationships, the document model is suitable. However, for data with frequent many-to-many relationships, the relational model might not suffice as complexity grows. In such cases, the graph model is more natural, consisting of vertices (nodes) and edges (relationships). Common graph data examples include social networks, web links, and transportation networks. Graph algorithms, like shortest path searches and PageRank, are useful for such data. Graphs can also store heterogeneous data types, as seen with Facebook's diverse vertex and edge types.
+
+#### Graph Data Model
+- Property graph model (implemented by Neo4j, Titan, and InfiniteGraph)
+- Triple-store model (implemented by Datomic, AllegroGraph, and others)
+
+#### Query languages for graphs
+- Cypher
+- SPARQL
+- Datalog
+- Gremlin
+
+#### Graph processing frameworks
+- Pregel
+
+### Property Graphs
+#### Vertex consists of
