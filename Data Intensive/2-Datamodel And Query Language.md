@@ -92,3 +92,6 @@ You can think of a graph store as consisting of two relational tables, one for v
 Created for the Neo4j graph database. 
 
 ![[Pasted image 20240616071620.png]]
+
+### Triple-Stores and SPARQL
+
