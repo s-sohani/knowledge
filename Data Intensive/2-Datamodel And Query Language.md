@@ -71,4 +71,18 @@ Many-to-many relationships are key in distinguishing data models. For applicatio
 - Pregel
 
 ### Property Graphs
+You can think of a graph store as consisting of two relational tables, one for vertices and one for edges.
+
 #### Vertex consists of
+- A unique identifier
+- A set of outgoing edges
+- A set of incoming edges
+- A collection of properties (key-value pairs)
+
+#### Each edge consists of:
+- A unique identifier
+- The vertex at which the edge starts (the tail vertex)
+- The vertex at which the edge ends (the head vertex)
+- A label to describe the kind of relationship between the two vertices
+- A collection of properties (key-value pairs)
+
