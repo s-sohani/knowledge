@@ -55,4 +55,4 @@ Auditors run in the background on every storage node in a Swift cluster and cont
 There are account auditors, container auditors and object auditors.
 
 #### Replicators
-Account, container, and object replicator processes run in the background on all nodes that are running the corresponding services.
+Account, container, and object replicator processes run in the background on all nodes that are running the corresponding services. A replicator will continuously examine its local node and compare the accounts, containers, or objects against the copies on other nodes in the cluster. If one of other nodes has an old or missing copy, then the replicator will send a copy of its local data out to that node.
