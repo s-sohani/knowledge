@@ -51,4 +51,8 @@ Objects are stored as binary files on the drive using a path. The timestamp is i
 The two main consistency services are auditors and replicators.
 
 #### Auditors
+Auditors run in the background on every storage node in a Swift cluster and continually scan the disks to ensure that the data stored on disk. If an error is found, the auditor moves the corrupted object to a quarantine area.
+There are account auditors, container auditors and object auditors.
 
+#### Replicators
+Account, container, and object replicator processes run in the background on all nodes that are running the corresponding services.
