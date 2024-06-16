@@ -86,3 +86,9 @@ You can think of a graph store as consisting of two relational tables, one for v
 - A label to describe the kind of relationship between the two vertices
 - A collection of properties (key-value pairs)
 
+![[Pasted image 20240616071317.png]]
+
+### The Cypher Query Language
+Created for the Neo4j graph database. 
+
+![[Pasted image 20240616071620.png]]
