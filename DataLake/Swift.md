@@ -46,3 +46,9 @@ The account server process handles requests regarding metadata for the individua
  
 #### Object Layer
 Objects are stored as binary files on the drive using a path. The timestamp is important as it allows the object server to store multiple versions of an object. the data and metadata are stored together and copied as a single unit.
+
+### Consistency Services
+The two main consistency services are auditors and replicators.
+
+#### Auditors
+
