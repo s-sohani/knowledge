@@ -60,5 +60,7 @@ When the server processes or the consistency services need to locate data it wil
 
 ### Partitions
 Swift uses a modified consistent hashing ring to store data uniformly across a cluster and ensure quick availability for requests. Hashing determines data locations, with each storage location’s hash value mapping to a partition. The hashing ring is divided into uniform-sized partitions assigned to drives in the cluster. This method is conceptually simple, with each partition represented as a directory on a disk with a corresponding hash table.
-
-
+### Durability
+Swift ensures durability and resilience through the use of replicas or erasure codes. Typically, a replica count of three is chosen, spreading partitions across the cluster and different datacenters or regions. When a drive fails, replication processes push missing data to designated handoff locations. The likelihood of all replicas failing before data is moved is very small, making Swift durable. Proxy server processes locate data by finding the replicated partitions that contain copies of the data.
+### The Rings
+Swift's ring data structure for storage includes a modified consistent hashing ring with partition shift values. Each ring contains a devices list detailing all added drives with their ID, zone, weight, IP, port, and name. Additionally, the devices lookup table maps replicas to partitions across the cluster, typically organized as three rows by thousands of columns. During ring construction, Swift calculates optimal drive placements based on weights and ensures unique distribution. For data retrieval, the proxy server calculates a hash value, maps it to a partition, and uses the lookup table to locate replicas across drives, ensuring redundancy and availability.
