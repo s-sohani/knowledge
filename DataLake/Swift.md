@@ -56,5 +56,5 @@ There are account auditors, container auditors and object auditors.
 Account, container, and object replicator processes run in the background on all nodes that are running the corresponding services. A replicator will continuously examine its local node and compare the accounts, containers, or objects against the copies on other nodes in the cluster. If one of other nodes has an old or missing copy, then the replicator will send a copy of its local data out to that node.
 
 ## Data Placement
-When the server processes or the consistency services need to locate data it will look at the storage location (`/account`, `/account/container`, `/account/container/object`) and consult one of the three rings: account ring, container ring or object ring.
+When the server processes or the consistency services need to locate data it will look at the storage location (`/account`, `/account/container`, `/account/container/object`) and consult one of the three rings: account ring, container ring or object ring. Each Swift ring is a modified consistent hashing ring that is distributed to every node in the cluster.
 
