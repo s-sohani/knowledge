@@ -110,3 +110,4 @@ The Turtle language is a human-readable format for RDF data, preferred over the 
 
 
 ### The SPARQL query language
+SPARQL is a query language for triple-stores using the RDF data model, similar to Cypher in its pattern matching. It is concise and effective for queries, such as finding people who moved from the US to Europe. SPARQL treats properties and edges uniformly as predicates, simplifying syntax. Despite the uncertain future of the semantic web, SPARQL remains a powerful tool for internal application use.
