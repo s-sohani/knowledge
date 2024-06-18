@@ -58,3 +58,5 @@ Account, container, and object replicator processes run in the background on all
 ## Data Placement
 When the server processes or the consistency services need to locate data it will look at the storage location (`/account`, `/account/container`, `/account/container/object`) and consult one of the three rings: account ring, container ring or object ring. Each Swift ring is a modified consistent hashing ring that is distributed to every node in the cluster.
 
+
+
