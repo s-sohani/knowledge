@@ -3,7 +3,8 @@
     "Podcasts/BPLUS/Outliers.md": "rtl",
     "Podcasts/BPLUS/Neanderthals.md": "rtl",
     "Podcasts/BPLUS/Everybody Lies.md": "rtl",
-    "DataLake/Itroduction.md": "rtl"
+    "DataLake/Itroduction.md": "rtl",
+    "DataLake/Swift.md": "ltr"
   },
   "defaultDirection": "auto",
   "rememberPerFile": true,
