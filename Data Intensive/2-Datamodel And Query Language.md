@@ -100,9 +100,13 @@ The subject of a triple is equivalent to a vertex in a graph. The object is one 
 - A value in a primitive datatype, such as a string or a number. In that case, the predicate and object of the triple are equivalent to the key and value of a property on the subject vertex. For example, (lucy, age, 33) is like a vertex lucy with properties {"age":33}.
 - Another vertex in the graph. In that case, the predicate is an edge in the graph, the subject is the tail vertex, and the object is the head vertex. For example, in (lucy, marriedTo, alain) the subject and object lucy and alain are both vertices, and the predicate marriedTo is the label of the edge that connects them.
 
-
 #### The semantic web
 Triple-stores, while often associated with the semantic web, are independent data models used for various purposes, such as in Datomic. The semantic web aimed to make web data machine-readable using the Resource Description Framework (RDF) to create an interconnected web of data. Despite being overhyped and complicated, leading to skepticism, the semantic web has produced valuable work. Triples remain useful as an internal data model for applications, even without publishing RDF data on the semantic web.
 
 #### The RDF data model
 The Turtle language is a human-readable format for RDF data, preferred over the more verbose XML format. RDF often uses URIs for the subject, predicate, and object in triples to prevent conflicts when combining data from different sources. These URIs serve as namespaces and don't need to resolve to actual URLs. Tools like Apache Jena can convert between RDF formats as needed.
+
+![[Pasted image 20240618064021.png|500]]
+
+
+### The SPARQL query language
