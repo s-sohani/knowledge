@@ -15,5 +15,11 @@ As described so far, we only ever append to a file—so how do we avoid eventual
 
 Moreover, since compaction often makes segments much smaller (assuming that a key is overwritten several times on average within one segment), we can also merge several segments together at the same time.
 ![[Pasted image 20240618070635.png|600]]
-The merging and compaction of frozen segments can be done in a background thread
+- The merging and compaction of frozen segments can be done in a background thread
+- Each segment now has its own in-memory hash table, mapping keys to file offsets.
+- In order to find the value for a key, we first check the most recent segment’s hash map; if the key is not present we check the second-most-recent segment, and so on.
+- If you want to delete a key and its associated value, you have to append a special deletion record to the data file (sometimes called a tombstone). When log segments are merged, the tombstone tells the merging process to discard any previ‐ ous values for the deleted key.
+- If a database restarts, in-memory hash maps are lost. Restoring them by reading the entire segment file is time-consuming for large files. Bitcask addresses this by storing a snapshot of each segment’s hash map on disk for quicker recovery.
+- The database may crash at any time, including halfway through appending a record to the log. Bitcask files include checksums, allowing such corrupted parts of the log to be detected and ignored.
+- 
 
