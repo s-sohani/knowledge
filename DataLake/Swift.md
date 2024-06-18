@@ -1,3 +1,4 @@
+Swift is written in **Python**.
 Swift currently **powers the largest object storage clouds**, including Rackspace Cloud Files, the HP Cloud, IBM Softlayer Cloud and countless private object storage clusters
 - Swift can be used as a stand-alone storage system or as part of a cloud compute environment.
 - Swift runs on standard Linux distributions and on standard x86 server hardware
