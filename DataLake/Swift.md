@@ -1,4 +1,4 @@
-o- Swift currently **powers the largest object storage clouds**, including Rackspace Cloud Files, the HP Cloud, IBM Softlayer Cloud and countless private object storage clusters
+Swift currently **powers the largest object storage clouds**, including Rackspace Cloud Files, the HP Cloud, IBM Softlayer Cloud and countless private object storage clusters
 - Swift can be used as a stand-alone storage system or as part of a cloud compute environment.
 - Swift runs on standard Linux distributions and on standard x86 server hardware
 - Swift—like Amazon S3—has an eventual consistency architecture, which make it ideal for building massive, highly distributed + infrastructures with lots of unstructured data serving global sites.
