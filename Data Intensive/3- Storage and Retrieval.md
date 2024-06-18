@@ -21,5 +21,8 @@ Moreover, since compaction often makes segments much smaller (assuming that a ke
 - If you want to delete a key and its associated value, you have to append a special deletion record to the data file (sometimes called a tombstone). When log segments are merged, the tombstone tells the merging process to discard any previ‐ ous values for the deleted key.
 - If a database restarts, in-memory hash maps are lost. Restoring them by reading the entire segment file is time-consuming for large files. Bitcask addresses this by storing a snapshot of each segment’s hash map on disk for quicker recovery.
 - The database may crash at any time, including halfway through appending a record to the log. Bitcask files include checksums, allowing such corrupted parts of the log to be detected and ignored.
-- 
+- Log files are immutable, so we can write with multithread to the same file. 
+
+why don’t you update the file in place, overwriting the old value with the new value? An append-only design turns out to be good for several reasons:
+
 
