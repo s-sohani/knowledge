@@ -23,6 +23,9 @@ Moreover, since compaction often makes segments much smaller (assuming that a ke
 - The database may crash at any time, including halfway through appending a record to the log. Bitcask files include checksums, allowing such corrupted parts of the log to be detected and ignored.
 - Log files are immutable, so we can write with multithread to the same file. 
 
-why don’t you update the file in place, overwriting the old value with the new value? An append-only design turns out to be good for several reasons:
-
-
+Why don’t you update the file in place, overwriting the old value with the new value? An append-only design turns out to be good for several reasons:
+ - Concurrency and crash recovery are much simpler. leaving you worry with a file containing part of the old and part of the new value spliced together.
+ - Appending much faster than random writes especially on magnetic spinning-disk hard drives.
+ - Merging old segments avoids the problem of data files getting fragmented over time.
+Hash table index also has limitations:
+- 
