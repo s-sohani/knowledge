@@ -66,3 +66,6 @@ Swift ensures durability and resilience through the use of replicas or erasure c
 Swift's ring data structure for storage includes a modified consistent hashing ring with partition shift values. Each ring contains a devices list detailing all added drives with their ID, zone, weight, IP, port, and name. Additionally, the devices lookup table maps replicas to partitions across the cluster, typically organized as three rows by thousands of columns. During ring construction, Swift calculates optimal drive placements based on weights and ensures unique distribution. 
 Example:
 Referring back to that proxy server process that was looking up data. The proxy server process calculated the hash value of the storage location which maps to a partition value. The proxy server process uses this partition value on the Devices lookup table. The process will check the first replica row at the partition column to determine the device ID where the first replica is located. The process will search the next two rows to get the other two locations. In our figure the partition value was 2 and the process found that the data was located on drives 1, 8 and 10.
+
+
+The placement of the partitions is determined by a combination of replica count, replica lock, and data distribution mechanisms such as drive weight and unique-as-possible placement.
