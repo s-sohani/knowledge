@@ -7,7 +7,7 @@ Swift currently **powers the largest object storage clouds**, including Rackspac
 - Applications store and retrieve data in Swift via an industry-standard **RESTful HTTP API**
 - Objects can have extensive metadata, which can be indexed and searched
 - All objects are stored with multiple copies and are replicated in as-unique-as-possible availability zones and/or regions
-- Swift is scaled by adding additional nodes, which allows for a cost-effective l**inear storage expansion**
+- Swift is scaled by adding additional nodes, which allows for a cost-effective **linear storage expansion**
 - When adding or replacing hardware, data **does not have to be migrated to a new storage system**, i.e. there are no fork-lift upgrades
 - Failed nodes and drives can be swapped out while the cluster is running with no downtime. New nodes and drives can be added the same way.
 - Swift client libraries such as Java, Python, Ruby, or JavaScript.
@@ -70,3 +70,14 @@ Referring back to that proxy server process that was looking up data. The proxy 
 
 The placement of the partitions is determined by a combination of replica count, replica lock, and data distribution mechanisms such as drive weight and unique-as-possible placement.
 
+### Some Swift Features
+- Static website hosting—Users can host static websites, including javascript and css, directly from Swift. Swift also supports custom error pages and auto-generate listings.
+- Automatically expiring objects—Objects can be given an expiry time after which they are no longer available and will be deleted. This is very useful for preventing stale data from remaining available and to comply with data retention policies.
+- Time-limited URLs—URLs can be generated that are valid for only a limited period of time. These URLs can prevent hotlinking or enable temporary write permissions without needing to hand out full credentials to an untrusted party.
+- Quotas—Storage limits can be set on containers and accounts.
+- Direct-from-HTML-form uploads—Users can generate web forms that upload data directly into Swift so that it doesn’t have to be proxied through another server
+- Versioned writes—Users can write a new version of an object and keep all older versions of the object.
+- Support for chunked Transfer-Encoding—Users can upload data to Swift without knowing ahead of time how large the object is.
+- Multi-Range reads—Users can read one or more sections of an object with only one read request
+- Access control lists—Users can configure access to their data to enable or prevent others ability to read or write the data
+- Programmatic access to data locality—Deployers can integrate Swift with systems like Hadoop and take advantage of locality information to lower network requirements when processing data.
