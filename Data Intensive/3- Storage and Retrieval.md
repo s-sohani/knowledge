@@ -28,4 +28,8 @@ Why don’t you update the file in place, overwriting the old value with the new
  - Appending much faster than random writes especially on magnetic spinning-disk hard drives.
  - Merging old segments avoids the problem of data files getting fragmented over time.
 Hash table index also has limitations:
-- 
+- The hash table must fit in memory, so if you have a very large number of keys, you’re out of luck. In principle, you could maintain a hash map on disk, but unfortunately it is difficult to make an on-disk hash map perform well. It requires a lot of random access I/O. 
+- Range queries are not efficient. For example, you cannot easily scan over all keys between kitty00000 and kitty99999—you’d have to look up each key individually in the hash maps.
+
+## SSTables and LSM-Trees
+
