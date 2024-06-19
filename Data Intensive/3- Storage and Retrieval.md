@@ -54,4 +54,9 @@ Making a storage engine perform well involves various optimizations. The LSM-tre
 ## B-Trees
 While log-structured indexes are gaining traction, B-trees remain the most common indexing structure. Introduced in 1970, B-trees are standard in almost all relational databases and many non-relational ones. Like SSTables, B-trees maintain sorted key-value pairs but differ significantly in design. B-trees use fixed-size blocks or pages (e.g., 4 KB), reading and writing one page at a time, aligning closely with hardware storage.
 
-B-trees are organized with a root page leading to child pages through references, forming a hierarchical tree. Each page covers a range of keys, and searching involves traversing from the root to the relevant leaf page. Updates and insertions are handled within pages, splitting them if necessary to maintain balance. The tree depth remains O(log n), typically just three or four levels deep, enabling efficient lookups and updates.
+B-trees are organized with a root page leading to child pages through references, forming a hierarchical tree. Each page covers a range of keys, and searching involves traversing from the root to the relevant leaf page. Updates and insertions are handled within pages, splitting them if necessary to maintain balance. The tree depth remains O(log n), typically just three or four levels deep, enabling efficient lookups and updates. The number of references to child pages in one page of the B-tree is called the branching factor. A four-level tree of 4 KB pages with a branching factor of 500 can store up to 256 TB.
+![[Pasted image 20240619074206.png|600]]
+
+In the example, we are looking for the key 251, so we know that we need to follow the page reference between the boundaries 200 and 300. That takes us to a similar-looking page that further breaks down the 200–300 range into subranges.
+
+### Making B-trees reliable
