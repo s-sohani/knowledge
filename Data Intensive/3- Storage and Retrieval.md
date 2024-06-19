@@ -34,5 +34,6 @@ Hash table index also has limitations:
 ## SSTables and LSM-Trees
 These pairs appear in the order that they were written, and values later in the log take precedence over values for the same key earlier in the log. We require that the sequence of key-value pairs is sorted by key. We call this format **Sorted String Table**, or **SSTable** for short. We also require that each key only appears once within each merged segment file. 
 SSTables have several big advantages:
-
+- Merging segments is simple and efficient, even if the files are bigger than the available memory. The approach is like the one used in the mergesort algorithm.
+![[Pasted image 20240619070219.png|600]]
 
