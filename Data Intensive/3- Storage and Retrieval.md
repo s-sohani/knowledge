@@ -37,3 +37,7 @@ SSTables have several big advantages:
 - Merging segments is simple and efficient, even if the files are bigger than the available memory. The approach is like the one used in the mergesort algorithm.
 ![[Pasted image 20240619070219.png|600]]
 
+- In order to find a particular key in the file, you no longer need to keep an index of all the keys in memory. You still need an in-memory index to tell you the offsets for some of the keys, but it can be sparse: one key for every few kilobytes of segment file is sufficient, because a few kilobytes can be scanned very quickly. For example if you now `hadbag` and `hadsome` offset, you can scan keys between them to find `hadiwork` offset.
+![[Pasted image 20240619070818.png|600]]
+
+
