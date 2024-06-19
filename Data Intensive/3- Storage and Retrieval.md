@@ -40,4 +40,7 @@ SSTables have several big advantages:
 - In order to find a particular key in the file, you no longer need to keep an index of all the keys in memory. You still need an in-memory index to tell you the offsets for some of the keys, but it can be sparse: one key for every few kilobytes of segment file is sufficient, because a few kilobytes can be scanned very quickly. For example if you now `hadbag` and `hadsome` offset, you can scan keys between them to find `hadiwork` offset.
 ![[Pasted image 20240619070818.png|600]]
 
+- Since read requests need to scan over several key-value pairs in the requested range anyway, it is possible to group those records into a block and compress it before writing it to disk.
+
+### Constructing and maintaining SSTables
 
