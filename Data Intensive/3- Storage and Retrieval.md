@@ -66,4 +66,7 @@ An additional complication of updating pages in place is that careful concurrenc
 B-trees and LSM-trees have different performance characteristics: LSM-trees generally offer faster write speeds, while B-trees are typically faster for read operations. This is because LSM-trees must check multiple data structures and SSTables at various compaction stages during reads. 
 
 #### Advantages of LSM-trees
-A B-tree index must write every piece of data at least twice: once to the write-ahead log, and once to the tree page itself (and perhaps again as pages are split). There is also overhead from having to write an entire page at a time, even if only a few bytes in that page changed.
+- A B-tree index must write every piece of data at least twice: once to the write-ahead log, and once to the tree page itself (and perhaps again as pages are split). There is also overhead from having to write an entire page at a time, even if only a few bytes in that page changed.
+- Moreover, LSM-trees are typically able to sustain higher write throughput than B- trees, partly because they sometimes have lower write amplification.
+- LSM-trees can be compressed better, and thus often produce smaller files on disk than B-trees. B-tree storage engines leave some disk space unused due to fragmenta‐ tion: when a page is split or when a row cannot fit into an existing page, some space in a page remains unused.
+#### Downsides of LSM-trees
