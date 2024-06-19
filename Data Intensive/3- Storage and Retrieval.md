@@ -43,4 +43,5 @@ SSTables have several big advantages:
 - Since read requests need to scan over several key-value pairs in the requested range anyway, it is possible to group those records into a block and compress it before writing it to disk.
 
 ### Constructing and maintaining SSTables
+To maintain data sorted by key, an in-memory balanced tree structure like a red-black or AVL tree (a memtable) is used. Incoming writes are added to the memtable, which maintains sorted key-value pairs. When the memtable reaches a certain size, it's written to disk as an SSTable file, maintaining the sorted order. Read requests check the memtable first, then recent SSTable segments. A background process periodically merges and compacts these segments. To prevent data loss during a crash, writes are also appended to an unsorted log on disk, used to restore the memtable after a crash. The log is discarded once the memtable is saved as an SSTable.
 
