@@ -32,4 +32,7 @@ Hash table index also has limitations:
 - Range queries are not efficient. For example, you cannot easily scan over all keys between kitty00000 and kitty99999—you’d have to look up each key individually in the hash maps.
 
 ## SSTables and LSM-Trees
+These pairs appear in the order that they were written, and values later in the log take precedence over values for the same key earlier in the log. We require that the sequence of key-value pairs is sorted by key. We call this format **Sorted String Table**, or **SSTable** for short. We also require that each key only appears once within each merged segment file. 
+SSTables have several big advantages:
+
 
