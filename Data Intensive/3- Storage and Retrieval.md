@@ -75,3 +75,7 @@ Log-structured storage, like LSM-trees, can experience performance interference 
 B-trees, with each key existing in one place, are advantageous for strong transactional semantics, often used in relational databases for efficient range key locking. Despite the rise of log-structured indexes in new datastores, B-trees remain integral to many databases due to their reliable performance across various workloads. 
 
 ### Other Indexing Structures
+It is also very common to have secondary indexes. In relational databases, you can create several secondary indexes on the same table using the CREATE INDEX. Both B-trees
+and log-structured indexes can be used as secondary indexes.
+
+#### Storing values within the index
