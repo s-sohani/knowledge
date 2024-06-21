@@ -92,3 +92,7 @@ Lucene uses a SSTable-like structure for its term dictionary. This structure req
 
 #### Keeping everything in memory
 Disks have two significant advantages: they are durable (their contents are not lost if the power is turned off), and they have a lower cost per gigabyte than RAM.
+Many datasets are simply not that big, so it’s quite feasible to keep them entirely in memory.
+Some in-memory key-value stores, such as Memcached, are intended for caching use only, where it’s acceptable for data to be lost if a machine is restarted. But other in- memory databases aim for durability, which can be achieved with special hardware, by writing a log of changes to disk, by writing periodic snapshots to disk, or by replicating the in-memory state to other machines.
+Products such as VoltDB, MemSQL, and Oracle TimesTen are in-memory databases with a relational model, and the vendors claim that they can offer big performance improvements by removing all the overheads associated with managing on-disk data structures.
+Redis and Couchbase provide weak durability by writing to disk asyn‐ chronously.
