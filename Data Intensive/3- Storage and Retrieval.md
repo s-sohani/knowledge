@@ -89,3 +89,5 @@ The most common type of multi-column index is called a concatenated index, which
 #### Full-text search and fuzzy indexes
 All the indexes discussed so far assume that you have exact data and allow you to query for exact values of a key, or a range of values of a key with a sort order. What they don’t allow you to do is search for similar keys, such as misspelled words. Such fuzzy querying requires different techniques. For example Lucene is able to search text for words within a certain edit distance.
 Lucene uses a SSTable-like structure for its term dictionary. This structure requires a small in- memory index that tells queries at which offset in the sorted file they need to look for a key.
+
+#### Keeping everything in memory
