@@ -91,3 +91,4 @@ All the indexes discussed so far assume that you have exact data and allow you t
 Lucene uses a SSTable-like structure for its term dictionary. This structure requires a small in- memory index that tells queries at which offset in the sorted file they need to look for a key.
 
 #### Keeping everything in memory
+Disks have two significant advantages: they are durable (their contents are not lost if the power is turned off), and they have a lower cost per gigabyte than RAM.
