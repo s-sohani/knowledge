@@ -62,39 +62,39 @@ In the example, we are looking for the key 251, so we know that we need to follo
 ### Making B-trees reliable
 In order to make the database resilient to crashes, it is common for B-tree implementations to include an additional data structure on disk: a write-ahead log (WAL, also known as a redo log). This is an append-only file to which every B-tree modification must be written before it can be applied to the pages of the tree itself.
 An additional complication of updating pages in place is that careful concurrency control is required if multiple threads are going to access the B-tree at the same time —otherwise a thread may see the tree in an inconsistent state. This is typically done by protecting the tree’s data structures with latches (lightweight locks).
-### Comparing B-Trees and LSM-Trees
+## Comparing B-Trees and LSM-Trees
 B-trees and LSM-trees have different performance characteristics: LSM-trees generally offer faster write speeds, while B-trees are typically faster for read operations. This is because LSM-trees must check multiple data structures and SSTables at various compaction stages during reads. 
 
-#### Advantages of LSM-trees
+### Advantages of LSM-trees
 - A B-tree index must write every piece of data at least twice: once to the write-ahead log, and once to the tree page itself (and perhaps again as pages are split). There is also overhead from having to write an entire page at a time, even if only a few bytes in that page changed.
 - Moreover, LSM-trees are typically able to sustain higher write throughput than B- trees, partly because they sometimes have lower write amplification.
 - LSM-trees can be compressed better, and thus often produce smaller files on disk than B-trees. B-tree storage engines leave some disk space unused due to fragmenta‐ tion: when a page is split or when a row cannot fit into an existing page, some space in a page remains unused.
-#### Downsides of LSM-trees
+### Downsides of LSM-trees
 Log-structured storage, like LSM-trees, can experience performance interference during compaction, affecting read and write operations. While typically minor, high percentile response times can be significantly impacted, making B-trees more predictable. High write throughput can overwhelm compaction processes, causing unmerged segments to accumulate and slow down reads, necessitating careful monitoring.
 
 B-trees, with each key existing in one place, are advantageous for strong transactional semantics, often used in relational databases for efficient range key locking. Despite the rise of log-structured indexes in new datastores, B-trees remain integral to many databases due to their reliable performance across various workloads. 
 
-### Other Indexing Structures
+## Other Indexing Structures
 So far we have only discussed key-value indexes, which are like a primary key index in the relational model. A primary key uniquely identifies one row in a relational table, or one document in a document database, or one vertex in a graph database. It is also very common to have secondary indexes. In relational databases, you can create several secondary indexes on the same table using the CREATE INDEX. A secondary index can easily be constructed from a key-value index. The main difference is that keys are not unique; i.e., there might be many rows (documents, vertices) with the same key. This can be solved in two ways: either by making each value in the index a list of matching row identifiers (like a postings list in a full-text index) or by making each key unique by appending a row identifier to it. Both B-trees and log-structured indexes can be used as secondary indexes.
 
-#### Storing values within the index
+### Storing values within the index
 The key in an index is the thing that queries search for, but the value can be one of two things: it could be the actual row (document, vertex) in question, or it could be a reference to the row stored elsewhere.
 A compromise between a clustered index (storing all row data within the index) and a nonclustered index (storing only references to the data within the index) is known as a covering index or index with included columns, which stores some of a table’s columns within the index. 
 As with any kind of duplication of data, clustered and covering indexes can speed up reads, but they require additional storage and can add overhead on writes. Databases also need to go to additional effort to enforce transactional guarantees, because appli‐ cations should not see inconsistencies due to the duplication.
 
-#### Multi-column indexes
+### Multi-column indexes
 The indexes discussed so far only map a single key to a value. That is not sufficient if we need to query multiple columns of a table (or multiple fields in a document) simultaneously.
 The most common type of multi-column index is called a concatenated index, which simply combines several fields into one key by appending one column to another (the index definition specifies in which order the fields are concatenated). This is like an old-fashioned paper phone book, which provides an index from (lastname, first‐ name) to phone number. Due to the sort order, the index can be used to find all the people with a particular last name, or all the people with a particular lastname- firstname combination. However, the index is useless if you want to find all the peo‐ ple with a particular first name.
 
-#### Full-text search and fuzzy indexes
+### Full-text search and fuzzy indexes
 All the indexes discussed so far assume that you have exact data and allow you to query for exact values of a key, or a range of values of a key with a sort order. What they don’t allow you to do is search for similar keys, such as misspelled words. Such fuzzy querying requires different techniques. For example Lucene is able to search text for words within a certain edit distance.
 Lucene uses a SSTable-like structure for its term dictionary. This structure requires a small in- memory index that tells queries at which offset in the sorted file they need to look for a key.
 
-#### Keeping everything in memory
+### Keeping everything in memory
 Disks have two significant advantages: they are durable (their contents are not lost if the power is turned off), and they have a lower cost per gigabyte than RAM.
 Many datasets are simply not that big, so it’s quite feasible to keep them entirely in memory.
 Some in-memory key-value stores, such as Memcached, are intended for caching use only, where it’s acceptable for data to be lost if a machine is restarted. But other in- memory databases aim for durability, which can be achieved with special hardware, by writing a log of changes to disk, by writing periodic snapshots to disk, or by replicating the in-memory state to other machines.
 Products such as VoltDB, MemSQL, and Oracle TimesTen are in-memory databases with a relational model, and the vendors claim that they can offer big performance improvements by removing all the overheads associated with managing on-disk data structures.
 Redis and Couchbase provide weak durability by writing to disk asyn‐ chronously.
 
-##
+# Transaction Processing or Analytics?
