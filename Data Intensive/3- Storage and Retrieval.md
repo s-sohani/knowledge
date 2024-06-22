@@ -113,3 +113,5 @@ The data warehouse con‐ tains a read-only copy of the data in all the various 
 
 The data model of a data warehouse is most commonly relational, because **SQL is generally a good fit for analytic** queries.
 Some opensource project for data warehouses include Apache Hive, Spark SQL, Cloudera Impala, Facebook Presto, Apache Tajo, and Apache Drill.
+
+## Stars and Snowflakes: Schemas for Analytics
