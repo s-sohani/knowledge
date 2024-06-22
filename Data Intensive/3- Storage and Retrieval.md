@@ -105,3 +105,5 @@ In the early days of business data processing, a write to the database typically
 Databases were initially used for various types of data, such as blog comments, game actions, and address book contacts, but the core access pattern remained similar to business transactions. Applications typically retrieve a few records using a key and update records based on user input, a pattern known as online transaction processing (OLTP). 
 
 Over time, databases began to be used more for data analytics, which involves different access patterns. Analytical queries usually scan large numbers of records, read only a few columns per record, and calculate aggregate statistics (like counts, sums, or averages) rather than returning raw data. For example, analytic queries might include calculating total store revenue in a month, comparing sales during a promotion, or identifying purchase patterns of certain products. It has been called online analytic processing (OLAP)
+
+### Data Warehousing
