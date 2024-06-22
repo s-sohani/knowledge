@@ -111,5 +111,5 @@ DBAs are usually reluctant to let business analysts run ad hoc analytic queries 
 The data warehouse con‐ tains a read-only copy of the data in all the various OLTP systems in the company. Data is extracted from OLTP databases. Process of getting data into the warehouse is known as Extract–Transform–Load (ETL).
 ![[Pasted image 20240622073221.png|600]]
 
-### The divergence between OLTP databases and data warehouses
-The data model of a data warehouse is most commonly relational, because SQL is generally a good fit for analytic queries.
+The data model of a data warehouse is most commonly relational, because **SQL is generally a good fit for analytic** queries.
+Some opensource project for data warehouses include Apache Hive, Spark SQL, Cloudera Impala, Facebook Presto, Apache Tajo, and Apache Drill.
