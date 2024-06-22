@@ -117,5 +117,10 @@ Some opensource project for data warehouses include Apache Hive, Spark SQL, Clou
 ## Stars and Snowflakes: Schemas for Analytics
 Many data warehouses are used in a fairly formulaic style, known as a star schema (also known as dimensional modeling).
 At the center of the star there is a table schema is a so-called fact table. Each row of the fact table represents an event that occurred at a particular time.
+Some of the columns in the fact table are attributes, such as the price at which the product was sold and the cost of buying it from the supplier (allowing the profit mar‐ gin to be calculated). Other columns in the fact table are foreign key references to other tables, called dimension tables. As each row in the fact table represents an event, the dimensions represent the who, what, where, when, how, and why of the event.
+
 ![[Pasted image 20240622075338.png|600]]
 
+A variation of this template is known as the snowflake schema, where dimensions are further broken down into subdimensions. For example, there could be separate tables for brands and product categories, and each row in the dim_product table could ref‐ erence the brand and category as foreign keys, rather than storing them as strings in the dim_product table. Snowflake schemas are more normalized than star schemas, but star schemas are often preferred because they are simpler for analysts to work with.
+
+# Column-Oriented Storage
