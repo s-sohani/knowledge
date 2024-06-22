@@ -125,3 +125,5 @@ A variation of this template is known as the snowflake schema, where dimensions 
 
 # Column-Oriented Storage
 Although fact tables are often over 100 columns wide, a typical data warehouse query only accesses 4 or 5 of them at one time.
+![[Pasted image 20240622084112.png|600]]
+
