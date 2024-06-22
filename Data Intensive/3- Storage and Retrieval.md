@@ -124,3 +124,4 @@ Some of the columns in the fact table are attributes, such as the price at which
 A variation of this template is known as the snowflake schema, where dimensions are further broken down into subdimensions. For example, there could be separate tables for brands and product categories, and each row in the dim_product table could ref‐ erence the brand and category as foreign keys, rather than storing them as strings in the dim_product table. Snowflake schemas are more normalized than star schemas, but star schemas are often preferred because they are simpler for analysts to work with.
 
 # Column-Oriented Storage
+Although fact tables are often over 100 columns wide, a typical data warehouse query only accesses 4 or 5 of them at one time.
