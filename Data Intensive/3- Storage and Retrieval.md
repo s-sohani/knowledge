@@ -106,6 +106,10 @@ Databases were initially used for various types of data, such as blog comments, 
 
 Over time, databases began to be used more for data analytics, which involves different access patterns. Analytical queries usually scan large numbers of records, read only a few columns per record, and calculate aggregate statistics (like counts, sums, or averages) rather than returning raw data. For example, analytic queries might include calculating total store revenue in a month, comparing sales during a promotion, or identifying purchase patterns of certain products. It has been called online analytic processing (OLAP)
 
-### Data Warehousing
+## Data Warehousing
 DBAs are usually reluctant to let business analysts run ad hoc analytic queries on an OLTP data‐ base, since those queries are often expensive, scanning large parts of the dataset, which can harm the performance of concurrently executing transactions. A data warehouse, is a separate database that analysts can query to their hearts’ content, without affecting OLTP operations.
-The data warehouse con‐ tains a read-only copy of the data in all the various OLTP systems in the company. Data is extracted from OLTP databases. 
+The data warehouse con‐ tains a read-only copy of the data in all the various OLTP systems in the company. Data is extracted from OLTP databases. Process of getting data into the warehouse is known as Extract–Transform–Load (ETL).
+![[Pasted image 20240622073221.png|600]]
+
+### The divergence between OLTP databases and data warehouses
+The data model of a data warehouse is most commonly relational, because SQL is generally a good fit for analytic queries.
