@@ -126,4 +126,5 @@ A variation of this template is known as the snowflake schema, where dimensions 
 # Column-Oriented Storage
 Although fact tables are often over 100 columns wide, a typical data warehouse query only accesses 4 or 5 of them at one time.
 ![[Pasted image 20240622084112.png|600]]
-
+A row-oriented storage engine still needs to load all of those rows (each consisting of over 100 attributes) from disk into memory, parse them, and filter out those that don’t meet the required conditions. That can take a long time.
+The idea behind column-oriented storage is simple: don’t store all the values from one row together, but store all the values from each column together instead. If each col‐ umn is stored in a separate file, a query only needs to read and parse those columns that are used in that query, which can save a lot of work.
