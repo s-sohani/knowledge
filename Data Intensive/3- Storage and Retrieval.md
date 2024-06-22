@@ -115,4 +115,7 @@ The data model of a data warehouse is most commonly relational, because **SQL is
 Some opensource project for data warehouses include Apache Hive, Spark SQL, Cloudera Impala, Facebook Presto, Apache Tajo, and Apache Drill.
 
 ## Stars and Snowflakes: Schemas for Analytics
-Many data warehouses are used in a fairly formulaic style, known as a star schema (also known as dimen‐ sional modeling ).
+Many data warehouses are used in a fairly formulaic style, known as a star schema (also known as dimensional modeling).
+At the center of the star there is a table schema is a so-called fact table. Each row of the fact table represents an event that occurred at a particular time.
+![[Pasted image 20240622075338.png|600]]
+
