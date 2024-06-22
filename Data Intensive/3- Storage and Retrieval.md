@@ -98,3 +98,5 @@ Products such as VoltDB, MemSQL, and Oracle TimesTen are in-memory databases wit
 Redis and Couchbase provide weak durability by writing to disk asyn‐ chronously.
 
 # Transaction Processing or Analytics?
+In the early days of business data processing, a write to the database typically corresponded to a commercial transaction taking place like paying an employee’s salary.
+> A transaction needn’t necessarily have ACID properties. Transaction processing just means allowing clients to make low-latency reads and writes as opposed to batch processing jobs, which only run periodically
