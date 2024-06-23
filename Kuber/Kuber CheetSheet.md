@@ -186,3 +186,5 @@ kubectl exec -it kubia-7nog1 -- bash
 Using the --v 6 option increases the logging level enough to let you see the requests kubectl is sending to the API server.
 Using this option, kubectl will print out each HTTP request it sends to the Kuberne-
 tes API server.
+
+#### Add Or Rem
