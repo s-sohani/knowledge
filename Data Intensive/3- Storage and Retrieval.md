@@ -134,3 +134,5 @@ It's often look quite repetitive, which is a good sign for compression. Dependin
 ![[Pasted image 20240623063118.png|600]]
 
 ## Sort Order in Column Storage
+In a column store, it doesn’t necessarily matter in which order the rows are stored. It’s easiest to store them in the order in which they were inserted, since then inserting a new row just means appending to each of the column files. However, we can choose to impose an order, like we did with SSTables previously, and use that as an indexing mechanism.
+A second column can determine the sort order of any rows that have the same value in the first column.
