@@ -130,3 +130,6 @@ A row-oriented storage engine still needs to load all of those rows (each consis
 The idea behind column-oriented storage is simple: don’t store all the values from one row together, but store all the values from each column together instead. If each col‐ umn is stored in a separate file, a query only needs to read and parse those columns that are used in that query, which can save a lot of work.
 
 ## Column Compression
+It's often look quite repetitive, which is a good sign for compression. Depending on the data in the column, different compression techniques can be used. One technique that is particu‐ larly effective in data warehouses is bitmap encoding.
+![[Pasted image 20240623063118.png|600]]
+
