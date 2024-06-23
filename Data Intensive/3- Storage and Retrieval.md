@@ -142,3 +142,6 @@ An update-in-place approach, like B-trees use, is not possible with compressed c
 
 ## Aggregation: Data Cubes and Materialized Views
 Another aspect of data warehouses that is worth mentioning briefly is materialized aggregates. As discussed earlier, data warehouse queries often involve an aggregate function, such as COUNT, SUM, AVG, MIN, or MAX. 
+One way of creating such a cache is a materialized view. In a relational data model, it is often defined like a standard (virtual) view: a table-like object whose contents are the results of some query. The difference is that a materialized view is an actual copy of the query results, written to disk, whereas a virtual view is just a shortcut for writ‐ ing queries. When you read from a virtual view, the SQL engine expands it into the view’s underlying query on the fly and then processes the expanded query.
+A common special case of a materialized view is known as a data cube or OLAP cube.
+![[Pasted image 20240623083500.png|600]]
