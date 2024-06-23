@@ -133,3 +133,4 @@ The idea behind column-oriented storage is simple: don’t store all the values 
 It's often look quite repetitive, which is a good sign for compression. Depending on the data in the column, different compression techniques can be used. One technique that is particu‐ larly effective in data warehouses is bitmap encoding.
 ![[Pasted image 20240623063118.png|600]]
 
+## Sort Order in Column Storage
