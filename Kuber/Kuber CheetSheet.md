@@ -187,4 +187,10 @@ Using the --v 6 option increases the logging level enough to let you see the req
 Using this option, kubectl will print out each HTTP request it sends to the Kuberne-
 tes API server.
 
-#### Add Or Rem
+#### Add Or Remove Node
+```shell
+kubectl drain <Node Name> --ignore-daemonsets --delete-emptydir-data
+kubctl uncordon <Node Name>
+```
+
+
