@@ -11,16 +11,16 @@ In recent years, numerous new tools for data storage and processing have emerged
 
 Now you have essentially created a new, special-purpose data system from smaller, general-purpose components.
 
-If you are designing a data system or service, a lot of tricky questions arise. How do you ensure that the data remains correct and complete, even when things go wrong internally? How do you provide consistently good performance to clients, even when parts of your system are degraded? How do you scale to handle an increase in load?
-What does a good API for the service look like?
+If you are designing a data system or service, a lot of tricky questions arise. How do you ensure that the **data remains correct and complete**? How do you provide **consistently** good **performance** to clients? How do you **scale** to handle an increase in load?
+What does a **good API** for the service look like?
 
 ## Reliability
-• The application performs the function that the user expected.
-• It can tolerate the user making mistakes or using the software in unexpected ways.
-• Its performance is good enough for the required use case, under the expected load and data volume.
-• The system prevents any unauthorized access and abuse.
+• The application performs the function that the **user expected**.
+• It can **tolerate** the user making **mistakes** or using the software in unexpected ways.
+• Its **performance** is good enough for the required use case, under the **expected** **load** and data **volume**.
+• The system **prevents** any **unauthorized access** and abuse.
 
-The things that can go wrong are called **faults**, and systems that anticipate faults and can cope with them are called **fault-tolerant** or resilient.
+The things that can go wrong are called **faults**, and systems that anticipate faults and can cope with them are called **fault-tolerant** or **resilient**.
 
 ### Types of faults
 #### Hardware Faults
