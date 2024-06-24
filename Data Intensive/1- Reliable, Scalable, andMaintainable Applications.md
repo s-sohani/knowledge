@@ -33,10 +33,7 @@ To prevent this type of failure we can use **Raid** Hard Disks or use **Multi-ma
 - A **runaway process** that uses up some shared resource—CPU time, memory, disk space, or network bandwidth.
 - A service that the system depends on that slows down, becomes unresponsive, or starts returning **corrupted responses**.
 - **Cascading failures**, where a small fault in one component triggers a fault in another component, which in turn triggers further faults.
-
-In those circumstances, it is revealed that the software is making some kind of assumption about its environment—and while that assumption is usually true, it eventually stops being true for some reason.
-For example, in a message queue, that the number of incoming messages equals the number of outgoing messages.
-
+\
 #### Human Errors
 How do we make our systems reliable, in spite of unreliable humans?
 - Design systems in a way that minimizes opportunities for error for example develop **API** to do things.
