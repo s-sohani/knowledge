@@ -1,6 +1,6 @@
 Most application is developed in layered structure. Each leyer hide complexity of another layer. One of layers is DataModel. There are many data models, and each datamodel is suitable for specifice use case. In particular, we will compare the relational model, the document model, and a few graph-based data models. 
 
-## Relational Model Versus Document Model
+# Relational Model Versus Document Model
 SQL had become the tools of choice for most people who needed to store and query data with some kind of regular structure.
 
 The RDBMS use cases appear in typically transaction processing (entering sales or banking transactions, airline reservations, stock-keeping in warehouses) and batch processing (customer invoicing, payroll, reporting).
@@ -45,7 +45,7 @@ Although document databases store nested records similarly to the hierarchical m
 ### Relational Versus Document Databases Today
 When comparing relational databases to document databases, key differences include schema flexibility, performance, and handling of data relationships. The document model offers **schema** **flexibility**, better **performance** due to data locality, and can align more **closely with application data structures**. However, it lacks robust support for joins and handling many-to-many relationships, which can complicate application code. Relational databases excel in supporting **complex relationships** and provide automated **query optimization**, **simplifying** code maintenance. They enforce **schemas at write time**, unlike the **schema-on-read** approach of document databases, which allows for more flexible data handling but can lead to inconsistent data structures. Despite their differences, both models are converging, with each adopting features of the other, suggesting a hybrid model as a future direction for databases.
 
-## Query Languages for Data
+# Query Languages for Data
 When the relational model was introduced, it revolutionized querying data by using SQL, a declarative query language, unlike the imperative coding used by IMS and CODASYL. Declarative languages like SQL specify the desired result without detailing the steps to achieve it, allowing the database system to optimize query execution. This abstraction enables automatic performance improvements, hides implementation details, and facilitates parallel execution. In contrast, imperative languages require step-by-step instructions, making them harder to optimize and parallelize. Declarative queries, by focusing on what data to retrieve rather than how to retrieve it, are generally more concise and easier to work with.
 
 ### Declarative Queries on the Web
@@ -54,7 +54,7 @@ Declarative query languages have advantages beyond databases, as illustrated by 
 ### MapReduce Querying
 MapReduce is a programming model for processing large-scale data across multiple machines, popularized by Google and used by some NoSQL databases like MongoDB and CouchDB for read-only queries. It is a middle ground between declarative and imperative querying, using snippets of code repeatedly executed by the processing framework. An example query in MongoDB to count shark sightings per month involves writing map and reduce JavaScript functions. However, writing these functions can be complex and less optimized compared to declarative queries. To address this, MongoDB introduced the aggregation pipeline, a declarative query language similar to SQL, providing a more user-friendly and optimizable approach.
 
-## Graph-Like Data Models
+# Graph-Like Data Models
 Many-to-many relationships are key in distinguishing data models. For applications with mostly one-to-many or no relationships, the document model is suitable. However, for data with frequent many-to-many relationships, the relational model might not suffice as complexity grows. In such cases, the graph model is more natural, consisting of vertices (nodes) and edges (relationships). Common graph data examples include social networks, web links, and transportation networks. Graph algorithms, like shortest path searches and PageRank, are useful for such data. Graphs can also store heterogeneous data types, as seen with Facebook's diverse vertex and edge types.
 
 #### Graph Data Model
