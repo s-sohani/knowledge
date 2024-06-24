@@ -8,7 +8,7 @@ The RDBMS use cases appear in typically transaction processing (entering sales o
 The NoSql use cases are 
 - A need for greater **scalability** than relational databases.
 - A widespread preference for **free** and **open source** software over commercial database products.
-- Specialized query operations that are not well supported by the relational model.
+- **Specialized query operations** that are not well supported by the relational model.
 - Desire for a more dynamic and expressive data model
 
 ### Impedance mismatch
