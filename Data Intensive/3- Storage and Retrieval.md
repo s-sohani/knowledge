@@ -146,3 +146,4 @@ One way of creating such a cache is a materialized view. In a relational data mo
 A common special case of a materialized view is known as a data cube or OLAP cube.
 ![[Pasted image 20240623083500.png|600]]
 The advantage of a materialized data cube is that certain queries become very fast because they have effectively been precomputed. For example, if you want to know the total sales per store yesterday, you just need to look at the totals along the appro‐ priate dimension—no need to scan millions of rows. The disadvantage is that a data cube doesn’t have the same flexibility as querying the raw data. For example, there is no way of calculating which proportion of sales comes from items that cost more than $100, because the price isn’t one of the dimensions.
+
