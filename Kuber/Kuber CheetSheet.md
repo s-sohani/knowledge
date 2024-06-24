@@ -193,4 +193,18 @@ kubectl drain <Node Name> --ignore-daemonsets --delete-emptydir-data
 kubctl uncordon <Node Name>
 ```
 
-
+#### Cilium Network Policy for deny all trafic for pod
+```yaml
+apiVersion: "cilium.io/v2"
+kind: CiliumNetworkPolicy
+metadata:
+  name: "deny-all-connections"
+spec:
+  endpointSelector:
+    matchLabels:
+      redisLabel: <label>
+  ingress:
+  - fromEndpoints: []
+  egress:
+  - toEndpoints: []
+```
