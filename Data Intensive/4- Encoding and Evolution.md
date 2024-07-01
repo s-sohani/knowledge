@@ -34,3 +34,4 @@ The binary encoding is 66 bytes long, which is only a little less than the 81 by
 
 ## Thrift and Protocol Buffers
 Apache Thrift and Protocol Buffers (protobuf) are binary encoding libraries that are based on the same principle. Protocol Buffers was originally developed at Google, Thrift was originally developed at Facebook, and both were made open source.
+Both Thrift and Protocol Buffers require a schema for any data that is encoded.
