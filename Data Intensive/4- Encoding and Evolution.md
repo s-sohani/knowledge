@@ -20,3 +20,5 @@ Popular languages have built-in encoding like Java has java.io.Serializable, Rub
 ## JSON, XML, and Binary Variants
 They are widely known, widely supported, and almost as widely disliked. JSON, XML, and CSV are textual formats, and thus somewhat human-readable.
 they also have some subtle problems:
+- In XML and CSV, you cannot distinguish between a number and a string and JSON doesn’t distinguish integers and floating-point numbers.
+- 
