@@ -16,3 +16,7 @@ Popular languages have built-in encoding like Java has java.io.Serializable, Rub
 - The encoding is often tied to a particular programming language, and reading the data in another language is very difficult.
 - In order to restore data in the same object types, the decoding process needs to be able to instantiate arbitrary classes.
 - Efficiency problems in using CPU and RAM.
+
+## JSON, XML, and Binary Variants
+They are widely known, widely supported, and almost as widely disliked. JSON, XML, and CSV are textual formats, and thus somewhat human-readable.
+they also have some subtle problems:
