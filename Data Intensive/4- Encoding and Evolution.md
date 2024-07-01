@@ -54,4 +54,7 @@ The Thrift CompactProtocol encoding is semantically equivalent to BinaryProtocol
 ![[Pasted image 20240701193644.png|600]]
 
 ### Protocol Buffers
-It's very similar to Thrift’s CompactProtocol. Protocol Buffers fits the same record in 33 bytes.
+It's very similar to Thrift’s Compact Protocol. Protocol Buffers fits the same record in 33 bytes. In the schemas shown earlier, each field was marked either required or optional , but this makes no difference to how the field is encoded (nothing in the binary data indicates whether a field was required). The difference is simply that required enables a runtime check that fails if the field is not set, which can be useful for catching bugs.
+![[Pasted image 20240701194041.png|600]]
+
+### Field tags and schema evolution
