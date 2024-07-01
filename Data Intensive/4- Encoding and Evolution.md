@@ -12,4 +12,7 @@ The translation from the in-memory representation to a byte sequence is called e
 > Serialization is unfortunately also used in the context of transactions (see Chapter 7), with a completely different meaning.
 
 ## Language-Specific Formats
-Popular languages have built-in encoding like Java has java.io.Serializable, Ruby has Marshal , Python has pickle. But they have some problems 
+Popular languages have built-in encoding like Java has java.io.Serializable, Ruby has Marshal , Python has pickle. But they have some problems:
+- The encoding is often tied to a particular programming language, and reading the data in another language is very difficult.
+- In order to restore data in the same object types, the decoding process needs to be able to instantiate arbitrary classes.
+- Efficiency problems in using CPU and RAM.
