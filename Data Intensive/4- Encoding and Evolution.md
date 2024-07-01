@@ -48,5 +48,10 @@ Each field has a type annotation (to indicate whether it is a string, integer, l
 
 ![[Pasted image 20240701193356.png|600]]
 
+### Thrift Compact Protocol
+The Thrift CompactProtocol encoding is semantically equivalent to BinaryProtocol, it packs the same information into only 34 bytes. It does this by packing the field type and tag number into a single byte, and by using variable-length integers. Rather than using a full eight bytes for the number 1337, it is encoded in two bytes.
 
+![[Pasted image 20240701193644.png|600]]
 
+### Protocol Buffers
+It's very similar to Thrift’s CompactProtocol. Protocol Buffers fits the same record in 33 bytes.
