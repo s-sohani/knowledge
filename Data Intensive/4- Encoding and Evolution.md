@@ -25,4 +25,4 @@ they also have some subtle problems:
 - These schema languages are quite powerful, and thus quite complicated to learn and implement.
 
 ### Binary encoding
-
+For internally communication you could choose a format that is more compact or faster to parse.
