@@ -24,3 +24,5 @@ they also have some subtle problems:
 - They don’t support binary strings, people get around this limitation by encoding the binary data as text using Base64. it’s somewhat hacky and increases the data size by 33%.
 - These schema languages are quite powerful, and thus quite complicated to learn and implement.
 
+### Binary encoding
+
