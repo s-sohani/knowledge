@@ -33,3 +33,4 @@ For internally communication you could choose a format that is more compact or f
 The binary encoding is 66 bytes long, which is only a little less than the 81 bytes taken by the textual JSON encoding (with whitespace removed). In the following sections we will see how we can do much better, and encode the same record in just 32 bytes.
 
 ## Thrift and Protocol Buffers
+Apache Thrift and Protocol Buffers (protobuf) are binary encoding libraries that are based on the same principle. Protocol Buffers was originally developed at Google, Thrift was originally developed at Facebook, and both were made open source.
