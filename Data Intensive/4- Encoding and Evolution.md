@@ -41,3 +41,12 @@ Both Thrift and Protocol Buffers require a schema for any data that is encoded.
 ### Protocol Buffers
 ![[Pasted image 20240701192925.png|400]]
 
+Thrift has two different binary encoding formats, iii called BinaryProtocol and CompactProtocol. 
+
+### Thrift Binary Protocol
+Each field has a type annotation (to indicate whether it is a string, integer, list, etc.) and, where required, a length indication (length of a string, number of items in a list). The strings that appear in the data (“Martin”, “daydream‐ ing”, “hacking”) are also encoded as ASCII (or rather, UTF-8), similar to before. The big difference compared to Json Binary is that there are no field names ( userName , favoriteNumber , interests ). Instead, the encoded data contains field tags, which are numbers ( 1 , 2 , and 3 ). Those are the numbers that appear in the schema definition.
+
+![[Pasted image 20240701193356.png|600]]
+
+
+
