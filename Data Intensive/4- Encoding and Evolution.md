@@ -20,5 +20,6 @@ Popular languages have built-in encoding like Java has java.io.Serializable, Rub
 ## JSON, XML, and Binary Variants
 They are widely known, widely supported, and almost as widely disliked. JSON, XML, and CSV are textual formats, and thus somewhat human-readable.
 they also have some subtle problems:
-- In XML and CSV, you cannot distinguish between a number and a string and JSON doesn’t distinguish integers and floating-point numbers.
+- In XML and CSV, you cannot distinguish between a number and a string and JSON doesn’t distinguish integers and floating-point numbers. This is a problem when dealing with large numbers; for example, integers greater than 2 pow 53 cannot be exactly represented in an IEEE 754 double-precision floating- point number, so such numbers become inaccurate when parsed in a language that uses floating-point numbers (such as JavaScript). A solution is use decimal string. 
+- They don’t support binary strings, people get around this limitation by encoding the binary data as text using Base64. it’s somewhat hacky and increases the data size by 33%.
 - 
