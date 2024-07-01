@@ -8,3 +8,7 @@ In this chapter we will look at several formats for encoding data, including JSO
 
 # Formats for Encoding Data
 The translation from the in-memory representation to a byte sequence is called encoding (also known as serialization or marshalling), and the reverse is called decoding (parsing, deserialization, unmarshalling).
+
+> Serialization is unfortunately also used in the context of transactions (see Chapter 7), with a completely different meaning.
+
+## Language-Specific Formats
