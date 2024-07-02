@@ -70,3 +70,5 @@ How change schema in Thrift and Protocol Buffer while keeping backward and forwa
 
 ### Datatypes and schema evolution
 What about changing the datatype of a field?
+- There is a risk that values will lose precision or get truncated. For example, say you change a 32-bit integer into a 64-bit integer. the old code is still using a 32-bit variable to hold the value. If the decoded 64-bit value won’t fit in 32 bits.
+- 
