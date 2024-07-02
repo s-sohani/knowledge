@@ -65,4 +65,8 @@ How change schema in Thrift and Protocol Buffer while keeping backward and forwa
 - If old code (which doesn’t know about the new tag numbers you added) tries to read data written by new code, including a new field with a tag number it doesn’t recognize, it can simply ignore that field.
 - The only detail is that if you add a new field, you cannot make it required.
 - Every field you add after the initial deployment of the schema must be optional or have a default value.
-- 
+- You can only remove a field that is optional.
+- You can never use the same tag number again.
+
+### Datatypes and schema evolution
+What about changing the datatype of a field?
