@@ -59,3 +59,10 @@ It's very similar to Thrift’s Compact Protocol. Protocol Buffers fits the same
 
 ### Field tags and schema evolution
 How change schema in Thrift and Protocol Buffer while keeping backward and forward compatibility? 
+- If a field value is not set, it is simply omitted from the encoded record.
+- You can change the name of a field in the schema.
+- You cannot change a field’s tag, since that would make all existing encoded data invalid.
+- If old code (which doesn’t know about the new tag numbers you added) tries to read data written by new code, including a new field with a tag number it doesn’t recognize, it can simply ignore that field.
+- The only detail is that if you add a new field, you cannot make it required.
+- Every field you add after the initial deployment of the schema must be optional or have a default value.
+- 
