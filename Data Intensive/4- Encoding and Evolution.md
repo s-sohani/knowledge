@@ -58,3 +58,4 @@ It's very similar to Thrift’s Compact Protocol. Protocol Buffers fits the same
 ![[Pasted image 20240701194041.png|600]]
 
 ### Field tags and schema evolution
+How change schema in Thrift and Protocol Buffer while keeping backward and forward compatibility? 
