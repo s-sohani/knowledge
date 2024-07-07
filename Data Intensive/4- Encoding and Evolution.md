@@ -78,8 +78,9 @@ What about changing the datatype of a field?
 ![[Pasted image 20240707061758.png||600]]
 - There is nothing to identify fields or their datatypes. The encoding simply consists of values concatenated together.
 ![[Pasted image 20240707062000.png|600]]
+### The reader’s schema
 - The binary data can only be decoded correctly if the code reading the data is using the exact same schema as the code that wrote the data.
 - Avro doesn’t have optional and required markers in the same way as Protocol Buffers and Thrift do.
 - Changing the datatype of a field is possible, provided that Avro can convert the type.
 - Changing the name of a field is possible but a little tricky: the reader’s schema can contain aliases for field names, so it can match an old writer’s schema field names against the aliases. This means that changing a field name is backward compatible but not forward compatible.
-- 
+
