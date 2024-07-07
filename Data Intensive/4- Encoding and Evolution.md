@@ -93,4 +93,3 @@ Avro use case:
 - Database with individually written records: Include a version number at the beginning of every encoded record and to keep a list of schema versions in your data base. A reader can fetch a record, extract the version number, and then fetch the writer’s schema for that version number from the database.
 - Sending records over a network connection: Two process can negotiate the schema version on connection setup and then use that schema for the lifetime of the connection.
 
-### Dynamically generated schemas
