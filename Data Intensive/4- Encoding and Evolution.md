@@ -76,3 +76,6 @@ What about changing the datatype of a field?
 It is a subproject of Hadoop.
 It has two schema languages: one (Avro IDL) intended for human editing, and one (based on JSON) that is more easily machine-readable.
 ![[Pasted image 20240707061758.png||600]]
+There is nothing to identify fields or their datatypes. The encoding simply consists of values concatenated together.
+![[Pasted image 20240707062000.png|600]]
+The binary data can only be decoded correctly if the code reading the data is using the exact same schema as the code that wrote the data.
