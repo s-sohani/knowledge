@@ -78,9 +78,17 @@ What about changing the datatype of a field?
 ![[Pasted image 20240707061758.png||600]]
 - There is nothing to identify fields or their datatypes. The encoding simply consists of values concatenated together.
 ![[Pasted image 20240707062000.png|600]]
-### The reader’s schema
+### The Reader’s schema
 - The binary data can only be decoded correctly if the code reading the data is using the exact same schema as the code that wrote the data.
+- When data is decoded (read), the Avro library resolves the differences by looking at the writer’s schema and the reader’s schema side by side and translating the data from the writer’s schema into the reader’s schema.
+- It’s no problem if the writer’s schema and the reader’s schema have their fields in a different order, because the schema resolution matches up the fields by field name.
 - Avro doesn’t have optional and required markers in the same way as Protocol Buffers and Thrift do.
 - Changing the datatype of a field is possible, provided that Avro can convert the type.
 - Changing the name of a field is possible but a little tricky: the reader’s schema can contain aliases for field names, so it can match an old writer’s schema field names against the aliases. This means that changing a field name is backward compatible but not forward compatible.
+
+### The Writer’s schema
+Avro use case:
+- Large file with lots of records: The writer of that file can just include the writer’s schema once at the beginning of the file.
+- Database with individually written records: Include a version number at the beginning of every encoded record and to keep a list of schema versions in your data base. A reader can fetch a record, extract the version number, and then fetch the writer’s schema for that version number from the database.
+- Sending records over a network connection: Two process can negotiate the schema version on connection setup and then use that schema for the lifetime of the connection.
 
