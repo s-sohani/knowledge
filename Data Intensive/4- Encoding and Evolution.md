@@ -96,4 +96,9 @@ Avro use case:
 - Sending records over a network connection: Two process can negotiate the schema version on connection setup and then use that schema for the lifetime of the connection.
 
 # Modes of Dataflow
-test
+In the rest of this chapter we will explore some of the most common ways how data flows between processes:
+- Via databases
+- Via service calls
+- Via asynchronous message passing
+
+## Dataflow Through Databases
