@@ -79,3 +79,4 @@ It has two schema languages: one (Avro IDL) intended for human editing, and one 
 There is nothing to identify fields or their datatypes. The encoding simply consists of values concatenated together.
 ![[Pasted image 20240707062000.png|600]]
 The binary data can only be decoded correctly if the code reading the data is using the exact same schema as the code that wrote the data.
+Avro doesn’t have optional and required markers in the same way as Protocol Buffers and Thrift do.
