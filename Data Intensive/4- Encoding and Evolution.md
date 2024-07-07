@@ -73,10 +73,13 @@ What about changing the datatype of a field?
 - There is a risk that values will lose precision or get truncated. For example, say you change a 32-bit integer into a 64-bit integer. the old code is still using a 32-bit variable to hold the value. If the decoded 64-bit value won’t fit in 32 bits.
 
 ## Apache Avro
-It is a subproject of Hadoop.
-It has two schema languages: one (Avro IDL) intended for human editing, and one (based on JSON) that is more easily machine-readable.
+- It is a subproject of Hadoop.
+- It has two schema languages: one (Avro IDL) intended for human editing, and one (based on JSON) that is more easily machine-readable.
 ![[Pasted image 20240707061758.png||600]]
-There is nothing to identify fields or their datatypes. The encoding simply consists of values concatenated together.
+- There is nothing to identify fields or their datatypes. The encoding simply consists of values concatenated together.
 ![[Pasted image 20240707062000.png|600]]
-The binary data can only be decoded correctly if the code reading the data is using the exact same schema as the code that wrote the data.
-Avro doesn’t have optional and required markers in the same way as Protocol Buffers and Thrift do.
+- The binary data can only be decoded correctly if the code reading the data is using the exact same schema as the code that wrote the data.
+- Avro doesn’t have optional and required markers in the same way as Protocol Buffers and Thrift do.
+- Changing the datatype of a field is possible, provided that Avro can convert the type.
+- Changing the name of a field is possible but a little tricky: the reader’s schema can contain aliases for field names, so it can match an old writer’s schema field names against the aliases. This means that changing a field name is backward compatible but not forward compatible.
+- 
