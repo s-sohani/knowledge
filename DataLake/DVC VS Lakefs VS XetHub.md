@@ -16,3 +16,7 @@ I start with a single 8 GB file (dataset) and then repeat the following 10 times
 - I commit and push the changes to the central repository
 
 ![[Pasted image 20240708083929.png]]
+
+![[Pasted image 20240708091916.png]]
+
+
