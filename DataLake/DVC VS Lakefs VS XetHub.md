@@ -11,6 +11,8 @@ This is where XetHub's block-level deduplication comes into play. It offers an a
 ![[Pasted image 20240708084815.png]]
 
 # Performance
-
+I start with a single 8 GB file (dataset) and then repeat the following 10 times:
+- I carry out a simulated iteration of feature engineering by adding random new columns to the dataset
+- I commit and push the changes to the central repository
 
 ![[Pasted image 20240708083929.png]]
