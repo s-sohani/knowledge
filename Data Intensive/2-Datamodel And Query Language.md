@@ -9,7 +9,7 @@ The NoSql use cases are
 - A need for greater **scalability** than relational databases.
 - A widespread preference for **free** and **open source** software over commercial database products.
 - **Specialized query operations** that are not well supported by the relational model.
-- Desire for a more dynamic and expressive data model
+- Desire for a more **dynamic** and expressive **data model**
 
 ### Impedance mismatch
 Most application development today is done in object-oriented programming languages, which leads to a common criticism of the SQL data model.
@@ -36,7 +36,7 @@ While many-to-many relationships and joins are routinely used in relational data
 
 The text discusses the historical debate on how to best represent relationships in databases, which dates back to the earliest computer databases and was reignited by the advent of NoSQL and document databases. In the 1970s, IBM's Information Management System (IMS) was a popular hierarchical model database, resembling the JSON structure used in modern document databases. Both IMS and document databases handle one-to-many relationships well but struggle with many-to-many relationships and do not support joins, requiring data duplication or manual reference resolution.
 
-Two prominent models emerged to address these limitations: the relational model (which became SQL) and the network model (CODASYL model). The network model, an extension of the hierarchical model, allowed records to have multiple parents, facilitating many-to-many relationships. It used pointers to link records, requiring programmers to manually navigate access paths, which made querying and updating complex and inflexible.
+Two prominent models emerged to address these limitations: the relational model (which became SQL) and the **network model** (CODASYL model). The network model, an extension of the hierarchical model, allowed records to have **multiple parents**, facilitating many-to-many relationships. It used pointers to link records, requiring programmers to manually navigate access paths, which made querying and updating complex and inflexible.
 
 Despite its efficiency for the limited hardware of the time, the network model's complexity and inflexibility made it challenging to modify an application's data model. This historical context is relevant today as developers face similar issues with modern document databases.
 
