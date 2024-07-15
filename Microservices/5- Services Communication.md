@@ -219,6 +219,9 @@ Async
 مزایا
 1- دیگه نیازی به Registery و Discovery نداریم 
 2- نگهداری پیام ها در صورت وجود خطا در سرویس 
+ابزار های Apache kafkaو Active mq و rabbitmq
+
+ 
 
 
 
