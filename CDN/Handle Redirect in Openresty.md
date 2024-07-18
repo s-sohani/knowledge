@@ -1,7 +1,7 @@
 ```lua
 server {
-        listen 86;
-        resolver  ***.16.0.253 ipv6=off;
+        listen 80;
+        resolver  ***.***.***.*** ipv6=off;
         error_page 301 302 307 = @handle_redirect;
          recursive_error_pages on;
         access_log /data/log/head_redirector.log main;
