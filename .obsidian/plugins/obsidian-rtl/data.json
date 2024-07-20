@@ -4,7 +4,8 @@
     "Podcasts/BPLUS/Neanderthals.md": "rtl",
     "Podcasts/BPLUS/Everybody Lies.md": "rtl",
     "DataLake/Itroduction.md": "rtl",
-    "DataLake/Swift.md": "ltr"
+    "DataLake/Swift.md": "ltr",
+    "Microservices/7- Application Architecture.md": "rtl"
   },
   "defaultDirection": "auto",
   "rememberPerFile": true,
