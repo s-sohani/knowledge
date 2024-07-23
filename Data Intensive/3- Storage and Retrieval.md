@@ -87,7 +87,7 @@ The indexes discussed so far only map a single key to a value. That is not suffi
 The most common type of multi-column index is called a concatenated index, which simply **combines several fields into one key** by appending one column to another (the index definition specifies in which order the fields are concatenated). This is like an old-fashioned paper phone book, which provides an index from (lastname, first‐ name) to phone number. Due to the sort order, the index can be used to find all the people with a particular last name, or all the people with a particular lastname- firstname combination. However, the index is useless if you want to find all the people with a particular first name.
 
 ### Full-text search and fuzzy indexes
-All the indexes discussed so far assume that you have exact data and allow you to query for exact values of a key, or a range of values of a key with a sort order. What they don’t allow you to do is search for similar keys, such as misspelled words. Such fuzzy querying requires different techniques. For example Lucene is able to search text for words within a certain edit distance.
+All the indexes discussed so far assume that you have exact data and allow you to query for exact values of a key, or a range of values of a key with a sort order. What they don’t allow you to do is search for **similar keys**, such as misspelled words. Such fuzzy querying requires different techniques. For example Lucene is able to search text for words within a certain **edit distance**.
 Lucene uses a SSTable-like structure for its term dictionary. This structure requires a small in- memory index that tells queries at which offset in the sorted file they need to look for a key.
 
 ### Keeping everything in memory
