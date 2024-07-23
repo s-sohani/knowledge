@@ -68,7 +68,7 @@ B-trees and LSM-trees have different performance characteristics: LSM-trees gene
 #### Advantages of LSM-trees
 - A B-tree index must write every piece of data at least twice: once to the write-ahead log, and once to the tree page itself (and perhaps again as pages are split). There is also overhead from having to write an entire page at a time, even if only a few bytes in that page changed.
 - Moreover, LSM-trees are typically able to sustain higher write throughput than B- trees, partly because they sometimes have lower write amplification.
-- LSM-trees can be compressed better, and thus often produce smaller files on disk than B-trees. B-tree storage engines leave some disk space unused due to fragmenta‐ tion: when a page is split or when a row cannot fit into an existing page, some space in a page remains unused.
+- LSM-trees can be compressed better, and thus often produce smaller files on disk than B-trees. B-tree storage engines leave some disk space unused due to fragmentation: when a page is split or when a row cannot fit into an existing page, some space in a page remains unused.
 #### Downsides of LSM-trees
 Log-structured storage, like LSM-trees, can experience performance interference during compaction, affecting read and write operations. While typically minor, high percentile response times can be significantly impacted, making B-trees more predictable. High write throughput can overwhelm compaction processes, causing unmerged segments to accumulate and slow down reads, necessitating careful monitoring.
 
