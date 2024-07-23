@@ -60,10 +60,10 @@ B-trees are organized with a root page leading to child pages through references
 In the example, we are looking for the key 251, so we know that we need to follow the page reference between the boundaries 200 and 300. That takes us to a similar-looking page that further breaks down the 200–300 range into subranges.
 
 ### Making B-trees reliable
-In order to make the database resilient to crashes, it is common for B-tree implementations to include an additional data structure on disk: a write-ahead log (WAL, also known as a redo log). This is an append-only file to which every B-tree modification must be written before it can be applied to the pages of the tree itself.
-An additional complication of updating pages in place is that careful concurrency control is required if multiple threads are going to access the B-tree at the same time —otherwise a thread may see the tree in an inconsistent state. This is typically done by protecting the tree’s data structures with latches (lightweight locks).
+In order to make the database resilient to crashes, it is common for B-tree implementations to include an additional data structure on disk: a write-ahead log (**WAL**, also known as a redo log). This is an append-only file to which every B-tree modification must be written **before** it can be applied to the pages of the tree itself.
+An additional complication of updating pages in place is that careful **concurrency control** is required if multiple threads are going to access the B-tree at the same time —otherwise a thread may see the tree in an inconsistent state. This is typically done by protecting the tree’s data structures with **latches** (lightweight locks).
 ### Comparing B-Trees and LSM-Trees
-B-trees and LSM-trees have different performance characteristics: LSM-trees generally offer faster write speeds, while B-trees are typically faster for read operations. This is because LSM-trees must check multiple data structures and SSTables at various compaction stages during reads. 
+B-trees and LSM-trees have different performance characteristics: LSM-trees generally offer **faster write** speeds, while B-trees are typically faster for **read** **operations**. This is because LSM-trees must check multiple data structures and SSTables at various compaction stages during reads. 
 
 #### Advantages of LSM-trees
 - A B-tree index must write every piece of data at least twice: once to the write-ahead log, and once to the tree page itself (and perhaps again as pages are split). There is also overhead from having to write an entire page at a time, even if only a few bytes in that page changed.
