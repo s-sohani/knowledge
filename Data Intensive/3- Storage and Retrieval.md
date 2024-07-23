@@ -29,12 +29,12 @@ Why don’t you update the file in place, overwriting the old value with the new
  - Merging old segments avoids the problem of data files getting **fragmented** over time.
 Hash table index also has limitations:
 - The hash table must **fit** in **memory**, so if you have a very large number of keys, you’re out of luck. In principle, you could maintain a hash map on disk, but unfortunately it is difficult to make an on-disk hash map perform well. It requires **a lot of random access I/O**. 
-- Range queries are not efficient. For example, you cannot easily scan over all keys between kitty00000 and kitty99999—you’d have to look up each key individually in the hash maps.
+- **Range** queries are not efficient. For example, you cannot easily scan over all keys between kitty00000 and kitty99999—you’d have to look up each key individually in the hash maps.
 
 ## SSTables and LSM-Trees
-These pairs appear in the order that they were written, and values later in the log take precedence over values for the same key earlier in the log. We require that the sequence of key-value pairs is sorted by key. We call this format **Sorted String Table**, or **SSTable** for short. We also require that each key only appears once within each merged segment file. 
+These pairs appear in the order that they were written, and values later in the log take precedence over values for the same key earlier in the log. We require that the sequence of key-value pairs is **sorted by key**. We call this format **Sorted String Table**, or **SSTable** for short. We also require that each key only appears once within each merged segment file. 
 SSTables have several big advantages:
-- Merging segments is simple and efficient, even if the files are bigger than the available memory. The approach is like the one used in the mergesort algorithm.
+- Merging segments is simple and efficient, even if the files are bigger than the available memory. The approach is like the one used in the **mergesort algorithm**.
 ![[Pasted image 20240619070219.png|600]]
 
 - In order to find a particular key in the file, you no longer need to keep an index of all the keys in memory. You still need an in-memory index to tell you the offsets for some of the keys, but it can be sparse: one key for every few kilobytes of segment file is sufficient, because a few kilobytes can be scanned very quickly. For example if you now `hadbag` and `hadsome` offset, you can scan keys between them to find `hadiwork` offset.
