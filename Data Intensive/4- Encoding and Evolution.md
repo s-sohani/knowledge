@@ -105,6 +105,6 @@ In the rest of this chapter we will explore some of the most common ways how dat
 
 
 ## Dataflow Through Services: REST and RPC
-communicate process over a network. The arrangement calls `Client` and `Server`. 
-
+Communicate process over a network. The arrangement calls `Client` and `Server`. 
+There are variance client like web-browser, native app running on a mobile 
 
