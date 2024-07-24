@@ -102,3 +102,9 @@ In the rest of this chapter we will explore some of the most common ways how dat
 - Via asynchronous message passing
 
 ## Dataflow Through Databases
+
+
+## Dataflow Through Services: REST and RPC
+communicate process over a network. The arrangement calls `Client` and `Server`. 
+
+
