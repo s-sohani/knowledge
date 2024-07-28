@@ -39,3 +39,37 @@ Others
 ___
 
 
+Vim (Vi IMproved) is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is an enhanced version of the vi editor distributed with most UNIX systems. Vim is often called a "programmer's editor," and so useful for programming that many consider it an entire IDE. It's not just for programmers, though. Vim is perfect for all kinds of text editing, from composing email to editing configuration files.
+
+	Normal mode For navigation and text manipulation.
+	Insert mode For inserting text.
+	Visual mode For selecting text.
+	Command-line mode For entering commands.
+	i Enter insert mode to start editing text.
+	R Enter replace mode
+	Esc Return to normal mode from insert mode.
+	w Save changes.
+	q Quit Vim.
+	wq Save changes and quit Vim.
+	q! Quit without saving changes.
+	v Enter visual mode
+	V Enter visual line mode
+	d / x Delete selected items
+	y Copy selected items
+	gg Go to the beginning of the file
+	G Go to the end of the file
+	:n Go to line number n
+	n Go to the next search result
+	N Go to the previous search result Move the cursor to the next occurrence of the word under the cursor
+	x Delete the character under the cursor
+	dd Cut the current line
+	yy Copy the current line
+	p Paste
+	u Undo changes
+	Ctrl + r Redo
+	/word Search for "word"
+	:set hls Highlight all search results
+	:set number Show line numbers
+	:set number! Hide line numbers
+	:!command Execute a shell command
+	:%s/old/new/g Replace "old" with "new" throughout the file
