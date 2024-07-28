@@ -21,6 +21,11 @@ DVC (Data Version Control) is a free and open-source version system for data, ma
 - Has VSCode extension
 ![[Pasted image 20240728104925.png|600]]
 
+## Disk Usage
+Some of Version Controls implement file-level deduplication, which helps ensure that only one copy of the data is stored locally at any given point. However, it still requires you to store, upload, and download the entire file whenever there is a minor change (adding a new row or column). Other tools save changes in order to save Disk space. 
+
+![[Pasted image 20240708084815.png|600]]
+
 # Performance
 I start with a single 8 GB file (dataset) and then repeat the following 10 times:
 - I carry out a simulated iteration of feature engineering by adding random new columns to the dataset
