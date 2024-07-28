@@ -1,10 +1,6 @@
 When considering machine learning workflows, managing different versions and copies of data incurs inherent costs when cleaning data, creating new features, and splitting the data for different datasets.
 ![[Pasted image 20240728103811.png|600]]
 
-Some of Version Controls implement file-level deduplication, which helps ensure that only one copy of the data is stored locally at any given point. However, it still requires you to store, upload, and download the entire file whenever there is a minor change (adding a new row or column). Other tools save changes in order to save Disk space. 
-
-![[Pasted image 20240708084815.png|600]]
-
 ## Lakefs
 LakeFS is a DataLake middleware between your code and blob-store which implement Git operations on the data.
 - Provide S3 endpoint
