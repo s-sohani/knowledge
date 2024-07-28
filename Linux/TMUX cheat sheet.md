@@ -66,7 +66,60 @@
 
 - **Move window to another session:** `Ctrl-b :move-window -t destination_session_name:`
 
-### Write parallel in pans: 
+## Write parallel in pans: 
 ```
 set-window-option synchronize-panes [on | off]
+```
+
+
+## Connect to multi server 
+```bash
+#!/bin/bash  
+starttmux() {  
+	if [ -z "$HOSTS" ]; then  
+		echo -n "Please provide of list of hosts separated by spaces [ENTER]: "  
+		read HOSTS  
+	fi  
+	local hosts=( $HOSTS )  
+	tmux new-window "ssh ${hosts[0]}"  
+	unset hosts[0];  
+	for i in "${hosts[@]}"; do  
+		tmux split-window "ssh $i"  
+		#tmux select-layout tiled > /dev/null  
+	done  
+	tmux select-pane -t 0  
+	tmux set-window-option synchronize-panes on > /dev/null  
+}  
+HOSTS="server1 server2 server3"  
+starttmux
+```
+
+
+## run code with tmux in parallel
+``` 
+  
+# !/bin/bash  
+# ssh-multi  
+# D.Kovalov  
+# Based on [http://linuxpixies.blogspot.jp/2011/06/tmux-copy-mode-and-how-to-control.html](http://linuxpixies.blogspot.jp/2011/06/tmux-copy-mode-and-how-to-control.html)  
+  
+# a script to ssh multiple servers over multiple tmux panes  
+  
+starttmux() {  
+tmux new-window ""  
+for i in `seq 0 3`; do  
+tmux split-window -h "java -cp [target/pg_bench-1.0-SNAPSHOT-jar-with-dependencies.jar](http://target/pg_bench-1.0-SNAPSHOT-jar-with-dependencies.jar) org.example.Main"  
+tmux select-layout tiled > /dev/null  
+done  
+tmux select-pane -t 0  
+tmux set-window-option synchronize-panes on > /dev/null  
+  
+}  
+  
+#if [ -z $1 ]; then  
+# echo "Please define root folder"  
+# exit -1  
+#fi  
+  
+starttmux
 ```
