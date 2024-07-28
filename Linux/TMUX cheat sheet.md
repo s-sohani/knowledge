@@ -67,12 +67,14 @@ TMUX is a terminal multiplexer: it enables a number of terminals to be created, 
 
 - **Move window to another session:** `Ctrl-b :move-window -t destination_session_name:`
 
-## Write parallel in pans: 
+## Write parallel in pans
+
 ```
 set-window-option synchronize-panes [on | off]
 ```
 
-## Connect to Multi erver 
+## Connect to Multi Server 
+
 ```bash
 #!/bin/bash  
 starttmux() {  
@@ -95,6 +97,7 @@ starttmux
 ```
 
 ## Run code with tmux in parallel
+
 ``` bash
 # !/bin/bash  
 # ssh-multi  
@@ -111,3 +114,4 @@ starttmux() {
   
 starttmux
 ```
+
