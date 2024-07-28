@@ -23,6 +23,7 @@ DVC (Data Version Control) is a free and open-source version system for data, ma
 - Support pipeline 
 - Support Model Registery
 - Has VSCode extension
+![[Pasted image 20240728104925.png|600]]
 
 # Performance
 I start with a single 8 GB file (dataset) and then repeat the following 10 times:
