@@ -71,8 +71,7 @@
 set-window-option synchronize-panes [on | off]
 ```
 
-
-## Connect to multi server 
+## Connect to Multi Server 
 ```bash
 #!/bin/bash  
 starttmux() {  
@@ -94,32 +93,20 @@ HOSTS="server1 server2 server3"
 starttmux
 ```
 
-
-## run code with tmux in parallel
-``` 
-  
+## Run code with tmux in parallel
+``` bash
 # !/bin/bash  
 # ssh-multi  
-# D.Kovalov  
-# Based on [http://linuxpixies.blogspot.jp/2011/06/tmux-copy-mode-and-how-to-control.html](http://linuxpixies.blogspot.jp/2011/06/tmux-copy-mode-and-how-to-control.html)  
-  
-# a script to ssh multiple servers over multiple tmux panes  
-  
+
 starttmux() {  
-tmux new-window ""  
-for i in `seq 0 3`; do  
-tmux split-window -h "java -cp [target/pg_bench-1.0-SNAPSHOT-jar-with-dependencies.jar](http://target/pg_bench-1.0-SNAPSHOT-jar-with-dependencies.jar) org.example.Main"  
-tmux select-layout tiled > /dev/null  
-done  
-tmux select-pane -t 0  
-tmux set-window-option synchronize-panes on > /dev/null  
-  
+	tmux new-window ""  
+	for i in `seq 0 3`; do  
+		tmux split-window -h "echo 'Hello word'"  
+		tmux select-layout tiled > /dev/null  
+	done  
+	tmux select-pane -t 0  
+	tmux set-window-option synchronize-panes on > /dev/null   
 }  
-  
-#if [ -z $1 ]; then  
-# echo "Please define root folder"  
-# exit -1  
-#fi  
   
 starttmux
 ```
