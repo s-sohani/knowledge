@@ -20,3 +20,11 @@ I start with a single 8 GB file (dataset) and then repeat the following 10 times
 ![[Pasted image 20240708091916.png]]
 
 
+Lakefs
+- Provide S3 endpoint
+- Create Bucket for each branch
+- Save Diff or File Changes and metadata in postgres 
+- Support action and pipeline
+- 
+
+![[Pasted image 20240728103045.png]]
