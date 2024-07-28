@@ -46,6 +46,7 @@
 - **Next window:** `Ctrl-b n`
 - **Previous window:** `Ctrl-b p`
 - **Swap windows:** `Ctrl-b :swap-window -t 2` (swap current window with window 2)
+- **Show window tree with pans** `Ctrl-b w`
 
 ### Closing Windows
 
@@ -64,3 +65,8 @@
 ### Moving Windows Between Sessions
 
 - **Move window to another session:** `Ctrl-b :move-window -t destination_session_name:`
+
+### Write parallel in pans: 
+```
+set-window-option synchronize-panes [on | off]
+```
