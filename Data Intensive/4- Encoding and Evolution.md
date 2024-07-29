@@ -116,3 +116,4 @@ The API of a SOAP web service is described using an XML-based language called th
 
 ### The problems with remote procedure calls (RPCs)
 EJB is Java Rpc that limited for Enterprise java bean, RMI also limited for java, DCOM is limited to Microsoft platform. All of thease are based on the RPC idea that limit to a programming language. 
+Despite all these problems, RPC isn’t going away. Various RPC frameworks have been built on top of all the encodings mentioned in this chapter: for example, Thrift and Avro come with RPC support included, gRPC is an RPC implementation using Protocol Buffers, Finagle also uses Thrift, and Rest.li uses JSON over HTTP.
