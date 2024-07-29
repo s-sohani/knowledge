@@ -105,7 +105,7 @@ In the rest of this chapter we will explore some of the most common ways how dat
 Several applications or single application (running multi instance of an application) may access to database. It is necessary consider Backward and forward compatibility. If the application changes, some process runs the new version and other runs an old version of the application. This means that a value in the database may be written by a newer version of the code, and subsequently read by an older version of the code that is still running. Thus, forward compatibility is also often required for databases. For example you add new field in new version of an application, The old version wants to update a record, in this situation, the unknown field might be lost in that translation process. 
 ![[Pasted image 20240729092247.png|600]]
 ### Different values written at different times
-May be you have large database since five years ago and update your application
+May be you have large database since five years ago, update  application change entire schema. In this situation the whole data should be update, this is an expensive process for large database so most databases avoid it if possible. 
 ## Dataflow Through Services: REST and RPC
 Communicate process over a network. The arrangement calls `Client` and `Server`. 
 There are variance client like web-browser, native app running on a mobile, java script, web service. 
