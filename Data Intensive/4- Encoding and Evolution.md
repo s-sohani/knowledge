@@ -115,3 +115,4 @@ There are two popular approaches to web services: REST and SOAP.
 The API of a SOAP web service is described using an XML-based language called the Web Services Description Language, or WSDL. WSDL enables code generation so that a client can access a remote service using local classes and method calls.
 
 ### The problems with remote procedure calls (RPCs)
+EJB is Java Rpc that limited for Enterprise java bean, RMI also limited for java, DCOM is limited to Microsoft platform. All of thease are based on the RPC idea that limit to a programming language. 
