@@ -111,6 +111,5 @@ Communicate process over a network. The arrangement calls `Client` and `Server`.
 There are variance client like web-browser, native app running on a mobile, java script, web service. 
 Moreover, a server can itself be a client to another service.
 When HTTP is used as the underlying protocol for talking to the service, it is called a web service.
-
-
-
+There are two popular approaches to web services: REST and SOAP.
+The API of a SOAP web service is described using an XML-based language called the Web Services Description Language, or WSDL. WSDL enables code generation so that a client can access a remote service using local classes and method calls.
