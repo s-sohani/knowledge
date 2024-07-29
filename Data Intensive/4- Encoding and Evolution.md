@@ -110,6 +110,7 @@ May be you have large database since five years ago, update  application change 
 Communicate process over a network. The arrangement calls `Client` and `Server`. 
 There are variance client like web-browser, native app running on a mobile, java script, web service. 
 Moreover, a server can itself be a client to another service.
+When HTTP is used as the underlying protocol for talking to the service, it is called a web service.
 
 
 
