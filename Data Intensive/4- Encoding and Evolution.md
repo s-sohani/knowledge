@@ -102,7 +102,7 @@ In the rest of this chapter we will explore some of the most common ways how dat
 - Via asynchronous message passing
 
 ## Dataflow Through Databases
-
+Several applications or single application (running multi instance of an application) may access to database. It is necessary consider Backward and forward compatibility. 
 
 ## Dataflow Through Services: REST and RPC
 Communicate process over a network. The arrangement calls `Client` and `Server`. 
