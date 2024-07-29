@@ -119,3 +119,5 @@ EJB is Java Rpc that limited for Enterprise java bean, RMI also limited for java
 Despite all these problems, RPC isn’t going away. Various RPC frameworks have been built on top of all the encodings mentioned in this chapter: for example, Thrift and Avro come with RPC support included, gRPC is an RPC implementation using Protocol Buffers, Finagle also uses Thrift, and Rest.li uses JSON over HTTP.
 Custom RPC protocols with a binary encoding format can achieve better perfor‐ mance than something generic like JSON over REST. However, a RESTful API has other significant advantages: it is good for experimentation and debugging.
 For these reasons, REST seems to be the predominant style for public APIs. The main focus of RPC frameworks is on requests between services owned by the same organi‐ zation, typically within the same datacenter.
+
+## Message-Passing Dataflow
