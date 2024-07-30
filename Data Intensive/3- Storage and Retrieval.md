@@ -84,14 +84,14 @@ As with any kind of **duplication of data**, clustered and covering indexes can 
 
 ### Multi-column indexes
 The indexes discussed so far only map a single key to a value. That is not sufficient if we need to query multiple columns of a table (or multiple fields in a document) simultaneously.
-The most common type of multi-column index is called a concatenated index, which simply **combines several fields into one key** by appending one column to another (the index definition specifies in which order the fields are concatenated). This is like an old-fashioned paper phone book, which provides an index from (lastname, first‐ name) to phone number. Due to the sort order, the index can be used to find all the people with a particular last name, or all the people with a particular lastname- firstname combination. However, the index is useless if you want to find all the people with a particular first name.
+The most common type of multi-column index is called a concatenated index, which simply **combines several fields into one key** by appending one column to another (the index definition specifies in which order the fields are concatenated). This is like an old-fashioned paper phone book, which provides an index from (lastname, first‐ name) to phone number. Due to the sort order, the index can be used to **find all the people with a particular last name**, or all the people with a particular lastname- firstname combination. However, the index is useless if you want to find all the people with a particular first name.
 
 ### Full-text search and fuzzy indexes
 All the indexes discussed so far assume that you have exact data and allow you to query for exact values of a key, or a range of values of a key with a sort order. What they don’t allow you to do is search for **similar keys**, such as misspelled words. Such fuzzy querying requires different techniques. For example Lucene is able to search text for words within a certain **edit distance**.
 Lucene uses a SSTable-like structure for its term dictionary. This structure requires a small in- memory index that tells queries at which offset in the sorted file they need to look for a key.
 
 ### Keeping everything in memory
-Disks have two significant advantages: they are durable (their contents are not lost if the power is turned off), and they have a lower cost per gigabyte than RAM.
+**Disks** have two significant advantages: they are **durable** (their contents are not lost if the power is turned off), and they have a **lower cost** per gigabyte than RAM.
 Many datasets are simply not that big, so it’s quite feasible to keep them entirely in memory.
 Some in-memory key-value stores, such as Memcached, are intended for caching use only, where it’s acceptable for data to be lost if a machine is restarted. But other in- memory databases aim for durability, which can be achieved with special hardware, by writing a log of changes to disk, by writing periodic snapshots to disk, or by replicating the in-memory state to other machines.
 Products such as VoltDB, MemSQL, and Oracle TimesTen are in-memory databases with a relational model, and the vendors claim that they can offer big performance improvements by removing all the overheads associated with managing on-disk data structures.
