@@ -121,3 +121,4 @@ Custom RPC protocols with a binary encoding format can achieve better perfor‐ 
 For these reasons, REST seems to be the predominant style for public APIs. The main focus of RPC frameworks is on requests between services owned by the same organi‐ zation, typically within the same datacenter.
 
 ## Message-Passing Dataflow
+Send message through broker. Send async message. 
