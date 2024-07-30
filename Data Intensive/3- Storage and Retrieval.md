@@ -93,9 +93,9 @@ Lucene uses a SSTable-like structure for its term dictionary. This structure req
 ### Keeping everything in memory
 **Disks** have two significant advantages: they are **durable** (their contents are not lost if the power is turned off), and they have a **lower cost** per gigabyte than RAM.
 Many datasets are simply not that big, so it’s quite feasible to keep them entirely in memory.
-Some in-memory key-value stores, such as Memcached, are intended for caching use only, where it’s acceptable for data to be lost if a machine is restarted. But other in- memory databases aim for durability, which can be achieved with special hardware, by writing a log of changes to disk, by writing periodic snapshots to disk, or by replicating the in-memory state to other machines.
+Some in-memory key-value stores, such as Memcached, are intended for caching use only, where it’s acceptable for data to be lost if a machine is restarted. But other in- memory databases aim for durability, which can be achieved with special hardware, by **writing a log of changes to disk**, by writing **periodic snapshots** to disk, or by replicating the in-memory state to other machines.
 Products such as VoltDB, MemSQL, and Oracle TimesTen are in-memory databases with a relational model, and the vendors claim that they can offer big performance improvements by removing all the overheads associated with managing on-disk data structures.
-Redis and Couchbase provide weak durability by writing to disk asyn‐ chronously.
+Redis and Couchbase provide weak durability by writing to disk asynchronously.
 
 # Transaction Processing or Analytics?
 In the early days of business data processing, a write to the database typically corresponded to a commercial transaction taking place like paying an employee’s salary.
@@ -104,10 +104,10 @@ In the early days of business data processing, a write to the database typically
 
 Databases were initially used for various types of data, such as blog comments, game actions, and address book contacts, but the core access pattern remained similar to business transactions. Applications typically retrieve a few records using a key and update records based on user input, a pattern known as online transaction processing (OLTP). 
 
-Over time, databases began to be used more for data analytics, which involves different access patterns. Analytical queries usually scan large numbers of records, read only a few columns per record, and calculate aggregate statistics (like counts, sums, or averages) rather than returning raw data. For example, analytic queries might include calculating total store revenue in a month, comparing sales during a promotion, or identifying purchase patterns of certain products. It has been called online analytic processing (OLAP)
+Over time, databases began to be used more for data analytics, which involves different access patterns. Analytical queries usually scan large numbers of records, **read only a few columns per record**, and **calculate aggregate** statistics (like counts, sums, or averages) rather than returning raw data. For example, analytic queries might include calculating total store revenue in a month, comparing sales during a promotion, or identifying purchase patterns of certain products. It has been called online analytic processing (OLAP)
 
 ## Data Warehousing
-DBAs are usually reluctant to let business analysts run ad hoc analytic queries on an OLTP data‐ base, since those queries are often expensive, scanning large parts of the dataset, which can harm the performance of concurrently executing transactions. A data warehouse, is a separate database that analysts can query to their hearts’ content, without affecting OLTP operations.
+DBAs are usually reluctant to let business analysts run ad hoc analytic queries on an OLTP data‐ base, since those queries are often **expensive**, scanning large parts of the dataset, which can harm the performance of concurrently executing transactions. A data warehouse, is a separate database that analysts can query to their hearts’ content, without affecting OLTP operations.
 The data warehouse con‐ tains a read-only copy of the data in all the various OLTP systems in the company. Data is extracted from OLTP databases. Process of getting data into the warehouse is known as Extract–Transform–Load (ETL).
 ![[Pasted image 20240622073221.png|600]]
 
