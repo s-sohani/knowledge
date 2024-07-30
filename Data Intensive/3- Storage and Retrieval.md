@@ -80,7 +80,7 @@ So far we have only discussed key-value indexes, which are like a primary key in
 ### Storing values within the index
 The key in an index is the thing that queries search for, but the **value can be one of two things**: it could be the actual **row** (document, vertex) in question, or it could be a **reference** to the row stored elsewhere.
 A compromise between a clustered index (storing all row data within the index) and a nonclustered index (storing only references to the data within the index) is known as a covering index or index with included columns, which **stores some of a table’s columns within the index.** 
-As with any kind of duplication of data, clustered and covering indexes can speed up reads, but they require additional storage and can add overhead on writes. Databases also need to go to additional effort to enforce transactional guarantees, because applications should not see inconsistencies due to the duplication.
+As with any kind of **duplication of data**, clustered and covering indexes can speed up reads, but they require additional storage and can add overhead on writes. Databases also need to go to additional effort to enforce transactional guarantees, because applications should not see inconsistencies due to the duplication.
 
 ### Multi-column indexes
 The indexes discussed so far only map a single key to a value. That is not sufficient if we need to query multiple columns of a table (or multiple fields in a document) simultaneously.
