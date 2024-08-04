@@ -77,3 +77,192 @@ else
     echo "You are not John"
 fi
 ```
+
+# Elif
+```
+if [ "$NAME" == "John" ]; then
+    echo "Hello, John"
+elif [ "$NAME" == "Jane" ]; then
+    echo "Hello, Jane"
+else
+    echo "You are not John or Jane"
+fi
+```
+
+# Case
+```
+case "$NAME" in
+  "John")
+    echo "Hello, John"
+    ;;
+  "Jane")
+    echo "Hello, Jane"
+    ;;
+  *)
+    echo "You are not John or Jane"
+    ;;
+esac
+```
+
+# For Loop
+```
+for i in 1 2 3 4 5; do
+    echo "Number: $i"
+done
+
+# C-style for loop
+for ((i = 1; i <= 5; i++)); do
+    echo "Number: $i"
+done
+```
+
+# While Loop
+```
+count=1
+while [ $count -le 5 ]; do
+    echo "Number: $count"
+    ((count++))
+done
+```
+
+# Until Loop
+```
+count=1
+until [ $count -gt 5 ]; do
+    echo "Number: $count"
+    ((count++))
+done
+```
+
+# Defining and Calling Functions
+```
+# Define a function
+greet() {
+    echo "Hello, $1"
+}
+
+# Call a function
+greet "John"
+```
+
+# Returning Values
+```
+# Define a function with a return value
+add() {
+    return $(($1 + $2))
+}
+
+# Call the function
+add 3 5
+result=$?
+echo "Result: $result"
+```
+
+# Using Local Variables
+```
+my_function() {
+    local VAR="local variable"
+    echo "$VAR"
+}
+my_function
+echo "$VAR"  # This will be empty because VAR is local to the function
+```
+
+# Checking if a File Exists
+```
+if [ -f "filename.txt" ]; then
+    echo "File exists"
+else
+    echo "File does not exist"
+fi
+```
+
+# Checking if a Directory Exists
+```
+if [ -d "dirname" ]; then
+    echo "Directory exists"
+else
+    echo "Directory does not exist"
+fi
+```
+
+# Reading a File Line by Line
+```
+while IFS= read -r line; do
+    echo "$line"
+done < "filename.txt"
+```
+
+# Exit on Error
+```
+set -e  # Exit immediately if a command exits with a non-zero status
+```
+
+# Trap
+```
+# Run a command when the script exits
+trap 'echo "Script exited with status $?"' EXIT
+```
+
+# Parsing Arguments
+```
+while [ "$1" != "" ]; do
+    case $1 in
+        -a | --arg1 )         shift
+                              ARG1=$1
+                              ;;
+        -b | --arg2 )         shift
+                              ARG2=$1
+                              ;;
+        -h | --help )         usage
+                              exit
+                              ;;
+        * )                   usage
+                              exit 1
+    esac
+    shift
+done
+```
+
+# Usage Function
+```
+usage() {
+    echo "Usage: $0 [-a arg1] [-b arg2]"
+}
+```
+
+# Enabling Debugging
+```
+set -x  # Print commands and their arguments as they are executed
+```
+
+# Disabling Debugging
+```
+set +x  # Turn off debugging
+```
+
+# Examples
+```
+#!/bin/bash
+
+SOURCE="/path/to/source"
+DEST="/path/to/dest"
+DATE=$(date +%Y-%m-%d)
+BACKUP_NAME="backup-$DATE.tar.gz"
+
+tar -czf "$DEST/$BACKUP_NAME" "$SOURCE"
+echo "Backup completed: $DEST/$BACKUP_NAME"
+```
+
+```
+#!/bin/bash
+
+echo "Enter your age:"
+read AGE
+
+if [ "$AGE" -ge 18 ]; then
+    echo "You are an adult."
+else
+    echo "You are a minor."
+fi
+```
