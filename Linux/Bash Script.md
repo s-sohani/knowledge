@@ -1,5 +1,2 @@
 
-# Define Variable
-# Loop
-
-# Condition
+# Shebang
