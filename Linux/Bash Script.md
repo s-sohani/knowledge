@@ -315,6 +315,9 @@ echo "Hello, World!" > /dev/null
 ```
 
 ```bash
-# Create a 1 KB file filled with zero bytes
+#!/bin/bash
+
+### Create a 1 KB file filled with zero bytes
+
 dd if=/dev/zero of=zero_file bs=1K count=1
 ```
