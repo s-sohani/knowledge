@@ -24,7 +24,7 @@ They are widely known, widely supported, and almost as widely disliked. JSON, XM
 they also have some subtle problems:
 - In XML and CSV, you cannot **distinguish** between a **number** and a **string** and JSON doesn’t **distinguish** **integers** and **floating-point** numbers. This is a problem when dealing with large numbers, for example, integers greater than 2 pow 53 cannot be exactly represented in an IEEE 754 double-precision floating- point number, so such numbers become **inaccurate** when parsed in a language that uses floating-point numbers (such as JavaScript). A solution is use decimal string. 
 - They **don’t** support **binary strings**, people get around this limitation by encoding the binary data as text **using Base64**. it’s somewhat hacky and **increases the data** size by 33%.
-- These schema languages are quite powerful, and thus quite complicated to learn and implement.
+- These schema languages are quite powerful, and thus quite **complicated** to learn and **implement** (Converting data to object).
 
 ### Binary encoding
 For internally communication you could choose a format that is more compact or faster to parse.
@@ -43,7 +43,7 @@ Both Thrift and Protocol Buffers require a schema for any data that is encoded.
 ### Protocol Buffers
 ![[Pasted image 20240701192925.png|400]]
 
-Thrift has two different binary encoding formats, iii called BinaryProtocol and CompactProtocol. 
+Thrift has two different binary encoding formats called BinaryProtocol and CompactProtocol. 
 
 ### Thrift Binary Protocol
 Each field has a type annotation (to indicate whether it is a string, integer, list, etc.) and, where required, a length indication (length of a string, number of items in a list). The strings that appear in the data (“Martin”, “daydream‐ ing”, “hacking”) are also encoded as ASCII (or rather, UTF-8), similar to before. The big difference compared to Json Binary is that there are no field names ( userName , favoriteNumber , interests ). Instead, the encoded data contains field tags, which are numbers ( 1 , 2 , and 3 ). Those are the numbers that appear in the schema definition.
