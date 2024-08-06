@@ -12,12 +12,14 @@ awk 'pattern { action }' input_file
 ## Running `awk`
 
 ### From a File
-`
+```
 awk 'pattern { action }' file.txt
-`
+```
 
 ### From a Command
-`echo "text" | awk 'pattern { action }'`
+```
+echo "text" | awk 'pattern { action }'
+```
 
 ## Basic Examples
 
