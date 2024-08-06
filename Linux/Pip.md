@@ -2,5 +2,10 @@ The pipe is a powerful tool in Unix-like operating systems, allowing you to pass
 
 Basic Usage
 ```
+command1 | command2
+```
 
 ```
+ls -l | grep "filename"
+```
+
