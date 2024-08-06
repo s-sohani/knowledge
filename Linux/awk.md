@@ -2,7 +2,7 @@
 
 ## Basic Syntax
 
-```
+```bash
 awk 'pattern { action }' input_file
 ```
 
