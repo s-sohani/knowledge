@@ -1,6 +1,6 @@
 The pipe is a powerful tool in Unix-like operating systems, allowing you to pass the output of one command as the input to another.
 
-Basic Usage
+# Basic Usage
 ```
 command1 | command2
 ```
@@ -9,45 +9,49 @@ command1 | command2
 ls -l | grep "filename"
 ```
 
-View Long Outputs
+# View Long Outputs
 ```
 ls -l | less
 ```
 
-Sorting Output
+# Sorting Output
 ```
 cat file.txt | sort
 ```
 
-Removing Duplicate Lines
+# Removing Duplicate Lines
 ```
 cat file.txt | sort | uniq
 ```
 
-Counting Lines, Words, and Characters
+# Counting Lines, Words, and Characters
 ```
 cat file.txt | wc -l   # Count lines
 cat file.txt | wc -w   # Count words
 cat file.txt | wc -c   # Count characters
 ```
 
-Extracting Columns
+# Extracting Columns
 ```
 cat file.txt | cut -d' ' -f1,2
 ```
 
-Replacing Text
+# Replacing Text
 ```
 echo "Hello World" | sed 's/World/Ubuntu/'
 ```
 
-Combining Multiple Commands
+# Combining Multiple Commands
 ```
 cat file.txt | grep "pattern" | sort | uniq -c | sort -nr
 ```
 
-Combining with xargs
+# Combining with xargs
+When using large dataset or using complex script
 ```
 cat file_list.txt | xargs -I {} cp {} /destination_directory/
 ```
 
+```
+cat pids.txt | xargs kill -9
+```
