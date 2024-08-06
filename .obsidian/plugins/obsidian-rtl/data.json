@@ -6,7 +6,7 @@
     "DataLake/Itroduction.md": "rtl",
     "DataLake/Swift.md": "ltr",
     "Microservices/7- Application Architecture.md": "rtl",
-    "Linux/awk.md": "rtl"
+    "Linux/awk.md": "auto"
   },
   "defaultDirection": "auto",
   "rememberPerFile": true,
