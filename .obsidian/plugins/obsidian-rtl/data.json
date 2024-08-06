@@ -5,7 +5,8 @@
     "Podcasts/BPLUS/Everybody Lies.md": "rtl",
     "DataLake/Itroduction.md": "rtl",
     "DataLake/Swift.md": "ltr",
-    "Microservices/7- Application Architecture.md": "rtl"
+    "Microservices/7- Application Architecture.md": "rtl",
+    "Linux/awk.md": "rtl"
   },
   "defaultDirection": "auto",
   "rememberPerFile": true,
