@@ -24,33 +24,47 @@ echo "text" | awk 'pattern { action }'
 ## Basic Examples
 
 ### Print Entire File
-`awk '{ print }' file.txt`
+```
+awk '{ print }' file.txt
+```
 
 ### Print Specific Column
 
 Print the first column of each line:
-`awk '{ print $1 }' file.txt`
+```
+awk '{ print $1 }' file.txt
+```
 
 Print the first and third columns:
-`awk '{ print $1, $3 }' file.txt`
+```
+awk '{ print $1, $3 }' file.txt
+```
 
 ### Print Lines Matching a Pattern
 
 Print lines containing "pattern":
-`awk '/pattern/ { print }' file.txt`
+```
+awk '/pattern/ { print }' file.txt
+```
 
 Print lines where the first column matches "pattern":
-`awk '$1 == "pattern" { print }' file.txt`
+```
+awk '$1 == "pattern" { print }' file.txt
+```
 
 ## Field Separators
 
 ### Default Separator (Whitespace)
-`awk '{ print $1 }' file.txt`
+```
+awk '{ print $1 }' file.txt
+```
 
 ### Custom Separator
 
 Using a comma as a field separator:
+```
 `awk -F, '{ print $1 }' file.csv`
+```
 
 ## Built-in Variables
 
