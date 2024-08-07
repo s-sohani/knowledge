@@ -165,7 +165,7 @@ echo "search_string" | grep "pattern"  # Search for "pattern" in piped input
     grep "search_string" *.txt
     ```
     
-- Search recursively for a string in all files in a directory, **ignoring case**:
+- Search recursively for a string in all files in a directory, ignoring case:
     ```bash
     grep -ri "search_string" /path/to/dir
     ```
