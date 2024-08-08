@@ -50,4 +50,4 @@
 
 
 الگوهای توسعه entity
-
+الگوی specification: 
