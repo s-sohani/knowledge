@@ -6,3 +6,4 @@
 
 Object storage usually bottlenecks in disk IOPS. 
 Design of object store like UNIX file system. file name stores in data structure named inode and file data stores in another location. 
+Object store works similarly that inode become the metadata store that store all object metadata and hard disk become data store that stores the object data. 
