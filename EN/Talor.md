@@ -5,4 +5,9 @@ outfit: لباس فرم یا لباسی که مخصوص مراسم خاصی هس
 chairman: رییس
 chairman of the board رییس هییت مدیره
 trustees هیتت امنا
-the board of trustees اعضا هییت امنا
+chairman of the board of trustees رییس هیت امنا تراستیس یا همون هییت امنا
+president رییس دانشگاه
+provost معاون دانشگاه
+faculty اساتید دانشگاه
+alumni فارغ التحصیلان 
+commentsment فارغ التحصیلان
