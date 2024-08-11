@@ -5,3 +5,4 @@
 - How long data durability and system availability
 
 Object storage usually bottlenecks in disk IOPS. 
+Design of object store like UNIX file system. file name stores in data structure named inode and file data stores in another location. 
