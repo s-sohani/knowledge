@@ -6,4 +6,7 @@
 
 Object storage usually bottlenecks in disk IOPS. 
 Design of object store like UNIX file system. file name stores in data structure named inode and file data stores in another location. 
-Object store works similarly that inode become the metadata store that store all object metadata and hard disk become data store that stores the object data. ObjectStore use id to find object in datastore. This helps us to implement this two component independly. 
+Object store works similarly that inode become the metadata store that store all object metadata and hard disk become data store that stores the object data. ObjectStore use id to find object in datastore. This helps us to implement this two component independely. 
+![[Pasted image 20240811090208.png|600]]
+
+262
