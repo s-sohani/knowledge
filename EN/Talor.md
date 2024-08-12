@@ -18,3 +18,5 @@ humble شرمنده کردن من رو
 elated = delighted
 patchwork quilt هر کدام تیکه های پازلیم(تیکه های ملحفه)
 empathy همدردی
+insanely complex world دنیا به شدت پیچیده
+bazillion questions یه عالمه سوال
