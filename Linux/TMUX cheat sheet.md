@@ -32,7 +32,7 @@ TMUX is a terminal multiplexer: it enables a number of terminals to be created, 
 - **Resize pane:** `Ctrl-b` followed by arrow keys
 - **Precise resize (horizontal):** `Ctrl-b :resize-pane -L 10` or `Ctrl-b :resize-pane -R 10`
 - **Precise resize (vertical):** `Ctrl-b :resize-pane -U 10` or `Ctrl-b :resize-pane -D 10`
-- **Maximize a pan**
+- **Maximize a pan**: `Ctrl-b + z`
 
 ### Closing Panes
 
