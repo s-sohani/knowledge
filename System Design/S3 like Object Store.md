@@ -9,4 +9,5 @@ Design of object store like UNIX file system. file name stores in data structure
 Object store works similarly that inode become the metadata store that store all object metadata and hard disk become data store that stores the object data. ObjectStore use id to find object in datastore. This helps us to implement this two component independely. 
 ![[Pasted image 20240811090208.png|600]]
 
-262
+1- Write an draw the put, get and list of objects in the bucket 
+2- Write Apis schema 
