@@ -20,3 +20,4 @@ patchwork quilt هر کدام تیکه های پازلیم(تیکه های مل�
 empathy همدردی
 insanely complex world دنیا به شدت پیچیده
 bazillion questions یه عالمه سوال
+gratitude قدردانی
