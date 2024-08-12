@@ -16,3 +16,5 @@ fellow همکار و هم دست و هم رده
 fellow honorees همکارانی که مفتخر هستن با من
 humble شرمنده کردن من رو
 elated = delighted
+patchwork quilt هر کدام تیکه های پازلیم(تیکه های ملحفه)
+empathy همدردی
