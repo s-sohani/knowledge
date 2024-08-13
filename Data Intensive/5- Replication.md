@@ -20,6 +20,8 @@ In this model, writes are only performed on the master, while reads can be done 
 
 This Master/Slave model is a built-in feature of most relational and non-relational databases.
 
+
+![[Pasted image 20240813180742.png|600]]
 ### Synchronous vs Asynchronous Replication:
 - **Synchronous Replication**: A successful write response is only returned to the client when all slaves have synchronized with the master. This model ensures that no written data is lost if the leader fails. However, it blocks write requests until the data is reflected on all followers. If a follower encounters an issue during this process, the entire write operation may fail.
 
