@@ -88,7 +88,7 @@ starttmux() {
 	unset hosts[0];  
 	for i in "${hosts[@]}"; do  
 		tmux split-window "ssh $i"  
-		#tmux select-layout tiled > /dev/null  
+		tmux select-layout tiled > /dev/null  
 	done  
 	tmux select-pane -t 0  
 	tmux set-window-option synchronize-panes on > /dev/null  
