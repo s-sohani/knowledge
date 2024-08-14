@@ -68,6 +68,9 @@ TMUX is a terminal multiplexer: it enables a number of terminals to be created, 
 
 - **Move window to another session:** `Ctrl-b :move-window -t destination_session_name:`
 
+### Scroll
+- **Scroll up and down:** `Ctrl-b + [ ` and then 
+
 ## Write parallel in pans
 
 ```
