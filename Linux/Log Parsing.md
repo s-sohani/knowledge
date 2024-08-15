@@ -69,4 +69,15 @@ uniq foo.txt
 diff foo.log bar.log
 ```
 Output:
-- 
+- a: Add.
+- c: Change.
+- d: Delete.
+- #: Line number. 
+- <: File1.
+- >: File2.
+
+# AWK
+`AWK` is programming language for manipulating data. 
+```bash
+awk '{print $2}' foo.log
+```
