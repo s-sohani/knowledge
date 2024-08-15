@@ -27,6 +27,28 @@ The `CUT` command is used for parse fields from delimited logs.
 cut -d ":" -f 2 file.log
 ```
 - -d: Used the field delimiter. 
-- -f: the field numbers. 
+- -f: The field numbers. 
 - -c: Specifies characters position
 
+# SED
+`SED` is used to replace string in a file. 
+```bash 
+sed s/regex/replace/g
+```
+- s: Search 
+- g: Replace
+- d: Delete
+- w: Append to file
+
+# SORT
+`SORT` is used to sort a file. 
+```bash 
+sort foo.txt
+```
+- -o: Output to file. 
+- -r: Reverse order. 
+- -n: Numerical Sort
+- -k: Sort by column. 
+- -c: Check if ordered. 
+- -u: Sort and remove. 
+- 
