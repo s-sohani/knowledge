@@ -51,4 +51,22 @@ sort foo.txt
 - -k: Sort by column. 
 - -c: Check if ordered. 
 - -u: Sort and remove. 
+- -f: Ignore case. 
+- -h: Human sort. 
+
+# UNIQ
+`UNIQ` is used to extract uniq occurrences. 
+```bash 
+uniq foo.txt
+```
+- -c: Count the number of duplicate. 
+- -d: Print duplicate. 
+- -i: Case intensive. 
+
+# DIFF
+`DIFF` is used to display difference in files by comparing line by line. 
+```bash 
+diff foo.log bar.log
+```
+Output:
 - 
