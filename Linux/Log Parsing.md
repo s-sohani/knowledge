@@ -1,5 +1,5 @@
-# Grep
-`Grep` Allow you to search pattern in files, `ZGrep` for GZIP files. 
+# GREP
+`GREP` Allow you to search pattern in files, `ZGREP` for GZIP files. 
 ```bash
 grep <pattern> [options] file.log
 ```
@@ -10,11 +10,23 @@ grep <pattern> [options] file.log
 - -c: Count number of matches. 
 - -l: Find file names that match that pattern. 
 
-# NGrep
-`NGrep` is used for analyzing network packets. 
+# NGREP
+`NGREP` is used for analyzing network packets. 
 ```bash
 ngrep -I file.pcap
 ```
 - -d: Specify network interface. 
 - -i: Case insensitive. 
-- 
+- -x: Print in alternate hexdump. 
+- -t: print time stamp. 
+- -I: Road pcap file. 
+
+# CUT
+The `CUT` command is used for parse fields from delimited logs. 
+```bash
+cut -d ":" -f 2 file.log
+```
+- -d: Used the field delimiter. 
+- -f: the field numbers. 
+- -c: Specifies characters position
+
