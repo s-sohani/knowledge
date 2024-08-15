@@ -1,0 +1,3 @@
+sudo certbot rtonly --manual --preferred-challenges dns -v -d [boom.zarebin.ir](http://boom.zarebin.ir/) -d [boom.shaadbin.ir](http://boom.shaadbin.ir/) -d [nimboom.zarebin.ir](http://nimboom.zarebin.ir/) -d [nimboom.shaadbin.ir](http://nimboom.shaadbin.ir/) -d [biboom.zarebin.ir](http://biboom.zarebin.ir/) -d [biboom.shaadbin.ir](http://biboom.shaadbin.ir/)  
+  
+certbot --nginx -d [graf.pantachain.com](http://graf.pantachain.com/)
