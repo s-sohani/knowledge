@@ -39,3 +39,10 @@ fines the name and size of the shared memory zone used to store cache keys and m
     - **Explanation**:
         - **`off`**: Cached files are written directly to their final location in the cache directory. This can improve performance by avoiding the overhead of moving files from a temporary directory.
         - **`on`** (the default): Cached files are first written to a temporary directory (usually `/var/lib/nginx/proxy`) and then moved to the final cache location.
+
+```nginx
+proxy_cache_valid 200 302 10m;
+```
+**proxy_cache_valid**
+- **Purpose**: Sets the cache duration for the specified status codes.
+- **Explanation**: Both `200` and `302` responses will be cached for `10 minutes`. After 10 minutes, the cached response will be considered stale, and Nginx will need to fetch a fresh response from the upstream server if requested again.
