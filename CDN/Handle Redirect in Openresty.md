@@ -3,7 +3,7 @@ server {
         listen 80;
         resolver  ***.***.***.*** ipv6=off;
         error_page 301 302 307 = @handle_redirect;
-         recursive_error_pages on;
+        recursive_error_pages on;
         access_log /data/log/head_redirector.log main;
         location / {
                 proxy_pass https:/$request_uri;
