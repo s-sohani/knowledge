@@ -18,3 +18,11 @@ server {
 }
 ```
 
+# Disable redirect
+```
+proxy_hide_header Location;  
+proxy_redirect off;
+```
+
+
+
