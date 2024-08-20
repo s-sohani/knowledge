@@ -9,3 +9,5 @@ from dawn to midnight از صب تا شب
 the decisions really count (اهمیت و مهم است) آنجایی که تصمیماتی سرنوشساز وجود دارد 
 what we were in for چی پیش روی ماست. هدفمون چیه 
 convictions عقاید
+complain about problems شکایت کنه از مشکلات
+
