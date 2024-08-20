@@ -98,3 +98,6 @@ Mechanisms similar to triggers and stored procedures available in some databases
 For example, you can create a trigger that generates a log upon data changes and writes it somewhere else. Another process can then distribute those logs to the other nodes.
 
 However, this method has higher costs and a greater chance of bugs compared to other methods, but it offers high flexibility.
+
+# Problems with Replication Lag
+
