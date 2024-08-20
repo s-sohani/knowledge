@@ -17,8 +17,13 @@ The opposite of this is the shared-nothing architecture, also known as horizonta
 It seems that this approach can reduce latency and help address the issue of data loss.
 
 # Replication Versus Partitioning
+In the shared-nothing architecture, data is distributed across different nodes.
 
+There are two different approaches for data distribution:
+- **Replication:** Keeping multiple identical copies of data on different machines.
+- **Partitioning:** Dividing data into smaller parts and storing each part on an independent machine. This is also known as sharding.
 
+# Replication
 Replication means having multiple copies of the same data on different machines that are accessible through a network.
 
 ### Why Replication is Necessary:
