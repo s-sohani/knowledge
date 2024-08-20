@@ -1,3 +1,24 @@
+There are various reasons why you might want to distribute a database across multiple machines:
+- Scalability
+- Fault tolerance/high availability
+- Latency
+
+# Scaling to Higher Load
+If you constantly have a high load, it's better to do vertical scaling and have a machine with sufficient resources.
+Next, it mentions two methods for vertical scaling: shared-memory architecture and shared-disk architecture.
+The shared-memory architecture suggests that you can connect several CPUs, RAM, or disks together and place them under a single operating system.
+The shared-disk architecture, on the other hand, suggests that you can have several independent machines, each with its own CPU and RAM, but all working on a shared disk.
+
+The problem with shared-memory architecture is that when you have a machine with twice the resources, first, the costs more than double, and secondly, it can't handle exactly twice the load due to various reasons, including bottlenecks.
+The problem with shared-disk architecture is the overhead of locking, which disrupts the system's ability to scale.
+
+# Shared-Nothing Architectures
+The opposite of this is the shared-nothing architecture, also known as horizontal scaling. In this architecture, you distribute the data across independent machines or nodes.
+It seems that this approach can reduce latency and help address the issue of data loss.
+
+# Replication Versus Partitioning
+
+
 Replication means having multiple copies of the same data on different machines that are accessible through a network.
 
 ### Why Replication is Necessary:
