@@ -64,3 +64,8 @@ Steps for copying the latest version of data to the new follower:
 2. Copy the snapshot to the new follower.
 3. The new follower requests any remaining data changes that occurred after the snapshot from the leader.
 4. Once the new follower has processed the backlog, it announces that it is ready.
+
+# Handling Node Outages
+For various reasons, such as node failure, rebooting nodes during maintenance, or installing kernel security patches, one or more nodes might drop out of the replication set. Availability dictates that in such situations, the system should not completely fail or experience downtime. How is availability managed in leader-based architectures?
+
+
