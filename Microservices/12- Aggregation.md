@@ -81,3 +81,8 @@
 ذخیره و بازیابی توسط repository ها انجام میشه. برای هر  aggregate یک repository داریم. یک بار دیگه این نکته رو باید بگیم که فقط توی command query این صادق هست و توی query و گزارش گیری های اپلیکیشن سرویس نباید از این استفاده کنیم. 
 برای حذف هم یک  aggregate رو که داریم کل entity های اون  aggregate باید حذف بشه. 
 
+خلاصه بخش consistency
+مدیریت eventual consistency رو میسپاریم به domain event و immediate consistency رو میسپاریم دست ORM ها. 
+
+خلاصه بحث event توی بخش eventual consistency
+ما دو دسته 
