@@ -19,21 +19,11 @@ Because the first 4 bytes of the `ObjectId` are a timestamp, they are ordered ch
 To implement this method, you would follow these steps:
 
 1. **Initial Query**: Start by querying your collection with a limit to fetch the first page.
-    
-    javascript
-    
-    Copy code
-    
     `db.collection.find().sort({_id: 1}).limit(pageSize);`
     
 2. **Storing the Last ID**: After fetching the results, store the `_id` of the last document.
     
 3. **Subsequent Queries**: For subsequent pages, filter the documents with `_id` greater than the last seen `_id`.
-    
-    javascript
-    
-    Copy code
-    
     `db.collection.find({_id: {$gt: lastId}}).sort({_id: 1}).limit(pageSize);`
     
 
