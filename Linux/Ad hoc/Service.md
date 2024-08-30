@@ -1,3 +1,4 @@
+```bash
 [Unit]  
 Description=movadian  
 [After=network-online.target](http://after=network-online.target/)  
@@ -14,9 +15,9 @@ LimitNPROC=infinity
 [Install]  
 
 [WantedBy=multi-user.target](http://wantedby=multi-user.target/)
+```
 
-
-# example
+# Example
 ```bash
 #!/bin/bash
 
@@ -62,22 +63,21 @@ WantedBy=multi-user.target
     - **Description**: This is the default type. The service is considered started as soon as the process specified in `ExecStart` is executed. The service manager will not wait for the service to signal readiness.
     - **Use Case**: Suitable for services that don't fork or for simple scripts that run in the foreground.
     
-    Example:
-    
-    `[Service] Type=simple ExecStart=/usr/local/bin/my_app.sh`
-    
+    Example:    ```
+    ```
+    [Service] Type=simple ExecStart=/usr/local/bin/my_app.sh
+    ```
+
 - **`Type=forking`**:
     
     - **Description**: This type is used for services that fork a child process, and the parent process exits while the child continues to run. The service is considered started when the parent process exits.
     - **Use Case**: Common for traditional UNIX daemons that fork themselves into the background.
     
     Example:
-    
-    ini
-    
-    Copy code
-    
-    `[Service] Type=forking ExecStart=/usr/local/bin/my_daemon --daemonize`
+
+    ```
+    [Service] Type=forking ExecStart=/usr/local/bin/my_daemon --daemonize
+    ```
     
 - **`Type=oneshot`**:
     
@@ -85,12 +85,10 @@ WantedBy=multi-user.target
     - **Use Case**: Ideal for running initialization tasks or one-time scripts.
     
     Example:
-    
-    ini
-    
-    Copy code
-    
-    `[Service] Type=oneshot ExecStart=/usr/local/bin/my_one_time_script.sh RemainAfterExit=true`
+
+    ```
+    [Service] Type=oneshot ExecStart=/usr/local/bin/my_one_time_script.sh RemainAfterExit=true
+    ```
     
 - **`Type=notify`**:
     
@@ -98,12 +96,10 @@ WantedBy=multi-user.target
     - **Use Case**: Useful for services that have complex initialization processes and want to signal readiness explicitly.
     
     Example:
-    
-    ini
-    
-    Copy code
-    
-    `[Service] Type=notify ExecStart=/usr/local/bin/my_app_with_notify`
+
+    ```
+    [Service] Type=notify ExecStart=/usr/local/bin/my_app_with_notify
+    ```
     
 - **`Type=idle`**:
     
@@ -112,8 +108,44 @@ WantedBy=multi-user.target
     
     Example:
     
-    ini
-    
-    Copy code
-    
-    `[Service] Type=idle ExecStart=/usr/local/bin/my_idle_service.sh`
+    ```
+    [Service] Type=idle ExecStart=/usr/local/bin/my_idle_service.sh
+    ```
+
+# Run Python Script
+```
+#!/usr/bin/env python3
+
+```
+
+```bash
+[Unit]
+Description=My Python Script Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env python3 /usr/local/bin/my_python_script.py
+Restart=on-failure
+User=your-username
+Group=your-group
+WorkingDirectory=/usr/local/bin
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=my_python_service
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
+
+# Save Stdout logs in logfile
+```
+[Service]
+...
+StandardOutput=file:/var/log/my_python_service_output.log
+StandardError=file:/var/log/my_python_service_error.log
+
+```
+
