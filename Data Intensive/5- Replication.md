@@ -397,12 +397,28 @@ r:
 # Capturing the happens-before relationship
 
 اینجا داره سعی میکنه سناریوی شکل ۵-۱۳ رو یه جوری توضیح بده که نوشتن دوتا کاربر روی یک دیتا داده رو قراره خراب کنه. تو این سناریو دیتابیس اصلا قرار نیست مقدارهای چندتا کلاینت رو مرج کنه. هرچی میدن میگیره set میکنه
+تو این شکل یک لیدر و دیتابیس داریم ولی چون خواندن قبل از نوشتن انجام شده به مشکل خورده
 
 ![[Pasted image 20240821203913.png|600]]
 
 ![[Pasted image 20240821203926.png|600]]
 
 اینجا اشاره میکنه به روش  versioning که باهاش مشکل حل میشه
+مراحل ورژن زدن
+The server maintains a version number for every key, increments the version
+number every time that key is written, and stores the new version number along
+with the value written.
+• When a client reads a key, the server returns all values that have not been over‐
+written, as well as the latest version number. A client must read a key before
+writing.
+• When a client writes a key, it must include the version number from the prior
+read, and it must merge together all values that it received in the prior read. (The
+response from a write request can be like a read, returning all current values,
+which allows us to chain several writes like in the shopping cart example.)
+• When the server receives a write with a particular version number, it can over‐
+write all values with that version number or below (since it knows that they have
+been merged into the new value), but it must keep all values with a higher ver‐
+sion number (because those values are concurrent with the incoming write).
 
 # Merging concurrently written values
 ### Version vectors
