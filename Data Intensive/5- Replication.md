@@ -343,13 +343,12 @@ leaderless
 
 # Leaderless Replication
 برخی دیتابیس اه رویکری متفاوت به نام leaderless رو انتخاب کردن.
-In some leaderless implementations, the client directly sends its writes to several rep‐
-licas, while in others, a coordinator node does this on behalf of the client.
+In some leaderless implementations, the client directly sends its writes to several replicas, while in others, a coordinator node does this on behalf of the client.
 
 # Writing to the Database When a Node Is Down
 ![[Pasted image 20240821203626.png|600]]
 
-Version numbers are used to determine
+Version numbers are used to determine 
 which value is newer
 
 دیتااستورهای Dynamo-style به اونایی میگه که یه مکانیزیمی دارن که دیتاهای out-of-date رو شناسایی کنند و اصلاح شون کنن. 
