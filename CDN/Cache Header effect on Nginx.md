@@ -1,4 +1,4 @@
-the `Cache-Control` header plays a crucial role in determining whether content will be stored, served from the cache, or bypassed in Nginx (or any caching proxy). It directly influences whether a resource is cacheable, how long it should remain in the cache, and under what conditions it can be served from the cache.
+The `Cache-Control` header plays a crucial role in determining whether content will be stored, served from the cache, or bypassed in Nginx (or any caching proxy). It directly influences whether a resource is cacheable, how long it should remain in the cache, and under what conditions it can be served from the cache.
 
 ### Headers That Affect Caching in Nginx
 
