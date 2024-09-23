@@ -37,3 +37,19 @@
     
 - **Copy Line Up/Down**
     `Shift+Alt+Up/Down (Shift+Option+Up/Down on macOS)`
+
+In VSCode, you can navigate the cursor to the next or previous position with these shortcuts:
+
+- **Move to next cursor position (Next occurrence):**
+    
+    - **Windows/Linux:** `Ctrl + D`
+    - **Mac:** `Cmd + D`
+- **Move to previous cursor position:**
+    
+    - **Windows/Linux:** `Ctrl + U`
+    - **Mac:** `Cmd + U`
+
+In VSCode, to show the parameters (or signature) of a function while coding, you can use the **"Parameter Hints"** feature. Here's how you can trigger it:
+
+- **Windows/Linux:** `Ctrl + Shift + Space`
+- **Mac:** `Cmd + Shift + Space`
