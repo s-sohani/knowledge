@@ -6,11 +6,7 @@ In the context of an Nginx configuration file like `nginx_cachenode.conf.j2`, ti
 - **Use case**: How long Nginx waits to connect to the backend server.
 - **Default**: 60 seconds.
 - **Example**:
-    
-    nginx
-    
-    Copy code
-    
+
     `proxy_connect_timeout 30s;`
     
 
@@ -20,11 +16,7 @@ In the context of an Nginx configuration file like `nginx_cachenode.conf.j2`, ti
 - **Use case**: Defines how long Nginx waits for the backend server to send the response after the connection is established.
 - **Default**: 60 seconds.
 - **Example**:
-    
-    nginx
-    
-    Copy code
-    
+
     `proxy_read_timeout 60s;`
     
 
@@ -34,11 +26,7 @@ In the context of an Nginx configuration file like `nginx_cachenode.conf.j2`, ti
 - **Use case**: Defines how long Nginx waits for sending the full request to the backend.
 - **Default**: 60 seconds.
 - **Example**:
-    
-    nginx
-    
-    Copy code
-    
+
     `proxy_send_timeout 60s;`
     
 
@@ -48,11 +36,7 @@ In the context of an Nginx configuration file like `nginx_cachenode.conf.j2`, ti
 - **Use case**: Limits how long Nginx will wait for the client to receive data.
 - **Default**: 60 seconds.
 - **Example**:
-    
-    nginx
-    
-    Copy code
-    
+
     `send_timeout 60s;`
     
 
@@ -62,11 +46,7 @@ In the context of an Nginx configuration file like `nginx_cachenode.conf.j2`, ti
 - **Use case**: Defines how long Nginx will wait to receive the client request body.
 - **Default**: 60 seconds.
 - **Example**:
-    
-    nginx
-    
-    Copy code
-    
+
     `client_body_timeout 60s;`
     
 
@@ -76,11 +56,7 @@ In the context of an Nginx configuration file like `nginx_cachenode.conf.j2`, ti
 - **Use case**: Defines how long Nginx will keep an inactive connection with a client alive.
 - **Default**: 75 seconds.
 - **Example**:
-    
-    nginx
-    
-    Copy code
-    
+
     `keepalive_timeout 65s;`
     
 
