@@ -1040,7 +1040,7 @@
             "containerId": null,
             "originalText": "1. Slide title",
             "lineHeight": 1.2,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "frame",
@@ -2622,7 +2622,7 @@
             "containerId": null,
             "originalText": "VERY LONG\nPRESENTATION\nTITLE",
             "lineHeight": 1.2,
-            "baseline": 113
+            "baseline": 112
           },
           {
             "type": "frame",
@@ -14477,7 +14477,7 @@
             "containerId": null,
             "originalText": "Full Name",
             "lineHeight": 1.2,
-            "baseline": 25
+            "baseline": 24
           },
           {
             "type": "text",
@@ -14514,7 +14514,7 @@
             "containerId": null,
             "originalText": "Date",
             "lineHeight": 1.2,
-            "baseline": 20
+            "baseline": 19
           },
           {
             "type": "ellipse",
@@ -14578,7 +14578,7 @@
             "containerId": null,
             "originalText": "Very long presentation\ntitle",
             "lineHeight": 1.2,
-            "baseline": 65
+            "baseline": 64
           },
           {
             "type": "frame",
@@ -56351,7 +56351,7 @@
             "containerId": null,
             "originalText": "Legend",
             "lineHeight": 1.25,
-            "baseline": 36
+            "baseline": 34
           },
           {
             "type": "line",
@@ -61371,7 +61371,7 @@
             "containerId": null,
             "originalText": "Legend",
             "lineHeight": 1.25,
-            "baseline": 36
+            "baseline": 34
           },
           {
             "type": "line",
