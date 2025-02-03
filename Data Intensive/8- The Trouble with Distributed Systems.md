@@ -252,3 +252,7 @@ System.currentTimeMillis() in Java that return number of seconds (or millisecond
 
 ### Synchronized clocks for global snapshots
 
+تو بحث Snapshot Isolation گفتیم که لازمه به تراکنش ها یه آیدی یونیک اختصاص داده بشه. اگر دیتابیس توزیع شده هست این آیدی باید ازنوع
+global, monotonically increasing transaction ID
+باشد.
+
