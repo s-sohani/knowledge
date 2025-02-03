@@ -6,4 +6,20 @@ aria2c -s 8 -x 8 -k 1024M  -d /mnt/data/ -o LiteNode_output-directory.tgz --retr
 
 ```shell
 wget $Link -O - | zstd -cd | tar xf -
+
 ```
+
+
+
+In the command:
+
+bash
+
+CopyEdit
+
+`wget -qO- <URL> | tar -xz -C /path/to/destination`
+
+the `-qO-` flags in `wget` mean:
+
+- **`-q` (quiet mode)**: Suppresses the output, so `wget` doesn't print progress messages.
+- **`-O-` (output to stdout instead of file)**: Instead of saving the downloaded file to disk, it outputs the data to `stdout` (standard output), which is then piped (`|`) to `tar`.
