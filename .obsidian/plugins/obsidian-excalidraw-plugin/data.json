@@ -212,7 +212,7 @@
             "containerId": null,
             "originalText": "Slide title",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "ellipse",
@@ -816,7 +816,7 @@
             "containerId": null,
             "originalText": "SLIDE NUMBER",
             "lineHeight": 1.2,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "ellipse",
@@ -1040,7 +1040,7 @@
             "containerId": null,
             "originalText": "1. Slide title",
             "lineHeight": 1.2,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "frame",
@@ -2622,7 +2622,7 @@
             "containerId": null,
             "originalText": "VERY LONG\nPRESENTATION\nTITLE",
             "lineHeight": 1.2,
-            "baseline": 112
+            "baseline": 113
           },
           {
             "type": "frame",
@@ -13466,7 +13466,7 @@
             "containerId": null,
             "originalText": "Presentation Title",
             "lineHeight": 1.2,
-            "baseline": 34
+            "baseline": 36
           },
           {
             "type": "text",
@@ -14477,7 +14477,7 @@
             "containerId": null,
             "originalText": "Full Name",
             "lineHeight": 1.2,
-            "baseline": 24
+            "baseline": 25
           },
           {
             "type": "text",
@@ -14514,7 +14514,7 @@
             "containerId": null,
             "originalText": "Date",
             "lineHeight": 1.2,
-            "baseline": 19
+            "baseline": 20
           },
           {
             "type": "ellipse",
@@ -14578,7 +14578,7 @@
             "containerId": null,
             "originalText": "Very long presentation\ntitle",
             "lineHeight": 1.2,
-            "baseline": 64
+            "baseline": 65
           },
           {
             "type": "frame",
@@ -14858,7 +14858,7 @@
             "containerId": null,
             "originalText": "Text",
             "lineHeight": 1.25,
-            "baseline": 11
+            "baseline": 12
           },
           {
             "type": "diamond",
@@ -14922,7 +14922,7 @@
             "containerId": null,
             "originalText": "Text",
             "lineHeight": 1.25,
-            "baseline": 11
+            "baseline": 12
           },
           {
             "type": "diamond",
@@ -15302,7 +15302,7 @@
             "containerId": null,
             "originalText": "Very long\npresentation title",
             "lineHeight": 1.25,
-            "baseline": 77
+            "baseline": 76
           },
           {
             "type": "text",
@@ -15339,7 +15339,7 @@
             "containerId": null,
             "originalText": "Full Name",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "frame",
@@ -15592,7 +15592,7 @@
             "containerId": null,
             "originalText": "Text",
             "lineHeight": 1.25,
-            "baseline": 11
+            "baseline": 12
           },
           {
             "type": "diamond",
@@ -15656,7 +15656,7 @@
             "containerId": null,
             "originalText": "Text",
             "lineHeight": 1.25,
-            "baseline": 11
+            "baseline": 12
           },
           {
             "type": "diamond",
@@ -15901,7 +15901,7 @@
             "containerId": null,
             "originalText": "Very long\npresentation title",
             "lineHeight": 1.25,
-            "baseline": 77
+            "baseline": 76
           },
           {
             "type": "text",
@@ -15938,7 +15938,7 @@
             "containerId": null,
             "originalText": "Full Name",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "frame",
@@ -16102,7 +16102,7 @@
             "containerId": null,
             "originalText": "Text",
             "lineHeight": 1.25,
-            "baseline": 11
+            "baseline": 12
           },
           {
             "type": "diamond",
@@ -16166,7 +16166,7 @@
             "containerId": null,
             "originalText": "Text",
             "lineHeight": 1.25,
-            "baseline": 11
+            "baseline": 12
           },
           {
             "type": "diamond",
@@ -20905,7 +20905,7 @@
             "containerId": null,
             "originalText": "CDN",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "created": 1691073675703,
@@ -21638,7 +21638,7 @@
             "containerId": "0UJXoC14CD_cHsE50d-kv",
             "originalText": "FCM",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "ellipse",
@@ -21719,7 +21719,7 @@
             "containerId": "nNMTeW881WMC6K-JG223q",
             "originalText": "APNS",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "diamond",
@@ -21893,7 +21893,7 @@
             "containerId": null,
             "originalText": "Cache",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "arrow",
@@ -23179,7 +23179,7 @@
             "containerId": null,
             "originalText": "Database",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "arrow",
@@ -23436,7 +23436,7 @@
             "containerId": null,
             "originalText": "Kafka",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "created": 1691073638284,
@@ -23537,7 +23537,7 @@
             "containerId": "LGkRWuPMF8ufIHaQsYzTG",
             "originalText": "API\nGateway",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 42
           },
           {
             "type": "rectangle",
@@ -24982,7 +24982,7 @@
             "containerId": null,
             "originalText": "Lorem ipsum dolor sit amet, \nconsectetur adipiscing elit,sed\n do eiusmod tempor incididunt\n ut labore et dolore magna\n aliqua. Ut enim ad miveniam,\n quis nostrud exercitaullamco \nlaboris nisi ut aliquip ex ea \nommodo consequat. Duis aute \nirure dolor in reprehenderit i",
             "lineHeight": 1.3706256908018875,
-            "baseline": 30
+            "baseline": 29
           },
           {
             "type": "text",
@@ -25023,7 +25023,7 @@
             "containerId": null,
             "originalText": "Lorem ipsum dolor s, \nconsectetur adipng d\n do eiusmopor incididunt\nut labore et dolore magna\naliqua. Ut enim ad miveniam,\nquis nostrud exercitaullamco \nlaboris nisi ut aliquip ex ea \nommodo consequat. Duis aute \n",
             "lineHeight": 1.3706256908018875,
-            "baseline": 30
+            "baseline": 29
           },
           {
             "type": "arrow",
@@ -26258,7 +26258,7 @@
             "containerId": null,
             "originalText": "Cache",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "arrow",
@@ -27020,7 +27020,7 @@
             "containerId": null,
             "originalText": "Database",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "created": 1691071880917,
@@ -27719,7 +27719,7 @@
             "containerId": null,
             "originalText": "Database",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "created": 1691071806490,
@@ -27901,7 +27901,7 @@
             "containerId": null,
             "originalText": "Cache",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "arrow",
@@ -29071,7 +29071,7 @@
             "containerId": null,
             "originalText": "Database",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "rectangle",
@@ -32545,7 +32545,7 @@
             "containerId": null,
             "originalText": "Database",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "created": 1691070328336,
@@ -32591,7 +32591,7 @@
             "containerId": null,
             "originalText": "Kafka Streams Topology Design",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "text",
@@ -32630,7 +32630,7 @@
             "containerId": null,
             "originalText": "Diagram Title",
             "lineHeight": 1.25,
-            "baseline": 32
+            "baseline": 31
           },
           {
             "type": "text",
@@ -32823,7 +32823,7 @@
             "containerId": null,
             "originalText": "sub-0",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "id": "So0FniZVbWsmRfnRonS7X",
@@ -36425,7 +36425,7 @@
             "containerId": null,
             "originalText": "KS",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "id": "I8Av_c2i39-Fr66FNQDoy",
@@ -36504,7 +36504,7 @@
             "containerId": null,
             "originalText": "KT",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "id": "6Acn-TZgbDD5Z10-VctU6",
@@ -36583,7 +36583,7 @@
             "containerId": null,
             "originalText": "GKT",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "id": "4R3brE3pvKip1Sg283gL1",
@@ -36703,7 +36703,7 @@
             "containerId": null,
             "originalText": "filter",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "id": "6GfRRy29FW4tmhws26G71",
@@ -36751,7 +36751,7 @@
             "containerId": null,
             "originalText": "map",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "rectangle",
@@ -36873,7 +36873,7 @@
             "containerId": null,
             "originalText": "mapValues",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "ellipse",
@@ -36994,7 +36994,7 @@
             "containerId": null,
             "originalText": "0..*",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "text",
@@ -37034,7 +37034,7 @@
             "containerId": null,
             "originalText": "flatMap",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "rectangle",
@@ -37259,7 +37259,7 @@
             "containerId": null,
             "originalText": "0..*",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "text",
@@ -37299,7 +37299,7 @@
             "containerId": null,
             "originalText": "flatMapValues",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "ellipse",
@@ -37525,7 +37525,7 @@
             "containerId": null,
             "originalText": "split",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "ellipse",
@@ -38097,7 +38097,7 @@
             "containerId": null,
             "originalText": "merge",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "ellipse",
@@ -39095,7 +39095,7 @@
             "containerId": null,
             "originalText": "join",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "rectangle",
@@ -39652,7 +39652,7 @@
             "containerId": null,
             "originalText": "join",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "rectangle",
@@ -40276,7 +40276,7 @@
             "containerId": null,
             "originalText": "repartition\np=12",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 42
           },
           {
             "type": "rectangle",
@@ -41438,7 +41438,7 @@
             "containerId": null,
             "originalText": "selectKey",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "rectangle",
@@ -41678,7 +41678,7 @@
             "containerId": null,
             "originalText": "groupBy",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "rectangle",
@@ -43574,7 +43574,7 @@
             "containerId": null,
             "originalText": "reduce,\naggregate",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 42
           },
           {
             "type": "rectangle",
@@ -44275,7 +44275,7 @@
             "containerId": null,
             "originalText": "count",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "rectangle",
@@ -44643,7 +44643,7 @@
             "containerId": null,
             "originalText": "peek",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "ellipse",
@@ -44995,7 +44995,7 @@
             "containerId": null,
             "originalText": "forEach",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "ellipse",
@@ -45163,7 +45163,7 @@
             "containerId": null,
             "originalText": "stateful",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "line",
@@ -46079,7 +46079,7 @@
             "containerId": null,
             "originalText": "stateful",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           }
         ],
         "id": "2WefWsWVZGO6WFinRAbS5",
@@ -46126,7 +46126,7 @@
             "containerId": null,
             "originalText": "repartitioned",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "line",
@@ -46869,7 +46869,7 @@
             "containerId": null,
             "originalText": "repartitioned",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           }
         ],
         "id": "Tbe7RK-eoxFgRzHGRLWhz",
@@ -46917,7 +46917,7 @@
             "containerId": null,
             "originalText": "process",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "rectangle",
@@ -47058,7 +47058,7 @@
             "containerId": null,
             "originalText": "{}",
             "lineHeight": 1.25,
-            "baseline": 33
+            "baseline": 32
           }
         ],
         "id": "J564IVXfPSmMngXijZLCR",
@@ -47106,7 +47106,7 @@
             "containerId": null,
             "originalText": "processValues",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "rectangle",
@@ -47180,7 +47180,7 @@
             "containerId": null,
             "originalText": "{}",
             "lineHeight": 1.25,
-            "baseline": 33
+            "baseline": 32
           }
         ],
         "id": "JF6h3ZcEYycH4lFiCepWI",
@@ -47228,7 +47228,7 @@
             "containerId": null,
             "originalText": "transformValues",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "rectangle",
@@ -47302,7 +47302,7 @@
             "containerId": null,
             "originalText": "{}",
             "lineHeight": 1.25,
-            "baseline": 33
+            "baseline": 32
           }
         ],
         "id": "6r1ezZLTt7mn8_J2Ta0bO",
@@ -47350,7 +47350,7 @@
             "containerId": null,
             "originalText": "store-name",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "text",
@@ -48051,7 +48051,7 @@
             "containerId": null,
             "originalText": "Windowed",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "line",
@@ -48318,7 +48318,7 @@
             "containerId": null,
             "originalText": "Tumbling",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           }
         ],
         "id": "j4I2GqSxILpAwDHNGqmx-",
@@ -49182,7 +49182,7 @@
             "containerId": null,
             "originalText": "0",
             "lineHeight": 1.25,
-            "baseline": 10
+            "baseline": 9
           },
           {
             "type": "text",
@@ -49223,7 +49223,7 @@
             "containerId": null,
             "originalText": "1",
             "lineHeight": 1.25,
-            "baseline": 10
+            "baseline": 9
           },
           {
             "type": "text",
@@ -49264,7 +49264,7 @@
             "containerId": null,
             "originalText": "2",
             "lineHeight": 1.25,
-            "baseline": 10
+            "baseline": 9
           },
           {
             "type": "line",
@@ -52100,7 +52100,7 @@
             "containerId": null,
             "originalText": "Logged",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           }
         ],
         "id": "ABaW09pWkUMvxRq-jdIPw",
@@ -52435,7 +52435,7 @@
             "containerId": null,
             "originalText": "Not Logged",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "line",
@@ -52703,7 +52703,7 @@
             "containerId": null,
             "originalText": "Cached",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           }
         ],
         "id": "78p7AbO1tach398_sMopD",
@@ -52926,7 +52926,7 @@
             "containerId": null,
             "originalText": "Not Cached",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "line",
@@ -53332,7 +53332,7 @@
             "containerId": "33vKr6TGu9yBV_j8GaY0S",
             "originalText": "external\nSystem",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 42
           }
         ],
         "id": "PpSsrkiirbYHchDEqpsCg",
@@ -53409,7 +53409,7 @@
             "containerId": "19gtTYNRO7871ts2aimcO",
             "originalText": "external\nSystem",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 42
           }
         ],
         "id": "idUQfibHLpAJ6OdlBe1HP",
@@ -53486,7 +53486,7 @@
             "containerId": "xAjBUPJQINVtFabTCa4xd",
             "originalText": "external\nSystem",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 42
           }
         ],
         "id": "hUfLd2puitoisu0OnQ3sB",
@@ -53997,7 +53997,7 @@
             "containerId": "Vwduq6Iel-oADalF8GzaB",
             "originalText": "This is an 'inline' description",
             "lineHeight": 1.25,
-            "baseline": 35
+            "baseline": 36
           }
         ],
         "id": "rkn5HH9C_icP71sY-Nyg7",
@@ -54248,7 +54248,7 @@
             "containerId": null,
             "originalText": "AbcProcessor",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "text",
@@ -54411,7 +54411,7 @@
             "containerId": null,
             "originalText": "Key-changing Operation",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -54481,7 +54481,7 @@
             "containerId": null,
             "originalText": "Stateful Operation",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "ellipse",
@@ -54552,7 +54552,7 @@
             "containerId": null,
             "originalText": "Stateless Operation",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -54622,7 +54622,7 @@
             "containerId": null,
             "originalText": "Potentially Stateful\nand/or Key-changing",
             "lineHeight": 1.25,
-            "baseline": 35
+            "baseline": 36
           },
           {
             "type": "arrow",
@@ -54753,7 +54753,7 @@
             "containerId": null,
             "originalText": "Streams Topology Flow",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "text",
@@ -54792,7 +54792,7 @@
             "containerId": null,
             "originalText": "RPC / Access",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "line",
@@ -55247,7 +55247,7 @@
             "containerId": null,
             "originalText": "Topic",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "line",
@@ -56351,7 +56351,7 @@
             "containerId": null,
             "originalText": "Legend",
             "lineHeight": 1.25,
-            "baseline": 34
+            "baseline": 36
           },
           {
             "type": "line",
@@ -56625,7 +56625,7 @@
             "containerId": null,
             "originalText": "Read the KSTD docs",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "line",
@@ -59335,7 +59335,7 @@
             "containerId": null,
             "originalText": "Key-changing Operation",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -59405,7 +59405,7 @@
             "containerId": null,
             "originalText": "Stateful Operation",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "ellipse",
@@ -59476,7 +59476,7 @@
             "containerId": null,
             "originalText": "Stateless Operation",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "rectangle",
@@ -59642,7 +59642,7 @@
             "containerId": null,
             "originalText": "Potentially Stateful\nand/or Key-changing",
             "lineHeight": 1.25,
-            "baseline": 35
+            "baseline": 36
           },
           {
             "type": "arrow",
@@ -59773,7 +59773,7 @@
             "containerId": null,
             "originalText": "Streams Topology Flow",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "text",
@@ -59812,7 +59812,7 @@
             "containerId": null,
             "originalText": "RPC / Other",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "line",
@@ -60267,7 +60267,7 @@
             "containerId": null,
             "originalText": "Topic",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "line",
@@ -61371,7 +61371,7 @@
             "containerId": null,
             "originalText": "Legend",
             "lineHeight": 1.25,
-            "baseline": 34
+            "baseline": 36
           },
           {
             "type": "line",
@@ -61457,7 +61457,7 @@
             "containerId": null,
             "originalText": "Read the KSTD docs",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "line",
@@ -64175,7 +64175,7 @@
             "containerId": null,
             "originalText": "kstd.thriving.dev",
             "lineHeight": 1.25,
-            "baseline": 15
+            "baseline": 16
           },
           {
             "type": "line",
@@ -66975,7 +66975,7 @@
             "containerId": null,
             "originalText": "Off-page\nConnector",
             "lineHeight": 1.25,
-            "baseline": 35
+            "baseline": 34
           }
         ],
         "id": "zB7s47_c8YdombAHNxSYv",
@@ -67112,7 +67112,7 @@
             "containerId": null,
             "originalText": "Delay",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "id": "2ubxnY8d_WiH_BL5_tMbc",
@@ -67223,7 +67223,7 @@
             "containerId": null,
             "originalText": "Preparation /\nInitialization",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 42
           }
         ],
         "id": "D0V6_gzucPNKaYo0rlADU",
@@ -67438,7 +67438,7 @@
             "containerId": null,
             "originalText": "Database",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "id": "uaLlMcw6E6ejv52GWDpoo",
@@ -67625,7 +67625,7 @@
             "containerId": null,
             "originalText": "OR",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "id": "n3Fuxs_iH1zKmej-e7dtU",
@@ -67795,7 +67795,7 @@
             "containerId": null,
             "originalText": "AND",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "id": "0sp_GmpRbdtlu1GZ7omMt",
@@ -67898,7 +67898,7 @@
             "containerId": null,
             "originalText": "Input /\nOutput",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 42
           }
         ],
         "id": "RQ9LMOAx9SsgXwRdUWp3m",
@@ -67979,7 +67979,7 @@
             "containerId": "0h-ZKB5IgZaejdvIPwoE8",
             "originalText": "Predefined\nProcess",
             "lineHeight": 1.25,
-            "baseline": 48
+            "baseline": 49
           },
           {
             "type": "rectangle",
@@ -68111,7 +68111,7 @@
             "containerId": null,
             "originalText": "Manual Input",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "id": "gHuOPWI1to2x4GZe-f8a6",
@@ -68455,7 +68455,7 @@
             "containerId": null,
             "originalText": "Multiple\nDocument",
             "lineHeight": 1.25,
-            "baseline": 43
+            "baseline": 42
           }
         ],
         "id": "ZXLnsU-Sx_2nZTLLHK4bm",
@@ -68600,7 +68600,7 @@
             "containerId": null,
             "originalText": "Document",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "id": "EnBbCI8QaIPU6EmLx_POi",
@@ -68677,7 +68677,7 @@
             "containerId": "Q_oKTwLVNHjW9DQkiDUeo",
             "originalText": "Decision",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "id": "7drGFmKnMeVauqCwWXP1T",
@@ -68754,7 +68754,7 @@
             "containerId": "TpqBqrxZNxm6So_TyTxMG",
             "originalText": "Process",
             "lineHeight": 1.25,
-            "baseline": 18
+            "baseline": 17
           }
         ],
         "id": "349WwmMYPcxRe7MdAxOTo",
@@ -68891,7 +68891,7 @@
             "containerId": null,
             "originalText": "Start / End",
             "lineHeight": 1.25,
-            "baseline": 17
+            "baseline": 16
           }
         ],
         "id": "tVtn0WO3N-0HC-p2kIXOJ",
