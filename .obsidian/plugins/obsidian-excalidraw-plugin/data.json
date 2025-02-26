@@ -816,7 +816,7 @@
             "containerId": null,
             "originalText": "SLIDE NUMBER",
             "lineHeight": 1.2,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "ellipse",
@@ -2622,7 +2622,7 @@
             "containerId": null,
             "originalText": "VERY LONG\nPRESENTATION\nTITLE",
             "lineHeight": 1.2,
-            "baseline": 113
+            "baseline": 112
           },
           {
             "type": "frame",
@@ -8024,7 +8024,7 @@
             "containerId": null,
             "originalText": "1/ Slide Title",
             "lineHeight": 1.2,
-            "baseline": 19
+            "baseline": 18
           },
           {
             "type": "rectangle",
@@ -13466,7 +13466,7 @@
             "containerId": null,
             "originalText": "Presentation Title",
             "lineHeight": 1.2,
-            "baseline": 36
+            "baseline": 34
           },
           {
             "type": "text",
@@ -13505,7 +13505,7 @@
             "containerId": null,
             "originalText": "Full Name",
             "lineHeight": 1.2,
-            "baseline": 19
+            "baseline": 18
           },
           {
             "type": "frame",
@@ -13937,7 +13937,7 @@
             "containerId": null,
             "originalText": "1. Slide title",
             "lineHeight": 1.2,
-            "baseline": 18
+            "baseline": 17
           },
           {
             "type": "line",
@@ -17653,7 +17653,7 @@
             "containerId": null,
             "originalText": "Full name",
             "lineHeight": 1.2,
-            "baseline": 8
+            "baseline": 7
           },
           {
             "type": "ellipse",
@@ -45163,7 +45163,7 @@
             "containerId": null,
             "originalText": "stateful",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "line",
@@ -46079,7 +46079,7 @@
             "containerId": null,
             "originalText": "stateful",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           }
         ],
         "id": "2WefWsWVZGO6WFinRAbS5",
@@ -46126,7 +46126,7 @@
             "containerId": null,
             "originalText": "repartitioned",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "line",
@@ -46869,7 +46869,7 @@
             "containerId": null,
             "originalText": "repartitioned",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           }
         ],
         "id": "Tbe7RK-eoxFgRzHGRLWhz",
@@ -48318,7 +48318,7 @@
             "containerId": null,
             "originalText": "Tumbling",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           }
         ],
         "id": "j4I2GqSxILpAwDHNGqmx-",
@@ -52100,7 +52100,7 @@
             "containerId": null,
             "originalText": "Logged",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           }
         ],
         "id": "ABaW09pWkUMvxRq-jdIPw",
@@ -52435,7 +52435,7 @@
             "containerId": null,
             "originalText": "Not Logged",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "line",
@@ -52703,7 +52703,7 @@
             "containerId": null,
             "originalText": "Cached",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           }
         ],
         "id": "78p7AbO1tach398_sMopD",
@@ -52926,7 +52926,7 @@
             "containerId": null,
             "originalText": "Not Cached",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "line",
@@ -53997,7 +53997,7 @@
             "containerId": "Vwduq6Iel-oADalF8GzaB",
             "originalText": "This is an 'inline' description",
             "lineHeight": 1.25,
-            "baseline": 36
+            "baseline": 35
           }
         ],
         "id": "rkn5HH9C_icP71sY-Nyg7",
@@ -54411,7 +54411,7 @@
             "containerId": null,
             "originalText": "Key-changing Operation",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "rectangle",
@@ -54481,7 +54481,7 @@
             "containerId": null,
             "originalText": "Stateful Operation",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "ellipse",
@@ -54552,7 +54552,7 @@
             "containerId": null,
             "originalText": "Stateless Operation",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "rectangle",
@@ -54622,7 +54622,7 @@
             "containerId": null,
             "originalText": "Potentially Stateful\nand/or Key-changing",
             "lineHeight": 1.25,
-            "baseline": 36
+            "baseline": 35
           },
           {
             "type": "arrow",
@@ -54753,7 +54753,7 @@
             "containerId": null,
             "originalText": "Streams Topology Flow",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "text",
@@ -54792,7 +54792,7 @@
             "containerId": null,
             "originalText": "RPC / Access",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "line",
@@ -55247,7 +55247,7 @@
             "containerId": null,
             "originalText": "Topic",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "line",
@@ -56351,7 +56351,7 @@
             "containerId": null,
             "originalText": "Legend",
             "lineHeight": 1.25,
-            "baseline": 36
+            "baseline": 34
           },
           {
             "type": "line",
@@ -56625,7 +56625,7 @@
             "containerId": null,
             "originalText": "Read the KSTD docs",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "line",
@@ -59335,7 +59335,7 @@
             "containerId": null,
             "originalText": "Key-changing Operation",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "rectangle",
@@ -59405,7 +59405,7 @@
             "containerId": null,
             "originalText": "Stateful Operation",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "ellipse",
@@ -59476,7 +59476,7 @@
             "containerId": null,
             "originalText": "Stateless Operation",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "rectangle",
@@ -59642,7 +59642,7 @@
             "containerId": null,
             "originalText": "Potentially Stateful\nand/or Key-changing",
             "lineHeight": 1.25,
-            "baseline": 36
+            "baseline": 35
           },
           {
             "type": "arrow",
@@ -59773,7 +59773,7 @@
             "containerId": null,
             "originalText": "Streams Topology Flow",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "text",
@@ -59812,7 +59812,7 @@
             "containerId": null,
             "originalText": "RPC / Other",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "line",
@@ -60267,7 +60267,7 @@
             "containerId": null,
             "originalText": "Topic",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "line",
@@ -61371,7 +61371,7 @@
             "containerId": null,
             "originalText": "Legend",
             "lineHeight": 1.25,
-            "baseline": 36
+            "baseline": 34
           },
           {
             "type": "line",
@@ -61457,7 +61457,7 @@
             "containerId": null,
             "originalText": "Read the KSTD docs",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "line",
@@ -64175,7 +64175,7 @@
             "containerId": null,
             "originalText": "kstd.thriving.dev",
             "lineHeight": 1.25,
-            "baseline": 16
+            "baseline": 15
           },
           {
             "type": "line",
